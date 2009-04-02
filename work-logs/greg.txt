@@ -1,0 +1,2 @@
+2009-04-01: 0.50 hours: Set up a git repository for the project
+2009-04-02: 2.00 hours: Understanding and getting used to using git

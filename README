@@ -1,0 +1,9 @@
+To get started working on the project, you will probably want to set up a few options for using git on your system.
+Here are some commands that will set some common options for you:
+(Obviously, you will want to change some of these to reflect your information)
+
+git config --global user.name 'Greg Mefford'
+git config --global user.email 'gregory.mefford@gmail.com'
+
+There are tons of other options that you can also set.
+Try searching the Internet for .gitconfig to see some other people's examples.
