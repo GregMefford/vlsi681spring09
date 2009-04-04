@@ -1,0 +1,82 @@
+RESOURCES AND PLANNING 
+SECTION 1: RESOURCES.
+a. List all personnel and skills of each (VHDL or Altera experience, hardware or software project experience, good writing skills, etc.)
+Greg:
+
+Megan:
+
+Sandeep:
+
+b. List the number of hours each team member has available to devote to the project over the quarter (8 hours per week is probably a minimum) 
+Greg: 8
+Megan: 8
+Sandeep: 8
+c. List all hardware and software resources that will be used for development. Include any computers owned by the team members as well as the hardware and software in 890 Rhodes.    
+Greg:
+
+Megan:
+
+Sandeep:
+
+SECTION 2: PLANNING.
+a. List who will be assigned to oversee each of the following:
+Documentation - Megan
+Testing - Sandeep
+Version control and backups -Greg
+Tracking and productivity - Greg
+
+b. Describe how the team members will communicate, including meetings, email, phone, etc., and how they will coordinate their work.
+Class MWF
+Email:
+Greg - gregory.mefford@gmail.com
+Megan - mmswim22@gmail.com
+Sandeep - gsandyreddy@gmail.com
+
+Phone:
+Greg - 513-673-1912
+Megan - 
+Sandeep - 
+
+c. Give the time and place of weekly team meetings (at least one meeting per week is required).
+Tentatively, we will plan on meeting Wednesdays after class in/outside the classroom until we can come up with a more permanent time and place.
+
+d. Describe completely how you will handle version control and backups.
+Version control: git
+<Greg to describe git in more detail>
+
+Backups: git + github + Dropbox
+<Greg to describe the backup scheme in more detail>
+
+e. Describe your plan for testing.  Altera does not support testbenches, only .vec files.  How will you document your testing? 
+<Sandeep will write this section (Greg and Megan can help too)>
+
+f. Provide both a Gantt chart and Tracking Document for your project.  You will need to update the tracking document each week and include the updated documents in your project report.
+<Megan to create Gantt Chart>
+<Greg to create Tracking Document>
+
+g. Describe the coding and documentation standards you will use.
+<To be determined together, probably based on someone else's standards>
+
+h. Describe how you will produce up-to-date documentation (content and form—online?) in parallel with the project.  You will need to produce supporting documents, including a user manual, along with code documentation.
+<To be determined together, probably based on someone else's standards>
+
+SECTION 3: HARDWARE BASICS
+a. Describe the board you will be using, including:
+      chip capability, including gate count, clock speed, memory, etc.
+
+      I/O devices 
+
+b. Describe the capabilities of other chips which you can simulate using the design tools provided (in the event that the chip you have will not support dual-core processing)
+
+c. Describe the information you can obtain from the design tools about gate usage, speed, power, layout, etc. which will be needed to analyze the performance of your processor.
+
+d. Explain the procedure you will use for testing a hardware module with the given tools and documenting your test results.
+
+e. Perform the following simple experiments and report the results:
+1. What is the length of a critical path between two flip-flops? Does this depend on the placement of the flip-flops? Do "glitches" occur in the simulation? In the circuit? Are these significant?
+
+2. Design a D flip-flop starting from the gate level. Compare its behavior with the D flip-flop in the Altera VHDL library. Can you vary the clocking strategy—rising-edge, falling-edge, level triggered? Is one strategy preferable for this hardware?
+
+3. Repeat problem 2 for a 4-bit adder.
+
+4. Can you detect changes in a simple gate's switching behavior which depend on its fan-out?
