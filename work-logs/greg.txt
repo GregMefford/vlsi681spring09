@@ -3,3 +3,4 @@
 2009-04-03: 0.50 hours: Working out who is doing what for Report 1
 2009-04-03: 0.50 hours: Getting set up with git on my Windows computer at home
 2009-04-03: 0.50 hours: Writing up some getting-started info for using git in the README
+2009-04-04: 0.50 hours: Added a basic outline on the week 1 report in plain text form.
