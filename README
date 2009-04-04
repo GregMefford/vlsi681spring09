@@ -7,3 +7,29 @@ git config --global user.email 'gregory.mefford@gmail.com'
 
 There are tons of other options that you can also set.
 Try searching the Internet for .gitconfig to see some other people's examples.
+
+Getting Started:
+1. Install git on your platform of choice
+2. Go to the git command line (easy way in Windows is to run the "Git Bash" program from the Start menu) and set the above config options
+3. Run the Git GUI program, choose the option to clone a repo.
+4. Put in the "Your Clone URL" from the github website, and clone it to a local folder
+5. Go to "Branch" => "Create..." to create a branch for your current feature
+6. "Repository" => "Explore Working Copy" to see the files you currently have checked out
+7. Edit the files
+8. Go back to Git Gui and click "Rescan"
+9. Click "Stage Changed"
+10. Type a "Commit Message" explaining what was changed
+11. Click "Commit"
+
+That should create an entry in the repository for you change, but right now, it is only in your local repository on your machine.
+To get it into the public github repository, you need to push it there.
+12. Click "Push"
+
+Once we've decided that your change is something we want to put into the "master" branch of the project, you can do so like this:
+13. "Branch" => "Checkout..." and choose your local "master" branch
+14. "Merge" => "Local Merge" and select the branch you made and want to merge with the "master" and click "Merge"
+15. If it worked as expected, Push it up to the github server as before.
+
+If other people have made changes, you will need to do the following to update your local repository and see the changes:
+16. "Remote" => "Fetch from" => "origin" (This will update your local repository, but not change your working branch.)
+17. Create a new branch from origin/master to continue working from the new "master" branch.
