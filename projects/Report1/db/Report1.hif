@@ -35,6 +35,23 @@ DFFPOS.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+ADD4
+# storage
+db|Report1.(1).cnf
+db|Report1.(1).cnf
+# case_insensitive
+# source_file
+ADD4.bdf
+686f18da65a193ebf85bea3fb8f5175e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
 }
