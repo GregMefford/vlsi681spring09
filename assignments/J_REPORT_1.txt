@@ -105,6 +105,11 @@ The length of the critical path between flip flops will certainly depend on the 
 Presumably, the simulator would be able to simulate any delays associated with routing, and it is possible that these delays could be so significant as to cause a glitch when using a very fast clock speed.
 
 2. Design a D flip-flop starting from the gate level. Compare its behavior with the D flip-flop in the Altera VHDL library. Can you vary the clocking strategy—rising-edge, falling-edge, level triggered? Is one strategy preferable for this hardware?
+The only clocking strategy that appears to be in the Altera library is the dff object, which is positive edge-triggered.
+The performance of this device was similar to that of the straightforward implementation of a D flip-Flop (see http://en.wikipedia.org/wiki/File:Edge_triggered_D_flip-flop.png) with the following differences:
+	The simple gate-based implementation of the D Flip-Flop using 5 2-input NAND gates and a 3-input NAND gate offers a Q_Bar output as well as a Q output.
+	The VHDL design offers PRN and CLRN inputs, which are presumably there for asynchronous control.
+	The speed of the VHDL design is faster (6.8ns compared to 11.8ns) than the gate-based design.
 
 3. Repeat problem 2 for a 4-bit adder.
 

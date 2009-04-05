@@ -1,0 +1,45 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+40
+2630
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+DFFPOS
+# storage
+db|Report1.(0).cnf
+db|Report1.(0).cnf
+# case_insensitive
+# source_file
+DFFPOS.bdf
+7f21b8f4ea1d9c68742154d41701bf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

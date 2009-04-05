@@ -1,0 +1,11 @@
+|DFFPOS
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.IN0
+CLK => inst6.IN1
+CLK => inst10.CLK
+D => inst3.IN0
+D => inst10.DATAIN
+QX <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LIB_Q <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
