@@ -2,6 +2,14 @@ RESOURCES AND PLANNING
 SECTION 1: RESOURCES.
 a. List all personnel and skills of each (VHDL or Altera experience, hardware or software project experience, good writing skills, etc.)
 Greg:
+VHDL: Intermediate Skill
+Verilog: No Experience
+Altera: No Experience
+Xilinx: Some Experience
+Hardware Development: Basic experience based on VLSI Design courses
+Software Development: Lots of professional and personal software development experience
+Writing Skills: Some experience writing professional reports and proposals
+Version Control: Extensive experience with SVN, some with CVS, and quickly learning to use git
 
 Megan:
 
@@ -11,8 +19,16 @@ b. List the number of hours each team member has available to devote to the proj
 Greg: 8
 Megan: 8
 Sandeep: 8
-c. List all hardware and software resources that will be used for development. Include any computers owned by the team members as well as the hardware and software in 890 Rhodes.    
+c. List all hardware and software resources that will be used for development. Include any computers owned by the team members as well as the hardware and software in 890 Rhodes.
 Greg:
+Primary: Apple Macbook Pro
+	2.5 GHz Core 2 Duo
+	4 GB 667 MHz DDR2 SDRAM
+	Operating System: Mac OS X 10.5.6
+Secondary: Dell Dimension E521
+	2 GHz Athlon X2
+	4 GB 667 MHz DDR2 SDRAM
+	Operating System: Windows XP
 
 Megan:
 
@@ -22,17 +38,19 @@ SECTION 2: PLANNING.
 a. List who will be assigned to oversee each of the following:
 Documentation - Megan
 Testing - Sandeep
-Version control and backups -Greg
+Version control and backups - Greg
 Tracking and productivity - Greg
 
 b. Describe how the team members will communicate, including meetings, email, phone, etc., and how they will coordinate their work.
-Class MWF
-Email:
+Communication will be primarily through email in order to easily maintain a paper-trail of what was said.
+Email Addresses:
 Greg - gregory.mefford@gmail.com
 Megan - mmswim22@gmail.com
 Sandeep - gsandyreddy@gmail.com
 
-Phone:
+Also, we will have some impromptu face-to-face time as needed before and after VLSI System Design class on Monday, Wednesday, and Friday 12-1.20pm.
+
+In case other contact methods are impossible, our phone numbers are as follows:
 Greg - 513-673-1912
 Megan - 
 Sandeep - 
@@ -42,10 +60,14 @@ Tentatively, we will plan on meeting Wednesdays after class in/outside the class
 
 d. Describe completely how you will handle version control and backups.
 Version control: git
-<Greg to describe git in more detail>
+For version control of source code and assets associated with this project, the team will be using the git version control system (http://www.git-scm.com).
+The primary reason for choosing this version control system is that is a distributed version control system by design.
+What this means is that each team member will have a complete snapshot of the entire history of the project in their local repository, and that history will be automatically merged with the changes made by other team members as they are committed.
+In order to make the collaboration process easier, we will be using github (http://www.github.com) as the official master repository through which we will sync each of our respective local repositories.
 
 Backups: git + github + Dropbox
-<Greg to describe the backup scheme in more detail>
+Because git was designed to be a distributed version control system, it inherently represents a backup system in itself, since each team member and also the github server, has a complete copy of the entire history of the project. So not only will be always have a copy of the most recent version of the project code, but we will also maintain every previously-committed state of the project code.
+In addition to the protection inherently offered by the git version control system, Greg will be using Dropbox (Http://www.getdropbox.com) to sync code between his computers. Not only does Dropbox offer an additional server on which the current state of the project assets will be stored, but it also allows for older versions of the files to be downloaded in the unlikely event that every other precaution fails and the whole git repository is lost on each computer and on github.
 
 e. Describe your plan for testing.  Altera does not support testbenches, only .vec files.  How will you document your testing? 
 <Sandeep will write this section (Greg and Megan can help too)>
@@ -61,19 +83,26 @@ h. Describe how you will produce up-to-date documentation (content and form—on
 <To be determined together, probably based on someone else's standards>
 
 SECTION 3: HARDWARE BASICS
-a. Describe the board you will be using, including:
-      chip capability, including gate count, clock speed, memory, etc.
-
-      I/O devices 
+a. Describe the board you will be using:
+LEs: 5,980
+M4K RAM Blocks (128 x 36 bits): 20
+Total RAM Bits: 96,180
+PLLs: 2
+Maximum User I/O Pins: 185
+Max Clock Speed: Approximately 200 MHz
 
 b. Describe the capabilities of other chips which you can simulate using the design tools provided (in the event that the chip you have will not support dual-core processing)
+<Include the file "Cyclone Features.png">
 
 c. Describe the information you can obtain from the design tools about gate usage, speed, power, layout, etc. which will be needed to analyze the performance of your processor.
 
 d. Explain the procedure you will use for testing a hardware module with the given tools and documenting your test results.
+<Sandeep will write this section (Greg and Megan can help too)>
 
 e. Perform the following simple experiments and report the results:
 1. What is the length of a critical path between two flip-flops? Does this depend on the placement of the flip-flops? Do "glitches" occur in the simulation? In the circuit? Are these significant?
+The length of the critical path between flip flops will certainly depend on the placement of those flip-flops, due to the nature of wire-routing in an FPGA. Since the routing is programmable, and not intrinsic in the fabrication of the chip, there must be some combinational delay associated with each wiring segment within the chip, in addition to any combinational logic that is a part of the actual design.
+Presumably, the simulator would be able to simulate any delays associated with routing, and it is possible that these delays could be so significant as to cause a glitch when using a very fast clock speed.
 
 2. Design a D flip-flop starting from the gate level. Compare its behavior with the D flip-flop in the Altera VHDL library. Can you vary the clocking strategy—rising-edge, falling-edge, level triggered? Is one strategy preferable for this hardware?
 
