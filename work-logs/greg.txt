@@ -5,3 +5,4 @@
 2009-04-03: 0.50 hours: Writing up some getting-started info for using git in the README
 2009-04-04: 0.50 hours: Added a basic outline on the week 1 report in plain text form.
 2009-04-05: 3.50 hours: Finished the gate-level implementation and verification of the 4-bit adder for Report 1.
+2009-04-06: 1.00 hours: Getting all the changes merged together in version control.
