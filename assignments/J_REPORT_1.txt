@@ -1,6 +1,6 @@
-RESOURCES AND PLANNING 
+﻿RESOURCES AND PLANNING 
 SECTION 1: RESOURCES.
-a. List all personnel and skills of each (VHDL or Altera experience, hardware or software project experience, good writing skills, etc.)
+a. List all personnel and skills of each
 Greg:
 VHDL: Intermediate Skill
 Verilog: No Experience
@@ -12,14 +12,24 @@ Writing Skills: Some experience writing professional reports and proposals
 Version Control: Extensive experience with SVN, some with CVS, and quickly learning to use git
 
 Megan:
+VHDL: Intermediate Skill
+Verilog: Intermediate Skill
+Altera: Experience from Embedded Systems class
+Xilinx: No Experience
+Hardware Development: Basic experience based on VLSI Design courses
+Software Development: Basic programming experience
+Writing Skills: Great
+Version Control: Learning to use git, but no prior experience
 
 Sandeep:
 
-b. List the number of hours each team member has available to devote to the project over the quarter (8 hours per week is probably a minimum) 
+b. List the number of hours each team member has available to devote to the project over the quarter
 Greg: 8
 Megan: 8
 Sandeep: 8
-c. List all hardware and software resources that will be used for development. Include any computers owned by the team members as well as the hardware and software in 890 Rhodes.
+
+c. List all hardware and software resources that will be used for development.
+Hardware and software in 890 Rhodes.
 Greg:
 Primary: Apple Macbook Pro
 	2.5 GHz Core 2 Duo
@@ -30,7 +40,10 @@ Secondary: Dell Dimension E521
 	4 GB 667 MHz DDR2 SDRAM
 	Operating System: Windows XP
 
-Megan:
+Megan: 	HP Pavilion dv5 Notebook PC
+	AMD Turion(tm) X2 Dual-Core Mobile RM-70 2.00 GHz
+	3.00 GB RAM
+	Operating System: Windows XP
 
 Sandeep:
 
@@ -41,21 +54,20 @@ Testing - Sandeep
 Version control and backups - Greg
 Tracking and productivity - Greg
 
-b. Describe how the team members will communicate, including meetings, email, phone, etc., and how they will coordinate their work.
+b. Describe how the team members will communicate and how they will coordinate their work.
 Communication will be primarily through email in order to easily maintain a paper-trail of what was said.
 Email Addresses:
 Greg - gregory.mefford@gmail.com
 Megan - mmswim22@gmail.com
 Sandeep - gsandyreddy@gmail.com
-
 Also, we will have some impromptu face-to-face time as needed before and after VLSI System Design class on Monday, Wednesday, and Friday 12-1.20pm.
 
 In case other contact methods are impossible, our phone numbers are as follows:
 Greg - 513-673-1912
-Megan - 
+Megan - 614-370-6368
 Sandeep - 
 
-c. Give the time and place of weekly team meetings (at least one meeting per week is required).
+c. Give the time and place of weekly team meetings.
 Tentatively, we will plan on meeting Wednesdays after class in/outside the classroom until we can come up with a more permanent time and place.
 
 d. Describe completely how you will handle version control and backups.
