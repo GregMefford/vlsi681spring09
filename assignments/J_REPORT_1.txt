@@ -22,6 +22,14 @@ Writing Skills: Great
 Version Control: Learning to use git, but no prior experience
 
 Sandeep:
+VHDL: Intermediate Skill
+Verilog: No Experience
+Altera: No Experience 
+Xilinx: No Experience
+Hardware Development: Basic experience based on VLSI Design courses
+Software Development: Very good professional software development experience
+Writing Skills: some experience writing project reports
+Version Control: Learning to use git, but no prior experience
 
 b. List the number of hours each team member has available to devote to the project over the quarter
 Greg: 8
@@ -45,7 +53,22 @@ Megan: 	HP Pavilion dv5 Notebook PC
 	3.00 GB RAM
 	Operating System: Windows XP
 
-Sandeep:
+Sandeep:  Dell XPS M1330 Notebook PC
+	  Intel(R) Core(TM)2Duo CPU T5750 @2.00GHz 2.00GHz
+	  4GB RAM
+	  Operating System: Windows Vista
+
+Desktop PC in the lab 890 Rhodes :
+
+Intel Pentium(c)
+4 CPU 2.80 GHz
+2.79 GHz, 504MB of RAM
+Operating System : Windows XP version 2002 (SP 2)
+
+Altera Board :
+
+Cyclone* 
+EP1C6Q240C8
 
 SECTION 2: PLANNING.
 a. List who will be assigned to oversee each of the following:
@@ -65,7 +88,7 @@ Also, we will have some impromptu face-to-face time as needed before and after V
 In case other contact methods are impossible, our phone numbers are as follows:
 Greg - 513-673-1912
 Megan - 614-370-6368
-Sandeep - 
+Sandeep - 337-515-2357
 
 c. Give the time and place of weekly team meetings.
 Tentatively, we will plan on meeting Wednesdays after class in/outside the classroom until we can come up with a more permanent time and place.
