@@ -51,7 +51,7 @@ Secondary: Dell Dimension E521
 Megan: 	HP Pavilion dv5 Notebook PC
 	AMD Turion(tm) X2 Dual-Core Mobile RM-70 2.00 GHz
 	3.00 GB RAM
-	Operating System: Windows XP
+	Operating System: Windows Vista
 
 Sandeep:  Dell XPS M1330 Notebook PC
 	  Intel(R) Core(TM)2Duo CPU T5750 @2.00GHz 2.00GHz
