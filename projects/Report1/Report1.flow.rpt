@@ -1,6 +1,6 @@
 Flow report for Report1
-Sun Apr 05 16:12:47 2009
-Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+Fri Apr 10 07:18:36 2009
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
 ---------------------
@@ -19,7 +19,7 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2008 Altera Corporation
+Copyright (C) 1991-2009 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,8 +38,8 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Sun Apr 05 16:12:47 2009   ;
-; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Flow Status             ; Successful - Fri Apr 10 07:18:36 2009   ;
+; Quartus II Version      ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name           ; Report1                                 ;
 ; Top-level Entity Name   ; ADD4                                    ;
 ; Family                  ; Cyclone                                 ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2009 16:12:32 ;
+; Start date & time ; 04/10/2009 07:17:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Report1             ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+----------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 82148481109.123896235200200                                    ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 83520206528.123936225702984                                    ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; C:/Documents and Settings/mefforga/Desktop/VLSI681/Report1.dpf ; --            ; --          ; --             ;
@@ -86,11 +86,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:04     ; 1.0                     ; 160 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:05     ; 1.0                     ; 182 MB              ; 00:00:03                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 151 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 115 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:14     ; --                      ; --                  ; 00:00:07                           ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 163 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:04     ; 1.0                     ; 173 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 153 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 116 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:11     ; --                      ; --                  ; 00:00:06                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -99,10 +99,10 @@ applicable agreement for further details.
 +-------------------------+------------------+------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +-------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis    ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Fitter                  ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Assembler               ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Classic Timing Analyzer ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
+; Analysis & Synthesis    ; dump-truck       ; Windows XP ; 5.1        ; i1586          ;
+; Fitter                  ; dump-truck       ; Windows XP ; 5.1        ; i1586          ;
+; Assembler               ; dump-truck       ; Windows XP ; 5.1        ; i1586          ;
+; Classic Timing Analyzer ; dump-truck       ; Windows XP ; 5.1        ; i1586          ;
 +-------------------------+------------------+------------+------------+----------------+
 
 

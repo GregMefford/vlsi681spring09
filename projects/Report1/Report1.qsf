@@ -28,7 +28,7 @@ set_global_assignment -name DEVICE EP1C6Q240C8
 set_global_assignment -name TOP_LEVEL_ENTITY ADD4
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:13:52  APRIL 05, 2009"
-set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name DEVICE_FILTER_PACKAGE "ANY QFP"
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
@@ -38,10 +38,10 @@ set_global_assignment -name BDF_FILE DFFPOS.bdf
 set_global_assignment -name MISC_FILE "C:/Documents and Settings/mefforga/Desktop/VLSI681/Report1.dpf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE DFFPOS.vwf
 set_global_assignment -name BDF_FILE ADD4.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ADD4.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ADD4.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE ADD4.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ADD4.vwf

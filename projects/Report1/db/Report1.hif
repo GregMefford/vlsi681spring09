@@ -1,7 +1,6 @@
-Version 8.1 Build 163 10/28/2008 SJ Web Edition
-40
-2630
-OFF
+Version 9.0 Build 132 02/25/2009 SJ Web Edition
+41
+2978
 OFF
 OFF
 OFF
@@ -15,8 +14,6 @@ Level2
 VRSM_ON
 VHSM_ON
 0
--- Start Partition --
--- End Partition --
 -- Start Library Paths --
 -- End Library Paths --
 -- Start VHDL Libraries --
