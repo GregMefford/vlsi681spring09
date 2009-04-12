@@ -8,3 +8,4 @@
 2009-04-06: 1.00 hours: Getting all the changes merged together in version control.
 2009-04-06: 2.00 hours: Finishing up with the Report1 assignment.
 2009-04-08: 0.50 hours: Getting Report 1 feedback and Report 2 assignment into git
+2009-04-12: 1.00 hours: Getting started on tasks for Report 2
