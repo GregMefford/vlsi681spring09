@@ -29,14 +29,24 @@ Shift-Right: Dest = Src1 >> 1
 15      12 | 11      9 | 8       6 | 5 | 4   3 | 2       0
 1  1  0  1 | Dest  Reg | Src Reg 1 | 0 | 1   1 | 0   0   0
 
-	This change will allow us to perform fast multiplications in hardware, rather than having to perform multiple shifts and adds over many clock cycles. The advantage will be particularly significant because the instruction set did not originally have a shift operation either, so even the shifting portion would have been complicated. Additionally, using the reserved opcode for multiplication will save us some trouble in the implementation of the illegal opcode exception, as there is no longer any illegal opcode possible.
+	This change will allow us to perform fast multiplications in hardware, rather than having to perform multiple shifts and adds over many clock cycles. The advantage will be particularly significant because the instruction set did not originally have a shift operation either, so even the shifting portion would have been complicated. As a convenience, a Shift Left and Shift Right operation are also available using this same opcode. Additionally, using the reserved opcode for multiplication will save us some trouble in the implementation of the illegal opcode exception, as there is no longer any illegal opcode possible.
+	Further, the instruction format for these additional operations closely matches the ALU operations designed with the LC-3, so the control signals associated with directing the values in and out of the ALU should be simple compared to some other arbitrary instruction format.
 
 
 Step 2.  Design and test the data path of your processor.  This step will take two weeks, so the report you submit next week should have the top-level design requirements and test and as much of the rest of the design as you have completed.  The rest will be done for Project Report 3.
 
+The data path for this processor design will be very similar to the LC-3 (Patt & Patel pg. 570), with the following exceptions:
+	The ALU output is 32 bits wide, to support addition and multiplication overflow.
+	Overflow is always stored to the Overflow Register, R0, at the same time as the condition codes are set.
+	An operation that writes to the overflow register can not also specify R0 as the destination register, or an exception will be raised.
+
+	The primary purpose of keeping the data path and instruction set as similar as possible to the LC-3 is that the instruction set specified by Patt and Patel is simple and fairly complete, and they provide a lot of information on the control signals and design decisions associated with their architecture. We feel that it would be prudent to start with a design that has been thought through to completion and make modifications to it, rather than starting from scratch and having to work out all of the issues ourselves.
+
 
 Step 3.  Complete and submit your weekly report, with updated Gantt and tracking charts.
 Steps to be used in design and testing for your architecture for this and subsequent reports:
+
+
 1.  Design Phase
 a) Create the requirements specification for each task in the project assignment.  Ensure the requirements specification is a) complete, b) decomposed to appropriate levels to support the design function, and c) correctly specifies the functionality, performance, and implementation resources of the project.
 

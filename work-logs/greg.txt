@@ -13,3 +13,4 @@
 2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
 2009-04-13: 0.50 hours: Learning the basics of Verilog
 2009-04-15: 0.50 hours: Revising the instruction format changes for MUL, SL, and SR
+2009-04-15: 1.00 hours: Writing some specification requirements for the data path
