@@ -9,3 +9,7 @@
 2009-04-06: 2.00 hours: Finishing up with the Report1 assignment.
 2009-04-08: 0.50 hours: Getting Report 1 feedback and Report 2 assignment into git
 2009-04-12: 1.00 hours: Getting started on tasks for Report 2
+2009-04-13: 1.00 hours: Working on ISA requirements for multiply instruction
+2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
+2009-04-13: 0.50 hours: Learning the basics of Verilog
+2009-04-15: 0.50 hours: Revising the instruction format changes for MUL, SL, and SR
