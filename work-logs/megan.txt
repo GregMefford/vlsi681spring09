@@ -1,0 +1,9 @@
+Week 1:
+2009-04-01: 0.50 hours: Thinking about project implementation
+2009-04-03: 1.50 hours: Working on tutorial 1 from Hamblen
+2009-04-03: 0.50 hours: Working out who is doing what for Report 1
+2009-04-03: 1.50 hours: Setting up git on my laptop
+2009-04-05: 1.00 hours: Working on Report1 at home
+2009-04-06: 3.00 hours: Finishing up the Report1 experiments with Sandeep and Greg
+Week 2:
+2009-04-08: 1.00 hours: Setting up my worklog & updating it to the repository to test my git skills
