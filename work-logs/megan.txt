@@ -7,7 +7,13 @@ Week 1:
 2009-04-06: 3.00 hours: Finishing up the Report1 experiments with Sandeep and Greg
 Week 2:
 2009-04-08: 1.00 hours: Setting up my worklog & updating it to the repository to test my git skills
-2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
 Week 3:
-2009-04-14: 0.50 hours: Learning the basics of Verilog
+2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
+2009-04-14: 1.00 hours: Reading the Verilog documentation
+2009-04-15: 0.75 hours: Reading up on different architectures
+2009-04-17: 1.50 hours: Meeting to discuss pipelining/changes to design
+2009-04-17: 1.00 hours: Reading Cyclone literature
+2009-04-20: 1.00 hours: Discussing, finishing, submitting Report 3
 Week 4:
+
+
