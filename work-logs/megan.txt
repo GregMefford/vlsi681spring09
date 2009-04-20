@@ -7,3 +7,7 @@ Week 1:
 2009-04-06: 3.00 hours: Finishing up the Report1 experiments with Sandeep and Greg
 Week 2:
 2009-04-08: 1.00 hours: Setting up my worklog & updating it to the repository to test my git skills
+2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
+Week 3:
+2009-04-14: 0.50 hours: Learning the basics of Verilog
+Week 4:
