@@ -6,14 +6,17 @@ Week 1:
 2009-04-05: 1.00 hours: Working on Report1 at home
 2009-04-06: 3.00 hours: Finishing up the Report1 experiments with Sandeep and Greg
 Week 2:
+2009-04-06: 1.00 hours: Reading links on Mergesort, Quicksort, Matrix multiplication
 2009-04-08: 1.00 hours: Setting up my worklog & updating it to the repository to test my git skills
+2009-04-10: 1.50 hours: Investigating the LC-3 architecture
+2009-04-12: 2.00 hours: Reading Cyclone literature
 Week 3:
 2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
 2009-04-14: 1.00 hours: Reading the Verilog documentation
 2009-04-15: 0.75 hours: Reading up on different architectures
 2009-04-17: 1.50 hours: Meeting to discuss pipelining/changes to design
 2009-04-17: 1.00 hours: Reading Cyclone literature
-2009-04-20: 1.00 hours: Discussing, finishing, submitting Report 3
+2009-04-20: 1.50 hours: Discussing, finishing, submitting Report 3
 Week 4:
-
+2009-04-22: 1.00 hours: Investigating changes to LC-3 architecture we need to make
 
