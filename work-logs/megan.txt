@@ -19,4 +19,6 @@ Week 3:
 2009-04-20: 1.50 hours: Discussing, finishing, submitting Report 3
 Week 4:
 2009-04-22: 1.00 hours: Investigating changes to LC-3 architecture we need to make
+2009-04-24: 1.50 hours: Working on implementing the ALU
+2009-04-26: 1.50 hours: Starting Report 4 & reading LC-3
 
