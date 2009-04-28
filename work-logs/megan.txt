@@ -18,7 +18,11 @@ Week 3:
 2009-04-17: 1.00 hours: Reading Cyclone literature
 2009-04-20: 1.50 hours: Discussing, finishing, submitting Report 3
 Week 4:
+2009-04-20: 2.00 hours: Meeting to complete Report 3 and discuss module breakdowns
 2009-04-22: 1.00 hours: Investigating changes to LC-3 architecture we need to make
+2009-04-22: 1.50 hours: Reading more on Verilog and starting ALU
 2009-04-24: 1.50 hours: Working on implementing the ALU
 2009-04-26: 1.50 hours: Starting Report 4 & reading LC-3
+2009-04-27: 1.00 hours: Discussion on the basic data path structure
+2009-04-27: 1.00 hours: Finishing up with Report 4
 
