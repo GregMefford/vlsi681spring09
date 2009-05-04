@@ -1,0 +1,8 @@
+Add 	0000
+And 	0001
+Pass A 	0010
+Pass B 	0011
+Not	0100
+Mul	0101
+Shift L	0110
+Shift R	0111
