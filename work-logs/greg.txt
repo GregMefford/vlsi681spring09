@@ -14,3 +14,11 @@
 2009-04-13: 0.50 hours: Learning the basics of Verilog
 2009-04-15: 0.50 hours: Revising the instruction format changes for MUL, SL, and SR
 2009-04-15: 1.00 hours: Writing some specification requirements for the data path
+2009-04-20: 2.00 hours: Meeting to complete Report 3 and discuss module breakdowns
+2009-04-22: 2.00 hours: Doing the experiments for Homework 1
+2009-04-23: 1.00 hours: Doing the experiments for Homework 1
+2009-04-27: 1.00 hours: Writing up summaries for Homework 2
+2009-04-27: 1.00 hours: Getting started on the register file verilog module
+2009-04-27: 0.50 hours: Working on a single-register module
+2009-04-27: 2.50 hours: Working on 8-register file and overall architecture
+2009-04-27: 1.50 hours: Working on the overall architecture files in Quartus
