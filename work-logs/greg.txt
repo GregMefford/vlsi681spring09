@@ -22,3 +22,4 @@
 2009-04-27: 0.50 hours: Working on a single-register module
 2009-04-27: 2.50 hours: Working on 8-register file and overall architecture
 2009-04-27: 1.50 hours: Working on the overall architecture files in Quartus
+2009-05-04: 1.00 hours: Meeting to update team member statuses and plan next steps
