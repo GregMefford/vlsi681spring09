@@ -8,7 +8,7 @@ module mux16(A, B, CONTROL, OUT);
 		case(CONTROL)
 			0: OUT = A;
 			1: OUT = B;
-			default: OUT = A;
+			default: OUT = 16'bX;
 		endcase
 	end
 endmodule
