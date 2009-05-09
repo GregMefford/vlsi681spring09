@@ -11,13 +11,13 @@ wire [15: 0] instruction;
 wire [15: 0] next_pc;
 
 // Instruction Register Data
-wire [ 2: 0] rs1 = instruction[ 2: 0];
-wire [ 2: 0] rs2 = instruction[ 2: 0];
-wire [ 2: 0] rd  = instruction[ 2: 0];
+wire [ 2: 0] rs1 <= instruction[ 2: 0];
+wire [ 2: 0] rs2 <= instruction[ 2: 0];
+wire [ 2: 0] rd  <= instruction[ 2: 0];
 wire [15: 0] immediate;
 // Zero-extended immediate value
-immediate[15: 5] = 11'b0;
-immediate[ 4: 0] = instruction[ 4: 0];
+immediate[15: 5] <= 11'b0;
+immediate[ 4: 0] <= instruction[ 4: 0];
 
 // ALU
 wire [ 3: 0] alu_control;

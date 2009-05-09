@@ -1,0 +1,210 @@
+# Reading C:/altera/90/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/modelsim.mpf} 
+# Loading project modelsim
+# reading C:\altera\90\modelsim_ase\win32aloem/../modelsim.ini
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(27): near "b": syntax error, unexpected "IDENTIFIER", expecting ';'
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(37): Undefined variable: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(1): Identifier must be declared with a port mode: INST.
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "mux16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "RAM_data.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "reg16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "register_file.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "control.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(8): near "<=": syntax error, unexpected "<=", expecting ';'
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module mux16
+# 
+# Top level modules:
+# 	mux16
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module RAM_data
+# 
+# Top level modules:
+# 	RAM_data
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module RAM_instruction
+# 
+# Top level modules:
+# 	RAM_instruction
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module reg16
+# 
+# Top level modules:
+# 	reg16
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "mux16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "RAM_data.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "reg16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "register_file.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "control.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(8): near "<=": syntax error, unexpected "<=", expecting ';'
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(2): Cannot open `include file "mux16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(3): Cannot open `include file "RAM_data.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(4): Cannot open `include file "reg16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(5): Cannot open `include file "register_file.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(6): Cannot open `include file "control.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): near "<=": syntax error, unexpected "<=", expecting ';'
+cd {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src}
+cd {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/work}
+cd {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim}
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(2): Cannot open `include file "mux16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(3): Cannot open `include file "RAM_data.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(4): Cannot open `include file "reg16.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(5): Cannot open `include file "register_file.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(6): Cannot open `include file "control.v".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): Undefined variable: instruction.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): 'instruction' already declared in this scope (work).
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): Verilog Compiler exiting
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(27): near "b": syntax error, unexpected "IDENTIFIER", expecting ';'
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(37): Undefined variable: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(1): Identifier must be declared with a port mode: INST.
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module mux16
+# 
+# Top level modules:
+# 	mux16
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module RAM_data
+# 
+# Top level modules:
+# 	RAM_data
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module RAM_instruction
+# 
+# Top level modules:
+# 	RAM_instruction
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module reg16
+# 
+# Top level modules:
+# 	reg16
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+vsim work.register_file
+# vsim work.register_file 
+# Loading work.register_file
+add wave sim:/register_file/*
+run
+force CLK 0;force RD_LE 0; force R0_LE 0; force RS1 'h0; force RS2 'h0; force RD 'h0; force DATA_IN 'h0000; force R0_IN 'h0000;
+run
+force RD_LE 1; force R0_LE 1;
+run
+force CLK 1;
+run
+force CLK 0;
+run
+vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+restart
+# Loading work.register_file
+do register_file.do
+restart
+do register_file.do
+# ** Error: can't read "RS1": no such variable
+# Error in macro ./register_file.do line 40
+# can't read "RS1": no such variable
+#     while executing
+# "echo "Assert $RS1 == 0xDEAD""
+restart
+do register_file.do
+# ** Error: invalid command name "RS1"
+# Error in macro ./register_file.do line 40
+# invalid command name "RS1"
+#     while executing
+# "RS1"
+#     invoked from within
+# "echo "Assert [RS1] == 0xDEAD""
+restart
+do register_file.do
+# Assert 000 == 0xDEAD 
+# Assert 011 == 0xBEEF 
+do register_file.do
+# Assert dead == 0xDEAD 
+# Assert beef == 0xBEEF 
+do register_file.do
+# Assert 0xdead == 0xDEAD 
+# Assert 0xbeef == 0xBEEF 
+do register_file.do
+# Assert 0xdead == 0xDEAD 
+# Assert 0xbeef == 0xBEEF 
+# Assert 0xf0b0 == 0xF0B0 
+# Assert 0xfeed == 0xFEED 
+# Assert 0xbeef == 0xBEEF 
+# Assert 0xdead == 0xDEAD 
+restart
+do register_file.do
+# Assert 0xdead == 0xDEAD 
+# Assert 0xbeef == 0xBEEF 
+# Assert 0xf0b0 == 0xF0B0 
+# Assert 0xfeed == 0xFEED 
+# Assert 0xbeef == 0xBEEF 
+# Assert 0xdead == 0xDEAD 

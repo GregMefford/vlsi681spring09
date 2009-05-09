@@ -24,3 +24,5 @@
 2009-04-27: 1.50 hours: Working on the overall architecture files in Quartus
 2009-05-04: 1.00 hours: Meeting to update report 4 status and plan next steps
 2009-05-04: 2.00 hours: Working on basic control logic
+2009-05-08: 1.50 hours: Meeting for a status update, and getting started with ModelSim.
+2009-05-08: 1.50 hours: Working through ModelSim tutorials and testing the register File.
