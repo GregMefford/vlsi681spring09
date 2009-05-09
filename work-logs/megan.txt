@@ -23,6 +23,11 @@ Week 4:
 2009-04-22: 1.50 hours: Reading more on Verilog and starting ALU
 2009-04-24: 1.50 hours: Working on implementing the ALU
 2009-04-26: 1.50 hours: Starting Report 4 & reading LC-3
+2009-04-27: 1.00 hours: Writing up summaries for Homework 2
+Week 5:
 2009-04-27: 1.00 hours: Discussion on the basic data path structure
 2009-04-27: 1.00 hours: Finishing up with Report 4
-
+2009-04-29: 1.00 hours: Reading LC-3 documentation and instruction set
+2009-05-01: 1.50 hours: Reading up on implementation of ALU
+2009-05-04: 1.00 hours: Meeting to update Report 5 status and plan next steps
+2009-05-04: 2.00 hours: Working on ALU code/diagram
