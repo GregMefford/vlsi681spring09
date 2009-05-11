@@ -1,4 +1,4 @@
-module control(INST, ALU_CONTROL, IS_IMMEDIATE);
+module control(INST, MAR_LE, MDR_LE, PC_LE, IR_LE, ALU_CONTROL, IS_IMMEDIATE);
 	input      [15: 0] INSTRUCTION;
 	output reg [ 3: 0] ALU_CONTROL;
 	output             IS_IMMEDIATE;

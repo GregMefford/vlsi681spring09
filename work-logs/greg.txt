@@ -26,3 +26,6 @@
 2009-05-04: 2.00 hours: Working on basic control logic
 2009-05-08: 1.50 hours: Meeting for a status update, and getting started with ModelSim.
 2009-05-08: 1.50 hours: Working through ModelSim tutorials and testing the register File.
+2009-05-10: 1.00 hours: Control signal generation.
+2009-05-11: 1.50 hours: Top-level architecture and control signal generation.
+2009-05-11: 0.50 hours: Starting on the mid-term exam.
