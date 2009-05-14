@@ -2,29 +2,53 @@ m255
 K3
 13
 cModel Technology
-dC:\Documents and Settings\Greg Mefford\My Documents\modelsim_experiment
-vALU
-I5?a4^^^kOG0g>Db1PzFDK3
-VB91[H4<zPHaMV<:ClAFWh1
 Z0 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3\modelsim
+vALU
+IZ6OQj8dG48NKmFbaPN10N0
+VB91[H4<zPHaMV<:ClAFWh1
 w1241474036
-8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v
-FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v
+8ALU.v
+FALU.v
 L0 1
 Z1 OV;L;6.4a;39
 r1
 31
-Z2 o-work work -O0
+Z2 o-work work -nocovercells -O0
 n@a@l@u
 !s100 `jMDSALNfWdfNcDlNeYk`3
 !s85 0
+vcontrol
+!s100 Qki5b[kSfeaO7?T[G45?50
+I>]AO2iVZaU9Rk`[lcG;Wg1
+V_LT>Y7K6dZ:5e35mQj_T?3
+w1242257043
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v
+L0 1
+R1
+r1
+!s85 0
+31
+R2
+veffective_address
+IlTo`hCj76?V^Dd71<QV;C2
+VYNKjjI_b>hzeHD]Y34foL3
+w1242250427
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/effective_address.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/effective_address.v
+L0 3
+R1
+r1
+31
+R2
+!s100 >YkIVM;]D4BQEd3B^HS_c1
+!s85 0
 vmux16
-I1;3FTYP1j7z4MDRRCmh@G0
+IBi:=b4fJVLP2_AiP6P91P1
 V8=[TP;g?P9a@6SV=e7ME;1
-Z3 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3\modelsim
 w1241484736
-8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v
-FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/mux16.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/mux16.v
 L0 1
 R1
 r1
@@ -33,12 +57,11 @@ R2
 !s100 fLJ5=hMNcBl2noeXe[[Ec2
 !s85 0
 vRAM_data
-IZX>CXIzmRZdCB:_`SP@>A1
+I113DX=hihbigABdf89]i81
 VI;lSf;AR]k2O[TS^HS_8_0
-R3
-Z4 w1240882867
-8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_data.v
-FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_data.v
+Z3 w1240882867
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_data.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_data.v
 L0 1
 R1
 r1
@@ -48,12 +71,11 @@ n@r@a@m_data
 !s100 DC9dPYL;V5koB@hFEMb_z0
 !s85 0
 vRAM_instruction
-IED0Q4S:z99Hc7f=6UHIOS2
+I9e<MEe?j0`XUi^U0^>60o2
 VUjCbYjkZFoRdOYA[3Sf^T3
 R3
-R4
-8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v
-FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_instruction.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_instruction.v
 L0 1
 R1
 r1
@@ -63,12 +85,11 @@ n@r@a@m_instruction
 !s100 ofA@N<ZLzidAf8DoP5;Ra3
 !s85 0
 vreg16
-IUfMl_8dCZ1YbP9oPTCfQY0
+IcSF`>GoaCnQjWC?RADzgd3
 V2z4lZ5JIDMB42K62CekF11
 R3
-R4
-8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v
-FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/reg16.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/reg16.v
 L0 1
 R1
 r1
@@ -77,16 +98,15 @@ R2
 !s100 [hg?^zlLBDmGi[jVFVaG03
 !s85 0
 vregister_file
-!s100 MQGdRz;60O?mzSgI:]ba51
-I?i33jBejEO:U5]^dEBWiQ3
+IFRk_Jz_=4HP0=8j2BNR4P1
 V3;45;T<3<T0K;[BgKOBki0
-R3
 w1241484942
-8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v
-FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/register_file.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/register_file.v
 L0 1
 R1
 r1
-!s85 0
 31
 R2
+!s100 MQGdRz;60O?mzSgI:]ba51
+!s85 0
