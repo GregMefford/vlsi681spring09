@@ -1,0 +1,7 @@
+2009-05-06: 2.00 hours: Implementation of memory module
+
+2009-05-08: 3.00 hours: Worked on take home midterm
+
+2009-05-09: 2.00 hours: Installing and working on Modelsim
+
+2009-05-10: 1.50 hours: Worked on random testing of memory module

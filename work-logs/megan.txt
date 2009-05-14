@@ -30,4 +30,10 @@ Week 5:
 2009-04-29: 1.00 hours: Reading LC-3 documentation and instruction set
 2009-05-01: 1.50 hours: Reading up on implementation of ALU
 2009-05-04: 1.00 hours: Meeting to update Report 5 status and plan next steps
+Week 6:
 2009-05-04: 2.00 hours: Working on ALU code/diagram
+2009-05-08: 1.50 hours: Meeting for a status update, and getting started with ModelSim.
+2009-05-08: 1.50 hours: Working through ModelSim tutorials and testing the ALU
+2009-05-10: 1.00 hours: Continued testing ALU
+2009-05-11: 1.50 hours: Working on take-home midterm
+2009-05-11: 0.50 hours: Compiling hours and submitting Report 6
