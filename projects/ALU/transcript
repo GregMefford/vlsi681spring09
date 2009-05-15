@@ -1,0 +1,1936 @@
+# Reading C:/altera/81/modelsim_ae/tcl/vsim/pref.tcl 
+# OpenFile {C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/Project Files/050809 test files/ALU.v} 
+vlib work
+vlog -reportprogress 300 -work work {C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/Project Files/050809 test files/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work {C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/Project Files/050809 test files/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vsim work.ALU
+# vsim work.ALU 
+# Loading work.ALU
+# Load canceled
+# Load canceled
+run
+view wave
+# .main_pane.mdi.interior.cs.vm.paneset.cli_2.wf.clip.cs.pw.wf
+vlog -reportprogress 300 -work work {C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/Project Files/050809 test files/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+run
+run
+run
+vsim work.ALU
+# vsim work.ALU 
+# Loading work.ALU
+# Load canceled
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test.do
+# Cannot open macro file: ALU_test.do
+quit -sim
+do ALU_test.do
+# Cannot open macro file: ALU_test.do
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test.do
+# Cannot open macro file: ALU_test.do
+do ALU_test.do
+# Cannot open macro file: ALU_test.do
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h00 
+# Assert OF 0000 == 'h00 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h01 
+# Assert OF 0000 == 'h00 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h02 
+# Assert OF 0000 == 'h00 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1-1) 
+# Assert Z 0100 == 'h00 
+# Assert OF 0000 == 'h00 
+# Assert CC 100 == 001 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1-1) 
+# Assert Z 0000 == 'h00 
+# Assert OF 0001 == 'h00 
+# Assert CC 100 == 001 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1-1) 
+# Assert Z ffff == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 001 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h001F 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0001 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 001 
+# 
+# Test AND(1&1) 
+# Assert Z 0002 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 001 
+# 
+# Test AND(F&E) 
+# Assert Z 001d == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 001 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&0) 
+# Assert Z 0001 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0002 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 001d == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 010 
+quit -sim
+vsim ALU
+# vsim ALU 
+# Loading work.ALU
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'h1111 
+# Assert OF ffff == 'h1111 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'h1111 
+# Assert OF ffff == 'h0000 
+# Assert CC 010 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z ffff == 'h0000 
+# Assert OF ffff == 'h0000 
+# Assert CC 010 == 001 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 010 
+# 
+# Test Shift L 
+# Assert Z 001a == 'h001A 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z a020 == 'h0020 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 010 
+# 
+# Test Shift L 
+# Assert Z 001a == 'h001A 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 0020 == 'h0020 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 010 
+# 
+# Test Shift L 
+# Assert Z 001a == 'h001A 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 0020 == 'h0020 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift R 
+# Assert Z 0020 == 'h0008 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 010 
+# 
+# Test Shift L 
+# Assert Z 001a == 'h001A 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 0020 == 'h0020 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift R 
+# Assert Z 0008 == 'h0008 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 010 
+# 
+# Test Shift L 
+# Assert Z 001a == 'h001A 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 0020 == 'h0020 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 7dde == 'h7DDE 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift R 
+# Assert Z 0008 == 'h0008 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift R 
+# Assert Z df77 == 'h5F77 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+do ALU_test
+# 
+# Test ADD (0+0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test ADD(1+0) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(1+1) 
+# Assert Z 0002 == 'h0002 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(8+8) 
+# Assert Z 0010 == 'h0010 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test ADD(23+23) 
+# Assert Z 0100 == 'h0100 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(0&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test AND(1&0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 100 
+# 
+# Test AND(1&1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test AND(F&E) 
+# Assert Z 000e == 'h000E 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS A 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS A 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test PASS B 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test PASS B 
+# Assert Z 1111 == 'h1111 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test NOT A 
+# Assert Z ffff == 'hFFFF 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z efee == 'hEFEE 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test NOT A 
+# Assert Z 4444 == 'h4444 
+# Assert OF ffff == 'hFFFF 
+# Assert CC 010 == 010 
+# 
+# Test MUL A*B (0*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*0) 
+# Assert Z 0000 == 'h0000 
+# Assert OF 0000 == 'h0000 
+# Assert CC 001 == 001 
+# 
+# Test MUL A*B (1*1) 
+# Assert Z 0001 == 'h0001 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (4*3) 
+# Assert Z 000c == 'h000C 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (14*13) 
+# Assert Z 00b6 == 'h00B6 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test MUL A*B (DEAD*BEEF) (57005*48879) 
+# Assert Z 4983 == 'h4983 
+# Assert OF a614 == 'hA614 
+# Assert CC 010 == 010 
+# 
+# Test Shift L 
+# Assert Z 001a == 'h001A 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 0020 == 'h0020 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift L 
+# Assert Z 7dde == 'h7DDE 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift R 
+# Assert Z 0008 == 'h0008 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
+# 
+# Test Shift R 
+# Assert Z df77 == 'hDF77 
+# Assert OF 0000 == 'h0000 
+# Assert CC 100 == 100 
