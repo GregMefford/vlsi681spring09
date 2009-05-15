@@ -1,210 +1,495 @@
 # Reading C:/altera/90/modelsim_ase/tcl/vsim/pref.tcl 
 # OpenFile {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/modelsim.mpf} 
 # Loading project modelsim
-# reading C:\altera\90\modelsim_ase\win32aloem/../modelsim.ini
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Error opening C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/Untitled-1
+# Path name 'C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/Untitled-1' doesn't exist.
+# 1 file could not be opened in editor
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(27): near "b": syntax error, unexpected "IDENTIFIER", expecting ';'
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: MAR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: MAR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: MDR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: MDR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: PC_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: PC_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: IR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: IR_LE.
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(27): Undefined variable: X.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: MAR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: MAR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: MDR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: MDR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: PC_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: PC_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: IR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: IR_LE.
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: INST.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: MAR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: MAR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: MDR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: MDR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: PC_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: PC_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): Undefined variable: IR_LE.
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(1): Identifier must be declared with a port mode: IR_LE.
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(16): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(20): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(24): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(29): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(30): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(31): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(32): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(38): (vlog-2110) Illegal reference to net "IS_IMMEDIATE".
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(16): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(20): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(24): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(29): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(30): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(31): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(32): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): (vlog-2110) Illegal reference to net "ALU_CONTROL".
+# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(38): (vlog-2110) Illegal reference to net "IS_IMMEDIATE".
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+vsim work.effective_address
+# vsim work.effective_address 
+# Loading work.effective_address
+# Loading work.mux16
+vsim work.control
+# vsim work.control 
+# Loading work.control
+add wave sim:/control/*
+write format wave -window .main_pane.mdi.interior.cs.vm.paneset.cli_3.wf.clip.cs.pw.wf {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/wave.do}
+do control_test.do
+# Test R3 = R1 + R5 
+# ** Error: (vsim-4012) Expected ',' separator between value/time pairs.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+# Error in macro ./control_test.do line 6
+# ** Error: (vsim-4012) Expected ',' separator between value/time pairs.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+#     while executing
+# "force INSTRUCTION 16'b0001 011 001 0 00 101"
+do control_test.do
+# Test R3 = R1 + R5 
+# INSTRUCTION: 1645 
+do control_test.do
+# Test R3 = R1 + R5 
+# Assert 0000 0000 
+# Test R2 = R0 & R4 
+# Assert 0001 0001 
+do control_test.do
+# Test R3 = R1 + R5 
+# Assert 0000 == 0000 
+# Test R2 = R0 & R4 
+# Assert 0001 == 0001 
+# Test R7 = !R1 
+# Assert 0100 == 0100 
+do control_test.do
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL xxxx == 0101 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL xxxx == 0101 
+do control_test.do
+# ** Error: (vish-4008) Object 'INSTRUCTION' not found.
+# Error in macro ./control_test.do line 2
+# ** Error: (vish-4008) Object 'INSTRUCTION' not found.
+# 
+#     while executing
+# "force INSTRUCTION 'hDEAD"
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL xxxx == 0101 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(29): [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(33): [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(41): [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(29): [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(33): [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(37): [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v(41): [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL xxxx == 0101 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL xxxx == 0101 
+do control_test.do
+# Break in Module control at C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v line 13
+# Simulation Breakpoint: Break in Module control at C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v line 13
+# MACRO ./control_test.do PAUSED at line 3
+run
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Break in Module control at C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v line 13
+# Simulation Breakpoint: Break in Module control at C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v line 13
+# MACRO ./control_test.do PAUSED at line 7
+run -continue
+run -continue
+run -continue
+restart
+# Loading work.control
+do control_test.do
+# Break in Module control at C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v line 13
+# Simulation Breakpoint: Break in Module control at C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v line 13
+# MACRO ./control_test.do PAUSED at line 3
+step
+step
+# Break key hit 
+restart
+quit -sim
+quit -sim
+run
+# No Design Loaded!
+step
+# Active dataset is not in simulation mode
+do control_test.do
+# ** Error: (vish-4008) Object 'INSTRUCTION' not found.
+# Error in macro ./control_test.do line 2
+# ** Error: (vish-4008) Object 'INSTRUCTION' not found.
+# 
+#     while executing
+# "force INSTRUCTION 'hDEAD"
+# ** Error:  not found
+vsim work.control
+# vsim work.control 
+# Loading work.control
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL 0101 == 0101 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL 0101 == 0101 
+# 
+# Test R3 = << R5 
+# ** Error: (vsim-4012) Expected ',' separator between value/time pairs.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+# Error in macro ./control_test.do line 26
+# ** Error: (vsim-4012) Expected ',' separator between value/time pairs.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+#     while executing
+# "force INSTRUCTION 16'b1101 011 101 010 000"
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL 0101 == 0101 
+# 
+# Test R3 = << R5 
+# Assert ALU_CONTROL 0110 == 0110 
+# 
+# Test R4 = >> R6 
+# Assert ALU_CONTROL 0111 == 0111 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/ALU.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module control
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(27): near "b": syntax error, unexpected "IDENTIFIER", expecting ';'
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(37): Undefined variable: INST.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(1): Identifier must be declared with a port mode: INST.
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "mux16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "RAM_data.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "reg16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "register_file.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "control.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(8): near "<=": syntax error, unexpected "<=", expecting ';'
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v}
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/effective_address.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module mux16
+# -- Compiling module effective_address
 # 
 # Top level modules:
-# 	mux16
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_data.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# -- Compiling module RAM_data
+# 	effective_address
 # 
-# Top level modules:
-# 	RAM_data
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# -- Compiling module RAM_instruction
 # 
-# Top level modules:
-# 	RAM_instruction
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# -- Compiling module reg16
-# 
-# Top level modules:
-# 	reg16
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# -- Compiling module register_file
-# 
-# Top level modules:
-# 	register_file
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "mux16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "RAM_data.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "reg16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "register_file.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Missing ';' from include file path spec.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "control.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(8): near "<=": syntax error, unexpected "<=", expecting ';'
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(2): Cannot open `include file "mux16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(3): Cannot open `include file "RAM_data.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(4): Cannot open `include file "reg16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(5): Cannot open `include file "register_file.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(6): Cannot open `include file "control.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): near "<=": syntax error, unexpected "<=", expecting ';'
-cd {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src}
-cd {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/work}
-cd {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim}
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(1): Cannot open `include file "ALU.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(2): Cannot open `include file "mux16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(3): Cannot open `include file "RAM_data.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(4): Cannot open `include file "reg16.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(5): Cannot open `include file "register_file.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(6): Cannot open `include file "control.v".
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): Undefined variable: instruction.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): 'instruction' already declared in this scope (work).
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(14): Verilog Compiler exiting
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/LC3.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module mux16
+# -- Compiling module RAM_data
+# -- Compiling module reg16
+# -- Compiling module register_file
 # -- Compiling module control
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(27): near "b": syntax error, unexpected "IDENTIFIER", expecting ';'
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(37): Undefined variable: INST.
-# ** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v(1): Identifier must be declared with a port mode: INST.
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v}
+# ** Error: control.v(9): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# ** Error: control.v(14): Undefined variable: instruction.
+# ** Error: control.v(14): 'instruction' already declared in this scope (work).
+# ** Error: control.v(14): Verilog Compiler exiting
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/mux16.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module mux16
 # 
 # Top level modules:
 # 	mux16
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_data.v}
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_data.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module RAM_data
 # 
 # Top level modules:
 # 	RAM_data
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_instruction.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module RAM_instruction
 # 
 # Top level modules:
 # 	RAM_instruction
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v}
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/reg16.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module reg16
 # 
 # Top level modules:
 # 	reg16
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# 
+# 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/register_file.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# 
+# 
+# 9 compiles, 1 failed with 1 error. 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL 0101 == 0101 
+# 
+# Test R3 = << R5 
+# Assert ALU_CONTROL 0110 == 0110 
+# 
+# Test R4 = >> R6 
+# Assert ALU_CONTROL 0111 == 0101 
+# vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/control.v}
 # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# -- Compiling module register_file
+# -- Compiling module control
 # 
 # Top level modules:
-# 	register_file
-vsim work.register_file
-# vsim work.register_file 
-# Loading work.register_file
-add wave sim:/register_file/*
-run
-force CLK 0;force RD_LE 0; force R0_LE 0; force RS1 'h0; force RS2 'h0; force RD 'h0; force DATA_IN 'h0000; force R0_IN 'h0000;
-run
-force RD_LE 1; force R0_LE 1;
-run
-force CLK 1;
-run
-force CLK 0;
-run
-vlog -reportprogress 300 -work work {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
-# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-# -- Compiling module register_file
+# 	control
 # 
-# Top level modules:
-# 	register_file
-restart
-# Loading work.register_file
-do register_file.do
-restart
-do register_file.do
-# ** Error: can't read "RS1": no such variable
-# Error in macro ./register_file.do line 40
-# can't read "RS1": no such variable
-#     while executing
-# "echo "Assert $RS1 == 0xDEAD""
-restart
-do register_file.do
-# ** Error: invalid command name "RS1"
-# Error in macro ./register_file.do line 40
-# invalid command name "RS1"
-#     while executing
-# "RS1"
-#     invoked from within
-# "echo "Assert [RS1] == 0xDEAD""
-restart
-do register_file.do
-# Assert 000 == 0xDEAD 
-# Assert 011 == 0xBEEF 
-do register_file.do
-# Assert dead == 0xDEAD 
-# Assert beef == 0xBEEF 
-do register_file.do
-# Assert 0xdead == 0xDEAD 
-# Assert 0xbeef == 0xBEEF 
-do register_file.do
-# Assert 0xdead == 0xDEAD 
-# Assert 0xbeef == 0xBEEF 
-# Assert 0xf0b0 == 0xF0B0 
-# Assert 0xfeed == 0xFEED 
-# Assert 0xbeef == 0xBEEF 
-# Assert 0xdead == 0xDEAD 
-restart
-do register_file.do
-# Assert 0xdead == 0xDEAD 
-# Assert 0xbeef == 0xBEEF 
-# Assert 0xf0b0 == 0xF0B0 
-# Assert 0xfeed == 0xFEED 
-# Assert 0xbeef == 0xBEEF 
-# Assert 0xdead == 0xDEAD 
+# 
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL 0101 == 0101 
+# 
+# Test R3 = << R5 
+# Assert ALU_CONTROL 0110 == 0110 
+# 
+# Test R4 = >> R6 
+# Assert ALU_CONTROL 0111 == 0101 
+quit -sim
+vsim work.control
+# vsim work.control 
+# Loading work.control
+do control_test.do
+# 
+# Test R3 = R1 + R5 
+# Assert ALU_CONTROL 0000 == 0000 
+# 
+# Test R2 = R0 & R4 
+# Assert ALU_CONTROL 0001 == 0001 
+# 
+# Test R7 = !R1 
+# Assert ALU_CONTROL 0100 == 0100 
+# 
+# Test R2 = R0 * R5 
+# Assert ALU_CONTROL 0101 == 0101 
+# 
+# Test R3 = << R5 
+# Assert ALU_CONTROL 0110 == 0110 
+# 
+# Test R4 = >> R6 
+# Assert ALU_CONTROL 0101 == 0101 

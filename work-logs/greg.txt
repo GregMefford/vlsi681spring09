@@ -29,3 +29,6 @@
 2009-05-10: 1.00 hours: Control signal generation.
 2009-05-11: 1.50 hours: Top-level architecture and control signal generation.
 2009-05-11: 0.50 hours: Starting on the mid-term exam.
+2009-05-12: 4.00 hours: Working on the mid-term exam.
+2009-05-13: 2.50 hours: Finishing up the mid-term exam.
+2009-05-13: 3.50 hours: Developing and testing effective address and ALU control signals.
