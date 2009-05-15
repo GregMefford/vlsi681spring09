@@ -1,0 +1,163 @@
+--lpm_mult CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEDICATED_MULTIPLIER_CIRCUITRY="AUTO" DEVICE_FAMILY="Cyclone" DSP_BLOCK_BALANCING="Auto" INPUT_A_IS_CONSTANT="NO" INPUT_B_IS_CONSTANT="NO" LPM_REPRESENTATION="UNSIGNED" LPM_WIDTHA=16 LPM_WIDTHB=16 LPM_WIDTHP=32 LPM_WIDTHS=1 MAXIMIZE_SPEED=6 dataa datab result CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 8.1 cbx_cycloneii 2008:05:19:10:57:37:SJ cbx_lpm_add_sub 2008:05:19:10:49:01:SJ cbx_lpm_mult 2008:08:08:14:38:02:SJ cbx_mgl 2008:08:08:15:16:18:SJ cbx_padd 2008:07:31:17:08:03:SJ cbx_stratix 2008:08:05:17:10:23:SJ cbx_stratixii 2008:08:07:13:54:47:SJ cbx_util_mgl 2008:07:18:09:58:54:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2008 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION carry_sum (cin, sin)
+RETURNS ( cout, sout);
+FUNCTION lcell (in)
+RETURNS ( out);
+FUNCTION soft (in)
+RETURNS ( out);
+
+--synthesis_resources = lut 357 
+SUBDESIGN mult_nn01
+( 
+	dataa[15..0]	:	input;
+	datab[15..0]	:	input;
+	result[31..0]	:	output;
+) 
+VARIABLE
+	add12_result[34..0]	:	WIRE;
+	add16_result[31..0]	:	WIRE;
+	add20_result[28..0]	:	WIRE;
+	add24_result[23..0]	:	WIRE;
+	add28_result[17..0]	:	WIRE;
+	add32_result[13..0]	:	WIRE;
+	add36_result[15..0]	:	WIRE;
+	add40_result[6..0]	:	WIRE;
+	add44_result[2..0]	:	WIRE;
+	cs1a[8..0] : carry_sum;
+	cs2a[8..0] : carry_sum;
+	le10a[17..0] : lcell;
+	le11a[16..0] : lcell;
+	le3a[17..0] : lcell;
+	le4a[17..0] : lcell;
+	le5a[17..0] : lcell;
+	le6a[17..0] : lcell;
+	le7a[17..0] : lcell;
+	le8a[17..0] : lcell;
+	le9a[17..0] : lcell;
+	sft13a[34..0] : soft;
+	sft14a[34..0] : soft;
+	sft15a[34..0] : soft;
+	sft17a[31..0] : soft;
+	sft18a[31..0] : soft;
+	sft19a[31..0] : soft;
+	sft21a[28..0] : soft;
+	sft22a[28..0] : soft;
+	sft23a[28..0] : soft;
+	sft25a[23..0] : soft;
+	sft26a[23..0] : soft;
+	sft27a[23..0] : soft;
+	sft29a[17..0] : soft;
+	sft30a[17..0] : soft;
+	sft31a[17..0] : soft;
+	sft33a[13..0] : soft;
+	sft34a[13..0] : soft;
+	sft35a[13..0] : soft;
+	sft37a[15..0] : soft;
+	sft38a[15..0] : soft;
+	sft39a[15..0] : soft;
+	sft41a[6..0] : soft;
+	sft42a[6..0] : soft;
+	sft43a[6..0] : soft;
+	sft45a[2..0] : soft;
+	sft46a[2..0] : soft;
+	sft47a[2..0] : soft;
+	dataa_node[15..0]	: WIRE;
+	datab_node[15..0]	: WIRE;
+	final_result_node[31..0]	: WIRE;
+	w1351w[34..0]	: WIRE;
+	w213w[17..0]	: WIRE;
+	w284w[17..0]	: WIRE;
+	w340w[17..0]	: WIRE;
+	w410w[17..0]	: WIRE;
+	w480w[17..0]	: WIRE;
+	w550w[17..0]	: WIRE;
+	w620w[17..0]	: WIRE;
+	w787w	: WIRE;
+	w7w[17..0]	: WIRE;
+	w831w	: WIRE;
+
+BEGIN 
+	add12_result[] = sft13a[].out + sft14a[].out;
+	add16_result[] = sft17a[].out + sft18a[].out;
+	add20_result[] = sft21a[].out + sft22a[].out;
+	add24_result[] = sft25a[].out + sft26a[].out;
+	add28_result[] = sft29a[].out + sft30a[].out;
+	add32_result[] = sft33a[].out + sft34a[].out;
+	add36_result[] = sft37a[].out + sft38a[].out;
+	add40_result[] = sft41a[].out + sft42a[].out;
+	add44_result[] = sft45a[].out + sft46a[].out;
+	cs1a[].cin = ( ((w7w[16..16] & cs1a[7].cout) # w7w[17..17]), (cs1a[6].cout & w7w[14..14]), ((w7w[12..12] & cs1a[5].cout) # w7w[13..13]), ((w7w[10..10] & cs1a[4].cout) # w7w[11..11]), ((w7w[8..8] & cs1a[3].cout) # w7w[9..9]), ((w7w[6..6] & cs1a[2].cout) # w7w[7..7]), ((w7w[4..4] & cs1a[1].cout) # w7w[5..5]), ((w7w[2..2] & cs1a[0].cout) # w7w[3..3]), w7w[1..1]);
+	cs1a[].sin = ( ((((((! w7w[17..17]) & w7w[16..16]) & cs1a[7].cout) # ((w7w[17..17] & w7w[16..16]) & (! cs1a[7].cout))) # ((w7w[17..17] & (! w7w[16..16])) & cs1a[7].cout)) # ((w7w[17..17] & (! w7w[16..16])) & (! cs1a[7].cout))), (cs1a[6].cout & w7w[14..14]), ((((((! w7w[13..13]) & w7w[12..12]) & cs1a[5].cout) # ((w7w[13..13] & w7w[12..12]) & (! cs1a[5].cout))) # ((w7w[13..13] & (! w7w[12..12])) & cs1a[5].cout)) # ((w7w[13..13] & (! w7w[12..12])) & (! cs1a[5].cout))), ((((((! w7w[11..11]) & w7w[10..10]) & cs1a[4].cout) # ((w7w[11..11] & w7w[10..10]) & (! cs1a[4].cout))) # ((w7w[11..11] & (! w7w[10..10])) & cs1a[4].cout)) # ((w7w[11..11] & (! w7w[10..10])) & (! cs1a[4].cout))), ((((((! w7w[9..9]) & w7w[8..8]) & cs1a[3].cout) # ((w7w[9..9] & w7w[8..8]) & (! cs1a[3].cout))) # ((w7w[9..9] & (! w7w[8..8])) & cs1a[3].cout)) # ((w7w[9..9] & (! w7w[8..8])) & (! cs1a[3].cout))), ((((((! w7w[7..7]) & w7w[6..6]) & cs1a[2].cout) # ((w7w[7..7] & w7w[6..6]) & (! cs1a[2].cout))) # ((w7w[7..7] & (! w7w[6..6])) & cs1a[2].cout)) # ((w7w[7..7] & (! w7w[6..6])) & (! cs1a[2].cout))), ((((((! w7w[5..5]) & w7w[4..4]) & cs1a[1].cout) # ((w7w[5..5] & w7w[4..4]) & (! cs1a[1].cout))) # ((w7w[5..5] & (! w7w[4..4])) & cs1a[1].cout)) # ((w7w[5..5] & (! w7w[4..4])) & (! cs1a[1].cout))), ((((((! w7w[3..3]) & w7w[2..2]) & cs1a[0].cout) # ((w7w[3..3] & w7w[2..2]) & (! cs1a[0].cout))) # ((w7w[3..3] & (! w7w[2..2])) & cs1a[0].cout)) # ((w7w[3..3] & (! w7w[2..2])) & (! cs1a[0].cout))), w7w[1..1]);
+	cs2a[].cin = ( ((w7w[16..16] & cs2a[7].cout) # w7w[17..17]), (cs2a[6].cout $ w7w[14..14]), ((w7w[12..12] & cs2a[5].cout) # w7w[13..13]), ((w7w[10..10] & cs2a[4].cout) # w7w[11..11]), ((w7w[8..8] & cs2a[3].cout) # w7w[9..9]), ((w7w[6..6] & cs2a[2].cout) # w7w[7..7]), ((w7w[4..4] & cs2a[1].cout) # w7w[5..5]), ((w7w[2..2] & cs2a[0].cout) # w7w[3..3]), w7w[1..1]);
+	cs2a[].sin = ( ((((((! w7w[17..17]) & (! w7w[16..16])) & cs2a[7].cout) # (((! w7w[17..17]) & w7w[16..16]) & (! cs2a[7].cout))) # ((w7w[17..17] & w7w[16..16]) & (! cs2a[7].cout))) # ((w7w[17..17] & (! w7w[16..16])) & cs2a[7].cout)), (cs2a[6].cout $ w7w[14..14]), ((((((! w7w[13..13]) & (! w7w[12..12])) & cs2a[5].cout) # (((! w7w[13..13]) & w7w[12..12]) & (! cs2a[5].cout))) # ((w7w[13..13] & w7w[12..12]) & (! cs2a[5].cout))) # ((w7w[13..13] & (! w7w[12..12])) & cs2a[5].cout)), ((((((! w7w[11..11]) & (! w7w[10..10])) & cs2a[4].cout) # (((! w7w[11..11]) & w7w[10..10]) & (! cs2a[4].cout))) # ((w7w[11..11] & w7w[10..10]) & (! cs2a[4].cout))) # ((w7w[11..11] & (! w7w[10..10])) & cs2a[4].cout)), ((((((! w7w[9..9]) & (! w7w[8..8])) & cs2a[3].cout) # (((! w7w[9..9]) & w7w[8..8]) & (! cs2a[3].cout))) # ((w7w[9..9] & w7w[8..8]) & (! cs2a[3].cout))) # ((w7w[9..9] & (! w7w[8..8])) & cs2a[3].cout)), ((((((! w7w[7..7]) & (! w7w[6..6])) & cs2a[2].cout) # (((! w7w[7..7]) & w7w[6..6]) & (! cs2a[2].cout))) # ((w7w[7..7] & w7w[6..6]) & (! cs2a[2].cout))) # ((w7w[7..7] & (! w7w[6..6])) & cs2a[2].cout)), ((((((! w7w[5..5]) & (! w7w[4..4])) & cs2a[1].cout) # (((! w7w[5..5]) & w7w[4..4]) & (! cs2a[1].cout))) # ((w7w[5..5] & w7w[4..4]) & (! cs2a[1].cout))) # ((w7w[5..5] & (! w7w[4..4])) & cs2a[1].cout)), ((((((! w7w[3..3]) & (! w7w[2..2])) & cs2a[0].cout) # (((! w7w[3..3]) & w7w[2..2]) & (! cs2a[0].cout))) # ((w7w[3..3] & w7w[2..2]) & (! cs2a[0].cout))) # ((w7w[3..3] & (! w7w[2..2])) & cs2a[0].cout)), w7w[0..0]);
+	le10a[].in = ((cs1a[7].sout & ( B"0", dataa_node[], B"0")) # (cs2a[7].sout & ( B"0", B"0", dataa_node[])));
+	le11a[].in = (w7w[15..15] & ( B"0", dataa_node[]));
+	le3a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[0].sout) & (! cs2a[0].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[0].sout) & cs2a[0].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[0].sout)) & cs2a[0].sout)))));
+	le4a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[1].sout) & (! cs2a[1].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[1].sout) & cs2a[1].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[1].sout)) & cs2a[1].sout)))));
+	le5a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[2].sout) & (! cs2a[2].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[2].sout) & cs2a[2].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[2].sout)) & cs2a[2].sout)))));
+	le6a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[3].sout) & (! cs2a[3].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[3].sout) & cs2a[3].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[3].sout)) & cs2a[3].sout)))));
+	le7a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[4].sout) & (! cs2a[4].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[4].sout) & cs2a[4].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[4].sout)) & cs2a[4].sout)))));
+	le8a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[5].sout) & (! cs2a[5].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[5].sout) & cs2a[5].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[5].sout)) & cs2a[5].sout)))));
+	le9a[].in = (! ((! (((! ( B"0", dataa_node[], B"0")) & cs1a[6].sout) & (! cs2a[6].sout))) & (! ((((! ( B"0", B"0", dataa_node[])) & cs1a[6].sout) & cs2a[6].sout) # ((( B"0", B"0", dataa_node[]) & (! cs1a[6].sout)) & cs2a[6].sout)))));
+	sft13a[].in = ( w787w, ( w787w, ( sft19a[30..30].out, ( sft19a[29..29].out, ( sft19a[28..28].out, ( sft19a[27..27].out, ( sft19a[26..26].out, ( sft19a[25..25].out, ( sft19a[24..24].out, ( sft19a[23..23].out, ( sft19a[22..22].out, ( sft19a[21..21].out, ( sft19a[20..20].out, ( sft19a[19..19].out, ( sft19a[18..18].out, ( sft19a[17..17].out, ( sft19a[16..16].out, ( sft19a[15..15].out, ( sft19a[14..14].out, ( sft19a[13..13].out, ( sft19a[12..12].out, ( sft19a[11..11].out, ( sft19a[10..10].out, ( sft19a[9..9].out, ( sft19a[8..8].out, ( sft19a[7..7].out, ( sft19a[6..6].out, ( sft19a[5..5].out, ( sft19a[4..4].out, ( sft19a[3..3].out, ( sft19a[2..2].out, ( le4a[1..1].out, ( le4a[0..0].out, ( le3a[1..0].out))))))))))))))))))))))))))))))))));
+	sft14a[].in = ( w831w, ( sft19a[31..31].out, ( sft23a[28..28].out, ( sft23a[27..27].out, ( sft23a[26..26].out, ( sft23a[25..25].out, ( sft23a[24..24].out, ( sft23a[23..23].out, ( sft23a[22..22].out, ( sft23a[21..21].out, ( sft23a[20..20].out, ( sft23a[19..19].out, ( sft23a[18..18].out, ( sft23a[17..17].out, ( sft23a[16..16].out, ( sft23a[15..15].out, ( sft23a[14..14].out, ( sft23a[13..13].out, ( sft23a[12..12].out, ( sft23a[11..11].out, ( sft23a[10..10].out, ( sft23a[9..9].out, ( sft23a[8..8].out, ( sft23a[7..7].out, ( sft23a[6..6].out, ( sft23a[5..5].out, ( sft23a[4..4].out, ( sft23a[3..3].out, ( sft23a[2..2].out, ( sft23a[1..1].out, ( sft23a[0..0].out, ( sft19a[1..1].out, ( sft19a[0..0].out, ( w831w, cs1a[0].sout))))))))))))))))))))))))))))))))));
+	sft15a[].in = add12_result[];
+	sft17a[].in = ( w831w, ( w787w, ( le11a[16..16].out, ( le11a[15..15].out, ( le11a[14..14].out, ( le11a[13..13].out, ( le11a[12..12].out, ( le11a[11..11].out, ( le11a[10..10].out, ( le11a[9..9].out, ( sft27a[17..17].out, ( sft27a[16..16].out, ( sft27a[15..15].out, ( sft27a[14..14].out, ( sft27a[13..13].out, ( sft27a[12..12].out, ( sft27a[11..11].out, ( sft27a[10..10].out, ( sft27a[9..9].out, ( sft27a[8..8].out, ( sft27a[7..7].out, ( sft27a[6..6].out, ( le8a[1..1].out, ( sft27a[4..4].out, ( le7a[1..1].out, ( le7a[0..0].out, ( le6a[1..1].out, ( le6a[0..0].out, ( le5a[1..1].out, ( le5a[0..0].out, ( le3a[3..2].out)))))))))))))))))))))))))))))));
+	sft18a[].in = ( w831w, ( w831w, ( le10a[17..17].out, ( le10a[16..16].out, ( le10a[15..15].out, ( sft27a[22..22].out, ( sft27a[21..21].out, ( sft27a[20..20].out, ( sft27a[19..19].out, ( sft27a[18..18].out, ( sft39a[11..11].out, ( sft31a[14..14].out, ( sft31a[13..13].out, ( sft31a[12..12].out, ( sft31a[11..11].out, ( sft31a[10..10].out, ( sft31a[9..9].out, ( sft31a[8..8].out, ( sft31a[7..7].out, ( sft31a[6..6].out, ( sft31a[5..5].out, ( sft31a[4..4].out, ( sft27a[5..5].out, ( sft31a[2..2].out, ( sft27a[3..3].out, ( sft27a[2..2].out, ( sft27a[1..1].out, ( sft27a[0..0].out, ( le4a[3..3].out, ( le4a[2..2].out, ( w831w, cs1a[1].sout)))))))))))))))))))))))))))))));
+	sft19a[].in = add16_result[];
+	sft21a[].in = ( w831w, ( w787w, ( w787w, ( (! w620w[17..17]), ( le10a[14..14].out, ( le10a[13..13].out, ( le10a[12..12].out, ( sft39a[13..13].out, ( sft39a[12..12].out, ( sft31a[15..15].out, ( sft35a[12..12].out, ( sft35a[11..11].out, ( sft35a[10..10].out, ( sft35a[9..9].out, ( sft35a[8..8].out, ( sft35a[7..7].out, ( sft35a[6..6].out, ( sft35a[5..5].out, ( sft35a[4..4].out, ( sft35a[3..3].out, ( sft35a[2..2].out, ( sft31a[3..3].out, ( le8a[0..0].out, ( le6a[3..3].out, ( le6a[2..2].out, ( le5a[3..3].out, ( le5a[2..2].out, ( le3a[5..5].out, cs1a[2].sout))))))))))))))))))))))))))));
+	sft22a[].in = ( w831w, ( w831w, ( w831w, ( sft27a[23..23].out, ( le9a[16..16].out, ( sft39a[15..15].out, ( sft39a[14..14].out, ( sft31a[17..17].out, ( sft31a[16..16].out, ( sft35a[13..13].out, ( sft39a[10..10].out, ( sft39a[9..9].out, ( sft39a[8..8].out, ( sft39a[7..7].out, ( sft39a[6..6].out, ( sft39a[5..5].out, ( sft39a[4..4].out, ( sft39a[3..3].out, ( sft39a[2..2].out, ( sft39a[1..1].out, ( sft39a[0..0].out, ( sft35a[1..1].out, ( sft35a[0..0].out, ( sft31a[1..1].out, ( sft31a[0..0].out, ( le4a[5..5].out, ( le4a[4..4].out, ( w831w, le3a[4..4].out))))))))))))))))))))))))))));
+	sft23a[].in = add20_result[];
+	sft25a[].in = ( w831w, ( w787w, ( le9a[15..15].out, ( le9a[14..14].out, ( le10a[11..11].out, ( le10a[10..10].out, ( le11a[8..8].out, ( le11a[7..7].out, ( le11a[6..6].out, ( le11a[5..5].out, ( le11a[4..4].out, ( le11a[3..3].out, ( le11a[2..2].out, ( le11a[1..1].out, ( le11a[0..0].out, ( le10a[0..0].out, ( le9a[1..1].out, ( le9a[0..0].out, ( le7a[3..3].out, ( le7a[2..2].out, ( le5a[5..5].out, ( le5a[4..4].out, ( le3a[7..6].out)))))))))))))))))))))));
+	sft26a[].in = ( w831w, ( w831w, ( (! w550w[17..17]), ( le8a[16..16].out, ( le9a[13..13].out, ( le9a[12..12].out, ( le10a[9..9].out, ( le10a[8..8].out, ( le10a[7..7].out, ( sft43a[5..5].out, ( sft43a[4..4].out, ( sft43a[3..3].out, ( sft43a[2..2].out, ( sft43a[1..1].out, ( sft43a[0..0].out, ( le9a[2..2].out, ( le8a[3..3].out, ( le8a[2..2].out, ( le6a[5..5].out, ( le6a[4..4].out, ( le4a[7..7].out, ( le4a[6..6].out, ( w831w, cs1a[3].sout)))))))))))))))))))))));
+	sft27a[].in = add24_result[];
+	sft29a[].in = ( w831w, ( w787w, ( le7a[15..15].out, ( le9a[10..10].out, ( le9a[9..9].out, ( le10a[6..6].out, ( le10a[5..5].out, ( le10a[4..4].out, ( le10a[3..3].out, ( le10a[2..2].out, ( le10a[1..1].out, ( le8a[4..4].out, ( le7a[5..5].out, ( le7a[4..4].out, ( le5a[7..7].out, ( le5a[6..6].out, ( le3a[9..9].out, cs1a[4].sout)))))))))))))))));
+	sft30a[].in = ( w831w, ( w831w, ( (! w410w[17..17]), ( le8a[12..12].out, ( le8a[11..11].out, ( le9a[8..8].out, ( le9a[7..7].out, ( le9a[6..6].out, ( le9a[5..5].out, ( le9a[4..4].out, ( le9a[3..3].out, ( le7a[6..6].out, ( le6a[7..7].out, ( le6a[6..6].out, ( le4a[9..9].out, ( le4a[8..8].out, ( w831w, le3a[8..8].out)))))))))))))))));
+	sft31a[].in = add28_result[];
+	sft33a[].in = ( w831w, ( le7a[14..14].out, ( le7a[13..13].out, ( le8a[10..10].out, ( le8a[9..9].out, ( le8a[8..8].out, ( le8a[7..7].out, ( le8a[6..6].out, ( le8a[5..5].out, ( le6a[8..8].out, ( le5a[9..9].out, ( le5a[8..8].out, ( le3a[11..11].out, cs1a[5].sout)))))))))))));
+	sft34a[].in = ( w831w, ( le6a[16..16].out, ( le6a[15..15].out, ( le7a[12..12].out, ( sft47a[2..2].out, ( sft47a[1..1].out, ( sft47a[0..0].out, ( le7a[8..8].out, ( le7a[7..7].out, ( le5a[10..10].out, ( le4a[11..11].out, ( le4a[10..10].out, ( w831w, le3a[10..10].out)))))))))))));
+	sft35a[].in = add32_result[];
+	sft37a[].in = ( w831w, ( w787w, ( le8a[15..15].out, ( le8a[14..14].out, ( le9a[11..11].out, ( w787w, ( (! w340w[17..17]), ( le6a[14..14].out, ( le7a[11..11].out, ( le7a[10..10].out, ( le7a[9..9].out, ( le6a[10..10].out, ( le6a[9..9].out, ( le4a[12..12].out, ( le3a[13..13].out, cs1a[6].sout)))))))))))))));
+	sft38a[].in = ( w831w, ( w831w, ( (! w480w[17..17]), ( le7a[16..16].out, ( le8a[13..13].out, ( w831w, ( sft43a[6..6].out, ( le5a[16..16].out, ( le6a[13..13].out, ( le6a[12..12].out, ( le6a[11..11].out, ( le5a[12..12].out, ( le5a[11..11].out, ( le3a[14..14].out, ( w831w, le3a[12..12].out)))))))))))))));
+	sft39a[].in = add36_result[];
+	sft41a[].in = ( w831w, ( w787w, ( le5a[15..15].out, ( le5a[14..14].out, ( le5a[13..13].out, ( le4a[14..13].out))))));
+	sft42a[].in = ( w831w, ( w831w, ( (! w284w[17..17]), ( le4a[16..16].out, ( le4a[15..15].out, ( le3a[16..15].out))))));
+	sft43a[].in = add40_result[];
+	sft45a[].in = ( w831w, ( w787w, w787w));
+	sft46a[].in = ( w831w, ( w831w, (! w213w[17..17])));
+	sft47a[].in = add44_result[];
+	dataa_node[] = ( dataa[15..0]);
+	datab_node[] = ( datab[15..0]);
+	final_result_node[] = ( w1351w[31..0]);
+	result[] = ( final_result_node[31..0]);
+	w1351w[] = ( sft15a[34..33].out, sft15a[32..31].out, sft15a[30..29].out, sft15a[28..27].out, sft15a[26..25].out, sft15a[24..23].out, sft15a[22..21].out, sft15a[20..19].out, sft15a[18..17].out, sft15a[16..15].out, sft15a[14..13].out, sft15a[12..11].out, sft15a[10..9].out, sft15a[8..7].out, sft15a[6..5].out, sft15a[4..3].out, sft15a[2..1].out, sft15a[0..0].out);
+	w213w[] = le3a[].out;
+	w284w[] = le4a[].out;
+	w340w[] = le5a[].out;
+	w410w[] = le6a[].out;
+	w480w[] = le7a[].out;
+	w550w[] = le8a[].out;
+	w620w[] = le9a[].out;
+	w787w = B"1";
+	w7w[] = ( B"00", datab_node[]);
+	w831w = B"0";
+END;
+--VALID FILE
