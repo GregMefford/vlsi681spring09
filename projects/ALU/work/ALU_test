@@ -1,0 +1,47 @@
+# Initialization
+add wave A
+add wave B
+add wave CONTROL
+add wave CC
+add wave Z
+add wave OF
+add wave result
+
+force A 'h00;
+force B 'h00;
+force CONTROL 'h0;
+run;
+
+echo "\nTest ADD (0+0)"
+force CONTROL 'h0;
+run;
+echo "Assert Z [examine -hex Z] == 'h00";
+echo "Assert OF [examine -hex OF] == 'h00";
+echo "Assert CC [examine CC] == 001";
+
+echo "\nTest ADD(1+0)"
+force A 'h01;
+force B 'h00;
+force CONTROL 'h0;
+run;
+echo "Assert Z [examine -hex Z] == 'h01";
+echo "Assert OF [examine -hex OF] == 'h00";
+echo "Assert CC [examine CC] == 100";
+
+echo "\nTest ADD(1+1)"
+force A 'h01;
+force B 'h01;
+force CONTROL 'h0;
+run;
+echo "Assert Z [examine -hex Z] == 'h02";
+echo "Assert OF [examine -hex OF] == 'h00";
+echo "Assert CC [examine CC] == 100";
+
+echo "\nTest ADD(1-1)"
+force A 'h01;
+force B 'hFF;
+force CONTROL 'h0;
+run;
+echo "Assert Z [examine -hex Z] == 'h00";
+echo "Assert OF [examine -hex OF] == 'h00";
+echo "Assert CC [examine CC] == 001";
