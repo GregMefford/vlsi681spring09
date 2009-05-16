@@ -34,6 +34,14 @@ Week 6:
 2009-05-04: 2.00 hours: Working on ALU code/diagram
 2009-05-08: 1.50 hours: Meeting for a status update, and getting started with ModelSim.
 2009-05-08: 1.50 hours: Working through ModelSim tutorials and testing the ALU
-2009-05-10: 1.00 hours: Continued testing ALU
-2009-05-11: 1.50 hours: Working on take-home midterm
+2009-05-10: 1.00 hours: Continued testing ALU w/ Altera
+2009-05-11: 1.50 hours: Starting on take-home midterm
 2009-05-11: 0.50 hours: Compiling hours and submitting Report 6
+Week 7:
+2009-05-12: 4.00 hours: Working on take-home midterm
+2009-05-13: 4.00 hours: Finishing up the take-home midterm
+2009-05-13: 1.00 hours: Trying to figure out the MIF & how that works
+2009-05-14: 2.00 hours: ALU verification with Altera
+2009-05-15: 2.00 hours: Working on writing matrix multiply prgm
+2009-05-15: 2.00 hours: Testing ALU with ModelSim DO file
+2009-05-16: 3.00 hours: Matrix multiply prgm in assembly and MIF file implementation
