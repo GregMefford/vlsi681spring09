@@ -1,4 +1,4 @@
-include "mux16.v";
+include <mux16>;
 
 module effective_address(PC, RS1_DATA, CONTROL, IR, EA);
 	input      [15: 0] PC;

@@ -1,14 +1,26 @@
-module control(INSTRUCTION, MAR_LE, MDR_LE, PC_LE, IR_LE, ALU_CONTROL, IS_IMMEDIATE);
-	input      [15: 0] INSTRUCTION;
-	
-	output             MAR_LE;
-	output             MDR_LE;
-	output             PC_LE;
-	output             IR_LE;
-	output reg [ 3: 0] ALU_CONTROL;
-	output reg         IS_IMMEDIATE;
-	
-	always @(INSTRUCTION) begin
+module control
+(
+	input              CLK,
+	input      [ 1: 0] STAGE,
+	input      [15: 0] INSTRUCTION,
+
+	output reg         NEXT_STAGE_LE,
+	output reg [ 1: 0] NEXT_STAGE,
+	output reg         MAR_LE,
+	output reg         MAR_CONTROL,
+	output reg         MEM_WE,
+	output reg         MEM_CLK,
+	output reg         IS_IMMEDIATE,
+	output reg [ 3: 0] ALU_CONTROL,
+	output reg         RD_LE,
+	output reg         REG_CONTROL,
+	output reg [ 2: 0] EA_CONTROL,
+	output reg         IR_LE,
+	output reg [ 1: 0] PC_CONTROL,
+	output reg         PC_LE
+);
+
+	always @(posedge CLK) begin
 		// Decode the OPCODE
 		case(INSTRUCTION[15:12])
 			4'b0001: begin

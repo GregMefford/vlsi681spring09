@@ -52,10 +52,26 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name COMMAND_MACRO_FILE test/register_file.do
+set_global_assignment -name COMMAND_MACRO_FILE test/control_test.do
+set_global_assignment -name COMMAND_MACRO_FILE test/EA_test.do
+set_global_assignment -name TEXT_FILE "doc/control signals.txt"
+set_global_assignment -name TEXT_FILE "doc/ALU documentation.txt"
 set_global_assignment -name VERILOG_FILE src/reg16.v
+set_global_assignment -name VERILOG_FILE src/control.v
+set_global_assignment -name VERILOG_FILE src/Dataram.v
+set_global_assignment -name VERILOG_FILE src/effective_address.v
+set_global_assignment -name VERILOG_FILE src/Instram.v
 set_global_assignment -name VERILOG_FILE src/mux16.v
 set_global_assignment -name VERILOG_FILE src/register_file.v
 set_global_assignment -name BDF_FILE src/LC3.bdf
-set_global_assignment -name VERILOG_FILE src/RAM_instruction.v
-set_global_assignment -name VERILOG_FILE src/RAM_data.v
 set_global_assignment -name VERILOG_FILE src/ALU.v
+set_global_assignment -name BDF_FILE src/Instruction_Fetch.bdf
+set_global_assignment -name VERILOG_FILE src/inc16.v
+set_global_assignment -name VERILOG_FILE src/SE5.v
+set_global_assignment -name BDF_FILE src/Data.bdf
+set_global_assignment -name VERILOG_FILE src/Registers.v
+set_global_assignment -name VERILOG_FILE src/Execution.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE test/LC3.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test/LC3.vwf
+set_global_assignment -name QIP_FILE src/lpm_counter0.qip

@@ -1,3 +1,4 @@
+Week 1:
 2009-04-01: 0.50 hours: Set up a git repository for the project
 2009-04-02: 2.00 hours: Understanding and getting used to using git
 2009-04-03: 0.50 hours: Working out who is doing what for Report 1
@@ -7,29 +8,36 @@
 2009-04-05: 3.50 hours: Finished the gate-level implementation and verification of the 4-bit adder for Report 1.
 2009-04-06: 1.00 hours: Getting all the changes merged together in version control.
 2009-04-06: 2.00 hours: Finishing up with the Report1 assignment.
+Week 2:
 2009-04-08: 0.50 hours: Getting Report 1 feedback and Report 2 assignment into git
 2009-04-12: 1.00 hours: Getting started on tasks for Report 2
+Week 3:
 2009-04-13: 1.00 hours: Working on ISA requirements for multiply instruction
 2009-04-13: 1.25 hours: Meeting to discuss ISA and bus architectures
 2009-04-13: 0.50 hours: Learning the basics of Verilog
 2009-04-15: 0.50 hours: Revising the instruction format changes for MUL, SL, and SR
 2009-04-15: 1.00 hours: Writing some specification requirements for the data path
+Week 4:
 2009-04-20: 2.00 hours: Meeting to complete Report 3 and discuss module breakdowns
 2009-04-22: 2.00 hours: Doing the experiments for Homework 1
 2009-04-23: 1.00 hours: Doing the experiments for Homework 1
+Week 5:
 2009-04-27: 1.00 hours: Writing up summaries for Homework 2
 2009-04-27: 1.00 hours: Getting started on the register file verilog module
 2009-04-27: 0.50 hours: Working on a single-register module
 2009-04-27: 2.50 hours: Working on 8-register file and overall architecture
 2009-04-27: 1.50 hours: Working on the overall architecture files in Quartus
+Week 6:
 2009-05-04: 1.00 hours: Meeting to update report 4 status and plan next steps
 2009-05-04: 2.00 hours: Working on basic control logic
 2009-05-08: 1.50 hours: Meeting for a status update, and getting started with ModelSim.
 2009-05-08: 1.50 hours: Working through ModelSim tutorials and testing the register File.
 2009-05-10: 1.00 hours: Control signal generation.
+Week 7:
 2009-05-11: 1.50 hours: Top-level architecture and control signal generation.
 2009-05-11: 0.50 hours: Starting on the mid-term exam.
 2009-05-12: 4.00 hours: Working on the mid-term exam.
 2009-05-13: 2.50 hours: Finishing up the mid-term exam.
 2009-05-13: 3.50 hours: Developing and testing effective address and ALU control signals.
 2009-05-14: 1.50 hours: Drawing diagrams for the status update presentation.
+2009-05-15: 3.50 hours: Working on control signal designs.
