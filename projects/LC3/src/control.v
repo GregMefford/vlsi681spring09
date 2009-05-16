@@ -1,7 +1,11 @@
 module control
 (
+	input              CLK,
+	input      [ 1: 0] STAGE,
 	input      [15: 0] INSTRUCTION,
 
+	output reg         NEXT_STAGE_LE,
+	output reg [ 1: 0] NEXT_STAGE,
 	output reg         MAR_LE,
 	output reg         MAR_CONTROL,
 	output reg         MEM_WE,
@@ -16,7 +20,7 @@ module control
 	output reg         PC_LE
 );
 
-	always @(INSTRUCTION) begin
+	always @(posedge CLK) begin
 		// Decode the OPCODE
 		case(INSTRUCTION[15:12])
 			4'b0001: begin

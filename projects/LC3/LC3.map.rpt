@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LC3
-Sat May 16 12:55:44 2009
+Sat May 16 15:41:39 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -15,12 +15,14 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   7. Registers Removed During Synthesis
   8. Removed Registers Triggering Further Register Optimizations
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: Data:inst12|Dataram:inst
- 11. Port Connectivity Checks: "Execution:inst13|ALU:b2v_inst4"
- 12. Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A"
- 13. Port Connectivity Checks: "Registers:inst|register_file:regfile"
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+ 10. Source assignments for lpm_counter0:inst19|lpm_counter:lpm_counter_component
+ 11. Parameter Settings for User Entity Instance: lpm_counter0:inst19|lpm_counter:lpm_counter_component
+ 12. Parameter Settings for User Entity Instance: Data:inst12|Dataram:inst
+ 13. Port Connectivity Checks: "Execution:inst13|ALU:b2v_inst4"
+ 14. Port Connectivity Checks: "Registers:inst|register_file:regfile"
+ 15. Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A"
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,13 +48,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 16 12:55:44 2009   ;
+; Analysis & Synthesis Status ; Successful - Sat May 16 15:41:39 2009   ;
 ; Quartus II Version          ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name               ; LC3                                     ;
 ; Top-level Entity Name       ; LC3                                     ;
 ; Family                      ; Cyclone                                 ;
-; Total logic elements        ; 0                                       ;
-; Total pins                  ; 32                                      ;
+; Total logic elements        ; 5                                       ;
+; Total pins                  ; 71                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; Total memory bits           ; 0                                       ;
 ; Total PLLs                  ; 0                                       ;
@@ -151,6 +153,21 @@ applicable agreement for further details.
 ; src/Data.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.bdf              ;
 ; src/Registers.v                  ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v           ;
 ; src/Execution.v                  ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v           ;
+; src/lpm_counter0.v               ; yes             ; User Wizard-Generated File         ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0.v        ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_counter.tdf                                                                                          ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_constant.inc                                                                                         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc                                                                                           ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.inc                                                                                          ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/cmpconst.inc                                                                                             ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc                                                                                          ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_counter.inc                                                                                          ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/dffeea.inc                                                                                               ;
+; alt_synch_counter.inc            ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_synch_counter.inc                                                                                    ;
+; alt_synch_counter_f.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_synch_counter_f.inc                                                                                  ;
+; alt_counter_f10ke.inc            ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_f10ke.inc                                                                                    ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                                                  ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc                                                                                            ;
+; db/cntr_hci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/db/cntr_hci.tdf           ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -159,199 +176,102 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 0     ;
+; Total logic elements                        ; 5     ;
 ;     -- Combinational with no register       ; 0     ;
-;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 0     ;
+;     -- Register only                        ; 1     ;
+;     -- Combinational with a register        ; 4     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- 2 input functions                    ; 0     ;
-;     -- 1 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 2     ;
+;     -- 2 input functions                    ; 1     ;
+;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
+;     -- normal mode                          ; 4     ;
+;     -- arithmetic mode                      ; 1     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-; I/O pins                                    ; 32    ;
+; Total registers                             ; 5     ;
+; Total logic cells in carry chains           ; 2     ;
+; I/O pins                                    ; 71    ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 5     ;
+; Total fan-out                               ; 20    ;
+; Average fan-out                             ; 0.26  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
-+----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |LC3                       ; 0 (0)       ; 0            ; 0           ; 32   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LC3                ; work         ;
-+----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                 ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                ; Library Name ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
+; |LC3                                      ; 5 (0)       ; 5            ; 0           ; 71   ; 0            ; 0 (0)        ; 1 (0)             ; 4 (0)            ; 2 (0)           ; 0 (0)      ; |LC3                                                                               ; work         ;
+;    |control:inst14|                       ; 3 (3)       ; 3            ; 0           ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |LC3|control:inst14                                                                ; work         ;
+;    |lpm_counter0:inst19|                  ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:inst19                                                           ; work         ;
+;       |lpm_counter:lpm_counter_component| ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component                         ; work         ;
+;          |cntr_hci:auto_generated|        ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated ; work         ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                    ;
-+----------------------------------------------------------------+--------------------------------------+
-; Register name                                                  ; Reason for Removal                   ;
-+----------------------------------------------------------------+--------------------------------------+
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[5]            ; Lost fanout                          ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[5]          ; Lost fanout                          ;
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[4]            ; Lost fanout                          ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[4]          ; Lost fanout                          ;
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[3]            ; Lost fanout                          ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[3]          ; Lost fanout                          ;
-; Data:inst12|reg16:inst1|DATA_OUT[0..3]                         ; Stuck at GND due to stuck port clock ;
-; Data:inst12|Dataram:inst|data_out[0..15]                       ; Stuck at GND due to stuck port clock ;
-; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0..15]          ; Stuck at GND due to stuck port clock ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[0..2,6..11] ; Stuck at GND due to stuck port clock ;
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[0..2,6..11]   ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R2[0]                     ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R1[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|RS1_DATA[0..15]           ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|RS2_DATA[0..15]           ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R2[1..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R3[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R4[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R5[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R6[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R7[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R0[0..15]                 ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 220                        ;                                      ;
-+----------------------------------------------------------------+--------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                             ;
++-------------------------------------------------------+----------------------------------------+
+; Register name                                         ; Reason for Removal                     ;
++-------------------------------------------------------+----------------------------------------+
+; Registers:inst|register_file:regfile|R2[0]            ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R1[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|RS1_DATA[0..15]  ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|RS2_DATA[0..15]  ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R2[1..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R3[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R4[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R5[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R6[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R7[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Registers:inst|register_file:regfile|R0[0..15]        ; Stuck at GND due to stuck port clock   ;
+; Data:inst12|reg16:inst1|DATA_OUT[0..3]                ; Stuck at GND due to stuck port clock   ;
+; Data:inst12|Dataram:inst|data_out[0..15]              ; Stuck at GND due to stuck port clock   ;
+; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0..15] ; Stuck at GND due to stuck port clock   ;
+; control:inst14|ALU_CONTROL[3]                         ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 197               ;                                        ;
++-------------------------------------------------------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                    ;
-+--------------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
-; Register name                                          ; Reason for Removal      ; Registers Removed due to This Register                                      ;
-+--------------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
-; Data:inst12|reg16:inst1|DATA_OUT[0]                    ; Stuck at GND            ; Data:inst12|Dataram:inst|data_out[0], Data:inst12|Dataram:inst|data_out[1], ;
-;                                                        ; due to stuck port clock ; Data:inst12|Dataram:inst|data_out[2], Data:inst12|Dataram:inst|data_out[3], ;
-;                                                        ;                         ; Data:inst12|Dataram:inst|data_out[4], Data:inst12|Dataram:inst|data_out[5], ;
-;                                                        ;                         ; Data:inst12|Dataram:inst|data_out[6], Data:inst12|Dataram:inst|data_out[7], ;
-;                                                        ;                         ; Data:inst12|Dataram:inst|data_out[8],                                       ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[1],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[2],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[3],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[4],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[5],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[6],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[7],                          ;
-;                                                        ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[8],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[8],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[7],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[6],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[5],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[4],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[3],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[2],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[1],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R1[0],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[8],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[7],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[6],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[5],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[4],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[3],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[2],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[1],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[0],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[8],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[7],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[6],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[5],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[4],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[3],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[2],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[1],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[0],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[0],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[1],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[2],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[3],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[4],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[5],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[6],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[7],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[8]                                  ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[9]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[9],                        ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R7[0],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[1],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[2],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[3],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[4],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[5],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[6],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[7],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[8],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[9],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[10],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[11],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[12],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[13],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[14],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R7[15]                                 ;
-; Data:inst12|Dataram:inst|data_out[9]                   ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[9],                          ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[9],                                 ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[9],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[9],                           ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[9]                                  ;
-; Data:inst12|Dataram:inst|data_out[10]                  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[10],                         ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[10],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[10],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[10],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[10]                                 ;
-; Data:inst12|Dataram:inst|data_out[11]                  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[11],                         ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[11],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[11],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[11],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[11]                                 ;
-; Data:inst12|Dataram:inst|data_out[12]                  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[12],                         ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[12],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[12],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[12],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[12]                                 ;
-; Data:inst12|Dataram:inst|data_out[13]                  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[13],                         ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[13],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[13],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[13],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[13]                                 ;
-; Data:inst12|Dataram:inst|data_out[14]                  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[14],                         ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[14],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[14],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[14],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[14]                                 ;
-; Data:inst12|Dataram:inst|data_out[15]                  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[15],                         ;
-;                                                        ; due to stuck port clock ; Registers:inst|register_file:regfile|R1[15],                                ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS1_DATA[15],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|RS2_DATA[15],                          ;
-;                                                        ;                         ; Registers:inst|register_file:regfile|R0[15]                                 ;
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[5]    ; Lost Fanouts            ; Instruction_Fetch:inst11|Instram:inst5|instruction[5]                       ;
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[4]    ; Lost Fanouts            ; Instruction_Fetch:inst11|Instram:inst5|instruction[4]                       ;
-; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[3]    ; Lost Fanouts            ; Instruction_Fetch:inst11|Instram:inst5|instruction[3]                       ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[11] ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[11]                        ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[10] ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[10]                        ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[8]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[8]                         ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[7]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[7]                         ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[6]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[6]                         ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[2]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[2]                         ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[1]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[1]                         ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-; Instruction_Fetch:inst11|Instram:inst5|instruction[0]  ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[0]                         ;
-;                                                        ; due to stuck port clock ;                                                                             ;
-+--------------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                               ;
++---------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal      ; Registers Removed due to This Register                                      ;
++---------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
+; Data:inst12|reg16:inst1|DATA_OUT[0]               ; Stuck at GND            ; Data:inst12|Dataram:inst|data_out[0], Data:inst12|Dataram:inst|data_out[1], ;
+;                                                   ; due to stuck port clock ; Data:inst12|Dataram:inst|data_out[2], Data:inst12|Dataram:inst|data_out[3], ;
+;                                                   ;                         ; Data:inst12|Dataram:inst|data_out[4], Data:inst12|Dataram:inst|data_out[5], ;
+;                                                   ;                         ; Data:inst12|Dataram:inst|data_out[6], Data:inst12|Dataram:inst|data_out[7], ;
+;                                                   ;                         ; Data:inst12|Dataram:inst|data_out[8],                                       ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[1],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[2],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[3],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[4],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[5],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[6],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[7],                          ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[8]                           ;
+; Registers:inst|register_file:regfile|RS1_DATA[15] ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[10],                         ;
+;                                                   ; due to stuck port clock ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[11],                         ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[12],                         ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[13],                         ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[14],                         ;
+;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[15]                          ;
+; Data:inst12|Dataram:inst|data_out[9]              ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[9]                           ;
+;                                                   ; due to stuck port clock ;                                                                             ;
++---------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -359,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -367,6 +287,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------+
+; Source assignments for lpm_counter0:inst19|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+-----------------------------------+
+; Assignment                ; Value ; From ; To                                ;
++---------------------------+-------+------+-----------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                 ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                 ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                 ;
++---------------------------+-------+------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_counter0:inst19|lpm_counter:lpm_counter_component ;
++------------------------+-------------+-------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                        ;
++------------------------+-------------+-------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                              ;
+; LPM_WIDTH              ; 2           ; Signed Integer                                              ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                     ;
+; LPM_MODULUS            ; 0           ; Untyped                                                     ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                     ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                     ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                     ;
+; DEVICE_FAMILY          ; Cyclone     ; Untyped                                                     ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                     ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                          ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                          ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                     ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                     ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                     ;
+; CBXI_PARAMETER         ; cntr_hci    ; Untyped                                                     ;
++------------------------+-------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------+
@@ -389,15 +347,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------+
-; Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A" ;
-+------+-------+----------+------------------------------------------+
-; Port ; Type  ; Severity ; Details                                  ;
-+------+-------+----------+------------------------------------------+
-; A    ; Input ; Info     ; Stuck at GND                             ;
-+------+-------+----------+------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Registers:inst|register_file:regfile"                                                                                                        ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -409,13 +358,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sat May 16 12:55:41 2009
+    Info: Processing started: Sat May 16 15:41:37 2009
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LC3 -c LC3
 Info: Found 1 design units, including 1 entities, in source file src/reg16.v
     Info: Found entity 1: reg16
@@ -447,36 +405,50 @@ Info: Found 1 design units, including 1 entities, in source file src/Registers.v
     Info: Found entity 1: Registers
 Info: Found 1 design units, including 1 entities, in source file src/Execution.v
     Info: Found entity 1: Execution
+Info: Found 1 design units, including 1 entities, in source file src/lpm_counter0.v
+    Info: Found entity 1: lpm_counter0
 Info: Elaborating entity "LC3" for the top level hierarchy
-Info: Elaborating entity "Registers" for hierarchy "Registers:inst"
-Info: Elaborating entity "register_file" for hierarchy "Registers:inst|register_file:regfile"
-Info: Elaborating entity "mux16" for hierarchy "Registers:inst|mux16:data_mux"
 Info: Elaborating entity "control" for hierarchy "control:inst14"
-Warning (10240): Verilog HDL Always Construct warning at control.v(19): inferring latch(es) for variable "IS_IMMEDIATE", which holds its previous value in one or more paths through the always construct
-Warning (10034): Output port "MAR_LE" at control.v(5) has no driver
-Warning (10034): Output port "MAR_CONTROL" at control.v(6) has no driver
-Warning (10034): Output port "MEM_WE" at control.v(7) has no driver
-Warning (10034): Output port "MEM_CLK" at control.v(8) has no driver
-Warning (10034): Output port "RD_LE" at control.v(11) has no driver
-Warning (10034): Output port "REG_CONTROL" at control.v(12) has no driver
-Warning (10034): Output port "EA_CONTROL[2]" at control.v(13) has no driver
-Warning (10034): Output port "EA_CONTROL[1]" at control.v(13) has no driver
-Warning (10034): Output port "EA_CONTROL[0]" at control.v(13) has no driver
-Warning (10034): Output port "IR_LE" at control.v(14) has no driver
-Warning (10034): Output port "PC_CONTROL[1]" at control.v(15) has no driver
-Warning (10034): Output port "PC_CONTROL[0]" at control.v(15) has no driver
-Warning (10034): Output port "PC_LE" at control.v(17) has no driver
-Info (10041): Inferred latch for "IS_IMMEDIATE" at control.v(19)
+Warning (10034): Output port "NEXT_STAGE_LE" at control.v(7) has no driver
+Warning (10034): Output port "NEXT_STAGE[1]" at control.v(8) has no driver
+Warning (10034): Output port "NEXT_STAGE[0]" at control.v(8) has no driver
+Warning (10034): Output port "MAR_LE" at control.v(9) has no driver
+Warning (10034): Output port "MAR_CONTROL" at control.v(10) has no driver
+Warning (10034): Output port "MEM_WE" at control.v(11) has no driver
+Warning (10034): Output port "MEM_CLK" at control.v(12) has no driver
+Warning (10034): Output port "RD_LE" at control.v(15) has no driver
+Warning (10034): Output port "REG_CONTROL" at control.v(16) has no driver
+Warning (10034): Output port "EA_CONTROL[2]" at control.v(17) has no driver
+Warning (10034): Output port "EA_CONTROL[1]" at control.v(17) has no driver
+Warning (10034): Output port "EA_CONTROL[0]" at control.v(17) has no driver
+Warning (10034): Output port "IR_LE" at control.v(18) has no driver
+Warning (10034): Output port "PC_CONTROL[1]" at control.v(19) has no driver
+Warning (10034): Output port "PC_CONTROL[0]" at control.v(19) has no driver
+Warning (10034): Output port "PC_LE" at control.v(21) has no driver
+Info: Elaborating entity "lpm_counter0" for hierarchy "lpm_counter0:inst19"
+Info: Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:inst19|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "lpm_counter0:inst19|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "lpm_counter0:inst19|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UP"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "2"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_hci.tdf
+    Info: Found entity 1: cntr_hci
+Info: Elaborating entity "cntr_hci" for hierarchy "lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated"
 Info: Elaborating entity "Instruction_Fetch" for hierarchy "Instruction_Fetch:inst11"
 Warning: Port "clk" of type Instram and instance "inst5" is missing source signal
 Info: Elaborating entity "reg16" for hierarchy "Instruction_Fetch:inst11|reg16:Inst_Reg"
 Info: Elaborating entity "Instram" for hierarchy "Instruction_Fetch:inst11|Instram:inst5"
 Warning (10858): Verilog HDL warning at Instram.v(11): object Instram used but never assigned
+Info: Elaborating entity "mux16" for hierarchy "Instruction_Fetch:inst11|mux16:inst1"
 Info: Elaborating entity "inc16" for hierarchy "Instruction_Fetch:inst11|inc16:PC_Inc"
 Warning (10230): Verilog HDL assignment warning at inc16.v(7): truncated value with size 32 to match size of target (16)
 Info: Elaborating entity "Data" for hierarchy "Data:inst12"
 Info: Elaborating entity "Dataram" for hierarchy "Data:inst12|Dataram:inst"
 Info: Elaborating entity "effective_address" for hierarchy "effective_address:inst8"
+Info: Elaborating entity "Registers" for hierarchy "Registers:inst"
+Info: Elaborating entity "register_file" for hierarchy "Registers:inst|register_file:regfile"
 Info: Elaborating entity "Execution" for hierarchy "Execution:inst13"
 Info: Elaborating entity "SE5" for hierarchy "Execution:inst13|SE5:b2v_inst2"
 Info: Elaborating entity "ALU" for hierarchy "Execution:inst13|ALU:b2v_inst4"
@@ -517,6 +489,23 @@ Warning (10034): Output port "OF[1]" at ALU.v(7) has no driver
 Warning (10034): Output port "OF[0]" at ALU.v(7) has no driver
 Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ALU_CONTROL[3]" is stuck at GND
+    Warning (13410): Pin "PC[15]" is stuck at GND
+    Warning (13410): Pin "PC[14]" is stuck at GND
+    Warning (13410): Pin "PC[13]" is stuck at GND
+    Warning (13410): Pin "PC[12]" is stuck at GND
+    Warning (13410): Pin "PC[11]" is stuck at GND
+    Warning (13410): Pin "PC[10]" is stuck at GND
+    Warning (13410): Pin "PC[9]" is stuck at GND
+    Warning (13410): Pin "PC[8]" is stuck at GND
+    Warning (13410): Pin "PC[7]" is stuck at GND
+    Warning (13410): Pin "PC[6]" is stuck at GND
+    Warning (13410): Pin "PC[5]" is stuck at GND
+    Warning (13410): Pin "PC[4]" is stuck at GND
+    Warning (13410): Pin "PC[3]" is stuck at GND
+    Warning (13410): Pin "PC[2]" is stuck at GND
+    Warning (13410): Pin "PC[1]" is stuck at GND
+    Warning (13410): Pin "PC[0]" is stuck at GND
     Warning (13410): Pin "RS1_DATA[15]" is stuck at GND
     Warning (13410): Pin "RS1_DATA[14]" is stuck at GND
     Warning (13410): Pin "RS1_DATA[13]" is stuck at GND
@@ -549,22 +538,30 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "RS2_DATA[2]" is stuck at GND
     Warning (13410): Pin "RS2_DATA[1]" is stuck at GND
     Warning (13410): Pin "RS2_DATA[0]" is stuck at GND
-Info: 6 registers lost all their fanouts during netlist optimizations. The first 6 are displayed below.
-    Info: Register "Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "Instruction_Fetch:inst11|Instram:inst5|instruction[5]" lost all its fanouts during netlist optimizations.
-    Info: Register "Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "Instruction_Fetch:inst11|Instram:inst5|instruction[4]" lost all its fanouts during netlist optimizations.
-    Info: Register "Instruction_Fetch:inst11|reg16:Inst_Reg|DATA_OUT[3]" lost all its fanouts during netlist optimizations.
-    Info: Register "Instruction_Fetch:inst11|Instram:inst5|instruction[3]" lost all its fanouts during netlist optimizations.
 Info: Generated suppressed messages file C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/LC3.map.smsg
-Info: Implemented 32 device resources after synthesis - the final resource count might be different
-    Info: Implemented 0 input pins
-    Info: Implemented 32 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 86 warnings
-    Info: Peak virtual memory: 167 megabytes
-    Info: Processing ended: Sat May 16 12:55:44 2009
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:01
+Warning: Design contains 13 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "IR[13]"
+    Warning (15610): No output dependent on input pin "IR[12]"
+    Warning (15610): No output dependent on input pin "IR[11]"
+    Warning (15610): No output dependent on input pin "IR[10]"
+    Warning (15610): No output dependent on input pin "IR[9]"
+    Warning (15610): No output dependent on input pin "IR[8]"
+    Warning (15610): No output dependent on input pin "IR[7]"
+    Warning (15610): No output dependent on input pin "IR[6]"
+    Warning (15610): No output dependent on input pin "IR[5]"
+    Warning (15610): No output dependent on input pin "IR[3]"
+    Warning (15610): No output dependent on input pin "IR[2]"
+    Warning (15610): No output dependent on input pin "IR[1]"
+    Warning (15610): No output dependent on input pin "IR[0]"
+Info: Implemented 76 device resources after synthesis - the final resource count might be different
+    Info: Implemented 17 input pins
+    Info: Implemented 54 output pins
+    Info: Implemented 5 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 119 warnings
+    Info: Peak virtual memory: 168 megabytes
+    Info: Processing ended: Sat May 16 15:41:39 2009
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------+

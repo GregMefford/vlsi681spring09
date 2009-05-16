@@ -1,0 +1,276 @@
+Simulator report for LC3
+Sat May 16 15:43:22 2009
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 76 nodes     ;
+; Simulation Coverage         ;      19.05 % ;
+; Total Number of Transitions ; 215          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
+; Device                      ; EP1C6Q240C8  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; test/LC3.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      19.05 % ;
+; Total nodes checked                                 ; 76           ;
+; Total output ports checked                          ; 63           ;
+; Total output ports with complete 1/0-value coverage ; 12           ;
+; Total output ports with no 1/0-value coverage       ; 51           ;
+; Total output ports with no 1-value coverage         ; 51           ;
+; Total output ports with no 0-value coverage         ; 51           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                          ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                         ; Output Port Name                                                                                              ; Output Port Type ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+
+; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|counter_cella0 ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|counter_cella0~COUT        ; cout0            ;
+; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|counter_cella0 ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|counter_cella0~COUTCOUT1_3 ; cout1            ;
+; |LC3|control:inst14|ALU_CONTROL[2]                                                                ; |LC3|control:inst14|ALU_CONTROL[2]                                                                            ; regout           ;
+; |LC3|control:inst14|ALU_CONTROL[0]                                                                ; |LC3|control:inst14|ALU_CONTROL[0]                                                                            ; regout           ;
+; |LC3|ALU_CONTROL[2]                                                                               ; |LC3|ALU_CONTROL[2]                                                                                           ; padio            ;
+; |LC3|ALU_CONTROL[0]                                                                               ; |LC3|ALU_CONTROL[0]                                                                                           ; padio            ;
+; |LC3|STAGE[1]                                                                                     ; |LC3|STAGE[1]                                                                                                 ; padio            ;
+; |LC3|STAGE[0]                                                                                     ; |LC3|STAGE[0]                                                                                                 ; padio            ;
+; |LC3|IR[15]                                                                                       ; |LC3|IR[15]~corein                                                                                            ; combout          ;
+; |LC3|CLK                                                                                          ; |LC3|CLK~corein                                                                                               ; combout          ;
+; |LC3|IR[14]                                                                                       ; |LC3|IR[14]~corein                                                                                            ; combout          ;
+; |LC3|IR[4]                                                                                        ; |LC3|IR[4]~corein                                                                                             ; combout          ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |LC3|control:inst14|ALU_CONTROL[1] ; |LC3|control:inst14|ALU_CONTROL[1] ; regout           ;
+; |LC3|ALU_CONTROL[3]                ; |LC3|ALU_CONTROL[3]                ; padio            ;
+; |LC3|ALU_CONTROL[1]                ; |LC3|ALU_CONTROL[1]                ; padio            ;
+; |LC3|PC[15]                        ; |LC3|PC[15]                        ; padio            ;
+; |LC3|PC[14]                        ; |LC3|PC[14]                        ; padio            ;
+; |LC3|PC[13]                        ; |LC3|PC[13]                        ; padio            ;
+; |LC3|PC[12]                        ; |LC3|PC[12]                        ; padio            ;
+; |LC3|PC[11]                        ; |LC3|PC[11]                        ; padio            ;
+; |LC3|PC[10]                        ; |LC3|PC[10]                        ; padio            ;
+; |LC3|PC[9]                         ; |LC3|PC[9]                         ; padio            ;
+; |LC3|PC[8]                         ; |LC3|PC[8]                         ; padio            ;
+; |LC3|PC[7]                         ; |LC3|PC[7]                         ; padio            ;
+; |LC3|PC[6]                         ; |LC3|PC[6]                         ; padio            ;
+; |LC3|PC[5]                         ; |LC3|PC[5]                         ; padio            ;
+; |LC3|PC[4]                         ; |LC3|PC[4]                         ; padio            ;
+; |LC3|PC[3]                         ; |LC3|PC[3]                         ; padio            ;
+; |LC3|PC[2]                         ; |LC3|PC[2]                         ; padio            ;
+; |LC3|PC[1]                         ; |LC3|PC[1]                         ; padio            ;
+; |LC3|PC[0]                         ; |LC3|PC[0]                         ; padio            ;
+; |LC3|RS1_DATA[15]                  ; |LC3|RS1_DATA[15]                  ; padio            ;
+; |LC3|RS1_DATA[14]                  ; |LC3|RS1_DATA[14]                  ; padio            ;
+; |LC3|RS1_DATA[13]                  ; |LC3|RS1_DATA[13]                  ; padio            ;
+; |LC3|RS1_DATA[12]                  ; |LC3|RS1_DATA[12]                  ; padio            ;
+; |LC3|RS1_DATA[11]                  ; |LC3|RS1_DATA[11]                  ; padio            ;
+; |LC3|RS1_DATA[10]                  ; |LC3|RS1_DATA[10]                  ; padio            ;
+; |LC3|RS1_DATA[9]                   ; |LC3|RS1_DATA[9]                   ; padio            ;
+; |LC3|RS1_DATA[8]                   ; |LC3|RS1_DATA[8]                   ; padio            ;
+; |LC3|RS1_DATA[7]                   ; |LC3|RS1_DATA[7]                   ; padio            ;
+; |LC3|RS1_DATA[6]                   ; |LC3|RS1_DATA[6]                   ; padio            ;
+; |LC3|RS1_DATA[5]                   ; |LC3|RS1_DATA[5]                   ; padio            ;
+; |LC3|RS1_DATA[4]                   ; |LC3|RS1_DATA[4]                   ; padio            ;
+; |LC3|RS1_DATA[3]                   ; |LC3|RS1_DATA[3]                   ; padio            ;
+; |LC3|RS1_DATA[2]                   ; |LC3|RS1_DATA[2]                   ; padio            ;
+; |LC3|RS1_DATA[1]                   ; |LC3|RS1_DATA[1]                   ; padio            ;
+; |LC3|RS1_DATA[0]                   ; |LC3|RS1_DATA[0]                   ; padio            ;
+; |LC3|RS2_DATA[15]                  ; |LC3|RS2_DATA[15]                  ; padio            ;
+; |LC3|RS2_DATA[14]                  ; |LC3|RS2_DATA[14]                  ; padio            ;
+; |LC3|RS2_DATA[13]                  ; |LC3|RS2_DATA[13]                  ; padio            ;
+; |LC3|RS2_DATA[12]                  ; |LC3|RS2_DATA[12]                  ; padio            ;
+; |LC3|RS2_DATA[11]                  ; |LC3|RS2_DATA[11]                  ; padio            ;
+; |LC3|RS2_DATA[10]                  ; |LC3|RS2_DATA[10]                  ; padio            ;
+; |LC3|RS2_DATA[9]                   ; |LC3|RS2_DATA[9]                   ; padio            ;
+; |LC3|RS2_DATA[8]                   ; |LC3|RS2_DATA[8]                   ; padio            ;
+; |LC3|RS2_DATA[7]                   ; |LC3|RS2_DATA[7]                   ; padio            ;
+; |LC3|RS2_DATA[6]                   ; |LC3|RS2_DATA[6]                   ; padio            ;
+; |LC3|RS2_DATA[5]                   ; |LC3|RS2_DATA[5]                   ; padio            ;
+; |LC3|RS2_DATA[4]                   ; |LC3|RS2_DATA[4]                   ; padio            ;
+; |LC3|RS2_DATA[3]                   ; |LC3|RS2_DATA[3]                   ; padio            ;
+; |LC3|RS2_DATA[2]                   ; |LC3|RS2_DATA[2]                   ; padio            ;
+; |LC3|RS2_DATA[1]                   ; |LC3|RS2_DATA[1]                   ; padio            ;
+; |LC3|RS2_DATA[0]                   ; |LC3|RS2_DATA[0]                   ; padio            ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |LC3|control:inst14|ALU_CONTROL[1] ; |LC3|control:inst14|ALU_CONTROL[1] ; regout           ;
+; |LC3|ALU_CONTROL[3]                ; |LC3|ALU_CONTROL[3]                ; padio            ;
+; |LC3|ALU_CONTROL[1]                ; |LC3|ALU_CONTROL[1]                ; padio            ;
+; |LC3|PC[15]                        ; |LC3|PC[15]                        ; padio            ;
+; |LC3|PC[14]                        ; |LC3|PC[14]                        ; padio            ;
+; |LC3|PC[13]                        ; |LC3|PC[13]                        ; padio            ;
+; |LC3|PC[12]                        ; |LC3|PC[12]                        ; padio            ;
+; |LC3|PC[11]                        ; |LC3|PC[11]                        ; padio            ;
+; |LC3|PC[10]                        ; |LC3|PC[10]                        ; padio            ;
+; |LC3|PC[9]                         ; |LC3|PC[9]                         ; padio            ;
+; |LC3|PC[8]                         ; |LC3|PC[8]                         ; padio            ;
+; |LC3|PC[7]                         ; |LC3|PC[7]                         ; padio            ;
+; |LC3|PC[6]                         ; |LC3|PC[6]                         ; padio            ;
+; |LC3|PC[5]                         ; |LC3|PC[5]                         ; padio            ;
+; |LC3|PC[4]                         ; |LC3|PC[4]                         ; padio            ;
+; |LC3|PC[3]                         ; |LC3|PC[3]                         ; padio            ;
+; |LC3|PC[2]                         ; |LC3|PC[2]                         ; padio            ;
+; |LC3|PC[1]                         ; |LC3|PC[1]                         ; padio            ;
+; |LC3|PC[0]                         ; |LC3|PC[0]                         ; padio            ;
+; |LC3|RS1_DATA[15]                  ; |LC3|RS1_DATA[15]                  ; padio            ;
+; |LC3|RS1_DATA[14]                  ; |LC3|RS1_DATA[14]                  ; padio            ;
+; |LC3|RS1_DATA[13]                  ; |LC3|RS1_DATA[13]                  ; padio            ;
+; |LC3|RS1_DATA[12]                  ; |LC3|RS1_DATA[12]                  ; padio            ;
+; |LC3|RS1_DATA[11]                  ; |LC3|RS1_DATA[11]                  ; padio            ;
+; |LC3|RS1_DATA[10]                  ; |LC3|RS1_DATA[10]                  ; padio            ;
+; |LC3|RS1_DATA[9]                   ; |LC3|RS1_DATA[9]                   ; padio            ;
+; |LC3|RS1_DATA[8]                   ; |LC3|RS1_DATA[8]                   ; padio            ;
+; |LC3|RS1_DATA[7]                   ; |LC3|RS1_DATA[7]                   ; padio            ;
+; |LC3|RS1_DATA[6]                   ; |LC3|RS1_DATA[6]                   ; padio            ;
+; |LC3|RS1_DATA[5]                   ; |LC3|RS1_DATA[5]                   ; padio            ;
+; |LC3|RS1_DATA[4]                   ; |LC3|RS1_DATA[4]                   ; padio            ;
+; |LC3|RS1_DATA[3]                   ; |LC3|RS1_DATA[3]                   ; padio            ;
+; |LC3|RS1_DATA[2]                   ; |LC3|RS1_DATA[2]                   ; padio            ;
+; |LC3|RS1_DATA[1]                   ; |LC3|RS1_DATA[1]                   ; padio            ;
+; |LC3|RS1_DATA[0]                   ; |LC3|RS1_DATA[0]                   ; padio            ;
+; |LC3|RS2_DATA[15]                  ; |LC3|RS2_DATA[15]                  ; padio            ;
+; |LC3|RS2_DATA[14]                  ; |LC3|RS2_DATA[14]                  ; padio            ;
+; |LC3|RS2_DATA[13]                  ; |LC3|RS2_DATA[13]                  ; padio            ;
+; |LC3|RS2_DATA[12]                  ; |LC3|RS2_DATA[12]                  ; padio            ;
+; |LC3|RS2_DATA[11]                  ; |LC3|RS2_DATA[11]                  ; padio            ;
+; |LC3|RS2_DATA[10]                  ; |LC3|RS2_DATA[10]                  ; padio            ;
+; |LC3|RS2_DATA[9]                   ; |LC3|RS2_DATA[9]                   ; padio            ;
+; |LC3|RS2_DATA[8]                   ; |LC3|RS2_DATA[8]                   ; padio            ;
+; |LC3|RS2_DATA[7]                   ; |LC3|RS2_DATA[7]                   ; padio            ;
+; |LC3|RS2_DATA[6]                   ; |LC3|RS2_DATA[6]                   ; padio            ;
+; |LC3|RS2_DATA[5]                   ; |LC3|RS2_DATA[5]                   ; padio            ;
+; |LC3|RS2_DATA[4]                   ; |LC3|RS2_DATA[4]                   ; padio            ;
+; |LC3|RS2_DATA[3]                   ; |LC3|RS2_DATA[3]                   ; padio            ;
+; |LC3|RS2_DATA[2]                   ; |LC3|RS2_DATA[2]                   ; padio            ;
+; |LC3|RS2_DATA[1]                   ; |LC3|RS2_DATA[1]                   ; padio            ;
+; |LC3|RS2_DATA[0]                   ; |LC3|RS2_DATA[0]                   ; padio            ;
++------------------------------------+------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Sat May 16 15:43:21 2009
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off LC3 -c LC3
+Info: Using vector source file "test/LC3.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      19.05 %
+Info: Number of transitions in simulation is 215
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 115 megabytes
+    Info: Processing ended: Sat May 16 15:43:22 2009
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
