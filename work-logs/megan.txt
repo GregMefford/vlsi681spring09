@@ -44,4 +44,4 @@ Week 7:
 2009-05-14: 2.00 hours: ALU verification with Altera
 2009-05-15: 2.00 hours: Working on writing matrix multiply prgm
 2009-05-15: 2.00 hours: Testing ALU with ModelSim DO file
-2009-05-16: 3.00 hours: Matrix multiply prgm in assembly and MIF file implementation
+2009-05-16: 3.50 hours: Matrix multiply prgm in assembly and MIF file implementation
