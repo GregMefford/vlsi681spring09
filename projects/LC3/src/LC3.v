@@ -1,9 +1,9 @@
-include "ALU.v";
-include "mux16.v";
-include "RAM_data.v";
-include "reg16.v";
-include "register_file.v";
-include "control.v";
+include <ALU>;
+include <mux16>;
+include <RAM_data>;
+include <reg16>;
+include <register_file>;
+include <control>;
 
 // Program Counter
 wire [15: 0] pc;

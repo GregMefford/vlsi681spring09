@@ -711,7 +711,7 @@ db|LC3.(0).cnf
 # case_insensitive
 # source_file
 src|LC3.bdf
-eed689aef7649141719d66f6914a7
+be2842371d7041aebdc6a36e95f3a4e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -735,7 +735,7 @@ ON
 # case_sensitive
 # source_file
 src|control.v
-4069939070dce51f34fe483bc94d1fe3
+a180d7aeeada46212dd186ad709d285c
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
