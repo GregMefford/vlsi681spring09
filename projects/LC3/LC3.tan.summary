@@ -2,34 +2,24 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 7.305 ns
-From           : IR[15]
-To             : control:inst14|ALU_CONTROL[1]
-From Clock     : --
-To Clock       : CLK
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.058 ns
-From           : control:inst14|ALU_CONTROL[2]
-To             : ALU_CONTROL[2]
+Actual Time    : 7.551 ns
+From           : lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|safe_q[1]
+To             : STAGE[1]
 From Clock     : CLK
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.650 ns
-From           : IR[4]
-To             : control:inst14|ALU_CONTROL[1]
+Actual Time    : 14.132 ns
+From           : IR[13]
+To             : ALU_CONTROL[2]
 From Clock     : --
-To Clock       : CLK
+To Clock       : --
 Failed Paths   : 0
 
 Type           : Clock Setup: 'CLK'

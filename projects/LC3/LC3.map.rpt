@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LC3
-Sat May 16 15:41:39 2009
+Sun May 17 16:05:05 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -15,14 +15,15 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   7. Registers Removed During Synthesis
   8. Removed Registers Triggering Further Register Optimizations
   9. General Register Statistics
- 10. Source assignments for lpm_counter0:inst19|lpm_counter:lpm_counter_component
- 11. Parameter Settings for User Entity Instance: lpm_counter0:inst19|lpm_counter:lpm_counter_component
- 12. Parameter Settings for User Entity Instance: Data:inst12|Dataram:inst
- 13. Port Connectivity Checks: "Execution:inst13|ALU:b2v_inst4"
- 14. Port Connectivity Checks: "Registers:inst|register_file:regfile"
- 15. Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A"
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Source assignments for lpm_counter0:inst19|lpm_counter:lpm_counter_component
+ 12. Parameter Settings for User Entity Instance: lpm_counter0:inst19|lpm_counter:lpm_counter_component
+ 13. Parameter Settings for User Entity Instance: Data:inst12|Dataram:inst
+ 14. Port Connectivity Checks: "Execution:inst13|ALU:b2v_inst4"
+ 15. Port Connectivity Checks: "Registers:inst|register_file:regfile"
+ 16. Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A"
+ 17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,13 +49,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 16 15:41:39 2009   ;
+; Analysis & Synthesis Status ; Successful - Sun May 17 16:05:05 2009   ;
 ; Quartus II Version          ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name               ; LC3                                     ;
 ; Top-level Entity Name       ; LC3                                     ;
 ; Family                      ; Cyclone                                 ;
-; Total logic elements        ; 5                                       ;
-; Total pins                  ; 71                                      ;
+; Total logic elements        ; 6                                       ;
+; Total pins                  ; 88                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; Total memory bits           ; 0                                       ;
 ; Total PLLs                  ; 0                                       ;
@@ -171,39 +172,39 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Total logic elements                        ; 5     ;
-;     -- Combinational with no register       ; 0     ;
-;     -- Register only                        ; 1     ;
-;     -- Combinational with a register        ; 4     ;
-;                                             ;       ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 2     ;
-;     -- 2 input functions                    ; 1     ;
-;     -- 1 input functions                    ; 1     ;
-;     -- 0 input functions                    ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 4     ;
-;     -- arithmetic mode                      ; 1     ;
-;     -- qfbk mode                            ; 0     ;
-;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 5     ;
-; Total logic cells in carry chains           ; 2     ;
-; I/O pins                                    ; 71    ;
-; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 5     ;
-; Total fan-out                               ; 20    ;
-; Average fan-out                             ; 0.26  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                           ;
++---------------------------------------------+-----------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                   ;
++---------------------------------------------+-----------------------------------------------------------------------------------------+
+; Total logic elements                        ; 6                                                                                       ;
+;     -- Combinational with no register       ; 4                                                                                       ;
+;     -- Register only                        ; 0                                                                                       ;
+;     -- Combinational with a register        ; 2                                                                                       ;
+;                                             ;                                                                                         ;
+; Logic element usage by number of LUT inputs ;                                                                                         ;
+;     -- 4 input functions                    ; 3                                                                                       ;
+;     -- 3 input functions                    ; 0                                                                                       ;
+;     -- 2 input functions                    ; 2                                                                                       ;
+;     -- 1 input functions                    ; 1                                                                                       ;
+;     -- 0 input functions                    ; 0                                                                                       ;
+;                                             ;                                                                                         ;
+; Logic elements by mode                      ;                                                                                         ;
+;     -- normal mode                          ; 5                                                                                       ;
+;     -- arithmetic mode                      ; 1                                                                                       ;
+;     -- qfbk mode                            ; 0                                                                                       ;
+;     -- register cascade mode                ; 0                                                                                       ;
+;     -- synchronous clear/load mode          ; 0                                                                                       ;
+;     -- asynchronous clear/load mode         ; 0                                                                                       ;
+;                                             ;                                                                                         ;
+; Total registers                             ; 2                                                                                       ;
+; Total logic cells in carry chains           ; 2                                                                                       ;
+; I/O pins                                    ; 88                                                                                      ;
+; Maximum fan-out node                        ; lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|safe_q[0] ;
+; Maximum fan-out                             ; 3                                                                                       ;
+; Total fan-out                               ; 24                                                                                      ;
+; Average fan-out                             ; 0.26                                                                                    ;
++---------------------------------------------+-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,8 +212,8 @@ applicable agreement for further details.
 +-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                ; Library Name ;
 +-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
-; |LC3                                      ; 5 (0)       ; 5            ; 0           ; 71   ; 0            ; 0 (0)        ; 1 (0)             ; 4 (0)            ; 2 (0)           ; 0 (0)      ; |LC3                                                                               ; work         ;
-;    |control:inst14|                       ; 3 (3)       ; 3            ; 0           ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |LC3|control:inst14                                                                ; work         ;
+; |LC3                                      ; 6 (0)       ; 2            ; 0           ; 88   ; 0            ; 4 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3                                                                               ; work         ;
+;    |control:inst14|                       ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LC3|control:inst14                                                                ; work         ;
 ;    |lpm_counter0:inst19|                  ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:inst19                                                           ; work         ;
 ;       |lpm_counter:lpm_counter_component| ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component                         ; work         ;
 ;          |cntr_hci:auto_generated|        ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated ; work         ;
@@ -220,28 +221,27 @@ applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                             ;
-+-------------------------------------------------------+----------------------------------------+
-; Register name                                         ; Reason for Removal                     ;
-+-------------------------------------------------------+----------------------------------------+
-; Registers:inst|register_file:regfile|R2[0]            ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R1[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|RS1_DATA[0..15]  ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|RS2_DATA[0..15]  ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R2[1..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R3[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R4[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R5[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R6[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R7[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Registers:inst|register_file:regfile|R0[0..15]        ; Stuck at GND due to stuck port clock   ;
-; Data:inst12|reg16:inst1|DATA_OUT[0..3]                ; Stuck at GND due to stuck port clock   ;
-; Data:inst12|Dataram:inst|data_out[0..15]              ; Stuck at GND due to stuck port clock   ;
-; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0..15] ; Stuck at GND due to stuck port clock   ;
-; control:inst14|ALU_CONTROL[3]                         ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 197               ;                                        ;
-+-------------------------------------------------------+----------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++-------------------------------------------------------+--------------------------------------+
+; Register name                                         ; Reason for Removal                   ;
++-------------------------------------------------------+--------------------------------------+
+; Registers:inst|register_file:regfile|R2[0]            ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R1[0..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|RS1_DATA[0..15]  ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|RS2_DATA[0..15]  ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R2[1..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R3[0..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R4[0..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R5[0..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R6[0..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R7[0..15]        ; Stuck at GND due to stuck port clock ;
+; Registers:inst|register_file:regfile|R0[0..15]        ; Stuck at GND due to stuck port clock ;
+; Data:inst12|reg16:inst1|DATA_OUT[0..3]                ; Stuck at GND due to stuck port clock ;
+; Data:inst12|Dataram:inst|data_out[0..15]              ; Stuck at GND due to stuck port clock ;
+; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0..15] ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 196               ;                                      ;
++-------------------------------------------------------+--------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -279,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 2     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -287,6 +287,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |LC3|control:inst14|Mux1   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +------------------------------------------------------------------------------+
@@ -373,7 +382,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sat May 16 15:41:37 2009
+    Info: Processing started: Sun May 17 16:05:03 2009
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LC3 -c LC3
 Info: Found 1 design units, including 1 entities, in source file src/reg16.v
     Info: Found entity 1: reg16
@@ -409,6 +418,21 @@ Info: Found 1 design units, including 1 entities, in source file src/lpm_counter
     Info: Found entity 1: lpm_counter0
 Info: Elaborating entity "LC3" for the top level hierarchy
 Info: Elaborating entity "control" for hierarchy "control:inst14"
+Warning (10270): Verilog HDL Case Statement warning at control.v(32): incomplete case statement has no default case item
+Warning (10776): Verilog HDL warning at control.v(26): variable alu_control in static task or function alu_control may have unintended latch behavior
+Warning (10241): Verilog HDL Function Declaration warning at control.v(26): function "alu_control" may return a Don't Care value because its output register may not be assigned a value in every possible path through the function
+Warning (10230): Verilog HDL assignment warning at control.v(69): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(70): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(71): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(72): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(73): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(74): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(75): truncated value with size 2 to match size of target (1)
+Warning (10272): Verilog HDL Case Statement warning at control.v(72): case item expression covers a value already covered by a previous case item
+Warning (10030): Net "alu_control[3]" at control.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "alu_control[2]" at control.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "alu_control[1]" at control.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "alu_control[0]" at control.v(26) has no driver or initial value, using a default initial value '0'
 Warning (10034): Output port "NEXT_STAGE_LE" at control.v(7) has no driver
 Warning (10034): Output port "NEXT_STAGE[1]" at control.v(8) has no driver
 Warning (10034): Output port "NEXT_STAGE[0]" at control.v(8) has no driver
@@ -416,14 +440,13 @@ Warning (10034): Output port "MAR_LE" at control.v(9) has no driver
 Warning (10034): Output port "MAR_CONTROL" at control.v(10) has no driver
 Warning (10034): Output port "MEM_WE" at control.v(11) has no driver
 Warning (10034): Output port "MEM_CLK" at control.v(12) has no driver
+Warning (10034): Output port "IS_IMMEDIATE" at control.v(13) has no driver
 Warning (10034): Output port "RD_LE" at control.v(15) has no driver
 Warning (10034): Output port "REG_CONTROL" at control.v(16) has no driver
 Warning (10034): Output port "EA_CONTROL[2]" at control.v(17) has no driver
 Warning (10034): Output port "EA_CONTROL[1]" at control.v(17) has no driver
 Warning (10034): Output port "EA_CONTROL[0]" at control.v(17) has no driver
 Warning (10034): Output port "IR_LE" at control.v(18) has no driver
-Warning (10034): Output port "PC_CONTROL[1]" at control.v(19) has no driver
-Warning (10034): Output port "PC_CONTROL[0]" at control.v(19) has no driver
 Warning (10034): Output port "PC_LE" at control.v(21) has no driver
 Info: Elaborating entity "lpm_counter0" for hierarchy "lpm_counter0:inst19"
 Info: Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:inst19|lpm_counter:lpm_counter_component"
@@ -489,6 +512,7 @@ Warning (10034): Output port "OF[1]" at ALU.v(7) has no driver
 Warning (10034): Output port "OF[0]" at ALU.v(7) has no driver
 Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "REG_CONTROL" is stuck at GND
     Warning (13410): Pin "ALU_CONTROL[3]" is stuck at GND
     Warning (13410): Pin "PC[15]" is stuck at GND
     Warning (13410): Pin "PC[14]" is stuck at GND
@@ -522,6 +546,22 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "RS1_DATA[2]" is stuck at GND
     Warning (13410): Pin "RS1_DATA[1]" is stuck at GND
     Warning (13410): Pin "RS1_DATA[0]" is stuck at GND
+    Warning (13410): Pin "Y[15]" is stuck at GND
+    Warning (13410): Pin "Y[14]" is stuck at GND
+    Warning (13410): Pin "Y[13]" is stuck at GND
+    Warning (13410): Pin "Y[12]" is stuck at GND
+    Warning (13410): Pin "Y[11]" is stuck at GND
+    Warning (13410): Pin "Y[10]" is stuck at GND
+    Warning (13410): Pin "Y[9]" is stuck at GND
+    Warning (13410): Pin "Y[8]" is stuck at GND
+    Warning (13410): Pin "Y[7]" is stuck at GND
+    Warning (13410): Pin "Y[6]" is stuck at GND
+    Warning (13410): Pin "Y[5]" is stuck at GND
+    Warning (13410): Pin "Y[4]" is stuck at GND
+    Warning (13410): Pin "Y[3]" is stuck at GND
+    Warning (13410): Pin "Y[2]" is stuck at GND
+    Warning (13410): Pin "Y[1]" is stuck at GND
+    Warning (13410): Pin "Y[0]" is stuck at GND
     Warning (13410): Pin "RS2_DATA[15]" is stuck at GND
     Warning (13410): Pin "RS2_DATA[14]" is stuck at GND
     Warning (13410): Pin "RS2_DATA[13]" is stuck at GND
@@ -539,9 +579,7 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "RS2_DATA[1]" is stuck at GND
     Warning (13410): Pin "RS2_DATA[0]" is stuck at GND
 Info: Generated suppressed messages file C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/LC3.map.smsg
-Warning: Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "IR[13]"
-    Warning (15610): No output dependent on input pin "IR[12]"
+Warning: Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IR[11]"
     Warning (15610): No output dependent on input pin "IR[10]"
     Warning (15610): No output dependent on input pin "IR[9]"
@@ -549,17 +587,16 @@ Warning: Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IR[7]"
     Warning (15610): No output dependent on input pin "IR[6]"
     Warning (15610): No output dependent on input pin "IR[5]"
-    Warning (15610): No output dependent on input pin "IR[3]"
     Warning (15610): No output dependent on input pin "IR[2]"
     Warning (15610): No output dependent on input pin "IR[1]"
     Warning (15610): No output dependent on input pin "IR[0]"
-Info: Implemented 76 device resources after synthesis - the final resource count might be different
+Info: Implemented 94 device resources after synthesis - the final resource count might be different
     Info: Implemented 17 input pins
-    Info: Implemented 54 output pins
-    Info: Implemented 5 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 119 warnings
+    Info: Implemented 71 output pins
+    Info: Implemented 6 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 147 warnings
     Info: Peak virtual memory: 168 megabytes
-    Info: Processing ended: Sat May 16 15:41:39 2009
+    Info: Processing ended: Sun May 17 16:05:05 2009
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
