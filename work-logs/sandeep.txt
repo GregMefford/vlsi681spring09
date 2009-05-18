@@ -5,3 +5,12 @@
 2009-05-09: 2.00 hours: Installing and working on Modelsim
 
 2009-05-10: 1.50 hours: Worked on random testing of memory module
+
+
+05-12-2009 : 3 hours -- Worked on take home midterm
+
+05-13-2009 : 2 hours -- Worked on take home midterm
+
+05-14-2009 : 4 hours -- Worked on the Data and Instruction memory along with the Modelsim testing
+
+05-16-2009 : 2 hours -- Writing code for Sorting of data using modified LC3 instructions.
