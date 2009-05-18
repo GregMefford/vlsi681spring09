@@ -1,0 +1,59 @@
+A Memory Initialization File serves as an input file for memory initialization in the Compiler and Simulator. 
+
+A Memory Initialization File contains the initial values for each address in the memory. A separate file is required for each memory block. In a Memory Initialization File, you must specify the memory depth and width values. In addition, you can specify data radixes as binary (BIN), hexadecimal (HEX), octal (OCT), signed decimal (DEC), or unsigned decimal (UNS) to display and interpret addresses and data values. Data values must match the specified data radix.
+
+%  multiple-line comment  
+
+multiple-line comment  %      
+
+                                    
+
+-- single-line comment
+
+ 
+
+DEPTH = 32;                   -- The size of data in bits
+WIDTH = 8;                    -- The size of memory in words
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+
+00 : 00000000;                -- memory address : data
+01 : 00000001;
+02 : 00000010;
+03 : 00000011;
+04 : 00000100;
+05 : 00000101;
+06 : 00000110;
+07 : 00000111;
+08 : 00001000;
+09 : 00001001;
+0A : 00001010;
+0B : 00001011;
+0C : 00001100;
+
+END;
+
+-- another example:
+
+DEPTH = 1024; 		% Memory depth and width are required %
+WIDTH = 8; 		% Enter decimal numbers for each %
+ADDRESS_RADIX = HEX; 	% Address and value radixes are optional %
+DATA_RADIX = HEX; 	% Enter BIN, DEC, HEX, or OCT; unless %
+			% otherwise specified, radixes = HEX %
+-- Specify values for addresses, which can be single address or range
+
+CONTENT
+BEGIN
+
+[0..F] : 0; 		% First 16 values are zero %
+10 : 33; 		% Single address data %
+11 : 5C; 		% Addr[11] = 5C %
+12 : 99;
+13 : A1; 		% Addr[13] = A1 %
+14 : B2;
+15 : C3;
+16 : D4; 		% Addr[16] = D4 %
+[17..3FF] : FF; 	% remaining locations are FF %
+END ; 			% You must have END statement! %
