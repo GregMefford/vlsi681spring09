@@ -45,4 +45,5 @@ Week 7:
 2009-05-15: 2.00 hours: Working on writing matrix multiply prgm
 2009-05-15: 2.00 hours: Testing ALU with ModelSim DO file
 2009-05-16: 3.50 hours: Matrix multiply prgm in assembly and MIF file implementation
-2009-05-18: 0.50 hours: Compiling hours and submitting Report 7
+2009-05-18: 1.00 hours: Compiling hours and submitting Report 7
+2009-05-18: 1.50 hours: Working on matrix multiply program
