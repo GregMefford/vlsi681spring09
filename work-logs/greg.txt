@@ -46,3 +46,4 @@ Week 7:
 Week 8:
 2009-05-19: 1.00 hours: Working on control signals in ModelSim
 2009-05-22: 1.00 hours: Completed control signals for ALU operations.
+2009-05-25: 1.00 hours: Working on additional control signals for LC-3.
