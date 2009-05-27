@@ -2,6 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity Registers is
     port(
+        CLK             : in     vl_logic;
         RD_LE           : in     vl_logic;
         REG_Control     : in     vl_logic;
         DATA            : in     vl_logic_vector(15 downto 0);

@@ -1,11 +1,15 @@
-Warning (10273): Verilog HDL warning at control.v(52): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at control.v(55): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at control.v(58): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at control.v(61): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at control.v(56): extended using "x" or "z"
 Info (10281): Verilog HDL Declaration information at control.v(14): object "ALU_CONTROL" differs only in case from object "alu_control" in the same scope
 Info (10281): Verilog HDL Declaration information at control.v(19): object "PC_CONTROL" differs only in case from object "pc_control" in the same scope
 Info (10281): Verilog HDL Declaration information at control.v(18): object "IR_LE" differs only in case from object "ir_le" in the same scope
 Info (10281): Verilog HDL Declaration information at control.v(16): object "REG_CONTROL" differs only in case from object "reg_control" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(9): object "MAR_LE" differs only in case from object "mar_le" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(10): object "MAR_CONTROL" differs only in case from object "mar_control" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(11): object "MEM_WE" differs only in case from object "mem_we" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(21): object "PC_LE" differs only in case from object "pc_le" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(15): object "RD_LE" differs only in case from object "rd_le" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(8): object "NEXT_STAGE" differs only in case from object "next_stage" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(7): object "NEXT_STAGE_LE" differs only in case from object "next_stage_le" in the same scope
 Warning (10273): Verilog HDL warning at mux16.v(11): extended using "x" or "z"
 Warning (10273): Verilog HDL warning at register_file.v(47): extended using "x" or "z"
 Warning (10273): Verilog HDL warning at register_file.v(58): extended using "x" or "z"

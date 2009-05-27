@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LC3
-Sun May 17 16:05:05 2009
+Tue May 26 21:22:02 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -16,14 +16,17 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   8. Removed Registers Triggering Further Register Optimizations
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Source assignments for lpm_counter0:inst19|lpm_counter:lpm_counter_component
- 12. Parameter Settings for User Entity Instance: lpm_counter0:inst19|lpm_counter:lpm_counter_component
- 13. Parameter Settings for User Entity Instance: Data:inst12|Dataram:inst
- 14. Port Connectivity Checks: "Execution:inst13|ALU:b2v_inst4"
- 15. Port Connectivity Checks: "Registers:inst|register_file:regfile"
- 16. Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A"
- 17. Analysis & Synthesis Messages
- 18. Analysis & Synthesis Suppressed Messages
+ 11. Source assignments for lpm_counter0:stage_counter|lpm_counter:lpm_counter_component
+ 12. Parameter Settings for User Entity Instance: Data:data_inst|Dataram:inst
+ 13. Parameter Settings for User Entity Instance: lpm_counter0:stage_counter|lpm_counter:lpm_counter_component
+ 14. Parameter Settings for Inferred Entity Instance: Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0
+ 15. lpm_mult Parameter Settings by Entity Instance
+ 16. Port Connectivity Checks: "effective_address:effective_address_inst|mux16:EA_MUX2A"
+ 17. Port Connectivity Checks: "Execution:execution_inst|ALU:b2v_inst4"
+ 18. Port Connectivity Checks: "Execution:execution_inst"
+ 19. Port Connectivity Checks: "Registers:registers_inst|register_file:regfile"
+ 20. Analysis & Synthesis Messages
+ 21. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,12 +52,12 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun May 17 16:05:05 2009   ;
+; Analysis & Synthesis Status ; Successful - Tue May 26 21:22:01 2009   ;
 ; Quartus II Version          ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name               ; LC3                                     ;
 ; Top-level Entity Name       ; LC3                                     ;
 ; Family                      ; Cyclone                                 ;
-; Total logic elements        ; 6                                       ;
+; Total logic elements        ; 690                                     ;
 ; Total pins                  ; 88                                      ;
 ; Total virtual pins          ; 0                                       ;
 ; Total memory bits           ; 0                                       ;
@@ -139,6 +142,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                          ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; src/LC3.v                        ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v                 ;
 ; src/reg16.v                      ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v               ;
 ; src/control.v                    ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v             ;
 ; src/Dataram.v                    ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v             ;
@@ -146,7 +150,6 @@ applicable agreement for further details.
 ; src/Instram.v                    ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v             ;
 ; src/mux16.v                      ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v               ;
 ; src/register_file.v              ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v       ;
-; src/LC3.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.bdf               ;
 ; src/ALU.v                        ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v                 ;
 ; src/Instruction_Fetch.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.bdf ;
 ; src/inc16.v                      ; yes             ; User Verilog HDL File              ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/inc16.v               ;
@@ -169,109 +172,94 @@ applicable agreement for further details.
 ; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                                                  ;
 ; aglobal90.inc                    ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/aglobal90.inc                                                                                            ;
 ; db/cntr_hci.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/db/cntr_hci.tdf           ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/lpm_mult.tdf                                                                                             ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/multcore.inc                                                                                             ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/bypassff.inc                                                                                             ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/90/quartus/libraries/megafunctions/altshift.inc                                                                                             ;
+; db/mult_nn01.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/db/mult_nn01.tdf          ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                           ;
-+---------------------------------------------+-----------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                                   ;
-+---------------------------------------------+-----------------------------------------------------------------------------------------+
-; Total logic elements                        ; 6                                                                                       ;
-;     -- Combinational with no register       ; 4                                                                                       ;
-;     -- Register only                        ; 0                                                                                       ;
-;     -- Combinational with a register        ; 2                                                                                       ;
-;                                             ;                                                                                         ;
-; Logic element usage by number of LUT inputs ;                                                                                         ;
-;     -- 4 input functions                    ; 3                                                                                       ;
-;     -- 3 input functions                    ; 0                                                                                       ;
-;     -- 2 input functions                    ; 2                                                                                       ;
-;     -- 1 input functions                    ; 1                                                                                       ;
-;     -- 0 input functions                    ; 0                                                                                       ;
-;                                             ;                                                                                         ;
-; Logic elements by mode                      ;                                                                                         ;
-;     -- normal mode                          ; 5                                                                                       ;
-;     -- arithmetic mode                      ; 1                                                                                       ;
-;     -- qfbk mode                            ; 0                                                                                       ;
-;     -- register cascade mode                ; 0                                                                                       ;
-;     -- synchronous clear/load mode          ; 0                                                                                       ;
-;     -- asynchronous clear/load mode         ; 0                                                                                       ;
-;                                             ;                                                                                         ;
-; Total registers                             ; 2                                                                                       ;
-; Total logic cells in carry chains           ; 2                                                                                       ;
-; I/O pins                                    ; 88                                                                                      ;
-; Maximum fan-out node                        ; lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|safe_q[0] ;
-; Maximum fan-out                             ; 3                                                                                       ;
-; Total fan-out                               ; 24                                                                                      ;
-; Average fan-out                             ; 0.26                                                                                    ;
-+---------------------------------------------+-----------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 690   ;
+;     -- Combinational with no register       ; 528   ;
+;     -- Register only                        ; 128   ;
+;     -- Combinational with a register        ; 34    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 399   ;
+;     -- 3 input functions                    ; 126   ;
+;     -- 2 input functions                    ; 35    ;
+;     -- 1 input functions                    ; 1     ;
+;     -- 0 input functions                    ; 1     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 597   ;
+;     -- arithmetic mode                      ; 93    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 2     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 162   ;
+; Total logic cells in carry chains           ; 104   ;
+; I/O pins                                    ; 88    ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 162   ;
+; Total fan-out                               ; 2392  ;
+; Average fan-out                             ; 3.07  ;
++---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                 ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                ; Library Name ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
-; |LC3                                      ; 6 (0)       ; 2            ; 0           ; 88   ; 0            ; 4 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3                                                                               ; work         ;
-;    |control:inst14|                       ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LC3|control:inst14                                                                ; work         ;
-;    |lpm_counter0:inst19|                  ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:inst19                                                           ; work         ;
-;       |lpm_counter:lpm_counter_component| ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component                         ; work         ;
-;          |cntr_hci:auto_generated|        ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |LC3|lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated ; work         ;
-+-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                       ; Library Name ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------+--------------+
+; |LC3                                      ; 690 (1)     ; 162          ; 0           ; 88   ; 0            ; 528 (1)      ; 128 (0)           ; 34 (0)           ; 104 (0)         ; 0 (0)      ; |LC3                                                                                      ; work         ;
+;    |Execution:execution_inst|             ; 257 (0)     ; 0            ; 0           ; 0    ; 0            ; 257 (0)      ; 0 (0)             ; 0 (0)            ; 102 (0)         ; 0 (0)      ; |LC3|Execution:execution_inst                                                             ; work         ;
+;       |ALU:b2v_inst4|                     ; 257 (97)    ; 0            ; 0           ; 0    ; 0            ; 257 (97)     ; 0 (0)             ; 0 (0)            ; 102 (16)        ; 0 (0)      ; |LC3|Execution:execution_inst|ALU:b2v_inst4                                               ; work         ;
+;          |lpm_mult:Mult0|                 ; 160 (0)     ; 0            ; 0           ; 0    ; 0            ; 160 (0)      ; 0 (0)             ; 0 (0)            ; 86 (0)          ; 0 (0)      ; |LC3|Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0                                ; work         ;
+;             |mult_nn01:auto_generated|    ; 160 (160)   ; 0            ; 0           ; 0    ; 0            ; 160 (160)    ; 0 (0)             ; 0 (0)            ; 86 (86)         ; 0 (0)      ; |LC3|Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated       ; work         ;
+;    |Registers:registers_inst|             ; 426 (0)     ; 160          ; 0           ; 0    ; 0            ; 266 (0)      ; 128 (0)           ; 32 (0)           ; 0 (0)           ; 0 (0)      ; |LC3|Registers:registers_inst                                                             ; work         ;
+;       |register_file:regfile|             ; 426 (426)   ; 160          ; 0           ; 0    ; 0            ; 266 (266)    ; 128 (128)         ; 32 (32)          ; 0 (0)           ; 0 (0)      ; |LC3|Registers:registers_inst|register_file:regfile                                       ; work         ;
+;    |control:control_inst|                 ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |LC3|control:control_inst                                                                 ; work         ;
+;    |lpm_counter0:stage_counter|           ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:stage_counter                                                           ; work         ;
+;       |lpm_counter:lpm_counter_component| ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |LC3|lpm_counter0:stage_counter|lpm_counter:lpm_counter_component                         ; work         ;
+;          |cntr_hci:auto_generated|        ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |LC3|lpm_counter0:stage_counter|lpm_counter:lpm_counter_component|cntr_hci:auto_generated ; work         ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                           ;
-+-------------------------------------------------------+--------------------------------------+
-; Register name                                         ; Reason for Removal                   ;
-+-------------------------------------------------------+--------------------------------------+
-; Registers:inst|register_file:regfile|R2[0]            ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R1[0..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|RS1_DATA[0..15]  ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|RS2_DATA[0..15]  ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R2[1..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R3[0..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R4[0..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R5[0..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R6[0..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R7[0..15]        ; Stuck at GND due to stuck port clock ;
-; Registers:inst|register_file:regfile|R0[0..15]        ; Stuck at GND due to stuck port clock ;
-; Data:inst12|reg16:inst1|DATA_OUT[0..3]                ; Stuck at GND due to stuck port clock ;
-; Data:inst12|Dataram:inst|data_out[0..15]              ; Stuck at GND due to stuck port clock ;
-; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0..15] ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 196               ;                                      ;
-+-------------------------------------------------------+--------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                    ;
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+
+; Register name                                                         ; Reason for Removal                                                            ;
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+
+; Data:data_inst|reg16:inst1|DATA_OUT[0..3]                             ; Stuck at GND due to stuck port clock                                          ;
+; Data:data_inst|Dataram:inst|data_out[0..15]                           ; Stuck at GND due to stuck port clock                                          ;
+; Instruction_Fetch:instruction_fetch_inst|reg16:PC_Reg|DATA_OUT[1..15] ; Merged with Instruction_Fetch:instruction_fetch_inst|reg16:PC_Reg|DATA_OUT[0] ;
+; Instruction_Fetch:instruction_fetch_inst|reg16:PC_Reg|DATA_OUT[0]     ; Stuck at GND due to stuck port data_in                                        ;
+; Total Number of Removed Registers = 36                                ;                                                                               ;
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                               ;
-+---------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
-; Register name                                     ; Reason for Removal      ; Registers Removed due to This Register                                      ;
-+---------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
-; Data:inst12|reg16:inst1|DATA_OUT[0]               ; Stuck at GND            ; Data:inst12|Dataram:inst|data_out[0], Data:inst12|Dataram:inst|data_out[1], ;
-;                                                   ; due to stuck port clock ; Data:inst12|Dataram:inst|data_out[2], Data:inst12|Dataram:inst|data_out[3], ;
-;                                                   ;                         ; Data:inst12|Dataram:inst|data_out[4], Data:inst12|Dataram:inst|data_out[5], ;
-;                                                   ;                         ; Data:inst12|Dataram:inst|data_out[6], Data:inst12|Dataram:inst|data_out[7], ;
-;                                                   ;                         ; Data:inst12|Dataram:inst|data_out[8],                                       ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[0],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[1],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[2],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[3],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[4],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[5],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[6],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[7],                          ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[8]                           ;
-; Registers:inst|register_file:regfile|RS1_DATA[15] ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[10],                         ;
-;                                                   ; due to stuck port clock ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[11],                         ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[12],                         ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[13],                         ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[14],                         ;
-;                                                   ;                         ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[15]                          ;
-; Data:inst12|Dataram:inst|data_out[9]              ; Stuck at GND            ; Instruction_Fetch:inst11|reg16:PC_Reg|DATA_OUT[9]                           ;
-;                                                   ; due to stuck port clock ;                                                                             ;
-+---------------------------------------------------+-------------------------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                          ;
++----------------------------------------+-------------------------+-----------------------------------------------------------------------------------+
+; Register name                          ; Reason for Removal      ; Registers Removed due to This Register                                            ;
++----------------------------------------+-------------------------+-----------------------------------------------------------------------------------+
+; Data:data_inst|reg16:inst1|DATA_OUT[0] ; Stuck at GND            ; Data:data_inst|Dataram:inst|data_out[0], Data:data_inst|Dataram:inst|data_out[1], ;
+;                                        ; due to stuck port clock ; Data:data_inst|Dataram:inst|data_out[2], Data:data_inst|Dataram:inst|data_out[3], ;
+;                                        ;                         ; Data:data_inst|Dataram:inst|data_out[4], Data:data_inst|Dataram:inst|data_out[5], ;
+;                                        ;                         ; Data:data_inst|Dataram:inst|data_out[6], Data:data_inst|Dataram:inst|data_out[7], ;
+;                                        ;                         ; Data:data_inst|Dataram:inst|data_out[8],                                          ;
+;                                        ;                         ; Instruction_Fetch:instruction_fetch_inst|reg16:PC_Reg|DATA_OUT[0]                 ;
++----------------------------------------+-------------------------+-----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -279,9 +267,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2     ;
+; Total registers                              ; 162   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 2     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
@@ -289,66 +277,141 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |LC3|control:inst14|Mux1   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |LC3|Registers:registers_inst|register_file:regfile|RS1_DATA[0] ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |LC3|Registers:registers_inst|register_file:regfile|RS2_DATA[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |LC3|control:control_inst|Mux1                                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R7~31       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R6~17       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R5~27       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R4~31       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R3~31       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R2~27       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R1~23       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |LC3|Registers:registers_inst|register_file:regfile|R0~39       ;
+; 8:1                ; 14 bits   ; 70 LEs        ; 70 LEs               ; 0 LEs                  ; No         ; |LC3|Execution:execution_inst|ALU:b2v_inst4|Mux30               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; Source assignments for lpm_counter0:inst19|lpm_counter:lpm_counter_component ;
-+---------------------------+-------+------+-----------------------------------+
-; Assignment                ; Value ; From ; To                                ;
-+---------------------------+-------+------+-----------------------------------+
-; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                 ;
-; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                 ;
-; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                 ;
-+---------------------------+-------+------+-----------------------------------+
++-------------------------------------------------------------------------------------+
+; Source assignments for lpm_counter0:stage_counter|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+------------------------------------------+
+; Assignment                ; Value ; From ; To                                       ;
++---------------------------+-------+------+------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                        ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                        ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                        ;
++---------------------------+-------+------+------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_counter0:inst19|lpm_counter:lpm_counter_component ;
-+------------------------+-------------+-------------------------------------------------------------+
-; Parameter Name         ; Value       ; Type                                                        ;
-+------------------------+-------------+-------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                  ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                              ;
-; LPM_WIDTH              ; 2           ; Signed Integer                                              ;
-; LPM_DIRECTION          ; UP          ; Untyped                                                     ;
-; LPM_MODULUS            ; 0           ; Untyped                                                     ;
-; LPM_AVALUE             ; UNUSED      ; Untyped                                                     ;
-; LPM_SVALUE             ; UNUSED      ; Untyped                                                     ;
-; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                     ;
-; DEVICE_FAMILY          ; Cyclone     ; Untyped                                                     ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped                                                     ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                          ;
-; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                          ;
-; CARRY_CNT_EN           ; SMART       ; Untyped                                                     ;
-; LABWIDE_SCLR           ; ON          ; Untyped                                                     ;
-; USE_NEW_VERSION        ; TRUE        ; Untyped                                                     ;
-; CBXI_PARAMETER         ; cntr_hci    ; Untyped                                                     ;
-+------------------------+-------------+-------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data:data_inst|Dataram:inst ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; DATA_WIDTH     ; 16    ; Signed Integer                                  ;
+; ADDR_WIDTH     ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Data:inst12|Dataram:inst ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; DATA_WIDTH     ; 16    ; Signed Integer                               ;
-; ADDR_WIDTH     ; 16    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_counter0:stage_counter|lpm_counter:lpm_counter_component ;
++------------------------+-------------+--------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                               ;
++------------------------+-------------+--------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                     ;
+; LPM_WIDTH              ; 2           ; Signed Integer                                                     ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                            ;
+; LPM_MODULUS            ; 0           ; Untyped                                                            ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                            ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                            ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                            ;
+; DEVICE_FAMILY          ; Cyclone     ; Untyped                                                            ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                            ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                 ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                 ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                            ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                            ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                            ;
+; CBXI_PARAMETER         ; cntr_hci    ; Untyped                                                            ;
++------------------------+-------------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0 ;
++------------------------------------------------+-----------+-------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                      ;
++------------------------------------------------+-----------+-------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                            ;
+; LPM_WIDTHA                                     ; 16        ; Untyped                                   ;
+; LPM_WIDTHB                                     ; 16        ; Untyped                                   ;
+; LPM_WIDTHP                                     ; 32        ; Untyped                                   ;
+; LPM_WIDTHR                                     ; 32        ; Untyped                                   ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED  ; Untyped                                   ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                   ;
+; LATENCY                                        ; 0         ; Untyped                                   ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                   ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                   ;
+; USE_EAB                                        ; OFF       ; Untyped                                   ;
+; MAXIMIZE_SPEED                                 ; 6         ; Untyped                                   ;
+; DEVICE_FAMILY                                  ; Cyclone   ; Untyped                                   ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                   ;
+; CBXI_PARAMETER                                 ; mult_nn01 ; Untyped                                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                   ;
++------------------------------------------------+-----------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                ;
++---------------------------------------+-------------------------------------------------------+
+; Name                                  ; Value                                                 ;
++---------------------------------------+-------------------------------------------------------+
+; Number of entity instances            ; 1                                                     ;
+; Entity Instance                       ; Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                                    ;
+;     -- LPM_WIDTHB                     ; 16                                                    ;
+;     -- LPM_WIDTHP                     ; 32                                                    ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                              ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                    ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                    ;
+;     -- USE_EAB                        ; OFF                                                   ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                  ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                    ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                    ;
++---------------------------------------+-------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "effective_address:effective_address_inst|mux16:EA_MUX2A" ;
++------+-------+----------+-----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                   ;
++------+-------+----------+-----------------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                              ;
++------+-------+----------+-----------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Execution:inst13|ALU:b2v_inst4"                                                                          ;
+; Port Connectivity Checks: "Execution:execution_inst|ALU:b2v_inst4"                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -356,24 +419,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Execution:execution_inst"                                                                                ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; NPZ  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Registers:inst|register_file:regfile"                                                                                                        ;
+; Port Connectivity Checks: "Registers:registers_inst|register_file:regfile"                                                                                              ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; CLK   ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; R0_LE ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; R0_IN ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------+
-; Port Connectivity Checks: "effective_address:inst8|mux16:EA_MUX2A" ;
-+------+-------+----------+------------------------------------------+
-; Port ; Type  ; Severity ; Details                                  ;
-+------+-------+----------+------------------------------------------+
-; A    ; Input ; Info     ; Stuck at GND                             ;
-+------+-------+----------+------------------------------------------+
 
 
 +-------------------------------+
@@ -382,8 +444,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Sun May 17 16:05:03 2009
+    Info: Processing started: Tue May 26 21:21:53 2009
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LC3 -c LC3
+Info: Found 1 design units, including 1 entities, in source file src/LC3.v
+    Info: Found entity 1: LC3
 Info: Found 1 design units, including 1 entities, in source file src/reg16.v
     Info: Found entity 1: reg16
 Info: Found 1 design units, including 1 entities, in source file src/control.v
@@ -398,8 +462,6 @@ Info: Found 1 design units, including 1 entities, in source file src/mux16.v
     Info: Found entity 1: mux16
 Info: Found 1 design units, including 1 entities, in source file src/register_file.v
     Info: Found entity 1: register_file
-Info: Found 1 design units, including 1 entities, in source file src/LC3.bdf
-    Info: Found entity 1: LC3
 Info: Found 1 design units, including 1 entities, in source file src/ALU.v
     Info: Found entity 1: ALU
 Info: Found 1 design units, including 1 entities, in source file src/Instruction_Fetch.bdf
@@ -417,188 +479,197 @@ Info: Found 1 design units, including 1 entities, in source file src/Execution.v
 Info: Found 1 design units, including 1 entities, in source file src/lpm_counter0.v
     Info: Found entity 1: lpm_counter0
 Info: Elaborating entity "LC3" for the top level hierarchy
-Info: Elaborating entity "control" for hierarchy "control:inst14"
-Warning (10270): Verilog HDL Case Statement warning at control.v(32): incomplete case statement has no default case item
-Warning (10776): Verilog HDL warning at control.v(26): variable alu_control in static task or function alu_control may have unintended latch behavior
-Warning (10241): Verilog HDL Function Declaration warning at control.v(26): function "alu_control" may return a Don't Care value because its output register may not be assigned a value in every possible path through the function
+Info: Elaborating entity "Registers" for hierarchy "Registers:registers_inst"
+Info: Elaborating entity "register_file" for hierarchy "Registers:registers_inst|register_file:regfile"
+Info: Elaborating entity "mux16" for hierarchy "Registers:registers_inst|mux16:data_mux"
+Info: Elaborating entity "Instruction_Fetch" for hierarchy "Instruction_Fetch:instruction_fetch_inst"
+Warning: Port "clk" of type Instram and instance "inst5" is missing source signal
+Info: Elaborating entity "reg16" for hierarchy "Instruction_Fetch:instruction_fetch_inst|reg16:Inst_Reg"
+Info: Elaborating entity "Instram" for hierarchy "Instruction_Fetch:instruction_fetch_inst|Instram:inst5"
+Warning (10858): Verilog HDL warning at Instram.v(11): object Instram used but never assigned
+Info: Elaborating entity "inc16" for hierarchy "Instruction_Fetch:instruction_fetch_inst|inc16:PC_Inc"
+Warning (10230): Verilog HDL assignment warning at inc16.v(7): truncated value with size 32 to match size of target (16)
+Info: Elaborating entity "Data" for hierarchy "Data:data_inst"
+Info: Elaborating entity "Dataram" for hierarchy "Data:data_inst|Dataram:inst"
+Info: Elaborating entity "Execution" for hierarchy "Execution:execution_inst"
+Info: Elaborating entity "SE5" for hierarchy "Execution:execution_inst|SE5:b2v_inst2"
+Info: Elaborating entity "ALU" for hierarchy "Execution:execution_inst|ALU:b2v_inst4"
+Info: Elaborating entity "control" for hierarchy "control:control_inst"
+Warning (10230): Verilog HDL assignment warning at control.v(64): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(65): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(66): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(67): truncated value with size 2 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at control.v(68): truncated value with size 2 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at control.v(69): truncated value with size 2 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at control.v(70): truncated value with size 2 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at control.v(71): truncated value with size 2 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at control.v(72): truncated value with size 2 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at control.v(73): truncated value with size 2 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at control.v(74): truncated value with size 2 to match size of target (1)
-Warning (10230): Verilog HDL assignment warning at control.v(75): truncated value with size 2 to match size of target (1)
-Warning (10272): Verilog HDL Case Statement warning at control.v(72): case item expression covers a value already covered by a previous case item
-Warning (10030): Net "alu_control[3]" at control.v(26) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "alu_control[2]" at control.v(26) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "alu_control[1]" at control.v(26) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "alu_control[0]" at control.v(26) has no driver or initial value, using a default initial value '0'
-Warning (10034): Output port "NEXT_STAGE_LE" at control.v(7) has no driver
-Warning (10034): Output port "NEXT_STAGE[1]" at control.v(8) has no driver
-Warning (10034): Output port "NEXT_STAGE[0]" at control.v(8) has no driver
-Warning (10034): Output port "MAR_LE" at control.v(9) has no driver
-Warning (10034): Output port "MAR_CONTROL" at control.v(10) has no driver
-Warning (10034): Output port "MEM_WE" at control.v(11) has no driver
+Warning (10272): Verilog HDL Case Statement warning at control.v(67): case item expression covers a value already covered by a previous case item
+Warning (10230): Verilog HDL assignment warning at control.v(119): truncated value with size 2 to match size of target (1)
+Warning (10776): Verilog HDL warning at control.v(116): variable next_stage in static task or function next_stage may have unintended latch behavior
+Warning (10241): Verilog HDL Function Declaration warning at control.v(116): function "next_stage" may return a Don't Care value because its output register may not be assigned a value in every possible path through the function
+Warning (10030): Net "next_stage" at control.v(116) has no driver or initial value, using a default initial value '0'
 Warning (10034): Output port "MEM_CLK" at control.v(12) has no driver
 Warning (10034): Output port "IS_IMMEDIATE" at control.v(13) has no driver
-Warning (10034): Output port "RD_LE" at control.v(15) has no driver
-Warning (10034): Output port "REG_CONTROL" at control.v(16) has no driver
 Warning (10034): Output port "EA_CONTROL[2]" at control.v(17) has no driver
 Warning (10034): Output port "EA_CONTROL[1]" at control.v(17) has no driver
 Warning (10034): Output port "EA_CONTROL[0]" at control.v(17) has no driver
-Warning (10034): Output port "IR_LE" at control.v(18) has no driver
-Warning (10034): Output port "PC_LE" at control.v(21) has no driver
-Info: Elaborating entity "lpm_counter0" for hierarchy "lpm_counter0:inst19"
-Info: Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:inst19|lpm_counter:lpm_counter_component"
-Info: Elaborated megafunction instantiation "lpm_counter0:inst19|lpm_counter:lpm_counter_component"
-Info: Instantiated megafunction "lpm_counter0:inst19|lpm_counter:lpm_counter_component" with the following parameter:
+Info: Elaborating entity "effective_address" for hierarchy "effective_address:effective_address_inst"
+Info: Elaborating entity "lpm_counter0" for hierarchy "lpm_counter0:stage_counter"
+Info: Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:stage_counter|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "lpm_counter0:stage_counter|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "lpm_counter0:stage_counter|lpm_counter:lpm_counter_component" with the following parameter:
     Info: Parameter "lpm_direction" = "UP"
     Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info: Parameter "lpm_type" = "LPM_COUNTER"
     Info: Parameter "lpm_width" = "2"
 Info: Found 1 design units, including 1 entities, in source file db/cntr_hci.tdf
     Info: Found entity 1: cntr_hci
-Info: Elaborating entity "cntr_hci" for hierarchy "lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated"
-Info: Elaborating entity "Instruction_Fetch" for hierarchy "Instruction_Fetch:inst11"
-Warning: Port "clk" of type Instram and instance "inst5" is missing source signal
-Info: Elaborating entity "reg16" for hierarchy "Instruction_Fetch:inst11|reg16:Inst_Reg"
-Info: Elaborating entity "Instram" for hierarchy "Instruction_Fetch:inst11|Instram:inst5"
-Warning (10858): Verilog HDL warning at Instram.v(11): object Instram used but never assigned
-Info: Elaborating entity "mux16" for hierarchy "Instruction_Fetch:inst11|mux16:inst1"
-Info: Elaborating entity "inc16" for hierarchy "Instruction_Fetch:inst11|inc16:PC_Inc"
-Warning (10230): Verilog HDL assignment warning at inc16.v(7): truncated value with size 32 to match size of target (16)
-Info: Elaborating entity "Data" for hierarchy "Data:inst12"
-Info: Elaborating entity "Dataram" for hierarchy "Data:inst12|Dataram:inst"
-Info: Elaborating entity "effective_address" for hierarchy "effective_address:inst8"
-Info: Elaborating entity "Registers" for hierarchy "Registers:inst"
-Info: Elaborating entity "register_file" for hierarchy "Registers:inst|register_file:regfile"
-Info: Elaborating entity "Execution" for hierarchy "Execution:inst13"
-Info: Elaborating entity "SE5" for hierarchy "Execution:inst13|SE5:b2v_inst2"
-Info: Elaborating entity "ALU" for hierarchy "Execution:inst13|ALU:b2v_inst4"
-Warning (10034): Output port "CC[2]" at ALU.v(5) has no driver
-Warning (10034): Output port "CC[1]" at ALU.v(5) has no driver
-Warning (10034): Output port "CC[0]" at ALU.v(5) has no driver
-Warning (10034): Output port "Z[15]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[14]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[13]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[12]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[11]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[10]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[9]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[8]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[7]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[6]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[5]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[4]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[3]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[2]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[1]" at ALU.v(6) has no driver
-Warning (10034): Output port "Z[0]" at ALU.v(6) has no driver
-Warning (10034): Output port "OF[15]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[14]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[13]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[12]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[11]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[10]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[9]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[8]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[7]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[6]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[5]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[4]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[3]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[2]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[1]" at ALU.v(7) has no driver
-Warning (10034): Output port "OF[0]" at ALU.v(7) has no driver
-Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Elaborating entity "cntr_hci" for hierarchy "lpm_counter0:stage_counter|lpm_counter:lpm_counter_component|cntr_hci:auto_generated"
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "Execution:execution_inst|ALU:b2v_inst4|Mult0"
+Info: Elaborated megafunction instantiation "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0"
+Info: Instantiated megafunction "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0" with the following parameter:
+    Info: Parameter "LPM_WIDTHA" = "16"
+    Info: Parameter "LPM_WIDTHB" = "16"
+    Info: Parameter "LPM_WIDTHP" = "32"
+    Info: Parameter "LPM_WIDTHR" = "32"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info: Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info: Parameter "MAXIMIZE_SPEED" = "6"
+    Info: Parameter "DEDICATED_MULTIPLIER_CIRCUITRY" = "AUTO"
+Info: Found 1 design units, including 1 entities, in source file db/mult_nn01.tdf
+    Info: Found entity 1: mult_nn01
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[13]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[13]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[11]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[10]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[9]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[16]"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[11]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[10]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[9]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[8]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[7]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[6]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[5]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[4]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[3]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le10a[2]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[8]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[7]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[6]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[5]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[4]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[3]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[2]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le11a[1]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le3a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le5a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le5a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le5a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[13]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[11]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le6a[10]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[13]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[11]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[10]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[9]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le7a[8]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[13]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[11]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[10]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[9]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[8]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[7]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le8a[6]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[13]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[12]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[11]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[10]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[9]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[8]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[7]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[6]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[5]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le9a[4]"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le3a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le4a[17]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le4a[16]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le4a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le4a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le5a[15]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le5a[14]"
+        Warning (14320): Synthesized away node "Execution:execution_inst|ALU:b2v_inst4|lpm_mult:Mult0|mult_nn01:auto_generated|le5a[13]"
+Warning: 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Ignored 206 buffer(s)
+    Info: Ignored 206 SOFT buffer(s)
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "REG_CONTROL" is stuck at GND
     Warning (13410): Pin "ALU_CONTROL[3]" is stuck at GND
-    Warning (13410): Pin "PC[15]" is stuck at GND
-    Warning (13410): Pin "PC[14]" is stuck at GND
-    Warning (13410): Pin "PC[13]" is stuck at GND
-    Warning (13410): Pin "PC[12]" is stuck at GND
-    Warning (13410): Pin "PC[11]" is stuck at GND
-    Warning (13410): Pin "PC[10]" is stuck at GND
-    Warning (13410): Pin "PC[9]" is stuck at GND
-    Warning (13410): Pin "PC[8]" is stuck at GND
-    Warning (13410): Pin "PC[7]" is stuck at GND
-    Warning (13410): Pin "PC[6]" is stuck at GND
-    Warning (13410): Pin "PC[5]" is stuck at GND
-    Warning (13410): Pin "PC[4]" is stuck at GND
-    Warning (13410): Pin "PC[3]" is stuck at GND
-    Warning (13410): Pin "PC[2]" is stuck at GND
-    Warning (13410): Pin "PC[1]" is stuck at GND
     Warning (13410): Pin "PC[0]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[15]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[14]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[13]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[12]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[11]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[10]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[9]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[8]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[7]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[6]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[5]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[4]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[3]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[2]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[1]" is stuck at GND
-    Warning (13410): Pin "RS1_DATA[0]" is stuck at GND
-    Warning (13410): Pin "Y[15]" is stuck at GND
-    Warning (13410): Pin "Y[14]" is stuck at GND
-    Warning (13410): Pin "Y[13]" is stuck at GND
-    Warning (13410): Pin "Y[12]" is stuck at GND
-    Warning (13410): Pin "Y[11]" is stuck at GND
-    Warning (13410): Pin "Y[10]" is stuck at GND
-    Warning (13410): Pin "Y[9]" is stuck at GND
-    Warning (13410): Pin "Y[8]" is stuck at GND
-    Warning (13410): Pin "Y[7]" is stuck at GND
-    Warning (13410): Pin "Y[6]" is stuck at GND
-    Warning (13410): Pin "Y[5]" is stuck at GND
-    Warning (13410): Pin "Y[4]" is stuck at GND
-    Warning (13410): Pin "Y[3]" is stuck at GND
-    Warning (13410): Pin "Y[2]" is stuck at GND
-    Warning (13410): Pin "Y[1]" is stuck at GND
-    Warning (13410): Pin "Y[0]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[15]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[14]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[13]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[12]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[11]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[10]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[9]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[8]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[7]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[6]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[5]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[4]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[3]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[2]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[1]" is stuck at GND
-    Warning (13410): Pin "RS2_DATA[0]" is stuck at GND
+    Warning (13410): Pin "PC[1]" is stuck at GND
+    Warning (13410): Pin "PC[2]" is stuck at GND
+    Warning (13410): Pin "PC[3]" is stuck at GND
+    Warning (13410): Pin "PC[4]" is stuck at GND
+    Warning (13410): Pin "PC[5]" is stuck at GND
+    Warning (13410): Pin "PC[6]" is stuck at GND
+    Warning (13410): Pin "PC[7]" is stuck at GND
+    Warning (13410): Pin "PC[8]" is stuck at GND
+    Warning (13410): Pin "PC[9]" is stuck at GND
+    Warning (13410): Pin "PC[10]" is stuck at GND
+    Warning (13410): Pin "PC[11]" is stuck at GND
+    Warning (13410): Pin "PC[12]" is stuck at GND
+    Warning (13410): Pin "PC[13]" is stuck at GND
+    Warning (13410): Pin "PC[14]" is stuck at GND
+    Warning (13410): Pin "PC[15]" is stuck at GND
 Info: Generated suppressed messages file C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/LC3.map.smsg
-Warning: Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "IR[11]"
-    Warning (15610): No output dependent on input pin "IR[10]"
-    Warning (15610): No output dependent on input pin "IR[9]"
-    Warning (15610): No output dependent on input pin "IR[8]"
-    Warning (15610): No output dependent on input pin "IR[7]"
-    Warning (15610): No output dependent on input pin "IR[6]"
+Warning: Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IR[5]"
-    Warning (15610): No output dependent on input pin "IR[2]"
-    Warning (15610): No output dependent on input pin "IR[1]"
-    Warning (15610): No output dependent on input pin "IR[0]"
-Info: Implemented 94 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "IR[12]"
+    Warning (15610): No output dependent on input pin "IR[13]"
+Info: Implemented 778 device resources after synthesis - the final resource count might be different
     Info: Implemented 17 input pins
     Info: Implemented 71 output pins
-    Info: Implemented 6 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 147 warnings
-    Info: Peak virtual memory: 168 megabytes
-    Info: Processing ended: Sun May 17 16:05:05 2009
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Implemented 690 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 138 warnings
+    Info: Peak virtual memory: 170 megabytes
+    Info: Processing ended: Tue May 26 21:22:02 2009
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +------------------------------------------+
