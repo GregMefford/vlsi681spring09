@@ -43,3 +43,8 @@ Week 7:
 2009-05-15: 3.50 hours: Working on control signal designs.
 2009-05-16: 5.00 hours: Getting the whole design into Quartus so it can be simulated.
 2009-05-17: 3.00 hours: Developing and testing control signal generation.
+Week 8:
+2009-05-19: 1.00 hours: Working on control signals in ModelSim
+2009-05-22: 1.00 hours: Completed control signals for ALU operations.
+2009-05-25: 1.00 hours: Working on additional control signals for LC-3.
+2009-05-26: 1.50 hours: Working on ModelSim Simulations for the LC-3.

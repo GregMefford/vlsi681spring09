@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3\modelsim
 vALU
-IZ6OQj8dG48NKmFbaPN10N0
+IhcfJed<Kz@b[A<BK?DN[W0
 VB91[H4<zPHaMV<:ClAFWh1
 Z1 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3
-w1241474036
+w1242663447
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v
 L0 1
@@ -16,22 +16,37 @@ r1
 31
 Z3 o-work work -nocovercells -O0
 n@a@l@u
-!s100 `jMDSALNfWdfNcDlNeYk`3
+!s100 afL8hI_CZEQ4_1OVjDZ^;2
 !s85 0
 vcontrol
-!s100 Qao79@oEn69PhJ95g:k;M0
-I0oS560eFz3jL:XJ@c^DnS1
+IhCJL_U>G<N5jojO7D8]2^0
 VZ6G_n3z6dnXKcGH0@I:SG1
 R1
-w1242594245
+w1243044166
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v
 L0 1
 R2
 r1
-!s85 0
 31
 R3
+!s100 XBI4Jjd7Y=KM8TbV^X4363
+!s85 0
+vData
+Icn3FhcUhbG?7c7>eAO<Hd3
+VPL1HkM11SjRm0c5[iDl6P2
+R1
+w1243389156
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v
+L0 1
+R2
+r1
+31
+R3
+n@data
+!s100 4a1RPC;hPE[deBgR209Hb3
+!s85 0
 vDataram
 IQ>nA=;NjmAhlJl1]4<;el2
 V7XSWV@jgU]iI@n:z8AFd42
@@ -104,6 +119,36 @@ r1
 R3
 n@instram
 !s100 AQ?i1WUSTBA5jUYGDB^Ce2
+!s85 0
+vInstruction_Fetch
+!s100 L=:T<N9;BE<4@n>TBI98=2
+IJkKhYYXn>YX`7PXPMCY^a3
+VYDkdG7ko`gzU:SM@0FCCU2
+R1
+w1243388819
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+n@instruction_@fetch
+vLC3
+IVS_9YQb8bZM:n<YSf;ob52
+VWNgRX@:]SNnh;PA7A^9PP0
+R1
+w1243387311
+8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v
+FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v
+L0 1
+R2
+r1
+31
+R3
+n@l@c3
+!s100 =5VbZYEWJOlMRka2<V1?G1
 !s85 0
 vlpm_counter0
 ISAbi7E4HcjTanlUig137M0
@@ -190,10 +235,10 @@ R3
 !s100 MQGdRz;60O?mzSgI:]ba51
 !s85 0
 vRegisters
-IIPb7OjDKf_FVSm5G98?C70
-VDmB26fLfa^^oazmDhV^CW3
+I=?CJJ=`565];Mh[m8dR]<1
+Vb6gn=Ad]Bdf^JEmZ^RQlU3
 R1
-w1242492815
+w1243387258
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v
 L0 1
@@ -202,7 +247,7 @@ r1
 31
 R3
 n@registers
-!s100 MH>k:?>V:Xf1jPYQTfL?>0
+!s100 @BS1JBLEkL0IW^=oIUlDM2
 !s85 0
 vSE5
 IYl5<3oEeI;87YbR:Gf0<@2

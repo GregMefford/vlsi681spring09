@@ -1,59 +1,121 @@
-// Program Counter
-wire [15: 0] pc;
-wire [15: 0] instruction;
-wire [15: 0] next_pc;
-
-// Instruction Register Data
-wire [ 2: 0] rs1 = instruction[ 2: 0];
-wire [ 2: 0] rs2 = instruction[ 2: 0];
-wire [ 2: 0] rd  = instruction[ 2: 0];
-wire [15: 0] immediate;
-// Zero-extended immediate value
-immediate[15: 5] = 11'b0;
-immediate[ 4: 0] = instruction[ 4: 0];
-
-// ALU
-wire [ 3: 0] alu_control;
-wire         is_immediate;
-wire [15: 0] alu_a;
-wire [15: 0] alu_b;
-wire [ 2: 0] alu_cc;
-wire [15: 0] alu_z;
-wire [15: 0] alu_of;
-
-control control_logic (
-	.INSTRUCTION(instruction)
-	.RS1(rs1),
-	.RS2(rs2),
-	.RD(rd),
-	.ALU_CONTROL(alu_control),
-	.IS_IMMEDIATE(is_immediate)
+module LC3(
+	CLK,
+	IR,
+	REG_CONTROL,
+	ALU_CONTROL,
+	PC,
+	RS1_DATA,
+	RS2_DATA,
+	STAGE,
+	Y
 );
 
-reg16 pc (
-	.LE(clk),
-	.DATA_IN(next_pc),
-	.DATA_OUT(pc)
+input	        CLK;
+input	[15: 0] IR;
+
+output	        REG_CONTROL;
+output	[ 3: 0] ALU_CONTROL;
+output	[15: 0] PC;
+output	[15: 0] RS1_DATA;
+output	[15: 0] RS2_DATA;
+output	[ 1: 0] STAGE;
+output	[15: 0] Y;
+
+wire	[ 3: 0] ALU_CONTROL;
+wire	[15: 0] DATA;
+wire	[15: 0] EA;
+wire	[ 2: 0] EA_CONTROL;
+wire	        IR_LE;
+wire	        IS_IMMEDIATE;
+wire	        MAR_CONTROL;
+wire	        MAR_LE;
+wire	        MEM_CLK;
+wire	        MEM_WE;
+wire	[ 1: 0] NEXT_STAGE;
+wire	        NEXT_STAGE_LE;
+wire	[15: 0] PC;
+wire	[ 1: 0] PC_CONTROL;
+wire	        PC_LE;
+wire	        RD_LE;
+wire	        REG_CONTROL;
+wire	[15: 0] RS1_DATA;
+wire	[15: 0] RS2_DATA;
+wire	[ 1: 0] STAGE;
+wire	[15: 0] Y;
+
+Registers registers_inst(
+	.CLK(CLK),
+	.DATA(DATA),
+	.IR(IR),
+	.RD_LE(RD_LE),
+	.REG_Control(REG_CONTROL),
+	.RS1_DATA(RS1_DATA),
+	.RS2_DATA(RS2_DATA)
+	.Y(Y),
 );
 
-RAM_instruction i_RAM (
-	.CLK(clk),
-	.ADDRESS(pc),
-	.INSTRUCTION(instruction)
+Instruction_Fetch instruction_fetch_inst(
+	.IR_LE(IR_LE),
+	.PC_LE(PC_LE),
+	.DATA(DATA),
+	.EA(EA),
+	.PC_CONTROL(PC_CONTROL),
+	.PC(PC)
 );
 
-mux16 immediate_mux (
-	.A(rs2_data),
-	.B(immediate),
-	.CONTROL(is_immediate),
-	.OUT(alu_b)
+Data data_inst(
+	.MAR_LE(MAR_LE),
+	.MAR_CONTROL(MAR_CONTROL),
+	.WE(MEM_WE),
+	.clk(MEM_CLK),
+	.EA(EA),
+	.Y(Y),
+	.DATA(DATA)
 );
 
-ALU alu (
-	.A(alu_a),
-	.B(alu_b),
-	.CONTROL(alu_control),
-	.CC(alu_cc),
-	.Z(alu_z),
-	.OF(alu_of)
+Execution execution_inst(
+	.Is_Immediate(IS_IMMEDIATE),
+	.ALU_CONTROL(ALU_CONTROL),
+	.IR(IR),
+	.RS1_DATA(RS1_DATA),
+	.RS2_DATA(RS2_DATA),
+	
+	.Y(Y)
 );
+
+control control_inst(
+	.CLK(CLK),
+	.INSTRUCTION(IR),
+	.STAGE(STAGE),
+	.NEXT_STAGE_LE(NEXT_STAGE_LE),
+	.MAR_LE(MAR_LE),
+	.MAR_CONTROL(MAR_CONTROL),
+	.MEM_WE(MEM_WE),
+	.MEM_CLK(MEM_CLK),
+	.IS_IMMEDIATE(IS_IMMEDIATE),
+	.RD_LE(RD_LE),
+	.REG_CONTROL(REG_CONTROL),
+	.IR_LE(IR_LE),
+	.PC_LE(PC_LE),
+	.ALU_CONTROL(ALU_CONTROL),
+	.EA_CONTROL(EA_CONTROL),
+	.NEXT_STAGE(NEXT_STAGE),
+	.PC_CONTROL(PC_CONTROL)
+);
+
+effective_address effective_address_inst(
+	.CONTROL(EA_CONTROL),
+	.IR(IR),
+	.PC(PC),
+	.RS1_DATA(RS1_DATA),
+	.EA(EA)
+);
+
+lpm_counter0 stage_counter(
+	.sload(NEXT_STAGE_LE),
+	.clock(CLK),
+	.data(NEXT_STAGE),
+	.q(STAGE)
+);
+
+endmodule

@@ -1,4 +1,5 @@
 module Registers(
+	input         CLK,
 	input         RD_LE,
 	input         REG_Control,
 	input  [15:0] DATA,
@@ -12,9 +13,10 @@ module Registers(
 wire	[15:0] mux_value;
 
 register_file regfile(
-	.RD_LE(RD_LE),
+	.CLK(CLK),
 	.DATA_IN(mux_value),
 	.RD(IR[11:9]),
+	.RD_LE(RD_LE),
 	.RS1(IR[8:6]),
 	.RS2(IR[2:0]),
 	.RS1_DATA(RS1_DATA),

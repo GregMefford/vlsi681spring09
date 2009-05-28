@@ -2,12 +2,22 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 16.629 ns
+From           : IR[3]
+To             : Registers:registers_inst|register_file:regfile|RS1_DATA[15]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.551 ns
-From           : lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|safe_q[1]
-To             : STAGE[1]
+Actual Time    : 21.849 ns
+From           : Registers:registers_inst|register_file:regfile|RS2_DATA[1]
+To             : Y[14]
 From Clock     : CLK
 To Clock       : --
 Failed Paths   : 0
@@ -15,19 +25,29 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.132 ns
-From           : IR[13]
-To             : ALU_CONTROL[2]
+Actual Time    : 20.074 ns
+From           : IR[3]
+To             : Y[15]
 From Clock     : --
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -4.355 ns
+From           : IR[6]
+To             : Registers:registers_inst|register_file:regfile|RS1_DATA[11]
+From Clock     : --
+To Clock       : CLK
 Failed Paths   : 0
 
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : Restricted to 275.03 MHz ( period = 3.636 ns )
-From           : lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|safe_q[0]
-To             : lpm_counter0:inst19|lpm_counter:lpm_counter_component|cntr_hci:auto_generated|safe_q[1]
+Actual Time    : 57.84 MHz ( period = 17.290 ns )
+From           : Registers:registers_inst|register_file:regfile|RS2_DATA[1]
+To             : Registers:registers_inst|register_file:regfile|RS1_DATA[15]
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 0

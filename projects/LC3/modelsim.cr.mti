@@ -1,4 +1,11 @@
-{C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v}
+{C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module Instruction_Fetch
+
+Top level modules:
+	Instruction_Fetch
+
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module lpm_counter0
 
@@ -61,14 +68,14 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	inc16
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v} {0 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
-** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(2): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
-** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(7): Undefined variable: instruction.
-** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(7): 'instruction' already declared in this scope (work).
-** Error: C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v(7): Verilog Compiler exiting
+-- Compiling module LC3
 
-} {3.0 7.0} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v}
+Top level modules:
+	LC3
+
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module effective_address
 
@@ -89,12 +96,12 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	mux16
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module ALU
+-- Compiling module Data
 
 Top level modules:
-	ALU
+	Data
 
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
@@ -102,5 +109,12 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 
 Top level modules:
 	Dataram
+
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module ALU
+
+Top level modules:
+	ALU
 
 } {} {}}
