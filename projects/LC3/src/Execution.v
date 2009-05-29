@@ -1,35 +1,45 @@
 module Execution(
-	input	Is_Immediate,
-	input	[3:0] ALU_CONTROL,
+	input	[2:0]  ALU_CONTROL,
+	input	       ALU_MuxA,
+	input	[2:0]  ALU_MuxB,
+	input	[15:0] PC,
 	input	[15:0] IR,
 	input	[15:0] RS1_DATA,
 	input	[15:0] RS2_DATA,
 	output	[2:0] NPZ,
+	output       OF,
 	output	[15:0] Y
 );
 
 wire	[15:0] IMM5_SE;
+wire	[15:0] ALU_A;
 wire	[15:0] ALU_B;
 
-mux16	ALU_B_Mux (
-	.CONTROL(Is_Immediate),
-	.A(RS2_DATA),
-	.B(IMM5_SE),
+assign ALU_A = (ALU_MuxA) ? RS1_DATA : PC;
 
-	.OUT(ALU_B)
-);
+assign ALU_B = alu_muxb(IR, RS2_DATA, ALU_MuxB);
+function [15:0] alu_muxb;
+	input [15:0] IR;
+	input [15:0] RS2_DATA;
+	input [ 2:0] ALU_MuxB;
+	if(ALU_MuxB[2]) begin
+	  case(ALU_MuxB[1:0])
+	    'b00: alu_muxb = {{11{IR[ 4]}}, IR[ 4:0]}; // IMM5
+	    'b01: alu_muxb = {{10{IR[ 5]}}, IR[ 5:0]}; // Offset6
+	    'b10: alu_muxb = {{ 7{IR[ 8]}}, IR[ 8:0]}; // Offset9
+	    'b11: alu_muxb = {{ 5{IR[10]}}, IR[10:0]}; // Offset11
+	    default: alu_muxb = 16'bX;
+	  endcase
+	end
+	else alu_muxb = RS2_DATA;
+endfunction // alu_muxb
 
-SE5	b2v_inst2(
-	.IMM5(IR[4:0]),
-
-	.RESULT(IMM5_SE)
-);
-
-ALU	b2v_inst4(
-	.A(RS1_DATA),
+ALU	ALU_inst(
+	.A(ALU_A),
 	.B(ALU_B),
 	.CONTROL(ALU_CONTROL),
 
+  .OF(OF),
 	.CC(NPZ),
 	.Z(Y)
 );

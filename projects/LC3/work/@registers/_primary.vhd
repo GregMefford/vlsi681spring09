@@ -9,6 +9,7 @@ entity Registers is
         IR              : in     vl_logic_vector(15 downto 0);
         Y               : in     vl_logic_vector(15 downto 0);
         RS1_DATA        : out    vl_logic_vector(15 downto 0);
-        RS2_DATA        : out    vl_logic_vector(15 downto 0)
+        RS2_DATA        : out    vl_logic_vector(15 downto 0);
+        RD_DATA         : out    vl_logic_vector(15 downto 0)
     );
 end Registers;

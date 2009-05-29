@@ -1,52 +1,60 @@
-Simple Traces:
---------------
+----------------------------
+ADD
+----------------------------
+Decode:
+	ALU_Control = 000 (Y = A+B)
+	ALU_MuxA = 1 (A = RS1_DATA)
+	if(is_immediate)
+		ALU_MuxB = 100 (B = Imm5)
+	else
+		ALU_MuxB = 0XX (B = RS2_DATA)
+	end
+Execute:
+	PC_Control = 0 (PC = PC+1)
+	PC_LE = 1
 
-ADD R1, R2, R3:
+WriteBack:
+	Reg_Control = 0 (RD = Y)
+	RD_LE = 1
 
-Phase 1: (Fetch, Decode, Execute)
-	IR_LE 'PosEdge
-	(Combination stuff based on IR):
-		PC_Control = 00 (PC = PC++)
-		ALU_Control = 000 (ADD Function)
-		Reg_Control = 0 (Store ALU result in register)
-		RS1 = 010 (Op1 is R2)
-		RS2 = 011 (Op2 is R3)
-		RD = 001 (Result goes to R1)
-Phase 2: (Write-Back)
-	PC_LE 'PosEdge (Store the next PC)
-	RD_LE 'PosEdge (Store the result of addition)
+Fetch:
+	IR_LE = 1
 
-JMP PC + <Offset9>:
+----------------------------
+LDR
+----------------------------
+Decode:
+	ALU_Control = 000 (Y = A+B)
+	ALU_MuxA = 1 (A = RS1_DATA)
+	ALU_MuxB = 101 (B = Offset6)
+	MAR_Control = 0 (MAR = Y)
+	MAR_LE = 1
+Execute:
+	PC_Control = 0 (PC = PC+1)
+	PC_LE = 1
 
-Phase 1: (Fetch, Decode, Execute)
-	IR_LE 'PosEdge
-	(Combination stuff based on IR):
-		EA_Control = 010 (EA = PC + Offset9 mode)
-		PC_Control = 10 (PC = EA)
-Phase 2: (Write-Back)
-	PC_LE 'PosEdge (Store the next PC)
+WriteBack:
+	Reg_Control = 1 (RD = DATA)
+	RD_LE = 1
 
+Fetch:
+	IR_LE = 1
 
-Complicated Traces:
--------------------
+----------------------------
+STR
+----------------------------
+Decode:
+	ALU_Control = 000 (Y = A+B)
+	ALU_MuxA = 1 (A = RS1_DATA)
+	ALU_MuxB = 101 (B = Offset6)
+	MAR_Control = 0 (MAR = Y)
+	MAR_LE = 1
+Execute:
+	PC_Control = 0 (PC = PC+1)
+	PC_LE = 1
 
-LDI R1, R0 + Offset6:
+WriteBack:
+	MEM_WE = 1
 
-Phase 1: (Fetch)
-	IR_LE 'PosEdge
-	(Combination stuff based on IR):
-		EA_Control = 101 (EA = BaseReg + Offset6 mode)
-		PC_Control = 00 (PC = PC++)
-	RS1 = 000 (BaseReg is R0)
-	MAR_Control = 0 (Load EA to MAR)
-Phase 2: (Decode)
-	PC_LE 'PosEdge (Store the next PC)
-	MAR_LE 'PosEdge (Latch EA into MAR)
-	MAR_Control = 1 (Load DATA to MAR)
-Phase 3: (Execute)
-	MAR_LE 'PosEdge (Latch DATA into MAR)
-	RD = 001 (Result goes to R1)
-Phase 4: (Write-Back)
-	RD_LE 'PosEdge (Store the result in destination register)
-
-
+Fetch:
+	IR_LE = 1

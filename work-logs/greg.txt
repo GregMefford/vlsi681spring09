@@ -48,3 +48,5 @@ Week 8:
 2009-05-22: 1.00 hours: Completed control signals for ALU operations.
 2009-05-25: 1.00 hours: Working on additional control signals for LC-3.
 2009-05-26: 1.50 hours: Working on ModelSim Simulations for the LC-3.
+2009-05-27: 3.50 hours: Re-architecting the data path and control signals.
+2009-05-28: 5.00 hours: Finished architecture and control signals for ADD, MUL, LDR, STR.

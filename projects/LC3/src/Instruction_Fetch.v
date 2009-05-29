@@ -1,61 +1,30 @@
 module Instruction_Fetch(
-	PC_LE,
-	IR_LE,
-	DATA,
-	EA,
-	PC_CONTROL,
-	IR,
-	PC
+  input	            CLK,
+  input	            PC_LE,
+  input	            IR_LE,
+  input	     [15:0] Y,
+  input	            PC_CONTROL,
+  output	reg [15:0] IR,
+  output	reg [15:0] PC
 );
 
-input	PC_LE;
-input	IR_LE;
-input	[15:0] DATA;
-input	[15:0] EA;
-input	[1:0] PC_CONTROL;
-output	[15:0] IR;
-output	[15:0] PC;
 
-wire	[15:0] MUX_A_OUT;
 wire	[15:0] PC_INC;
-wire	[15:0] PC;
-wire	[15:0] IR;
 wire	[15:0] NEXT_PC;
+wire	[15:0] IMEM_DATA;
 
-mux16	mux_a(
-	.CONTROL(PC_CONTROL[0]),
-	.A(EA),
-	.B(DATA),
-	.OUT(MUX_A_OUT)
-);
+assign NEXT_PC = (PC_CONTROL) ? Y : PC_INC;
+assign PC_INC = PC + 1;
 
-mux16	mux_b(
-	.CONTROL(PC_CONTROL[1]),
-	.A(MUX_A_OUT),
-	.B(PC_INC),
-	.OUT(NEXT_PC)
-);
+always @(posedge CLK) begin
+  if(PC_LE) PC = NEXT_PC;
+  if(IR_LE) IR = IMEM_DATA;
+end
 
 Instram	instram_inst(
+  .clk(CLK),
 	.address(PC),
-	.instruction(IR)
-);
-
-reg16	ir_reg(
-	.LE(IR_LE),
-	.DATA_IN(IR),
-	.DATA_OUT(IR)
-);
-
-reg16	pc_reg(
-	.LE(PC_LE),
-	.DATA_IN(NEXT_PC),
-	.DATA_OUT(PC)
-);
-
-inc16	pc_inc_inst(
-	.value(PC),
-	.result(PC_INC)
+	.instruction(IMEM_DATA)
 );
 
 endmodule

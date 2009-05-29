@@ -1,14 +1,13 @@
-module register_file(CLK, RD_LE, R0_LE, RS1, RS2, RD, DATA_IN, R0_IN, RS1_DATA, RS2_DATA);
+module register_file(CLK, RD_LE, RS1, RS2, RD, DATA_IN, RS1_DATA, RS2_DATA, RD_DATA);
 	input              CLK;
 	input              RD_LE;
-	input              R0_LE;
 	input      [ 2: 0] RS1;
 	input      [ 2: 0] RS2;
 	input      [ 2: 0] RD;
 	input      [15: 0] DATA_IN;
-	input      [15: 0] R0_IN;
 	output reg [15: 0] RS1_DATA;
 	output reg [15: 0] RS2_DATA;
+	output reg [15: 0] RD_DATA;
 	
 	       reg [15: 0] R7;
 	       reg [15: 0] R6;
@@ -20,9 +19,6 @@ module register_file(CLK, RD_LE, R0_LE, RS1, RS2, RD, DATA_IN, R0_IN, RS1_DATA, 
 	       reg [15: 0] R0;
 	
 	always @(posedge CLK) begin
-		if(R0_LE) begin
-			R0 = R0_IN;
-		end
 		if(RD_LE) begin
 			case(RD)
 				0: R0 = DATA_IN;
@@ -56,6 +52,17 @@ module register_file(CLK, RD_LE, R0_LE, RS1, RS2, RD, DATA_IN, R0_IN, RS1_DATA, 
 			6: RS2_DATA = R6;
 			7: RS2_DATA = R7;
 			default: RS2_DATA = 16'hX;
+		endcase
+		case(RD)
+			0: RD_DATA = R0;
+			1: RD_DATA = R1;
+			2: RD_DATA = R2;
+			3: RD_DATA = R3;
+			4: RD_DATA = R4;
+			5: RD_DATA = R5;
+			6: RD_DATA = R6;
+			7: RD_DATA = R7;
+			default: RD_DATA = 16'hX;
 		endcase
 	end
 endmodule

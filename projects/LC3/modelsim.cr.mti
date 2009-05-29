@@ -12,19 +12,19 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	lpm_counter0
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module register_file
-
-Top level modules:
-	register_file
-
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module Execution
 
 Top level modules:
 	Execution
+
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module register_file
+
+Top level modules:
+	register_file
 
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/SE5.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/SE5.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
@@ -96,12 +96,12 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	mux16
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module Data
+-- Compiling module ALU
 
 Top level modules:
-	Data
+	ALU
 
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
@@ -110,11 +110,11 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	Dataram
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module ALU
+-- Compiling module Data
 
 Top level modules:
-	ALU
+	Data
 
 } {} {}}
