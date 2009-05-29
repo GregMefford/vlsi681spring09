@@ -1,8 +1,2 @@
 # Reading C:/altera/81/modelsim_ae/tcl/vsim/pref.tcl 
-# OpenFile {C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/ALU.v} 
-quit -sim
-vsim ALU
-# vsim ALU 
-# ** Error: (vsim-23) Unable to change to directory path "work".
-# No such file or directory. (errno = ENOENT)
-# Error loading design
+# OpenFile {C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Instram.v} 

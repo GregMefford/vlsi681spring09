@@ -50,3 +50,5 @@ Week 7:
 Week 8:
 2009-05-27: 5.00 hours:	Finishing matrix multiply changes and converting to machine code
 2009-05-27: 0.50 hours: Modifying ALU for different control signals and retesting
+2009-05-28: 2.00 hours: Getting all benchmarks for matrix multiply into MIF files
+2009-05-29: 3.00 hours: Getting ready for project demonstration
