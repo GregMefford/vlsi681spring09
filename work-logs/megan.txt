@@ -47,3 +47,6 @@ Week 7:
 2009-05-16: 3.50 hours: Matrix multiply prgm in assembly and MIF file implementation
 2009-05-18: 1.00 hours: Compiling hours and submitting Report 7
 2009-05-18: 1.50 hours: Working on matrix multiply program
+Week 8:
+2009-05-27: 5.00 hours:	Finishing matrix multiply changes and converting to machine code
+2009-05-27: 0.50 hours: Modifying ALU for different control signals and retesting
