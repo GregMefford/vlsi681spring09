@@ -1,5 +1,9 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="LC3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LC3|Data:data_inst|DRAM:DRAM_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0sf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LC3|Execution:execution_inst|ALU:ALU_inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_qk01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LC3|Instruction_Fetch:instruction_fetch_inst|IRAM:IRAM_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qf61.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LC3|lpm_counter0:stage_counter|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_hci.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

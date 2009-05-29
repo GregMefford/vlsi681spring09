@@ -1,0 +1,18 @@
+module Instram (clk, address, instruction);
+
+input		clk;
+input	[15:0]	address;
+output	[15:0]	instruction;
+
+reg	[15:0]	instruction;
+
+//	memAddr is an address register in the memory side.
+reg	[15:0]	Instram[0:4096];
+
+	
+	
+always @(posedge clk) begin
+		instruction = Instram[address[11:0]];
+end
+
+endmodule

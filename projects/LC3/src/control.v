@@ -11,7 +11,6 @@ module control
 	output             MAR_LE,
 	output             MAR_CONTROL,
 	output             MEM_WE,
-	output reg         MEM_CLK,
 	output             RD_LE,
 	output             REG_CONTROL,
 	output             PC_CONTROL,
@@ -134,13 +133,12 @@ module control
 		input [15:0] IR;
 		input [ 1:0] STAGE;
 		case(IR[15:12])
-			4'b0000: pc_control = 'b1; // BR:     PC = Y
-			4'b1100: pc_control = 'b1; // JMP:    PC = Y
-			4'b0100: pc_control = 'b1; // JSR[R]: PC = Y
-			4'b1100: pc_control = 'b1; // RET:    PC = Y
-			4'b1111: pc_control = 'b1; // TRAP:   PC = Y
-			4'b1000: pc_control = 'b1; // RTI:    PC = Y
-			default: pc_control = 'b0; // PC = PC++
+			4'b0000: pc_control = 'b1; // BR:      PC = Y
+			4'b1100: pc_control = 'b1; // JMP/RET: PC = Y
+			4'b0100: pc_control = 'b1; // JSR[R]:  PC = Y
+			4'b1111: pc_control = 'b1; // TRAP:    PC = Y
+			4'b1000: pc_control = 'b1; // RTI:     PC = Y
+			default: pc_control = 'b0; // DEFAULT: PC = PC++
 		endcase
 	endfunction // pc_control
 
@@ -177,15 +175,16 @@ module control
 
 	function mem_we;
 		input [15:0] IR;
-		input [ 1:0] WRITEBACK;
+		input        WRITEBACK;
 		if(IR[15:12] == 'b0111) mem_we = WRITEBACK; // STR
 		else mem_we = 0;
 	endfunction // mem_we
 
-	function next_stage;
+	function [1:0] next_stage;
 		input [15:0] IR;
 		input [ 1:0] STAGE;
 		if(STAGE == 1) next_stage = 2'b00; // Skip from stage 1 back to stage 0
+		else next_stage = 2'bX;
 	endfunction // next_stage
 
 	function next_stage_le;

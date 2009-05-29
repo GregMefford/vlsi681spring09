@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.629 ns
-From           : IR[3]
-To             : Registers:registers_inst|register_file:regfile|RS1_DATA[15]
+Actual Time    : 6.797 ns
+From           : RESET
+To             : Instruction_Fetch:instruction_fetch_inst|PC[15]
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -15,29 +15,19 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 21.849 ns
-From           : Registers:registers_inst|register_file:regfile|RS2_DATA[1]
-To             : Y[14]
+Actual Time    : 33.999 ns
+From           : Instruction_Fetch:instruction_fetch_inst|IR[15]
+To             : NPZ[2]
 From Clock     : CLK
-To Clock       : --
-Failed Paths   : 0
-
-Type           : Worst-case tpd
-Slack          : N/A
-Required Time  : None
-Actual Time    : 20.074 ns
-From           : IR[3]
-To             : Y[15]
-From Clock     : --
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -4.355 ns
-From           : IR[6]
-To             : Registers:registers_inst|register_file:regfile|RS1_DATA[11]
+Actual Time    : -5.173 ns
+From           : RESET
+To             : Instruction_Fetch:instruction_fetch_inst|PC[15]
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -45,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 57.84 MHz ( period = 17.290 ns )
-From           : Registers:registers_inst|register_file:regfile|RS2_DATA[1]
-To             : Registers:registers_inst|register_file:regfile|RS1_DATA[15]
+Actual Time    : 39.28 MHz ( period = 25.461 ns )
+From           : Instruction_Fetch:instruction_fetch_inst|IR[15]
+To             : Registers:registers_inst|register_file:regfile|RS2_DATA[7]
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 0

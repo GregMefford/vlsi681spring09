@@ -1,6 +1,8 @@
 module LC3(
   input	        CLK,
-  input	[15: 0] IR,
+  input	        RESET,
+  
+  output    [15: 0] IR,
   
   output	[15: 0] PC,
   output	[ 1: 0] STAGE,
@@ -25,7 +27,6 @@ module LC3(
   
   output	        MAR_CONTROL,
   output	        MAR_LE,
-  output	        MEM_CLK,
   output	        MEM_WE,
   output	[15: 0] DATA,
   
@@ -49,6 +50,7 @@ Registers registers_inst(
 
 Instruction_Fetch instruction_fetch_inst(
 	.CLK(CLK),
+	.RESET(RESET),
 	.PC_LE(PC_LE),
 	.IR_LE(IR_LE),
 	.Y(Y),
@@ -60,7 +62,7 @@ Instruction_Fetch instruction_fetch_inst(
 Data data_inst(
 	.MAR_LE(MAR_LE),
 	.MAR_CONTROL(MAR_CONTROL),
-	.WE(WE),
+	.WE(MEM_WE),
 	.CLK(CLK),
 	.RD_DATA(RD_DATA),
 	.Y(Y),
@@ -92,7 +94,6 @@ control control_inst(
 	.MAR_LE(MAR_LE),
 	.MAR_CONTROL(MAR_CONTROL),
 	.MEM_WE(MEM_WE),
-	.MEM_CLK(MEM_CLK),
 	.RD_LE(RD_LE),
 	.REG_CONTROL(REG_CONTROL),
 	.PC_CONTROL(PC_CONTROL),

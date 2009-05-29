@@ -23,15 +23,12 @@ always @(posedge CLK) begin
   if(MAR_LE) MAR = (MAR_CONTROL) ? DATA : Y;
 end
 
-Dataram	dataram_inst(
-	.we(WE),
-	.clk(clk),
-	.data_in(RD_DATA),
-	.read_addr(MAR),
-	.write_addr(MAR),
-	.data_out(DATA)
+DRAM	DRAM_inst (
+	.address ( MAR[11:0] ),
+	.clock ( CLK ),
+	.data ( RD_DATA ),
+	.wren ( WE ),
+	.q ( DATA )
 );
-	defparam	dataram_inst.ADDR_WIDTH = 16;
-	defparam	dataram_inst.DATA_WIDTH = 16;
 
 endmodule

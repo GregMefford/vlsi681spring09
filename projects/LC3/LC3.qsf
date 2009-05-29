@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP1C6Q240C8
 set_global_assignment -name TOP_LEVEL_ENTITY LC3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:51:31  APRIL 27, 2009"
-set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name DEVICE_FILTER_PACKAGE "ANY QFP"
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
@@ -52,26 +52,26 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test/LC3.vwf
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name VERILOG_FILE src/DRAM.v
+set_global_assignment -name VERILOG_FILE src/IRAM.v
+set_global_assignment -name VERILOG_FILE src/Instruction_Fetch.v
+set_global_assignment -name VERILOG_FILE src/Data.v
 set_global_assignment -name VERILOG_FILE src/LC3.v
 set_global_assignment -name COMMAND_MACRO_FILE test/register_file.do
 set_global_assignment -name COMMAND_MACRO_FILE test/control_test.do
 set_global_assignment -name COMMAND_MACRO_FILE test/EA_test.do
 set_global_assignment -name TEXT_FILE "doc/control signals.txt"
 set_global_assignment -name TEXT_FILE "doc/ALU documentation.txt"
-set_global_assignment -name VERILOG_FILE src/reg16.v
 set_global_assignment -name VERILOG_FILE src/control.v
 set_global_assignment -name VERILOG_FILE src/Dataram.v
-set_global_assignment -name VERILOG_FILE src/effective_address.v
 set_global_assignment -name VERILOG_FILE src/Instram.v
-set_global_assignment -name VERILOG_FILE src/mux16.v
 set_global_assignment -name VERILOG_FILE src/register_file.v
 set_global_assignment -name VERILOG_FILE src/ALU.v
-set_global_assignment -name BDF_FILE src/Instruction_Fetch.bdf
-set_global_assignment -name VERILOG_FILE src/inc16.v
-set_global_assignment -name VERILOG_FILE src/SE5.v
-set_global_assignment -name BDF_FILE src/Data.bdf
 set_global_assignment -name VERILOG_FILE src/Registers.v
 set_global_assignment -name VERILOG_FILE src/Execution.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE test/LC3.vwf
 set_global_assignment -name QIP_FILE src/lpm_counter0.qip
+set_global_assignment -name QIP_FILE src/IRAM.qip
+set_global_assignment -name QIP_FILE src/DRAM.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test/LC3.vwf
