@@ -50,3 +50,7 @@ Week 8:
 2009-05-26: 1.50 hours: Working on ModelSim Simulations for the LC-3.
 2009-05-27: 3.50 hours: Re-architecting the data path and control signals.
 2009-05-28: 5.00 hours: Finished architecture and control signals for ADD, MUL, LDR, STR.
+2009-05-29: 4.00 hours: Getting the whole system working and ready to present.
+Week 9:
+2009-06-03: 3.00 hours: Creating digital schematics and working on pipelining.
+2009-06-03: 2.00 hours: Partitioning the design into pipeline stages.
