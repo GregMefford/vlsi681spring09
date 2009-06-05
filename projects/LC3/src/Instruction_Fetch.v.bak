@@ -14,12 +14,12 @@ wire	[15:0] NEXT_PC;
 wire	[15:0] IMEM_DATA;
 
 assign NEXT_PC = (PC_CONTROL) ? Y : PC_INC;
-assign PC_INC = PC + 1;
+assign PC_INC = {PC + 1}[15:0];
 
 always @(posedge CLK) begin
   if(PC_LE) PC = NEXT_PC;
   if(IR_LE) IR = IMEM_DATA;
-  if(RESET) PC = 'h1000;
+  if(RESET) PC = 'h0000;
 end
 
 IRAM	IRAM_inst (

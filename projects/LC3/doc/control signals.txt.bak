@@ -66,31 +66,13 @@ Decode:
 	ALU_Control = 000 (Y = A+B)
 	ALU_MuxA = 0 (A = PC)
 	ALU_MuxB = 110 (B = Offset9)
-	MAR_LE = 0
+	MAR_Control = 0 (MAR = Y)
+	MAR_LE = 1
 Execute:
 	PC_Control = (Compare CCs)
 	PC_LE = 1
 
 WriteBack:
-
-Fetch:
-	IR_LE = 1
-
-----------------------------
-LEA
-----------------------------
-Decode:
-	ALU_Control = 000 (Y = A+B)
-	ALU_MuxA = 0 (A = PC)
-	ALU_MuxB = 110 (B = Offset9)
-	MAR_LE = 0
-Execute:
-	PC_Control = 0 (PC = PC+1)
-	PC_LE = 1
-
-WriteBack:
-	Reg_Control = 0 (RD = Y)
-	RD_LE = 1
 
 Fetch:
 	IR_LE = 1

@@ -1,4 +1,4 @@
- -- Copyright (C) 1991-2008 Altera Corporation
+ -- Copyright (C) 1991-2009 Altera Corporation
  -- Your use of Altera Corporation's design tools, logic functions 
  -- and other software and tools, and its AMPP partner logic 
  -- functions, and any output files from any of the foregoing 
@@ -45,8 +45,8 @@
  --					valid signal  on the board  (low, high, or toggling)  if that signal
  --					is required for a different revision of the design.
  -- GND*          : Unused  I/O  pin.   For transceiver I/O banks (Bank 13, 14, 15, 16 and 17),
- --           	    connect each pin marked GND* either individually through a 10 kohm resistor
- --           	    to GND or tie all pins together and connect through a single 10 kohm resistor
+ --           	    connect each pin marked GND* either individually through a 10k Ohm resistor
+ --           	    to GND or tie all pins together and connect through a single 10k Ohm resistor
  --           	    to GND.
  --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
  --           	    or leave it unconnected.
@@ -63,34 +63,34 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 CHIP  "LC3"  ASSIGNED TO AN: EP1C6Q240C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-NEXT_STAGE[0]                : 1         : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 1         :        :                   :         : 1         :                
 GND*                         : 2         :        :                   :         : 1         :                
 GND*                         : 3         :        :                   :         : 1         :                
-ALU_MuxA                     : 4         : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 4         :        :                   :         : 1         :                
 GND*                         : 5         :        :                   :         : 1         :                
-GND*                         : 6         :        :                   :         : 1         :                
-GND*                         : 7         :        :                   :         : 1         :                
-GND*                         : 8         :        :                   :         : 1         :                
+RS1_DATA[13]                 : 6         : output : 3.3-V LVTTL       :         : 1         : N              
+DATA[9]                      : 7         : output : 3.3-V LVTTL       :         : 1         : N              
+IR[9]                        : 8         : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
 GND                          : 10        : gnd    :                   :         :           :                
-OF                           : 11        : output : 3.3-V LVTTL       :         : 1         : N              
-RD_DATA[8]                   : 12        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 13        :        :                   :         : 1         :                
-DATA[0]                      : 14        : output : 3.3-V LVTTL       :         : 1         : N              
-NPZ[1]                       : 15        : output : 3.3-V LVTTL       :         : 1         : N              
-RD_DATA[1]                   : 16        : output : 3.3-V LVTTL       :         : 1         : N              
-RD_DATA[3]                   : 17        : output : 3.3-V LVTTL       :         : 1         : N              
-ALU_CONTROL[1]               : 18        : output : 3.3-V LVTTL       :         : 1         : N              
-STAGE[0]                     : 19        : output : 3.3-V LVTTL       :         : 1         : N              
-RD_DATA[12]                  : 20        : output : 3.3-V LVTTL       :         : 1         : N              
-IR[3]                        : 21        : output : 3.3-V LVTTL       :         : 1         : N              
+RS2_DATA[9]                  : 11        : output : 3.3-V LVTTL       :         : 1         : N              
+RS1_DATA[9]                  : 12        : output : 3.3-V LVTTL       :         : 1         : N              
+STAGE[1]                     : 13        : output : 3.3-V LVTTL       :         : 1         : N              
+PC[2]                        : 14        : output : 3.3-V LVTTL       :         : 1         : N              
+Y[15]                        : 15        : output : 3.3-V LVTTL       :         : 1         : N              
+RS2_DATA[14]                 : 16        : output : 3.3-V LVTTL       :         : 1         : N              
+IR_LE                        : 17        : output : 3.3-V LVTTL       :         : 1         : N              
+PC[8]                        : 18        : output : 3.3-V LVTTL       :         : 1         : N              
+RS1_DATA[1]                  : 19        : output : 3.3-V LVTTL       :         : 1         : N              
+RD_DATA[6]                   : 20        : output : 3.3-V LVTTL       :         : 1         : N              
+STAGE[0]                     : 21        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 22        : power  :                   : 3.3V    : 1         :                
-IR[14]                       : 23        : output : 3.3-V LVTTL       :         : 1         : N              
+IR[3]                        : 23        : output : 3.3-V LVTTL       :         : 1         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 24        : input  : 3.3-V LVTTL       :         : 1         : N              
 DATA0                        : 25        : input  :                   :         : 1         :                
 nCONFIG                      : 26        :        :                   :         : 1         :                
@@ -105,113 +105,113 @@ MSEL0                        : 34        :        :                   :         
 MSEL1                        : 35        :        :                   :         : 1         :                
 DCLK                         : 36        : bidir  :                   :         : 1         :                
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 37        : input  : 3.3-V LVTTL       :         : 1         : N              
-STAGE[1]                     : 38        : output : 3.3-V LVTTL       :         : 1         : N              
-Y[12]                        : 39        : output : 3.3-V LVTTL       :         : 1         : N              
+RS2_DATA[2]                  : 38        : output : 3.3-V LVTTL       :         : 1         : N              
+RD_DATA[0]                   : 39        : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : 40        : gnd    :                   :         :           :                
-PC[2]                        : 41        : output : 3.3-V LVTTL       :         : 1         : N              
-PC[3]                        : 42        : output : 3.3-V LVTTL       :         : 1         : N              
-PC[5]                        : 43        : output : 3.3-V LVTTL       :         : 1         : N              
-Y[11]                        : 44        : output : 3.3-V LVTTL       :         : 1         : N              
-PC[12]                       : 45        : output : 3.3-V LVTTL       :         : 1         : N              
-DATA[1]                      : 46        : output : 3.3-V LVTTL       :         : 1         : N              
-RS1_DATA[7]                  : 47        : output : 3.3-V LVTTL       :         : 1         : N              
-PC[15]                       : 48        : output : 3.3-V LVTTL       :         : 1         : N              
-DATA[10]                     : 49        : output : 3.3-V LVTTL       :         : 1         : N              
-RD_DATA[10]                  : 50        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 41        :        :                   :         : 1         :                
+RS2_DATA[6]                  : 42        : output : 3.3-V LVTTL       :         : 1         : N              
+ALU_MuxB[1]                  : 43        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 44        :        :                   :         : 1         :                
+GND*                         : 45        :        :                   :         : 1         :                
+MAR_CONTROL                  : 46        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 47        :        :                   :         : 1         :                
+GND*                         : 48        :        :                   :         : 1         :                
+GND*                         : 49        :        :                   :         : 1         :                
+GND*                         : 50        :        :                   :         : 1         :                
 VCCIO1                       : 51        : power  :                   : 3.3V    : 1         :                
 GND                          : 52        : gnd    :                   :         :           :                
 GND*                         : 53        :        :                   :         : 1         :                
 GND*                         : 54        :        :                   :         : 1         :                
-RS2_DATA[1]                  : 55        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 56        :        :                   :         : 1         :                
+GND*                         : 55        :        :                   :         : 1         :                
+NEXT_STAGE[1]                : 56        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 57        :        :                   :         : 1         :                
 GND*                         : 58        :        :                   :         : 1         :                
 GND*                         : 59        :        :                   :         : 1         :                
 GND*                         : 60        :        :                   :         : 1         :                
-NEXT_STAGE[1]                : 61        : output : 3.3-V LVTTL       :         : 4         : N              
+ALU_MuxA                     : 61        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : 62        :        :                   :         : 4         :                
 GND*                         : 63        :        :                   :         : 4         :                
-RS2_DATA[3]                  : 64        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 64        :        :                   :         : 4         :                
 GND*                         : 65        :        :                   :         : 4         :                
-DATA[7]                      : 66        : output : 3.3-V LVTTL       :         : 4         : N              
-RD_DATA[5]                   : 67        : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[15]                 : 68        : output : 3.3-V LVTTL       :         : 4         : N              
+NEXT_STAGE[0]                : 66        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 67        :        :                   :         : 4         :                
+PC_LE                        : 68        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 69        : gnd    :                   :         :           :                
 VCCIO4                       : 70        : power  :                   : 3.3V    : 4         :                
 GND                          : 71        : gnd    :                   :         :           :                
 VCCINT                       : 72        : power  :                   : 1.5V    :           :                
 GND*                         : 73        :        :                   :         : 4         :                
-RS2_DATA[5]                  : 74        : output : 3.3-V LVTTL       :         : 4         : N              
-DATA[15]                     : 75        : output : 3.3-V LVTTL       :         : 4         : N              
-RS2_DATA[7]                  : 76        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[12]                       : 77        : output : 3.3-V LVTTL       :         : 4         : N              
-RD_DATA[15]                  : 78        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[11]                       : 79        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[10]                       : 80        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[8]                        : 81        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[7]                        : 82        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[6]                        : 83        : output : 3.3-V LVTTL       :         : 4         : N              
-IR_LE                        : 84        : output : 3.3-V LVTTL       :         : 4         : N              
-IR[1]                        : 85        : output : 3.3-V LVTTL       :         : 4         : N              
-ALU_MuxB[2]                  : 86        : output : 3.3-V LVTTL       :         : 4         : N              
-RD_DATA[2]                   : 87        : output : 3.3-V LVTTL       :         : 4         : N              
-PC_CONTROL                   : 88        : output : 3.3-V LVTTL       :         : 4         : N              
+RS2_DATA[0]                  : 74        : output : 3.3-V LVTTL       :         : 4         : N              
+DATA[10]                     : 75        : output : 3.3-V LVTTL       :         : 4         : N              
+RS1_DATA[11]                 : 76        : output : 3.3-V LVTTL       :         : 4         : N              
+Y[12]                        : 77        : output : 3.3-V LVTTL       :         : 4         : N              
+RS2_DATA[12]                 : 78        : output : 3.3-V LVTTL       :         : 4         : N              
+RS2_DATA[1]                  : 79        : output : 3.3-V LVTTL       :         : 4         : N              
+IR[6]                        : 80        : output : 3.3-V LVTTL       :         : 4         : N              
+DATA[7]                      : 81        : output : 3.3-V LVTTL       :         : 4         : N              
+REG_CONTROL                  : 82        : output : 3.3-V LVTTL       :         : 4         : N              
+RS1_DATA[5]                  : 83        : output : 3.3-V LVTTL       :         : 4         : N              
+RD_DATA[13]                  : 84        : output : 3.3-V LVTTL       :         : 4         : N              
+RD_DATA[2]                   : 85        : output : 3.3-V LVTTL       :         : 4         : N              
+RS1_DATA[14]                 : 86        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[0]                        : 87        : output : 3.3-V LVTTL       :         : 4         : N              
+RD_DATA[3]                   : 88        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 89        : gnd    :                   :         :           :                
 VCCINT                       : 90        : power  :                   : 1.5V    :           :                
 GND                          : 91        : gnd    :                   :         :           :                
 VCCIO4                       : 92        : power  :                   : 3.3V    : 4         :                
-PC[9]                        : 93        : output : 3.3-V LVTTL       :         : 4         : N              
-PC[4]                        : 94        : output : 3.3-V LVTTL       :         : 4         : N              
-PC[6]                        : 95        : output : 3.3-V LVTTL       :         : 4         : N              
-RS2_DATA[9]                  : 96        : output : 3.3-V LVTTL       :         : 4         : N              
-RESET                        : 97        : input  : 3.3-V LVTTL       :         : 4         : N              
-Y[4]                         : 98        : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[3]                  : 99        : output : 3.3-V LVTTL       :         : 4         : N              
-ALU_CONTROL[2]               : 100       : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[4]                  : 101       : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[12]                 : 102       : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[11]                 : 103       : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[14]                 : 104       : output : 3.3-V LVTTL       :         : 4         : N              
-RS2_DATA[0]                  : 105       : output : 3.3-V LVTTL       :         : 4         : N              
-RD_DATA[11]                  : 106       : output : 3.3-V LVTTL       :         : 4         : N              
-RS1_DATA[10]                 : 107       : output : 3.3-V LVTTL       :         : 4         : N              
-RS2_DATA[11]                 : 108       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA[13]                     : 93        : output : 3.3-V LVTTL       :         : 4         : N              
+DATA[2]                      : 94        : output : 3.3-V LVTTL       :         : 4         : N              
+IR[14]                       : 95        : output : 3.3-V LVTTL       :         : 4         : N              
+IR[12]                       : 96        : output : 3.3-V LVTTL       :         : 4         : N              
+DATA[11]                     : 97        : output : 3.3-V LVTTL       :         : 4         : N              
+IR[13]                       : 98        : output : 3.3-V LVTTL       :         : 4         : N              
+RD_DATA[11]                  : 99        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[6]                        : 100       : output : 3.3-V LVTTL       :         : 4         : N              
+IR[15]                       : 101       : output : 3.3-V LVTTL       :         : 4         : N              
+ALU_MuxB[0]                  : 102       : output : 3.3-V LVTTL       :         : 4         : N              
+RS1_DATA[3]                  : 103       : output : 3.3-V LVTTL       :         : 4         : N              
+Y[2]                         : 104       : output : 3.3-V LVTTL       :         : 4         : N              
+RD_DATA[7]                   : 105       : output : 3.3-V LVTTL       :         : 4         : N              
+Y[10]                        : 106       : output : 3.3-V LVTTL       :         : 4         : N              
+DATA[3]                      : 107       : output : 3.3-V LVTTL       :         : 4         : N              
+PC[15]                       : 108       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 109       : gnd    :                   :         :           :                
 VCCINT                       : 110       : power  :                   : 1.5V    :           :                
 GND                          : 111       : gnd    :                   :         :           :                
 VCCIO4                       : 112       : power  :                   : 3.3V    : 4         :                
-RS2_DATA[14]                 : 113       : output : 3.3-V LVTTL       :         : 4         : N              
-RS2_DATA[4]                  : 114       : output : 3.3-V LVTTL       :         : 4         : N              
-Y[14]                        : 115       : output : 3.3-V LVTTL       :         : 4         : N              
-PC[10]                       : 116       : output : 3.3-V LVTTL       :         : 4         : N              
+NPZ[0]                       : 113       : output : 3.3-V LVTTL       :         : 4         : N              
+NPZ[2]                       : 114       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : 115       :        :                   :         : 4         :                
+GND*                         : 116       :        :                   :         : 4         :                
 GND*                         : 117       :        :                   :         : 4         :                
 GND*                         : 118       :        :                   :         : 4         :                
 GND*                         : 119       :        :                   :         : 4         :                
 GND*                         : 120       :        :                   :         : 4         :                
 GND*                         : 121       :        :                   :         : 3         :                
-MAR_CONTROL                  : 122       : output : 3.3-V LVTTL       :         : 3         : N              
+NEXT_STAGE_LE                : 122       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : 123       :        :                   :         : 3         :                
-DATA[11]                     : 124       : output : 3.3-V LVTTL       :         : 3         : N              
-PC[14]                       : 125       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 124       :        :                   :         : 3         :                
+GND*                         : 125       :        :                   :         : 3         :                
 GND*                         : 126       :        :                   :         : 3         :                
-RD_DATA[7]                   : 127       : output : 3.3-V LVTTL       :         : 3         : N              
-PC[13]                       : 128       : output : 3.3-V LVTTL       :         : 3         : N              
+RESET                        : 127       : input  : 3.3-V LVTTL       :         : 3         : N              
+OF                           : 128       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : 129       : gnd    :                   :         :           :                
 VCCIO3                       : 130       : power  :                   : 3.3V    : 3         :                
-PC[11]                       : 131       : output : 3.3-V LVTTL       :         : 3         : N              
-RS2_DATA[12]                 : 132       : output : 3.3-V LVTTL       :         : 3         : N              
-Y[15]                        : 133       : output : 3.3-V LVTTL       :         : 3         : N              
-RS1_DATA[0]                  : 134       : output : 3.3-V LVTTL       :         : 3         : N              
-RS1_DATA[1]                  : 135       : output : 3.3-V LVTTL       :         : 3         : N              
-Y[10]                        : 136       : output : 3.3-V LVTTL       :         : 3         : N              
-RS2_DATA[10]                 : 137       : output : 3.3-V LVTTL       :         : 3         : N              
-DATA[4]                      : 138       : output : 3.3-V LVTTL       :         : 3         : N              
-PC[8]                        : 139       : output : 3.3-V LVTTL       :         : 3         : N              
-PC[0]                        : 140       : output : 3.3-V LVTTL       :         : 3         : N              
-Y[3]                         : 141       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[14]                       : 131       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[11]                       : 132       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[13]                       : 133       : output : 3.3-V LVTTL       :         : 3         : N              
+RD_DATA[5]                   : 134       : output : 3.3-V LVTTL       :         : 3         : N              
+RD_DATA[10]                  : 135       : output : 3.3-V LVTTL       :         : 3         : N              
+DATA[5]                      : 136       : output : 3.3-V LVTTL       :         : 3         : N              
+Y[5]                         : 137       : output : 3.3-V LVTTL       :         : 3         : N              
+RS2_DATA[11]                 : 138       : output : 3.3-V LVTTL       :         : 3         : N              
+RS2_DATA[5]                  : 139       : output : 3.3-V LVTTL       :         : 3         : N              
+RD_DATA[1]                   : 140       : output : 3.3-V LVTTL       :         : 3         : N              
+RS2_DATA[7]                  : 141       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : 142       : gnd    :                   :         :           :                
-PC[1]                        : 143       : output : 3.3-V LVTTL       :         : 3         : N              
-IR[13]                       : 144       : output : 3.3-V LVTTL       :         : 3         : N              
+PC_CONTROL                   : 143       : output : 3.3-V LVTTL       :         : 3         : N              
+RS1_DATA[15]                 : 144       : output : 3.3-V LVTTL       :         : 3         : N              
 CONF_DONE                    : 145       :        :                   :         : 3         :                
 nSTATUS                      : 146       :        :                   :         : 3         :                
 TCK                          : 147       : input  :                   :         : 3         :                
@@ -223,88 +223,88 @@ GND+                         : 152       :        :                   :         
 GND+                         : 153       :        :                   :         : 3         :                
 VCCA_PLL2                    : 154       : power  :                   : 1.5V    :           :                
 TDI                          : 155       : input  :                   :         : 3         :                
-Y[9]                         : 156       : output : 3.3-V LVTTL       :         : 3         : N              
+IR[4]                        : 156       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 157       : power  :                   : 3.3V    : 3         :                
-IR[5]                        : 158       : output : 3.3-V LVTTL       :         : 3         : N              
-Y[0]                         : 159       : output : 3.3-V LVTTL       :         : 3         : N              
-RS1_DATA[8]                  : 160       : output : 3.3-V LVTTL       :         : 3         : N              
-IR[4]                        : 161       : output : 3.3-V LVTTL       :         : 3         : N              
-RS2_DATA[6]                  : 162       : output : 3.3-V LVTTL       :         : 3         : N              
-Y[1]                         : 163       : output : 3.3-V LVTTL       :         : 3         : N              
-RS1_DATA[13]                 : 164       : output : 3.3-V LVTTL       :         : 3         : N              
-RS2_DATA[8]                  : 165       : output : 3.3-V LVTTL       :         : 3         : N              
-Y[8]                         : 166       : output : 3.3-V LVTTL       :         : 3         : N              
-RS2_DATA[13]                 : 167       : output : 3.3-V LVTTL       :         : 3         : N              
-ALU_MuxB[0]                  : 168       : output : 3.3-V LVTTL       :         : 3         : N              
-RD_DATA[6]                   : 169       : output : 3.3-V LVTTL       :         : 3         : N              
-DATA[6]                      : 170       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[7]                        : 158       : output : 3.3-V LVTTL       :         : 3         : N              
+RS1_DATA[2]                  : 159       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[1]                        : 160       : output : 3.3-V LVTTL       :         : 3         : N              
+IR[5]                        : 161       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[5]                        : 162       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[3]                        : 163       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[9]                        : 164       : output : 3.3-V LVTTL       :         : 3         : N              
+Y[1]                         : 165       : output : 3.3-V LVTTL       :         : 3         : N              
+Y[3]                         : 166       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[4]                        : 167       : output : 3.3-V LVTTL       :         : 3         : N              
+Y[6]                         : 168       : output : 3.3-V LVTTL       :         : 3         : N              
+RS2_DATA[8]                  : 169       : output : 3.3-V LVTTL       :         : 3         : N              
+RD_DATA[15]                  : 170       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : 171       : gnd    :                   :         :           :                
 VCCIO3                       : 172       : power  :                   : 3.3V    : 3         :                
-GND*                         : 173       :        :                   :         : 3         :                
-GND*                         : 174       :        :                   :         : 3         :                
-RD_DATA[9]                   : 175       : output : 3.3-V LVTTL       :         : 3         : N              
-RD_DATA[14]                  : 176       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 177       :        :                   :         : 3         :                
-DATA[13]                     : 178       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 179       :        :                   :         : 3         :                
-GND*                         : 180       :        :                   :         : 3         :                
+DATA[1]                      : 173       : output : 3.3-V LVTTL       :         : 3         : N              
+Y[11]                        : 174       : output : 3.3-V LVTTL       :         : 3         : N              
+IR[10]                       : 175       : output : 3.3-V LVTTL       :         : 3         : N              
+DATA[8]                      : 176       : output : 3.3-V LVTTL       :         : 3         : N              
+Y[9]                         : 177       : output : 3.3-V LVTTL       :         : 3         : N              
+PC[10]                       : 178       : output : 3.3-V LVTTL       :         : 3         : N              
+RD_DATA[14]                  : 179       : output : 3.3-V LVTTL       :         : 3         : N              
+RD_LE                        : 180       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : 181       :        :                   :         : 2         :                
 GND*                         : 182       :        :                   :         : 2         :                
 GND*                         : 183       :        :                   :         : 2         :                
-Y[13]                        : 184       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 185       :        :                   :         : 2         :                
-GND*                         : 186       :        :                   :         : 2         :                
-DATA[9]                      : 187       : output : 3.3-V LVTTL       :         : 2         : N              
-Y[5]                         : 188       : output : 3.3-V LVTTL       :         : 2         : N              
+RS2_DATA[4]                  : 184       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[12]                       : 185       : output : 3.3-V LVTTL       :         : 2         : N              
+DATA[4]                      : 186       : output : 3.3-V LVTTL       :         : 2         : N              
+Y[4]                         : 187       : output : 3.3-V LVTTL       :         : 2         : N              
+Y[7]                         : 188       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : 189       : power  :                   : 3.3V    : 2         :                
 GND                          : 190       : gnd    :                   :         :           :                
 VCCINT                       : 191       : power  :                   : 1.5V    :           :                
 GND                          : 192       : gnd    :                   :         :           :                
-NPZ[2]                       : 193       : output : 3.3-V LVTTL       :         : 2         : N              
-RS1_DATA[9]                  : 194       : output : 3.3-V LVTTL       :         : 2         : N              
-DATA[14]                     : 195       : output : 3.3-V LVTTL       :         : 2         : N              
-DATA[8]                      : 196       : output : 3.3-V LVTTL       :         : 2         : N              
-IR[0]                        : 197       : output : 3.3-V LVTTL       :         : 2         : N              
-RS1_DATA[2]                  : 198       : output : 3.3-V LVTTL       :         : 2         : N              
-RS1_DATA[6]                  : 199       : output : 3.3-V LVTTL       :         : 2         : N              
-Y[6]                         : 200       : output : 3.3-V LVTTL       :         : 2         : N              
-RS1_DATA[5]                  : 201       : output : 3.3-V LVTTL       :         : 2         : N              
-MAR_LE                       : 202       : output : 3.3-V LVTTL       :         : 2         : N              
-DATA[5]                      : 203       : output : 3.3-V LVTTL       :         : 2         : N              
-NPZ[0]                       : 204       : output : 3.3-V LVTTL       :         : 2         : N              
-IR[15]                       : 205       : output : 3.3-V LVTTL       :         : 2         : N              
-DATA[12]                     : 206       : output : 3.3-V LVTTL       :         : 2         : N              
-DATA[3]                      : 207       : output : 3.3-V LVTTL       :         : 2         : N              
-Y[2]                         : 208       : output : 3.3-V LVTTL       :         : 2         : N              
+Y[13]                        : 193       : output : 3.3-V LVTTL       :         : 2         : N              
+Y[0]                         : 194       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[0]                  : 195       : output : 3.3-V LVTTL       :         : 2         : N              
+Y[14]                        : 196       : output : 3.3-V LVTTL       :         : 2         : N              
+ALU_CONTROL[2]               : 197       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[8]                  : 198       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[7]                  : 199       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[4]                  : 200       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[6]                  : 201       : output : 3.3-V LVTTL       :         : 2         : N              
+Y[8]                         : 202       : output : 3.3-V LVTTL       :         : 2         : N              
+MEM_WE                       : 203       : output : 3.3-V LVTTL       :         : 2         : N              
+DATA[15]                     : 204       : output : 3.3-V LVTTL       :         : 2         : N              
+MAR_LE                       : 205       : output : 3.3-V LVTTL       :         : 2         : N              
+RD_DATA[4]                   : 206       : output : 3.3-V LVTTL       :         : 2         : N              
+DATA[14]                     : 207       : output : 3.3-V LVTTL       :         : 2         : N              
+DATA[0]                      : 208       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : 209       : power  :                   : 3.3V    : 2         :                
 GND                          : 210       : gnd    :                   :         :           :                
 VCCINT                       : 211       : power  :                   : 1.5V    :           :                
 GND                          : 212       : gnd    :                   :         :           :                
-MEM_WE                       : 213       : output : 3.3-V LVTTL       :         : 2         : N              
-RD_DATA[13]                  : 214       : output : 3.3-V LVTTL       :         : 2         : N              
-PC[7]                        : 215       : output : 3.3-V LVTTL       :         : 2         : N              
-RD_DATA[0]                   : 216       : output : 3.3-V LVTTL       :         : 2         : N              
-REG_CONTROL                  : 217       : output : 3.3-V LVTTL       :         : 2         : N              
-ALU_CONTROL[0]               : 218       : output : 3.3-V LVTTL       :         : 2         : N              
-IR[9]                        : 219       : output : 3.3-V LVTTL       :         : 2         : N              
-Y[7]                         : 220       : output : 3.3-V LVTTL       :         : 2         : N              
-IR[2]                        : 221       : output : 3.3-V LVTTL       :         : 2         : N              
-RS2_DATA[15]                 : 222       : output : 3.3-V LVTTL       :         : 2         : N              
-DATA[2]                      : 223       : output : 3.3-V LVTTL       :         : 2         : N              
-RD_LE                        : 224       : output : 3.3-V LVTTL       :         : 2         : N              
-PC_LE                        : 225       : output : 3.3-V LVTTL       :         : 2         : N              
-RS2_DATA[2]                  : 226       : output : 3.3-V LVTTL       :         : 2         : N              
-RD_DATA[4]                   : 227       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 228       :        :                   :         : 2         :                
+RS2_DATA[10]                 : 213       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[10]                 : 214       : output : 3.3-V LVTTL       :         : 2         : N              
+ALU_MuxB[2]                  : 215       : output : 3.3-V LVTTL       :         : 2         : N              
+IR[11]                       : 216       : output : 3.3-V LVTTL       :         : 2         : N              
+ALU_CONTROL[0]               : 217       : output : 3.3-V LVTTL       :         : 2         : N              
+IR[8]                        : 218       : output : 3.3-V LVTTL       :         : 2         : N              
+IR[1]                        : 219       : output : 3.3-V LVTTL       :         : 2         : N              
+IR[2]                        : 220       : output : 3.3-V LVTTL       :         : 2         : N              
+ALU_CONTROL[1]               : 221       : output : 3.3-V LVTTL       :         : 2         : N              
+RS1_DATA[12]                 : 222       : output : 3.3-V LVTTL       :         : 2         : N              
+IR[7]                        : 223       : output : 3.3-V LVTTL       :         : 2         : N              
+IR[0]                        : 224       : output : 3.3-V LVTTL       :         : 2         : N              
+RD_DATA[12]                  : 225       : output : 3.3-V LVTTL       :         : 2         : N              
+RS2_DATA[15]                 : 226       : output : 3.3-V LVTTL       :         : 2         : N              
+DATA[12]                     : 227       : output : 3.3-V LVTTL       :         : 2         : N              
+RD_DATA[8]                   : 228       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : 229       : power  :                   : 1.5V    :           :                
 GND                          : 230       : gnd    :                   :         :           :                
 VCCIO2                       : 231       : power  :                   : 3.3V    : 2         :                
 GND                          : 232       : gnd    :                   :         :           :                
-GND*                         : 233       :        :                   :         : 2         :                
-GND*                         : 234       :        :                   :         : 2         :                
-GND*                         : 235       :        :                   :         : 2         :                
-ALU_MuxB[1]                  : 236       : output : 3.3-V LVTTL       :         : 2         : N              
-NEXT_STAGE_LE                : 237       : output : 3.3-V LVTTL       :         : 2         : N              
+RD_DATA[9]                   : 233       : output : 3.3-V LVTTL       :         : 2         : N              
+DATA[6]                      : 234       : output : 3.3-V LVTTL       :         : 2         : N              
+RS2_DATA[13]                 : 235       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 236       :        :                   :         : 2         :                
+RS2_DATA[3]                  : 237       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 238       :        :                   :         : 2         :                
-GND*                         : 239       :        :                   :         : 2         :                
+NPZ[1]                       : 239       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 240       :        :                   :         : 2         :                

@@ -3,6 +3,9 @@ module control
 	input              CLK,
 	input      [ 1: 0] STAGE,
 	input      [15: 0] IR,
+	input              N,
+	input              Z,
+	input              P,
 
 	output     [ 2: 0] ALU_CONTROL,
 	output             ALU_MuxA,
@@ -27,9 +30,6 @@ module control
 	wire WRITEBACK; assign WRITEBACK = (STAGE == 2'b10);
 	wire FETCH;     assign FETCH     = (STAGE == 2'b11);
 
-	wire ADD; assign ADD = (IR[15:12] == 4'b0001);
-	wire LDR; assign ADD = (IR[15:12] == 4'b0110);
-
 	wire IS_IMMEDIATE; assign IS_IMMEDIATE = (IR[5] == 1);
 
 	assign ALU_CONTROL   = alu_control(IR, DECODE);
@@ -52,42 +52,16 @@ module control
 		if(DECODE) begin
 			// Decode the OPCODE
 			case(IR[15:12])
-				4'b0001: begin
-					// ADD
-					alu_control = 'b000; // Y = A + B
+				4'b0101: alu_control = 'b001; // AND: Y = A & B
+				4'b1001: alu_control = 'b010; // NOT: Y = !A
+				4'b1101: begin // MUL, SL, or SR
+					if(IR[5]) alu_control = 'b100; // Multiply Imm5
+					else alu_control = {1'b1, IR[4:3]};
 				end
-				4'b0101: begin
-					// AND
-					alu_control = 'b001; // Y = A & B
-				end
-				4'b0110: begin
-					// LDR
-					alu_control = 'b000; // Y = A + B
-				end
-				4'b0111: begin
-					// STR
-					alu_control = 'b000; // Y = A + B
-				end
-				4'b1001: begin
-					// NOT
-					alu_control = 'b010; // Y = !A
-				end
-				4'b1101: begin
-					// MUL, SL, or SR
-					if(IR[5]) begin
-						// Multiply Imm5
-						alu_control = 'b100;
-					end
-					else begin
-						alu_control = {1'b1, IR[4:3]};
-					end
-				end
-				default: alu_control = 3'bX;
+				default: alu_control = 3'b000; // Y = A + B
 			endcase
 		end
-		else begin
-			alu_control = 3'bX;
-		end
+		else alu_control = 3'bX;
 	endfunction // alu_control
 	
 	function alu_MuxA;
@@ -96,11 +70,8 @@ module control
 		if(DECODE) begin
 			// Decode the OPCODE
 			case(IR[15:12])
-				4'b0001: begin
-					// ADD
-					alu_MuxA = 'b1;
-				end
-				default: alu_MuxA = 'b1;
+				4'b0000: alu_MuxA = 'b0; // BR: (ALU_A = PC)
+				default: alu_MuxA = 'b1; // ALU_A = RS1_DATA
 			endcase
 		end
 		else begin
@@ -119,8 +90,17 @@ module control
 					if(IS_IMMEDIATE) alu_MuxB = 'b100; // (B = IMM5)
 					else alu_MuxB = 'b0XX; // (B = RS2_DATA)
 				end
+				4'b1101: begin	// MUL
+					if(IS_IMMEDIATE) alu_MuxB = 'b100; // (B = IMM5)
+					else alu_MuxB = 'b0XX; // (B = RS2_DATA)
+				end
 				4'b0110: alu_MuxB = 'b101; // LDR (B = Offset6)
 				4'b0111: alu_MuxB = 'b101; // STR (B = Offset6)
+				4'b0000: alu_MuxB = 'b110; // BR  (B = Offset9)
+				4'b0100: begin
+					if(IR(11]) alu_MuxB = 'b111; // JSR  (B = Offset11)
+					else       alu_MuxB = 'b110; // JSRR  (B = Offset6)
+				end
 				default: alu_MuxB = 'b0XX; // (B = RS2_DATA)
 			endcase
 		end
@@ -133,7 +113,7 @@ module control
 		input [15:0] IR;
 		input [ 1:0] STAGE;
 		case(IR[15:12])
-			4'b0000: pc_control = 'b1; // BR:      PC = Y
+			4'b0000: pc_control = (IR[9] && P) || (IR[10] && Z) || (IR[11] && N); // BR: PC = Y (if CCs match)
 			4'b1100: pc_control = 'b1; // JMP/RET: PC = Y
 			4'b0100: pc_control = 'b1; // JSR[R]:  PC = Y
 			4'b1111: pc_control = 'b1; // TRAP:    PC = Y

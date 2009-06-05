@@ -1,11 +1,4 @@
-{C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module Instruction_Fetch
-
-Top level modules:
-	Instruction_Fetch
-
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v}
+{C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0_bb.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module lpm_counter0
 
@@ -40,13 +33,6 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	reg16
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module Instram
-
-Top level modules:
-	Instram
-
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module Registers
@@ -68,26 +54,12 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	inc16
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module LC3
-
-Top level modules:
-	LC3
-
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module effective_address
 
 Top level modules:
 	effective_address
-
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module control
-
-Top level modules:
-	control
 
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
@@ -96,25 +68,11 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	mux16
 
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module ALU
-
-Top level modules:
-	ALU
-
 } {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module Dataram
 
 Top level modules:
 	Dataram
-
-} {} {}} {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v} {1 {vlog -work work -nocovercells {C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
-Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module Data
-
-Top level modules:
-	Data
 
 } {} {}}

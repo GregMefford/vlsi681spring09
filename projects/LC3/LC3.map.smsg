@@ -1,6 +1,6 @@
-Warning (10273): Verilog HDL warning at control.v(85): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at control.v(89): extended using "x" or "z"
-Warning (10273): Verilog HDL warning at control.v(187): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at control.v(82): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at control.v(86): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at control.v(184): extended using "x" or "z"
 Info (10281): Verilog HDL Declaration information at control.v(7): object "ALU_CONTROL" differs only in case from object "alu_control" in the same scope
 Info (10281): Verilog HDL Declaration information at control.v(8): object "ALU_MuxA" differs only in case from object "alu_MuxA" in the same scope
 Info (10281): Verilog HDL Declaration information at control.v(9): object "ALU_MuxB" differs only in case from object "alu_MuxB" in the same scope

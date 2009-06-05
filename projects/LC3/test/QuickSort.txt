@@ -1,0 +1,137 @@
+		
+		LEA R0, Start Address
+	 	LEA R1, End Address
+	 	CALL QUICK SORT
+		HLT
+
+
+
+QUICK SORT	ADD R6,R6,#-1
+		STR R1,R6,#1
+
+		ADD R6,R6,#-1
+		STR R0,R6,#1
+
+		INV R1
+		ADD R1,#1
+		ADD R0,R1
+
+		BRn LABEL
+		RET
+
+LABEL 		LDR R2,R0,#0
+		ADD R4,R2,R2
+
+LABEL1		ADD R0,#1
+		LDR R2,R0,#0
+	
+		INV R2
+		ADD R2,#1
+		ADD R4,R2
+		LD R5,R4
+
+LABEL2		INV R1
+		ADD R1,#1
+		ADD R0,R1
+		LD R5,R0
+
+		BRnz LABEL4
+        	LDR R3,R1, #0	
+
+		ADD R1,#-1
+
+		INV R3
+		ADD R3,#1
+		ADD R2,R3
+		LD R5,R2
+
+		BRnz LABEL2
+
+		LDR R5,R1,#0
+        	STR  R2,R1,#0
+        	STR  R5,R0,#0
+        	BR LABEL1
+
+LABEL4		LDR R5,R1,#0
+        	LDR R4,R1,#0
+
+        	LDR R0, R6, #1
+		ADD R6, R6, #1
+
+        	STR R5,R0,#0
+
+        	ADD R1,#1
+
+        	ADD R6,R6,#-1
+		STR R1,R6,#1                 
+
+        	ADD R1,#-1
+		ADD R1,#-1  
+            
+        	CALL QUICK SORT
+
+ 		LDR R0, R6, #1
+		ADD R6, R6, #1          
+
+		LDR R1, R6, #1
+		ADD R6, R6, #1
+                        
+        	CALL QUICK SORT
+        	RET
+
+
+To Implement :
+
+LEA, ADD, LDR, STR, INV, BR, BRn, BRnz, LD,
+
+
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+
+
+Bubble sort LC3 ISA :
+
+INITDONE
+
+ADD R1, R1,#-1
+ST R1, COUNT ; Store the # of elements in the array
+LD R3, COUNT
+ADD R3, R3,#-1
+
+NEXT_I
+AND R4, R4,#0
+ADD R4, R4,#1
+AND R4, R4,#0
+ADD R4, R4,#1
+LEA R2, ARRAY
+
+NEXT_J
+LDR R0, R2,#0
+LDR R1, R2,#1
+NOT R0, R0
+ADD R0, R0,#1
+ADD R0, R1, R0
+BRzp NOSWAP
+
+SWAP
+LDR R0, R2,#0
+STR R0, R2,#1
+STR R1, R2,#0
+
+NOSWAP
+ADD R4, R4,#1
+ADD R2, R2,#1    
+NOT R1, R4
+ADD R1, R1,#1
+ADD R1, R3,R1
+BRzp NEXT_J    
+ADD R3, R3,#-1
+
+BRzp NEXT_I
+OUTPUT
+
+
+To Implement :
+
+ADD, ST, LD, AND, LEA, LDR, STR, NOT, BRzp 
