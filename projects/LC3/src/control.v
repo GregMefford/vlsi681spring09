@@ -35,7 +35,7 @@ module control
 	assign ALU_CONTROL   = alu_control(IR, DECODE);
 	assign ALU_MuxA      = alu_MuxA(IR, DECODE);
 	assign ALU_MuxB      = alu_MuxB(IR, DECODE, IS_IMMEDIATE);
-	assign PC_CONTROL    = pc_control(IR, STAGE);
+	assign PC_CONTROL    = pc_control(IR, STAGE, N, Z, P);
 	assign IR_LE         = FETCH;
 	assign REG_CONTROL   = reg_control(IR, STAGE);
 	assign MEM_WE        = mem_we(IR, WRITEBACK);
@@ -70,7 +70,8 @@ module control
 		if(DECODE) begin
 			// Decode the OPCODE
 			case(IR[15:12])
-				4'b0000: alu_MuxA = 'b0; // BR: (ALU_A = PC)
+				4'b0000: alu_MuxA = 'b0; // BR:  (ALU_A = PC)
+				4'b1110: alu_MuxA = 'b0; // LEA: (ALU_A = PC)
 				default: alu_MuxA = 'b1; // ALU_A = RS1_DATA
 			endcase
 		end
@@ -97,10 +98,7 @@ module control
 				4'b0110: alu_MuxB = 'b101; // LDR (B = Offset6)
 				4'b0111: alu_MuxB = 'b101; // STR (B = Offset6)
 				4'b0000: alu_MuxB = 'b110; // BR  (B = Offset9)
-				4'b0100: begin
-					if(IR(11]) alu_MuxB = 'b111; // JSR  (B = Offset11)
-					else       alu_MuxB = 'b110; // JSRR  (B = Offset6)
-				end
+				4'b1110: alu_MuxB = 'b101; // LEA (B = Offset6)
 				default: alu_MuxB = 'b0XX; // (B = RS2_DATA)
 			endcase
 		end
@@ -112,6 +110,9 @@ module control
 	function pc_control;
 		input [15:0] IR;
 		input [ 1:0] STAGE;
+		input        N;
+		input        Z;
+		input        P;
 		case(IR[15:12])
 			4'b0000: pc_control = (IR[9] && P) || (IR[10] && Z) || (IR[11] && N); // BR: PC = Y (if CCs match)
 			4'b1100: pc_control = 'b1; // JMP/RET: PC = Y
@@ -125,7 +126,7 @@ module control
 	function reg_control;
 		input [15:0] IR;
 		input [ 1:0] STAGE;
-		if(IR[15:12] == 'b0110) reg_control = 1; // RD = DATA
+		if(IR[15:12] == 'b0110) reg_control = 1; // LDR: RD = DATA
 		else reg_control = 0; // RD = Y
 	endfunction // reg_control
 
@@ -133,6 +134,7 @@ module control
 		input [15:0] IR;
 		input        WRITEBACK;
 		if(IR[15:12] == 'b0111) rd_le = 0; // STR
+		if(IR[15:12] == 'b0000) rd_le = 0; // BR
 		else rd_le = WRITEBACK;
 	endfunction // rd_le
 

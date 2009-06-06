@@ -16,7 +16,9 @@ module LC3(
   output	[ 2: 0] ALU_MuxB,
   
   output	[15: 0] Y,
-  output	[ 2: 0] NPZ,
+  output	        N,
+  output	        Z,
+  output	        P,
   output	        OF,
   
   output	        REG_CONTROL,
@@ -77,7 +79,9 @@ Execution execution_inst(
 	.IR(IR),
 	.RS1_DATA(RS1_DATA),
 	.RS2_DATA(RS2_DATA),
-	.NPZ(NPZ),
+	.N(N),
+	.Z(Z),
+	.P(P),
 	.OF(OF),
 	.Y(Y)
 );
