@@ -1,9 +1,9 @@
-{Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+{Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
--- Compiling module control
+-- Compiling module IRAM
 
 Top level modules:
-	control
+	IRAM
 
 } {} {}} {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
@@ -141,6 +141,13 @@ Top level modules:
 	altparallel_flash_loader
 	altserial_flash_loader
 	altsource_probe
+
+} {} {}} {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module DRAM
+
+Top level modules:
+	DRAM
 
 } {} {}} {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
