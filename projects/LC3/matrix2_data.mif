@@ -1,4 +1,4 @@
--- Copyright (C) 1991-2008 Altera Corporation
+-- Copyright (C) 1991-2009 Altera Corporation
 -- Your use of Altera Corporation's design tools, logic functions 
 -- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
@@ -15,20 +15,19 @@
 -- Quartus II generated Memory Initialization File (.mif)
 
 WIDTH=16;
-DEPTH=1024;
+DEPTH=4096;
 
 ADDRESS_RADIX=HEX;
-DATA_RADIX=BIN;
+DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	000  :   0101000000100000; -- R0 = R0 AND #0
-	001  :   0110001000000000; -- R1 = MEM[R0 + 0]
-	002  :   0110010000000001; -- R2 = MEM[R0 + 1]
-	003  :   0001011001000010; -- R3 = R1 + R2
-	004  :   0111011000000010; -- MEM[R0 + 2] = R3
-	005  :   0110001000000001; -- R1 = MEM[R0 + 1]
-	006  :   0110010000000010; -- R2 = MEM[R0 + 2]
-	007  :   1101011001000010; -- R3 = R1 * R2
-	008  :   0111011000000011; -- MEM[R0 + 3] = R3
-	[009..3FF]  :   0000000000000000;
+	0000  :   000B;
+	0001  :   000E;
+	0002  :   0005;
+	0003  :   FFF8;
+	0004  :   0001;
+	0005  :   0004;
+	0006  :   0009;
+	0007  :   000A;
+	[0008..0FFF]  :   0000;
 END;

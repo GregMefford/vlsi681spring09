@@ -5651,3 +5651,1193 @@ vsim work.LC3
 run 1000
 run 1000
 run 1000
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altcam
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module alt3pram
+# -- Compiling module altqpram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altdq_dqs
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altddio_bidir
+# 	altcam
+# 	altdpram
+# 	alt3pram
+# 	altqpram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altdq_dqs
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	altsource_probe
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 13 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+run 10000
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altcam
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module alt3pram
+# -- Compiling module altqpram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altdq_dqs
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altddio_bidir
+# 	altcam
+# 	altdpram
+# 	alt3pram
+# 	altqpram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altdq_dqs
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	altsource_probe
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 13 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "matrix4_id_instr.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v(191)
+#    Time: 0 ps  Iteration: 0  Instance: /LC3/instruction_fetch_inst/IRAM_inst/altsyncram_component
+# ERROR: cannot read matrix4_id_instr.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "matrix4_id_instr.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v(44184)
+#    Time: 0 ps  Iteration: 0  Instance: /LC3/instruction_fetch_inst/IRAM_inst/altsyncram_component
+run 10000
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "matrix4_id_instr.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v(191)
+#    Time: 0 ps  Iteration: 0  Instance: /LC3/instruction_fetch_inst/IRAM_inst/altsyncram_component
+# ERROR: cannot read matrix4_id_instr.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "matrix4_id_instr.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v(44184)
+#    Time: 0 ps  Iteration: 0  Instance: /LC3/instruction_fetch_inst/IRAM_inst/altsyncram_component
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 12 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+run 10000
+run 10000
+run 10000
+run 100000
+restart
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+run 10000
+
+run 10000
+run 10000
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 12 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+run 10000
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 12 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+run 5000
+run 5000
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 12 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Registers
+# 
+# Top level modules:
+# 	Registers
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Data
+# 
+# Top level modules:
+# 	Data
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module DRAM
+# 
+# Top level modules:
+# 	DRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Execution
+# 
+# Top level modules:
+# 	Execution
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module single_port_rom
+# 
+# Top level modules:
+# 	single_port_rom
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instruction_Fetch
+# 
+# Top level modules:
+# 	Instruction_Fetch
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module IRAM
+# 
+# Top level modules:
+# 	IRAM
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module LC3
+# 
+# Top level modules:
+# 	LC3
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module Instram
+# 
+# Top level modules:
+# 	Instram
+# 
+# 
+# vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# 12 compiles, 0 failed with no errors. 
+vsim work.LC3
+# vsim work.LC3 
+# Loading work.LC3
+# Loading work.Registers
+# Loading work.register_file
+# Loading work.Instruction_Fetch
+# Loading work.IRAM
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# Loading work.altsyncram
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.Data
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# Loading work.DRAM
+# Loading work.Execution
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# Loading work.ALU
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# Loading work.control
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst
+restart
+# ** Warning: (vsim-3010) [TSCALE] - Module 'IRAM' has a `timescale directive in effect, but previous modules do not.
+#         Region: /LC3/instruction_fetch_inst/IRAM_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Data' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/data_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'Execution' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'ALU' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/execution_inst/ALU_inst
+# ** Warning: (vsim-3009) [TSCALE] - Module 'control' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /LC3/control_inst

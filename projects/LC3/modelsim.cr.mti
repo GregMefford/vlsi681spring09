@@ -5,6 +5,13 @@ Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 Top level modules:
 	IRAM
 
+} {} {}} {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v}
+Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+-- Compiling module control
+
+Top level modules:
+	control
+
 } {} {}} {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v} {1 {vlog -work work -nocovercells {Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v}
 Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
 -- Compiling module Instram
