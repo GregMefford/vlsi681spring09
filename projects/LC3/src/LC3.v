@@ -4,8 +4,8 @@ module LC3(
   
   output    [15: 0] IR,
   
-  output	[15: 0] PC,
-  output	[ 1: 0] STAGE,
+  output	    [15: 0] PC,
+  output	reg [ 1: 0] STAGE,
   
   output	        PC_CONTROL,
   output	        PC_LE,
@@ -28,15 +28,23 @@ module LC3(
   output	        MAR_CONTROL,
   output	        MAR_LE,
   output	        MEM_WE,
+  output	[15: 0] MAR,
   output	[15: 0] DATA,
   
-  output	[ 1: 0] NEXT_STAGE,
-  output	        NEXT_STAGE_LE
+ 	output [15:0] ALU_A,
+	output [15:0] ALU_B  
 );
 
+always @(posedge CLK) begin
+  if(RESET)
+    STAGE = 2'b11;
+  else
+    STAGE = STAGE + 1;
+end
 
 Registers registers_inst(
 	.CLK(CLK),
+	.RESET(RESET),
 	.RD_LE(RD_LE),
 	.REG_Control(REG_CONTROL),
 	.DATA(DATA),
@@ -66,7 +74,8 @@ Data data_inst(
 	.CLK(CLK),
 	.RD_DATA(RD_DATA),
 	.Y(Y),
-	.DATA(DATA)
+	.DATA(DATA),
+	.MAR(MAR)
 );
 
 Execution execution_inst(
@@ -79,7 +88,9 @@ Execution execution_inst(
 	.RS2_DATA(RS2_DATA),
 	.NPZ(NPZ),
 	.OF(OF),
-	.Y(Y)
+	.Y(Y),
+	.ALU_A(ALU_A),
+	.ALU_B(ALU_B)
 );
 
 control control_inst(
@@ -98,17 +109,7 @@ control control_inst(
 	.REG_CONTROL(REG_CONTROL),
 	.PC_CONTROL(PC_CONTROL),
 	.PC_LE(PC_LE),
-	.IR_LE(IR_LE),
-
-	.NEXT_STAGE_LE(NEXT_STAGE_LE),
-	.NEXT_STAGE(NEXT_STAGE)
-);
-
-lpm_counter0 stage_counter(
-	.sload(NEXT_STAGE_LE),
-	.clock(CLK),
-	.data(NEXT_STAGE),
-	.q(STAGE)
+	.IR_LE(IR_LE)
 );
 
 endmodule

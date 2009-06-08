@@ -11,7 +11,7 @@ module ALU(A, B, CONTROL, CC, Z, OF);
 
     assign result = alu_out(A, B, CONTROL);
     assign Z = result[15:0];
-    assign OF  = result[16] ;
+    assign OF  = result[16];
     assign CC = flags(result);
 
      function [31:0] alu_out;

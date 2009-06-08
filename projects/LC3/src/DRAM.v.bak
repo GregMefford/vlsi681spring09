@@ -79,7 +79,7 @@ module DRAM (
 	defparam
 		altsyncram_component.address_aclr_a = "NONE",
 		altsyncram_component.indata_aclr_a = "NONE",
-		altsyncram_component.init_file = "add_test_data.mif",
+		altsyncram_component.init_file = "matrix4_id_data.mif",
 		altsyncram_component.intended_device_family = "Cyclone",
 		altsyncram_component.lpm_hint = "ENABLE_RUNTIME_MOD=NO",
 		altsyncram_component.lpm_type = "altsyncram",

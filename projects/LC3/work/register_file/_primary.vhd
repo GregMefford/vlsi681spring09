@@ -3,6 +3,7 @@ use verilog.vl_types.all;
 entity register_file is
     port(
         CLK             : in     vl_logic;
+        RESET           : in     vl_logic;
         RD_LE           : in     vl_logic;
         RS1             : in     vl_logic_vector(2 downto 0);
         RS2             : in     vl_logic_vector(2 downto 0);

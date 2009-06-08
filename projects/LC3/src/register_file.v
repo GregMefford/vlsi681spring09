@@ -1,5 +1,6 @@
-module register_file(CLK, RD_LE, RS1, RS2, RD, DATA_IN, RS1_DATA, RS2_DATA, RD_DATA);
+module register_file(CLK, RESET, RD_LE, RS1, RS2, RD, DATA_IN, RS1_DATA, RS2_DATA, RD_DATA);
 	input              CLK;
+	input              RESET;
 	input              RD_LE;
 	input      [ 2: 0] RS1;
 	input      [ 2: 0] RS2;
@@ -19,6 +20,16 @@ module register_file(CLK, RD_LE, RS1, RS2, RD, DATA_IN, RS1_DATA, RS2_DATA, RD_D
 	       reg [15: 0] R0;
 	
 	always @(posedge CLK) begin
+	  if(RESET) begin
+	    R0 = 0;
+	    R1 = 0;
+	    R2 = 0;
+	    R3 = 0;
+	    R4 = 0;
+	    R5 = 0;
+	    R6 = 0;
+	    R7 = 0;
+	  end
 		if(RD_LE) begin
 			case(RD)
 				0: R0 = DATA_IN;

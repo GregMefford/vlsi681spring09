@@ -1,6 +1,6 @@
 Flow report for LC3
-Fri May 29 11:31:32 2009
-Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+Thu Jun 04 14:03:12 2009
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
 ---------------------
@@ -19,7 +19,7 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2008 Altera Corporation
+Copyright (C) 1991-2009 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,15 +38,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Fri May 29 11:31:32 2009   ;
-; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Flow Status             ; Successful - Thu Jun 04 14:03:12 2009   ;
+; Quartus II Version      ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name           ; LC3                                     ;
 ; Top-level Entity Name   ; LC3                                     ;
 ; Family                  ; Cyclone                                 ;
 ; Device                  ; EP1C6Q240C8                             ;
 ; Timing Models           ; Final                                   ;
 ; Met timing requirements ; Yes                                     ;
-; Total logic elements    ; 639 / 5,980 ( 11 % )                    ;
+; Total logic elements    ; 636 / 5,980 ( 11 % )                    ;
 ; Total pins              ; 138 / 185 ( 75 % )                      ;
 ; Total virtual pins      ; 0                                       ;
 ; Total memory bits       ; 81,920 / 92,160 ( 89 % )                ;
@@ -59,35 +59,35 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/29/2009 11:18:05 ;
+; Start date & time ; 06/04/2009 14:02:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LC3                 ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                ;
-+------------------------------------+-----------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                       ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+-----------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 82148481109.124361028502768 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_COUNTER                 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; ROM: 1-PORT                 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; RAM: 1-PORT                 ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                         ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 8.1                         ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 8.1                         ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                          ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                           ; --            ; --          ; --             ;
-; MISC_FILE                          ; src/lpm_counter0.bsf        ; --            ; --          ; --             ;
-; MISC_FILE                          ; src/lpm_counter0_bb.v       ; --            ; --          ; --             ;
-; MISC_FILE                          ; src/IRAM_inst.v             ; --            ; --          ; --             ;
-; MISC_FILE                          ; src/IRAM_bb.v               ; --            ; --          ; --             ;
-; MISC_FILE                          ; src/DRAM_inst.v             ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                    ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                      ; --            ; --          ; Top            ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                         ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+-----------------------------+---------------+-------------+----------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                  ;
++------------------------------------+-------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                         ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+-------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 8796753232772.124413855301584 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ROM: 1-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 1-PORT                   ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 8.1                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 8.1                           ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                            ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; src/lpm_counter0.bsf          ; --            ; --          ; --             ;
+; MISC_FILE                          ; src/lpm_counter0_bb.v         ; --            ; --          ; --             ;
+; MISC_FILE                          ; src/IRAM_inst.v               ; --            ; --          ; --             ;
+; MISC_FILE                          ; src/IRAM_bb.v                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; src/DRAM_inst.v               ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                      ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --            ; --          ; Top            ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                           ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+-------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +95,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:20     ; 1.0                     ; 175 MB              ; 00:00:14                           ;
-; Fitter                  ; 00:00:19     ; 1.0                     ; 186 MB              ; 00:00:15                           ;
-; Assembler               ; 00:00:04     ; 1.0                     ; 153 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 118 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:08     ; 1.0                     ; 134 MB              ; 00:00:06                           ;
-; Total                   ; 00:00:53     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis    ; 00:00:12     ; 1.0                     ; 177 MB              ; 00:00:08                           ;
+; Fitter                  ; 00:00:11     ; 1.0                     ; 175 MB              ; 00:00:09                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 154 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:03     ; 1.0                     ; 119 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:30     ; --                      ; --                  ; 00:00:21                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,11 +108,10 @@ applicable agreement for further details.
 +-------------------------+------------------+------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +-------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis    ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Fitter                  ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Assembler               ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Classic Timing Analyzer ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
-; Classic Timing Analyzer ; ececs-lab802m    ; Windows XP ; 5.1        ; i1586          ;
+; Analysis & Synthesis    ; jetpack-windows  ; Windows XP ; 5.1        ; i686           ;
+; Fitter                  ; jetpack-windows  ; Windows XP ; 5.1        ; i686           ;
+; Assembler               ; jetpack-windows  ; Windows XP ; 5.1        ; i686           ;
+; Classic Timing Analyzer ; jetpack-windows  ; Windows XP ; 5.1        ; i686           ;
 +-------------------------+------------------+------------+------------+----------------+
 
 
@@ -124,7 +122,6 @@ quartus_map --read_settings_files=on --write_settings_files=off LC3 -c LC3
 quartus_fit --read_settings_files=off --write_settings_files=off LC3 -c LC3
 quartus_asm --read_settings_files=off --write_settings_files=off LC3 -c LC3
 quartus_tan --read_settings_files=off --write_settings_files=off LC3 -c LC3 --timing_analysis_only
-quartus_tan --read_settings_files=on --write_settings_files=off LC3 -c LC3 --speed=8
 
 
 

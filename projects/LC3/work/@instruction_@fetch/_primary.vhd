@@ -3,6 +3,7 @@ use verilog.vl_types.all;
 entity Instruction_Fetch is
     port(
         CLK             : in     vl_logic;
+        RESET           : in     vl_logic;
         PC_LE           : in     vl_logic;
         IR_LE           : in     vl_logic;
         Y               : in     vl_logic_vector(15 downto 0);

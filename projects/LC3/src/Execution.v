@@ -8,16 +8,15 @@ module Execution(
 	input	[15:0] RS2_DATA,
 	output	[2:0] NPZ,
 	output       OF,
-	output	[15:0] Y
+	output	[15:0] Y,
+	
+	output [15:0] ALU_A,
+	output [15:0] ALU_B
 );
 
-wire	[15:0] IMM5_SE;
-wire	[15:0] ALU_A;
-wire	[15:0] ALU_B;
-
 assign ALU_A = (ALU_MuxA) ? RS1_DATA : PC;
-
 assign ALU_B = alu_muxb(IR, RS2_DATA, ALU_MuxB);
+
 function [15:0] alu_muxb;
 	input [15:0] IR;
 	input [15:0] RS2_DATA;
