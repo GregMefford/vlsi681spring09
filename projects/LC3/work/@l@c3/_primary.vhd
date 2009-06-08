@@ -3,7 +3,8 @@ use verilog.vl_types.all;
 entity LC3 is
     port(
         CLK             : in     vl_logic;
-        IR              : in     vl_logic_vector(15 downto 0);
+        RESET           : in     vl_logic;
+        IR              : out    vl_logic_vector(15 downto 0);
         PC              : out    vl_logic_vector(15 downto 0);
         STAGE           : out    vl_logic_vector(1 downto 0);
         PC_CONTROL      : out    vl_logic;
@@ -22,10 +23,10 @@ entity LC3 is
         RD_LE           : out    vl_logic;
         MAR_CONTROL     : out    vl_logic;
         MAR_LE          : out    vl_logic;
-        MEM_CLK         : out    vl_logic;
         MEM_WE          : out    vl_logic;
+        MAR             : out    vl_logic_vector(15 downto 0);
         DATA            : out    vl_logic_vector(15 downto 0);
-        NEXT_STAGE      : out    vl_logic_vector(1 downto 0);
-        NEXT_STAGE_LE   : out    vl_logic
+        ALU_A           : out    vl_logic_vector(15 downto 0);
+        ALU_B           : out    vl_logic_vector(15 downto 0)
     );
 end LC3;

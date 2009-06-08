@@ -1,8 +1,9 @@
 module Registers(
 	input         CLK,
+	input         RESET,
 	input         RD_LE,
 	input         REG_Control,
-	input  [15:0] DATA,
+	inout  [15:0] DATA,
 	input  [15:0] IR,
 	input  [15:0] Y,
 	
@@ -16,6 +17,7 @@ assign DATA_IN = (REG_Control) ? DATA : Y;
 
 register_file regfile(
 	.CLK(CLK),
+	.RESET(RESET),
 	.DATA_IN(DATA_IN),
 	.RD(IR[11:9]),
 	.RD_LE(RD_LE),

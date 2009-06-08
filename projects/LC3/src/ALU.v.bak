@@ -14,7 +14,7 @@ module ALU(A, B, CONTROL, CC, Z, OF);
     assign OF  = result[16];
     assign CC = flags(result);
 
-     function [15:0] alu_out;
+     function [31:0] alu_out;
            input  [15:0] A,B;
            input  [2:0] CONTROL;
            case (CONTROL)

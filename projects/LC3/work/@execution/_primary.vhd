@@ -11,6 +11,8 @@ entity Execution is
         RS2_DATA        : in     vl_logic_vector(15 downto 0);
         NPZ             : out    vl_logic_vector(2 downto 0);
         \OF\            : out    vl_logic;
-        Y               : out    vl_logic_vector(15 downto 0)
+        Y               : out    vl_logic_vector(15 downto 0);
+        ALU_A           : out    vl_logic_vector(15 downto 0);
+        ALU_B           : out    vl_logic_vector(15 downto 0)
     );
 end Execution;

@@ -15,11 +15,7 @@ module control
 	output             REG_CONTROL,
 	output             PC_CONTROL,
 	output             PC_LE,
-	output             IR_LE,
-
-	output             NEXT_STAGE_LE,
-	output     [ 1: 0] NEXT_STAGE
-
+	output             IR_LE
 );
 	
 	wire DECODE;    assign DECODE    = (STAGE == 2'b00);
@@ -27,11 +23,14 @@ module control
 	wire WRITEBACK; assign WRITEBACK = (STAGE == 2'b10);
 	wire FETCH;     assign FETCH     = (STAGE == 2'b11);
 
+	wire ADD; assign ADD = (IR[15:12] == 4'b0001);
+	wire LDR; assign ADD = (IR[15:12] == 4'b0110);
+
 	wire IS_IMMEDIATE; assign IS_IMMEDIATE = (IR[5] == 1);
 
-	assign ALU_CONTROL   = alu_control(IR, DECODE);
-	assign ALU_MuxA      = alu_MuxA(IR, DECODE);
-	assign ALU_MuxB      = alu_MuxB(IR, DECODE, IS_IMMEDIATE);
+	assign ALU_CONTROL   = alu_control(IR);
+	assign ALU_MuxA      = alu_MuxA(IR);
+	assign ALU_MuxB      = alu_MuxB(IR, IS_IMMEDIATE);
 	assign PC_CONTROL    = pc_control(IR, STAGE);
 	assign IR_LE         = FETCH;
 	assign REG_CONTROL   = reg_control(IR, STAGE);
@@ -40,66 +39,47 @@ module control
 	assign MAR_CONTROL   = mar_control(IR, STAGE);
 	assign PC_LE         = EXECUTE;
 	assign RD_LE         = rd_le(IR, WRITEBACK);
-	assign NEXT_STAGE_LE = 0;
-	assign NEXT_STAGE    = next_stage(IR, STAGE);
-	
+
 	function [2:0] alu_control;
 		input [15:0] IR;
-		input        DECODE;
-		if(DECODE) begin
-			// Decode the OPCODE
-			case(IR[15:12])
-				4'b0101: alu_control = 'b001; // AND: Y = A & B
-				4'b1001: alu_control = 'b010; // NOT: Y = !A
-				4'b1101: begin // MUL, SL, or SR
-					if(IR[5]) alu_control = 'b100; // Multiply Imm5
-					else alu_control = {1'b1, IR[4:3]};
-				end
-				default: alu_control = 3'b000; // Y = A + B
-			endcase
-		end
-		else alu_control = 3'bX;
+		// Decode the OPCODE
+		case(IR[15:12])
+			4'b0001: alu_control = 'b000; // ADD: Y = A + B
+			4'b0101: alu_control = 'b001; // AND: Y = A & B
+			4'b0110: alu_control = 'b000; // LDR: Y = A + B
+			4'b0111: alu_control = 'b000; // STR: Y = A + B
+			4'b1001: alu_control = 'b010; // NOT: Y = !A
+			4'b1101: begin
+				if(IR[5]) alu_control = 'b100; //      MUL IMM5
+				else alu_control = {1'b1, IR[4:3]}; // MUL, SL, or SR
+			end
+			default: alu_control = 3'bX;
+		endcase
 	endfunction // alu_control
 	
 	function alu_MuxA;
 		input [15:0] IR;
-		input        DECODE;
-		if(DECODE) begin
-			// Decode the OPCODE
-			case(IR[15:12])
-				4'b0000: alu_MuxA = 'b0; // BR: (ALU_A = PC)
-				default: alu_MuxA = 'b1; // ALU_A = RS1_DATA
-			endcase
-		end
-		else begin
-			alu_MuxA = 'b1;
-		end
+		// Decode the OPCODE
+		case(IR[15:12])
+			4'b0110: alu_MuxA = 'b0; // LDR (A = PC)
+			4'b0111: alu_MuxA = 'b0; // STR (A = PC)
+			default: alu_MuxA = 'b1; // (A = RS1_DATA)
+		endcase
 	endfunction // alu_MuxA
 	
 	function [2:0] alu_MuxB;
 		input [15:0] IR;
-		input        DECODE;
 		input        IS_IMMEDIATE;
-		if(DECODE) begin
-			// Decode the OPCODE
-			case(IR[15:12])
-				4'b0001: begin	// ADD
-					if(IS_IMMEDIATE) alu_MuxB = 'b100; // (B = IMM5)
-					else alu_MuxB = 'b0XX; // (B = RS2_DATA)
-				end
-				4'b1101: begin	// MUL
-					if(IS_IMMEDIATE) alu_MuxB = 'b100; // (B = IMM5)
-					else alu_MuxB = 'b0XX; // (B = RS2_DATA)
-				end
-				4'b0110: alu_MuxB = 'b101; // LDR (B = Offset6)
-				4'b0111: alu_MuxB = 'b101; // STR (B = Offset6)
-				4'b0000: alu_MuxB = 'b110; // BR  (B = Offset9)
-				default: alu_MuxB = 'b0XX; // (B = RS2_DATA)
-			endcase
-		end
-		else begin
-			alu_MuxB = 'b1;
-		end
+		// Decode the OPCODE
+		case(IR[15:12])
+			4'b0001: begin	// ADD
+				if(IS_IMMEDIATE) alu_MuxB = 'b100; // (B = IMM5)
+				else alu_MuxB = 'b0XX; // (B = RS2_DATA)
+			end
+			4'b0110: alu_MuxB = 'b101; // LDR (B = Offset6)
+			4'b0111: alu_MuxB = 'b101; // STR (B = Offset6)
+			default: alu_MuxB = 'b0XX; // (B = RS2_DATA)
+		endcase
 	endfunction // alu_MuxB
 	
 	function pc_control;
@@ -143,7 +123,7 @@ module control
 	function mar_control;
 		input [15:0] IR;
 		input [ 1:0] STAGE;
-		mar_control = 0; // Not using memory (MAR = EA)
+		mar_control = 0; // Not using memory (MAR = Y)
 	endfunction // mar_control
 
 	function mem_we;
@@ -152,19 +132,5 @@ module control
 		if(IR[15:12] == 'b0111) mem_we = WRITEBACK; // STR
 		else mem_we = 0;
 	endfunction // mem_we
-
-	function [1:0] next_stage;
-		input [15:0] IR;
-		input [ 1:0] STAGE;
-		if(STAGE == 1) next_stage = 2'b00; // Skip from stage 1 back to stage 0
-		else next_stage = 2'bX;
-	endfunction // next_stage
-
-	function next_stage_le;
-		input [15:0] IR;
-		input [ 1:0] STAGE;
-		if(STAGE == 1) next_stage_le = 1'b1; // Skip from stage 1 back to stage 0
-		else next_stage_le = 0;
-	endfunction // next_stage_le
 
 endmodule

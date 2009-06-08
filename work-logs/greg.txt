@@ -54,3 +54,5 @@ Week 8:
 Week 9:
 2009-06-03: 3.00 hours: Creating digital schematics and working on pipelining.
 2009-06-03: 2.00 hours: Partitioning the design into pipeline stages.
+2009-06-04: 3.00 hours: Working on a pipelined architecture.
+2009-06-05: 4.00 hours: Working on output verification and instructions for sorting.

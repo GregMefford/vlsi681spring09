@@ -5,9 +5,9 @@ module Data(
 	CLK,
 	RD_DATA,
 	Y,
-	DATA
+	DATA,
+	MAR
 );
-
 
 input	MAR_LE;
 input	MAR_CONTROL;
@@ -17,7 +17,7 @@ input	[15:0] RD_DATA;
 input	[15:0] Y;
 output	[15:0] DATA;
 
-reg	[15:0] MAR;
+output reg	[15:0] MAR;
 
 always @(posedge CLK) begin
   if(MAR_LE) MAR = (MAR_CONTROL) ? DATA : Y;

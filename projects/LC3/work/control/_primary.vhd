@@ -11,13 +11,10 @@ entity control is
         MAR_LE          : out    vl_logic;
         MAR_CONTROL     : out    vl_logic;
         MEM_WE          : out    vl_logic;
-        MEM_CLK         : out    vl_logic;
         RD_LE           : out    vl_logic;
         REG_CONTROL     : out    vl_logic;
         PC_CONTROL      : out    vl_logic;
         PC_LE           : out    vl_logic;
-        IR_LE           : out    vl_logic;
-        NEXT_STAGE_LE   : out    vl_logic;
-        NEXT_STAGE      : out    vl_logic_vector(1 downto 0)
+        IR_LE           : out    vl_logic
     );
 end control;
