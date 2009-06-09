@@ -1,0 +1,404 @@
+Analysis & Synthesis report for tutor2
+Mon Jun 08 12:56:48 2009
+Version 5.0 Build 168 06/22/2005 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. State Machine - |tutor2|LCD_Display:inst1|state
+  8. State Machine - |tutor2|LCD_Display:inst1|next_command
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: LCD_Display:inst1
+ 13. Parameter Settings for User Entity Instance: lpm_counter0:inst2|lpm_counter:lpm_counter_component
+ 14. Analysis & Synthesis Equations
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2005 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic       
+functions, and any output files any of the foregoing           
+(including device programming or simulation files), and any    
+associated documentation or information are expressly subject  
+to the terms and conditions of the Altera Program License      
+Subscription Agreement, Altera MegaCore Function License       
+Agreement, or other applicable license agreement, including,   
+without limitation, that your use is for the sole purpose of   
+programming logic devices manufactured by Altera and sold by   
+Altera or its authorized distributors.  Please refer to the    
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Jun 08 12:56:48 2009        ;
+; Quartus II Version          ; 5.0 Build 168 06/22/2005 SP 1 SJ Web Edition ;
+; Revision Name               ; tutor2                                       ;
+; Top-level Entity Name       ; tutor2                                       ;
+; Family                      ; Cyclone                                      ;
+; Total logic elements        ; 122                                          ;
+; Total pins                  ; 14                                           ;
+; Total virtual pins          ; 0                                            ;
+; Total memory bits           ; 0                                            ;
+; Total PLLs                  ; 0                                            ;
++-----------------------------+----------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                     ;
++--------------------------------------------------------------------+--------------+---------------+
+; Option                                                             ; Setting      ; Default Value ;
++--------------------------------------------------------------------+--------------+---------------+
+; Device                                                             ; EP1C6Q240C8  ;               ;
+; Top-level entity name                                              ; tutor2       ; tutor2        ;
+; Family name                                                        ; Cyclone      ; Stratix       ;
+; Use smart compilation                                              ; Off          ; Off           ;
+; Restructure Multiplexers                                           ; Auto         ; Auto          ;
+; Create Debugging Nodes for IP Cores                                ; off          ; off           ;
+; Preserve fewer node names                                          ; On           ; On            ;
+; Disable OpenCore Plus hardware evaluation                          ; Off          ; Off           ;
+; Verilog Version                                                    ; Verilog_2001 ; Verilog_2001  ;
+; VHDL Version                                                       ; VHDL93       ; VHDL93        ;
+; State Machine Processing                                           ; Auto         ; Auto          ;
+; Extract Verilog State Machines                                     ; On           ; On            ;
+; Extract VHDL State Machines                                        ; On           ; On            ;
+; Add Pass-Through Logic to Inferred RAMs                            ; On           ; On            ;
+; NOT Gate Push-Back                                                 ; On           ; On            ;
+; Power-Up Don't Care                                                ; On           ; On            ;
+; Remove Redundant Logic Cells                                       ; Off          ; Off           ;
+; Remove Duplicate Registers                                         ; On           ; On            ;
+; Ignore CARRY Buffers                                               ; Off          ; Off           ;
+; Ignore CASCADE Buffers                                             ; Off          ; Off           ;
+; Ignore GLOBAL Buffers                                              ; Off          ; Off           ;
+; Ignore ROW GLOBAL Buffers                                          ; Off          ; Off           ;
+; Ignore LCELL Buffers                                               ; Off          ; Off           ;
+; Ignore SOFT Buffers                                                ; On           ; On            ;
+; Limit AHDL Integers to 32 Bits                                     ; Off          ; Off           ;
+; Optimization Technique -- Cyclone                                  ; Balanced     ; Balanced      ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II ; 70           ; 70            ;
+; Auto Carry Chains                                                  ; On           ; On            ;
+; Auto Open-Drain Pins                                               ; On           ; On            ;
+; Remove Duplicate Logic                                             ; On           ; On            ;
+; Perform WYSIWYG Primitive Resynthesis                              ; Off          ; Off           ;
+; Perform gate-level register retiming                               ; Off          ; Off           ;
+; Allow register retiming to trade off Tsu/Tco with Fmax             ; On           ; On            ;
+; Auto ROM Replacement                                               ; On           ; On            ;
+; Auto RAM Replacement                                               ; On           ; On            ;
+; Auto Shift Register Replacement                                    ; On           ; On            ;
+; Auto Clock Enable Replacement                                      ; On           ; On            ;
+; Allows Synchronous Control Signal Usage in Normal Mode Logic Cells ; On           ; On            ;
+; Auto RAM Block Balancing                                           ; On           ; On            ;
+; Auto Resource Sharing                                              ; Off          ; Off           ;
+; Allow Any RAM Size For Recognition                                 ; Off          ; Off           ;
+; Allow Any ROM Size For Recognition                                 ; Off          ; Off           ;
+; Allow Any Shift Register Size For Recognition                      ; Off          ; Off           ;
+; Maximum Number of M512 Memory Blocks                               ; -1           ; -1            ;
+; Maximum Number of M4K Memory Blocks                                ; -1           ; -1            ;
+; Maximum Number of M-RAM Memory Blocks                              ; -1           ; -1            ;
+; Ignore translate_off and translate_on Synthesis Directives         ; Off          ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report                 ; On           ; On            ;
++--------------------------------------------------------------------+--------------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+; lpm_counter0.vhd                 ; yes             ; User VHDL File                     ; C:/altera/Megan/lpm_counter0.vhd                                       ;
+; LCD_Display.vhd                  ; yes             ; User VHDL File                     ; C:/altera/Megan/LCD_Display.vhd                                        ;
+; tutor2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/altera/Megan/tutor2.bdf                                             ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/quartus50sp1/libraries/megafunctions/lpm_counter.tdf         ;
+; lpm_constant.inc                 ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/lpm_constant.inc        ;
+; lpm_decode.inc                   ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/lpm_decode.inc          ;
+; lpm_add_sub.inc                  ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/lpm_add_sub.inc         ;
+; cmpconst.inc                     ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/cmpconst.inc            ;
+; lpm_compare.inc                  ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/lpm_compare.inc         ;
+; lpm_counter.inc                  ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/lpm_counter.inc         ;
+; dffeea.inc                       ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/dffeea.inc              ;
+; alt_synch_counter.inc            ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/alt_synch_counter.inc   ;
+; alt_synch_counter_f.inc          ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/alt_synch_counter_f.inc ;
+; alt_counter_f10ke.inc            ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/alt_counter_f10ke.inc   ;
+; alt_counter_stratix.inc          ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/alt_counter_stratix.inc ;
+; aglobal50.inc                    ; yes             ; Other                              ; c:/altera/quartus50sp1/libraries/megafunctions/aglobal50.inc           ;
+; db/cntr_ia7.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/altera/Megan/db/cntr_ia7.tdf                                        ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++-----------------------------------+---------+
+; Resource                          ; Usage   ;
++-----------------------------------+---------+
+; Total logic elements              ; 122     ;
+; Total combinational functions     ; 119     ;
+;     -- Total 4-input functions    ; 53      ;
+;     -- Total 3-input functions    ; 8       ;
+;     -- Total 2-input functions    ; 23      ;
+;     -- Total 1-input functions    ; 33      ;
+;     -- Total 0-input functions    ; 2       ;
+; Combinational cells for routing   ; 0       ;
+; Total registers                   ; 68      ;
+; Total logic cells in carry chains ; 33      ;
+; I/O pins                          ; 14      ;
+; Maximum fan-out node              ; SW8     ;
+; Maximum fan-out                   ; 49      ;
+; Total fan-out                     ; 517     ;
+; Average fan-out                   ; 3.80    ;
++-----------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                       ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+--------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Full Hierarchy Name                                                                  ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+--------------------------------------------------------------------------------------+
+; |tutor2                                   ; 122 (0)     ; 68           ; 0           ; 14   ; 0            ; 54 (0)       ; 3 (0)             ; 65 (0)           ; 33 (0)          ; |tutor2                                                                              ;
+;    |LCD_Display:inst1|                    ; 114 (114)   ; 60           ; 0           ; 0    ; 0            ; 54 (54)      ; 3 (3)             ; 57 (57)          ; 25 (25)         ; |tutor2|LCD_Display:inst1                                                            ;
+;    |lpm_counter0:inst2|                   ; 8 (0)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; |tutor2|lpm_counter0:inst2                                                           ;
+;       |lpm_counter:lpm_counter_component| ; 8 (0)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 8 (0)           ; |tutor2|lpm_counter0:inst2|lpm_counter:lpm_counter_component                         ;
+;          |cntr_ia7:auto_generated|        ; 8 (8)       ; 8            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 8 (8)           ; |tutor2|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_ia7:auto_generated ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+--------------------------------------------------------------------------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |tutor2|LCD_Display:inst1|state                                                                                                                                                                                                        ;
++---------------------+---------------------+-------------------+--------------+--------------+------------+------------------+-------------------+-------------+--------------------+----------------+------------------+----------------+--------------+
+; Name                ; state.display_clear ; state.display_off ; state.reset3 ; state.reset2 ; state.hold ; state.drop_lcd_e ; state.return_home ; state.line2 ; state.print_string ; state.mode_set ; state.display_on ; state.func_set ; state.reset1 ;
++---------------------+---------------------+-------------------+--------------+--------------+------------+------------------+-------------------+-------------+--------------------+----------------+------------------+----------------+--------------+
+; state.reset1        ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 0            ;
+; state.func_set      ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 1              ; 1            ;
+; state.display_on    ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 1                ; 0              ; 1            ;
+; state.mode_set      ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 1              ; 0                ; 0              ; 1            ;
+; state.print_string  ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 1                  ; 0              ; 0                ; 0              ; 1            ;
+; state.line2         ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 1           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.return_home   ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 1                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.drop_lcd_e    ; 0                   ; 0                 ; 0            ; 0            ; 0          ; 1                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.hold          ; 0                   ; 0                 ; 0            ; 0            ; 1          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.reset2        ; 0                   ; 0                 ; 0            ; 1            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.reset3        ; 0                   ; 0                 ; 1            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.display_off   ; 0                   ; 1                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
+; state.display_clear ; 1                   ; 0                 ; 0            ; 0            ; 0          ; 0                ; 0                 ; 0           ; 0                  ; 0              ; 0                ; 0              ; 1            ;
++---------------------+---------------------+-------------------+--------------+--------------+------------+------------------+-------------------+-------------+--------------------+----------------+------------------+----------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |tutor2|LCD_Display:inst1|next_command                                                                                                                                                                                                                                                                                                   ;
++----------------------------+----------------------------+--------------------------+---------------------+-------------------+---------------------+-------------------------+--------------------------+--------------------+---------------------------+-----------------------+-------------------------+-----------------------+---------------------+
+; Name                       ; next_command.display_clear ; next_command.display_off ; next_command.reset3 ; next_command.hold ; next_command.reset1 ; next_command.drop_lcd_e ; next_command.return_home ; next_command.line2 ; next_command.print_string ; next_command.mode_set ; next_command.display_on ; next_command.func_set ; next_command.reset2 ;
++----------------------------+----------------------------+--------------------------+---------------------+-------------------+---------------------+-------------------------+--------------------------+--------------------+---------------------------+-----------------------+-------------------------+-----------------------+---------------------+
+; next_command.reset2        ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 0                   ;
+; next_command.func_set      ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 1                     ; 1                   ;
+; next_command.display_on    ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 1                       ; 0                     ; 1                   ;
+; next_command.mode_set      ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 1                     ; 0                       ; 0                     ; 1                   ;
+; next_command.print_string  ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 1                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.line2         ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 1                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.return_home   ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 1                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.drop_lcd_e    ; 0                          ; 0                        ; 0                   ; 0                 ; 0                   ; 1                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.reset1        ; 0                          ; 0                        ; 0                   ; 0                 ; 1                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.hold          ; 0                          ; 0                        ; 0                   ; 1                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.reset3        ; 0                          ; 0                        ; 1                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.display_off   ; 0                          ; 1                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
+; next_command.display_clear ; 1                          ; 0                        ; 0                   ; 0                 ; 0                   ; 0                       ; 0                        ; 0                  ; 0                         ; 0                     ; 0                       ; 0                     ; 1                   ;
++----------------------------+----------------------------+--------------------------+---------------------+-------------------+---------------------+-------------------------+--------------------------+--------------------+---------------------------+-----------------------+-------------------------+-----------------------+---------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 68    ;
+; Number of registers using Synchronous Clear  ; 21    ;
+; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Asynchronous Clear ; 42    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 9     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; LCD_Display:inst1|LCD_E                ; 1       ;
+; LCD_Display:inst1|LCD_RW               ; 9       ;
+; LCD_Display:inst1|DATA_BUS_VALUE[5]    ; 1       ;
+; LCD_Display:inst1|DATA_BUS_VALUE[4]    ; 1       ;
+; LCD_Display:inst1|DATA_BUS_VALUE[3]    ; 2       ;
+; Total number of inverted registers = 5 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |tutor2|LCD_Display:inst1|CLK_COUNT_400HZ[14] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |tutor2|LCD_Display:inst1|DATA_BUS_VALUE[5]   ;
+; 32:1               ; 4 bits    ; 84 LEs        ; 32 LEs               ; 52 LEs                 ; No         ; |tutor2|LCD_Display:inst1|Next_Char[3]        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LCD_Display:inst1 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; num_hex_digits ; 2     ; Untyped                               ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_counter0:inst2|lpm_counter:lpm_counter_component ;
++------------------------+----------+---------------------------------------------------------------+
+; Parameter Name         ; Value    ; Type                                                          ;
++------------------------+----------+---------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                                ;
+; LPM_WIDTH              ; 8        ; Integer                                                       ;
+; LPM_DIRECTION          ; UP       ; Untyped                                                       ;
+; LPM_MODULUS            ; 0        ; Untyped                                                       ;
+; LPM_AVALUE             ; UNUSED   ; Untyped                                                       ;
+; LPM_SVALUE             ; UNUSED   ; Untyped                                                       ;
+; DEVICE_FAMILY          ; Cyclone  ; Untyped                                                       ;
+; CARRY_CHAIN            ; MANUAL   ; Untyped                                                       ;
+; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                            ;
+; NOT_GATE_PUSH_BACK     ; ON       ; NOT_GATE_PUSH_BACK                                            ;
+; CARRY_CNT_EN           ; SMART    ; Untyped                                                       ;
+; LABWIDE_SCLR           ; ON       ; Untyped                                                       ;
+; USE_NEW_VERSION        ; TRUE     ; Untyped                                                       ;
+; CBXI_PARAMETER         ; cntr_ia7 ; Untyped                                                       ;
++------------------------+----------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------+
+; Analysis & Synthesis Equations ;
++--------------------------------+
+The equations can be found in C:/altera/Megan/tutor2.map.eqn.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 5.0 Build 168 06/22/2005 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jun 08 12:56:42 2009
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tutor2 -c tutor2
+Info: Found 2 design units, including 1 entities, in source file lpm_counter0.vhd
+    Info: Found design unit 1: lpm_counter0-SYN
+    Info: Found entity 1: lpm_counter0
+Info: Found 2 design units, including 1 entities, in source file LCD_Display.vhd
+    Info: Found design unit 1: LCD_Display-a
+    Info: Found entity 1: LCD_Display
+Info: Found 1 design units, including 1 entities, in source file tutor2.bdf
+    Info: Found entity 1: tutor2
+Info: Elaborating entity "tutor2" for the top level hierarchy
+Info: Elaborating entity "LCD_Display" for hierarchy "LCD_Display:inst1"
+Info: (10035) Verilog HDL or VHDL information at LCD_Display.vhd(63): object "Line1_chars" declared but not used
+Info: (10035) Verilog HDL or VHDL information at LCD_Display.vhd(63): object "Line2_chars" declared but not used
+Info: Elaborating entity "lpm_counter0" for hierarchy "lpm_counter0:inst2"
+Info: Found 1 design units, including 1 entities, in source file ../quartus50sp1/libraries/megafunctions/lpm_counter.tdf
+    Info: Found entity 1: lpm_counter
+Info: Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:inst2|lpm_counter:lpm_counter_component"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_ia7.tdf
+    Info: Found entity 1: cntr_ia7
+Info: Elaborating entity "cntr_ia7" for hierarchy "lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_ia7:auto_generated"
+Info: State machine "|tutor2|LCD_Display:inst1|state" contains 13 states and 0 state bits
+Info: State machine "|tutor2|LCD_Display:inst1|next_command" contains 13 states and 0 state bits
+Info: Selected Auto state machine encoding method for state machine "|tutor2|LCD_Display:inst1|state"
+Info: Encoding result for state machine "|tutor2|LCD_Display:inst1|state"
+    Info: Completed encoding using 13 state bits
+        Info: Encoded state bit "LCD_Display:inst1|state.display_clear"
+        Info: Encoded state bit "LCD_Display:inst1|state.display_off"
+        Info: Encoded state bit "LCD_Display:inst1|state.reset3"
+        Info: Encoded state bit "LCD_Display:inst1|state.reset2"
+        Info: Encoded state bit "LCD_Display:inst1|state.hold"
+        Info: Encoded state bit "LCD_Display:inst1|state.drop_lcd_e"
+        Info: Encoded state bit "LCD_Display:inst1|state.return_home"
+        Info: Encoded state bit "LCD_Display:inst1|state.line2"
+        Info: Encoded state bit "LCD_Display:inst1|state.print_string"
+        Info: Encoded state bit "LCD_Display:inst1|state.mode_set"
+        Info: Encoded state bit "LCD_Display:inst1|state.display_on"
+        Info: Encoded state bit "LCD_Display:inst1|state.func_set"
+        Info: Encoded state bit "LCD_Display:inst1|state.reset1"
+    Info: State "|tutor2|LCD_Display:inst1|state.reset1" uses code string "0000000000000"
+    Info: State "|tutor2|LCD_Display:inst1|state.func_set" uses code string "0000000000011"
+    Info: State "|tutor2|LCD_Display:inst1|state.display_on" uses code string "0000000000101"
+    Info: State "|tutor2|LCD_Display:inst1|state.mode_set" uses code string "0000000001001"
+    Info: State "|tutor2|LCD_Display:inst1|state.print_string" uses code string "0000000010001"
+    Info: State "|tutor2|LCD_Display:inst1|state.line2" uses code string "0000000100001"
+    Info: State "|tutor2|LCD_Display:inst1|state.return_home" uses code string "0000001000001"
+    Info: State "|tutor2|LCD_Display:inst1|state.drop_lcd_e" uses code string "0000010000001"
+    Info: State "|tutor2|LCD_Display:inst1|state.hold" uses code string "0000100000001"
+    Info: State "|tutor2|LCD_Display:inst1|state.reset2" uses code string "0001000000001"
+    Info: State "|tutor2|LCD_Display:inst1|state.reset3" uses code string "0010000000001"
+    Info: State "|tutor2|LCD_Display:inst1|state.display_off" uses code string "0100000000001"
+    Info: State "|tutor2|LCD_Display:inst1|state.display_clear" uses code string "1000000000001"
+Info: Selected Auto state machine encoding method for state machine "|tutor2|LCD_Display:inst1|next_command"
+Info: Encoding result for state machine "|tutor2|LCD_Display:inst1|next_command"
+    Info: Completed encoding using 13 state bits
+        Info: Encoded state bit "LCD_Display:inst1|next_command.display_clear"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.display_off"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.reset3"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.hold"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.reset1"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.drop_lcd_e"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.return_home"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.line2"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.print_string"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.mode_set"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.display_on"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.func_set"
+        Info: Encoded state bit "LCD_Display:inst1|next_command.reset2"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.reset2" uses code string "0000000000000"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.func_set" uses code string "0000000000011"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.display_on" uses code string "0000000000101"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.mode_set" uses code string "0000000001001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.print_string" uses code string "0000000010001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.line2" uses code string "0000000100001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.return_home" uses code string "0000001000001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.drop_lcd_e" uses code string "0000010000001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.reset1" uses code string "0000100000001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.hold" uses code string "0001000000001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.reset3" uses code string "0010000000001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.display_off" uses code string "0100000000001"
+    Info: State "|tutor2|LCD_Display:inst1|next_command.display_clear" uses code string "1000000000001"
+Warning: Reduced register "LCD_Display:inst1|next_command.drop_lcd_e" with stuck data_in port to stuck value GND
+Warning: Reduced register "LCD_Display:inst1|next_command.hold" with stuck data_in port to stuck value GND
+Warning: Reduced register "LCD_Display:inst1|next_command.reset1" with stuck data_in port to stuck value GND
+Info: Registers with preset signals will power-up high
+Info: Implemented 136 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 3 output pins
+    Info: Implemented 8 bidirectional pins
+    Info: Implemented 122 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Processing ended: Mon Jun 08 12:56:48 2009
+    Info: Elapsed time: 00:00:07
+
+

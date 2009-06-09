@@ -47,4 +47,4 @@ force -freeze sim:/LC3/CLK 1 0, 0 {50 ps} -r 100
 force RESET 1
 run 100
 force RESET 0
-run 100
+run 100000

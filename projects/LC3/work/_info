@@ -6,16 +6,15 @@ Z0 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI
 va_graycounter
 IP<AX6mUoT700Sl@Jl;70a3
 VMk:N^O83OA1@aDzHMfGYh3
-Z1 dZ:\Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3
-Z2 w1244472809
-Z3 8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v
-Z4 FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/altera_mf.v
+Z1 dC:\Users\Megan\Documents\Megan\Spring 2009\EECE 681\vlsi681spring09\projects\LC3
+Z2 w1244489188
+Z3 8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/altera_mf.v
+Z4 FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/altera_mf.v
 L0 48864
-Z5 OV;L;6.4a;39
+Z5 OV;L;6.3g_p1;37
 r1
 31
 Z6 o-work work -nocovercells -O0
-!s100 jBY4i2RgFmSLE:UXINbaP2
 !s85 0
 valt3pram
 I@oQecOSS7SOTaiCZmEbn33
@@ -29,7 +28,6 @@ R5
 r1
 31
 R6
-!s100 gLS8zc^inj5UdVKg79bJ>2
 !s85 0
 valt_cal
 IH0oG2lKV^mYG>BZjcX26U3
@@ -43,7 +41,6 @@ R5
 r1
 31
 R6
-!s100 PR^BP_mU`?G@mdmASAWC10
 !s85 0
 valtaccumulate
 I@Noa9YV`FQT4c0gL?ENJK3
@@ -57,7 +54,6 @@ R5
 r1
 31
 R6
-!s100 ?GKA@W8ZRCXWg0S`4]Tmd1
 !s85 0
 valtcam
 IAV]g9iRkdeUSJm4?ga^jj1
@@ -71,7 +67,6 @@ R5
 r1
 31
 R6
-!s100 5oWag<gIUdlYoP@]bH]N52
 !s85 0
 valtclklock
 InH5K5ghl=]62SO8fn0O5V0
@@ -85,7 +80,6 @@ R5
 r1
 31
 R6
-!s100 ANVGEBln@]oQMbdN=70E83
 !s85 0
 valtddio_bidir
 ICMYfZhAAo`^F1?4MlacB03
@@ -99,7 +93,6 @@ R5
 r1
 31
 R6
-!s100 P1Zbb28hbcU>93BMPRhTg3
 !s85 0
 valtddio_in
 IOaT@2JOX1?M8E?g@8;m<`3
@@ -113,7 +106,6 @@ R5
 r1
 31
 R6
-!s100 0SAc3:DlS>H[YbdAX0E@S2
 !s85 0
 valtddio_out
 I^`gWCPJOKDGE[5JoAX6AY2
@@ -127,7 +119,6 @@ R5
 r1
 31
 R6
-!s100 oOOCT7HVlRf9`5]m]OAX72
 !s85 0
 valtdpram
 IbGH80T>nS6n31BlNRL0n@2
@@ -141,7 +132,6 @@ R5
 r1
 31
 R6
-!s100 AJcSm_OaONIUPMJjZofj_1
 !s85 0
 valtdq_dqs
 IFQ`Qim3mmY=;<lkBL=4Ea2
@@ -155,7 +145,6 @@ R5
 r1
 31
 R6
-!s100 P`5g5SLMm[<0YMDO:Nzgd3
 !s85 0
 vALTERA_DEVICE_FAMILIES
 I^3PzJHV0BZgZLKm4V95n02
@@ -170,7 +159,6 @@ r1
 31
 R6
 n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
-!s100 LjG:TDiO?P=8c3De2n@U_2
 !s85 0
 vALTERA_MF_HINT_EVALUATION
 IBSJbb>DJe@8b<?=KjbFf81
@@ -185,7 +173,6 @@ r1
 31
 R6
 n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
-!s100 7fP4:?27=aeYFH_CH9KZX2
 !s85 0
 vALTERA_MF_MEMORY_INITIALIZATION
 IgI9X@R04WbjXb<lmD[F]o1
@@ -200,7 +187,6 @@ r1
 31
 R6
 n@a@l@t@e@r@a_@m@f_@m@e@m@o@r@y_@i@n@i@t@i@a@l@i@z@a@t@i@o@n
-!s100 3:E@=DPUlZSjfUcXF_SHa2
 !s85 0
 valtera_std_synchronizer
 I[jZK^@506=mBzm]e;TbI;1
@@ -214,7 +200,6 @@ R5
 r1
 31
 R6
-!s100 ZGemi:7MNH]R4V=i?IWl<2
 !s85 0
 valtera_std_synchronizer_bundle
 ID11eL>k:TDSzkOm^5OQF91
@@ -228,7 +213,6 @@ R5
 r1
 31
 R6
-!s100 k[JMQ?QOl@;f883fS;QF50
 !s85 0
 valtfp_mult
 IE_J9bzdkaQBg42UhSckWW0
@@ -242,7 +226,6 @@ R5
 r1
 31
 R6
-!s100 o>2NQV@JPEbkPigZC[2Pj3
 !s85 0
 valtlvds_rx
 I6A<5AhFb<W[b`6R?]CGca0
@@ -256,7 +239,6 @@ R5
 r1
 31
 R6
-!s100 ]ChEdn<_3zgEzN`8VBkK:1
 !s85 0
 valtlvds_tx
 I^0MTLH^n;`JLXDdbNc=@X1
@@ -270,7 +252,6 @@ R5
 r1
 31
 R6
-!s100 Wi7VTV3A47e`iGg0;317M0
 !s85 0
 valtmult_accum
 IG@3BPda?W3iPS;ih@_Zzd2
@@ -284,7 +265,6 @@ R5
 r1
 31
 R6
-!s100 gLf42`PnVbkXC5gmoXLkm1
 !s85 0
 valtmult_add
 IKB3I0_:Sg:7@c4NcU:UMO2
@@ -298,7 +278,6 @@ R5
 r1
 31
 R6
-!s100 6_?ef9SAL7Bz3P^?H]jD82
 !s85 0
 valtparallel_flash_loader
 IQT=Ccd8Tz0]I0C;6S8X4]1
@@ -312,7 +291,6 @@ R5
 r1
 31
 R6
-!s100 42M7a7UZV=aORkn4z:D6h3
 !s85 0
 valtpll
 IH0OmkKE=9JZCkS62CWF1Z0
@@ -326,7 +304,6 @@ R5
 r1
 31
 R6
-!s100 _j;_ZzPaLd_Y`Z[`IV?^L1
 !s85 0
 valtqpram
 I1;MHJV66i5d[P;:hEBYWf1
@@ -340,7 +317,6 @@ R5
 r1
 31
 R6
-!s100 ETl6zI0DEGzIKJ_^ZmSi10
 !s85 0
 valtserial_flash_loader
 IklZmKjiFzdQ@VLM?ZjdPU0
@@ -354,7 +330,6 @@ R5
 r1
 31
 R6
-!s100 ?oPjW3VP:l0;JoPLo=[`80
 !s85 0
 valtshift_taps
 If4VX3OD:5F=mdGTD?_]:82
@@ -368,7 +343,6 @@ R5
 r1
 31
 R6
-!s100 nZc@<m;iShPoizVQSYi4z3
 !s85 0
 valtsource_probe
 I78lO>93=:6P2h`lcPDSkf1
@@ -382,7 +356,6 @@ R5
 r1
 31
 R6
-!s100 Mb9e7TQVSEadA2Gc3ggN>1
 !s85 0
 valtsqrt
 IZ9R><adV]81`9XB5Uann23
@@ -396,7 +369,6 @@ R5
 r1
 31
 R6
-!s100 8699mo>o>oUAS:KZn<YkB1
 !s85 0
 valtsquare
 IVL01S`Sb[KDR3HKY^4^Qz2
@@ -410,7 +382,6 @@ R5
 r1
 31
 R6
-!s100 Yjl9DSg>bR_ck[RX?H7om1
 !s85 0
 valtstratixii_oct
 I8J@2ci88=PC^L4j8UeS0n2
@@ -424,7 +395,6 @@ R5
 r1
 31
 R6
-!s100 `IXm4c;ZF;MHk?8JONA;D0
 !s85 0
 valtsyncram
 I=Cjf?_=HiinjMPhj;zHBR0
@@ -438,22 +408,20 @@ R5
 r1
 31
 R6
-!s100 e?4Aeza0i>h@BlO8hjKzI3
 !s85 0
 vALU
 ICDNlodR<Z=OA=5@l:P_Vd1
 V10R^Skj?c[H^n0c=:>^fN2
 R1
-w1244473900
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/ALU.v
+w1244489187
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/ALU.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/ALU.v
 L0 1
 R5
 r1
 31
 R6
 n@a@l@u
-!s100 g7h@dJg7J8d@[UD17iG1d1
 !s85 0
 varm_m_cntr
 I]>b^l0VoVBF3b<mT<96L_1
@@ -467,7 +435,6 @@ R5
 r1
 31
 R6
-!s100 AW96fLA=K<4RC?DacETbY0
 !s85 0
 varm_n_cntr
 INPGhU57ES`khOSK1^Ok070
@@ -481,7 +448,6 @@ R5
 r1
 31
 R6
-!s100 >f<;HXS`OST@3Ib0>b`fD1
 !s85 0
 varm_scale_cntr
 IeFPM?RcNU=mM=:e?aobWQ3
@@ -495,7 +461,6 @@ R5
 r1
 31
 R6
-!s100 AWadGM63ZS>k4nFaAaBl50
 !s85 0
 vcda_m_cntr
 I1>=0mo4KmM5W2gkz]Hlc:1
@@ -509,7 +474,6 @@ R5
 r1
 31
 R6
-!s100 ZBgMC`D7[m02dGklSmcO40
 !s85 0
 vcda_n_cntr
 I4jB:OIglJZb;MT7=kS0C_2
@@ -523,7 +487,6 @@ R5
 r1
 31
 R6
-!s100 ?49IZ8CDiP8ZCknOe27kH3
 !s85 0
 vcda_scale_cntr
 IYFo6@=XU<V2XTMG_`NEE:3
@@ -537,46 +500,43 @@ R5
 r1
 31
 R6
-!s100 J_L9]o[RR9hN_G<H_Nc0j0
 !s85 0
 vcontrol
 ISWacBWj3lQHMNzX`a5I]g1
 VGO9>VWeK_EMULCQ4K>b5i3
 R1
-w1244479283
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/control.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/control.v
 L0 1
 R5
 r1
 31
 R6
-!s100 RV@6>EZ_I@bMeT[aP>KPZ1
 !s85 0
 vData
 I5c;`YE_6I4`nCdJE1Nb[S2
 V8o9ONaV3<K3E<KH@d0;>83
 R1
-w1244477101
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Data.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Data.v
 L0 1
 R5
 r1
 31
 R6
 n@data
-!s100 _E_:M1ilC<DQ80TBblVz:3
 !s85 0
 vDataram
 IQ>nA=;NjmAhlJl1]4<;el2
 V7XSWV@jgU]iI@n:z8AFd42
-R1
-Z7 w1244472570
+Z7 dZ:\Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3
+Z8 w1244472570
 8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v
 FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Dataram.v
 L0 5
-R5
+Z9 OV;L;6.4a;39
 r1
 31
 R6
@@ -595,7 +555,6 @@ R5
 r1
 31
 R6
-!s100 jjYMR3]>RHSH<WSdUf5B01
 !s85 0
 vdcfifo_async
 I6VKCnQZRgD>I]:Ph60ST90
@@ -609,7 +568,6 @@ R5
 r1
 31
 R6
-!s100 =lR`dZR>X:X9][5^BX`o=3
 !s85 0
 vdcfifo_dffpipe
 IUYTTIjR6DQ<eL10X_z5o@1
@@ -623,7 +581,6 @@ R5
 r1
 31
 R6
-!s100 7oGnMlSSn70_PWC_jSF`<2
 !s85 0
 vdcfifo_fefifo
 I_=lYDKQB0=n?<@PIgX0f72
@@ -637,7 +594,6 @@ R5
 r1
 31
 R6
-!s100 @lSj7UYNN>R_>g<1I;]>E3
 !s85 0
 vdcfifo_low_latency
 IKDV]zZ>3SzYQTaUP:el@d1
@@ -651,7 +607,6 @@ R5
 r1
 31
 R6
-!s100 L?`7Gna@c2OzPmD<[2^_P0
 !s85 0
 vdcfifo_mixed_widths
 I6A36>c?e<1EP<oHYf=VW92
@@ -665,7 +620,6 @@ R5
 r1
 31
 R6
-!s100 H5XP`>VPhzZa9bHfPOU320
 !s85 0
 vdcfifo_sync
 IjCUOiQIVeVJO[CeahS??S1
@@ -679,7 +633,6 @@ R5
 r1
 31
 R6
-!s100 W;[P^OfhUnFEoNP5YXo8c0
 !s85 0
 vdffp
 IbhBlzf41dPh`ceBm4i;iF3
@@ -693,22 +646,20 @@ R5
 r1
 31
 R6
-!s100 [:IN2Q;FdkPkE7Xl4i94=0
 !s85 0
 vDRAM
 I0S2?[@7Q`^X7WHY0CKS930
 VCF^M?04TXzICdHnAUQML=3
 R1
-w1244480369
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/DRAM.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/DRAM.v
 L0 39
 R5
 r1
 31
 R6
 n@d@r@a@m
-!s100 TAY^T<@0IbcR`DkIe3zSk1
 !s85 0
 vdummy_hub
 I>Dz@]I[i@69gRDKOA5R@O0
@@ -722,17 +673,16 @@ R5
 r1
 31
 R6
-!s100 4OCjjUFhB>?]a:=W5;7^51
 !s85 0
 veffective_address
 IR7P^EzP5T`UBkm89eHRM53
 VYNKjjI_b>hzeHD]Y34foL3
-Z8 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3
+Z10 dC:\Documents and Settings\Greg Mefford\My Documents\My Dropbox\UC Stuff\VLSI System Design\git\vlsi681spring09\projects\LC3
 w1242591347
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/effective_address.v
 L0 1
-R5
+R9
 r1
 31
 R6
@@ -742,16 +692,15 @@ vExecution
 IDo0<j<WPF3caRTlBGJRH^0
 Vho_[>Ho[O_L66ji`a>Z`k3
 R1
-w1244474689
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Execution.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Execution.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Execution.v
 L0 1
 R5
 r1
 31
 R6
 n@execution
-!s100 izA5Q[MKCl@dCz;h9X9NF3
 !s85 0
 vflexible_lvds_rx
 I>7RGO=ndmi_4oLeM_ocR92
@@ -765,7 +714,6 @@ R5
 r1
 31
 R6
-!s100 ME0hF2Y<gObJLEhFf0@Ka3
 !s85 0
 vflexible_lvds_tx
 I24k4=6BGh6Y9LI0Z]TTKm1
@@ -779,17 +727,16 @@ R5
 r1
 31
 R6
-!s100 cAddbY3oWZc>KBc>g;BM^2
 !s85 0
 vinc16
 IUi=WnU?DGLTkndhnbKD[A3
 VFoAoBXz9_YDoZizNC5_8n0
-R8
+R10
 w1242483164
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/inc16.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/inc16.v
 L0 1
-R5
+R9
 r1
 31
 R6
@@ -799,46 +746,43 @@ vInstram
 IzReAL>feR3kMeD:aDFD[z1
 V0_5]c7]M^`2`VhYWnUa621
 R1
-w1244472571
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/RAM_instruction.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/RAM_instruction.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/RAM_instruction.v
 L0 1
 R5
 r1
 31
 R6
 n@instram
-!s100 AQ?i1WUSTBA5jUYGDB^Ce2
 !s85 0
 vInstruction_Fetch
 I>?>B?R;MS6d7DMWhd`1`L3
 Vn6jL;`^nfPikH0>3kj4J@2
 R1
-R7
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Instruction_Fetch.v
 L0 1
 R5
 r1
 31
 R6
 n@instruction_@fetch
-!s100 GgEWIoFdZk^:e`8NJeRe:0
 !s85 0
 vIRAM
 I1Zd5m^cc2MK]EMk<5Zm`i2
 VobYB5I[mPHamo[P;cj50j1
 R1
-w1244480380
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/IRAM.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/IRAM.v
 L0 39
 R5
 r1
 31
 R6
 n@i@r@a@m
-!s100 kUf?CJi>BgO:SF<Se75WD3
 !s85 0
 vjtag_tap_controller
 Ie=DcU<EWZXl0lHoX1e[1g0
@@ -852,22 +796,20 @@ R5
 r1
 31
 R6
-!s100 >dUAahmUdcH:z[5^IkkaN0
 !s85 0
 vLC3
 IKHFaf?:8nYXIIcJ;YEUlU1
 V8[fBITPcfBoa9LmhLTA343
 R1
-w1244477199
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/LC3.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/LC3.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/LC3.v
 L0 1
 R5
 r1
 31
 R6
 n@l@c3
-!s100 2;i<T7egU9AjfSEAV[@PM0
 !s85 0
 vlcell
 IzhPCWYC2z9lfRQ^4L;ACf3
@@ -881,17 +823,16 @@ R5
 r1
 31
 R6
-!s100 0iHR7LCSWH`2lX8KA=J;13
 !s85 0
 vlpm_counter0
 I6:K58hWA2P`TL9I3FSQRJ3
 V;W6A_VfY_F<@HZMz@M0b30
-R1
 R7
+R8
 8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0.v
 FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/lpm_counter0.v
 L0 39
-R5
+R9
 r1
 31
 R6
@@ -910,7 +851,6 @@ r1
 31
 R6
 n@m@f_cycloneiii_pll
-!s100 2XFFPEN5>^hh68?0zVi:f3
 !s85 0
 vMF_pll_reg
 IaHWeES]AJ8_JM=>I1DePD3
@@ -925,7 +865,6 @@ r1
 31
 R6
 n@m@f_pll_reg
-!s100 SVKkL=:LSzU?>Eg]XRYig2
 !s85 0
 vMF_stratix_pll
 IY?@`8=;o9hZNVlmh:[IXF3
@@ -940,7 +879,6 @@ r1
 31
 R6
 n@m@f_stratix_pll
-!s100 71c3SKXgU3S2cX1mmeH^22
 !s85 0
 vMF_stratixii_pll
 Ifa?cHDSQ9TR4aahF^dniK1
@@ -955,7 +893,6 @@ r1
 31
 R6
 n@m@f_stratixii_pll
-!s100 Ud_W:F3l7DP;Bcc[U>Aa^1
 !s85 0
 vMF_stratixiii_pll
 IWkWk1D^?RWzHVJ2egYW[11
@@ -970,17 +907,16 @@ r1
 31
 R6
 n@m@f_stratixiii_pll
-!s100 ;PAzYE=32R`C0l[9Dh2Vc1
 !s85 0
 vmux16
 IBi:=b4fJVLP2_AiP6P91P1
 V8=[TP;g?P9a@6SV=e7ME;1
-R8
+R10
 w1241484736
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/mux16.v
 L0 1
-R5
+R9
 r1
 31
 R6
@@ -998,7 +934,6 @@ R5
 r1
 31
 R6
-!s100 ?fdhjH[<fD9<[JYgQW>6N3
 !s85 0
 vpll_iobuf
 I8BI>mGo<4^HgzSGm9FCF71
@@ -1012,16 +947,15 @@ R5
 r1
 31
 R6
-!s100 ]d<h9QDjMPEcCHBm0AD193
 !s85 0
 vRAM_data
 I113DX=hihbigABdf89]i81
 VI;lSf;AR]k2O[TS^HS_8_0
-Z9 w1240882867
+Z11 w1240882867
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_data.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_data.v
 L0 1
-R5
+R9
 r1
 31
 R6
@@ -1031,11 +965,11 @@ n@r@a@m_data
 vRAM_instruction
 I9e<MEe?j0`XUi^U0^>60o2
 VUjCbYjkZFoRdOYA[3Sf^T3
-R9
+R11
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_instruction.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/modelsim/RAM_instruction.v
 L0 1
-R5
+R9
 r1
 31
 R6
@@ -1045,46 +979,44 @@ n@r@a@m_instruction
 vreg16
 IcSF`>GoaCnQjWC?RADzgd3
 V2z4lZ5JIDMB42K62CekF11
-R8
-R9
+R10
+R11
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/reg16.v
 L0 1
-R5
+R9
 r1
 31
 R6
 !s100 [hg?^zlLBDmGi[jVFVaG03
 !s85 0
 vregister_file
-!s100 8cekZlXOj[o?fz5gT:h`H1
 IdmJ50nKlf=mPfo0lHM_6j0
 V[3_g9Plf?65_iMBCzAzJP1
 R1
-w1244475458
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/register_file.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/register_file.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/register_file.v
 L0 1
 R5
 r1
-!s85 0
 31
 R6
+!s85 0
 vRegisters
 Ia1D=2SBCD5cBK]JhI5IPj2
 Vfbl46c@>Lh:bBYbC`[I6I3
 R1
-w1244475531
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Registers.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Registers.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Registers.v
 L0 1
 R5
 r1
+!s85 0
 31
 R6
 n@registers
-!s100 2TgnIe5>G3S?80iedB`<i1
-!s85 0
 vscfifo
 IJ]jR[jikc0>gJU8WD?mn30
 VfTPPJP4B>B>SFiWJU6HFB3
@@ -1097,17 +1029,16 @@ R5
 r1
 31
 R6
-!s100 C46H=7VHja]AE=l9Y?elP3
 !s85 0
 vSE5
 IYl5<3oEeI;87YbR:Gf0<@2
 V7;C>52ZTGlMXi4CUZ2DdR1
-R8
+R10
 w1242485125
 8C:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/SE5.v
 FC:/Documents and Settings/Greg Mefford/My Documents/My Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/SE5.v
 L0 1
-R5
+R9
 r1
 31
 R6
@@ -1126,21 +1057,19 @@ R5
 r1
 31
 R6
-!s100 gYh?z_IenOXYnW:7BJg891
 !s85 0
 vsingle_port_rom
 IFk5L`fL3N6dGHeSI:W0YV1
 VjHb>Vo0iN42Z9ZL_0jjTc1
 R1
-R7
-8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v
-FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Instram.v
+R2
+8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Instram.v
+FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Instram.v
 L0 4
 R5
 r1
 31
 R6
-!s100 <S2E22TEJBJ`3<JF[Cf<42
 !s85 0
 vsld_signaltap
 Il4MJ5ZY^4;B`TDmCPYH?b1
@@ -1154,7 +1083,6 @@ R5
 r1
 31
 R6
-!s100 hUXlMg58]i@5i03<SnEme1
 !s85 0
 vsld_virtual_jtag
 IMl4^zihCeD5CXI7GcC[eX2
@@ -1168,7 +1096,6 @@ R5
 r1
 31
 R6
-!s100 ?JDf_>;6aDIJ>1mLL4j863
 !s85 0
 vstratix_lvds_rx
 IZl?6:zTn;MndNBP1W<a0<1
@@ -1182,7 +1109,6 @@ R5
 r1
 31
 R6
-!s100 c0YBj`f<XT>5=WnejR0m00
 !s85 0
 vstratix_tx_outclk
 I`Kni6bfkN>]gIg01Pm8CE0
@@ -1196,7 +1122,6 @@ R5
 r1
 31
 R6
-!s100 9mki6H@4I8GDLGTZ^;?KB1
 !s85 0
 vstratixgx_dpa_lvds_rx
 I_=aAf`l8N5k:lNFWocK?=3
@@ -1210,7 +1135,6 @@ R5
 r1
 31
 R6
-!s100 U1K4?VhRWol@D;8_WOHel2
 !s85 0
 vstratixii_lvds_rx
 I@eE1KWD1P21U_>:HK5al?2
@@ -1224,7 +1148,6 @@ R5
 r1
 31
 R6
-!s100 N]Z[lN_Ja1i9JM9GB1l@;0
 !s85 0
 vstratixii_tx_outclk
 IW9JjJ>K5InPIkQERCJb?L1
@@ -1238,7 +1161,6 @@ R5
 r1
 31
 R6
-!s100 YZ4XGF:cej]MzehPYJiT?2
 !s85 0
 vstratixiii_lvds_rx
 IbWI]PTOU9BV6Xj1:l:<F[1
@@ -1252,7 +1174,6 @@ R5
 r1
 31
 R6
-!s100 j]JkYAzkz1@hz2;6^WPbU0
 !s85 0
 vstratixiii_lvds_rx_channel
 I62aRHT8`fkH1J>]1^8F6b3
@@ -1266,7 +1187,6 @@ R5
 r1
 31
 R6
-!s100 MfK6>@O@D^;4Qi_<FU]NI3
 !s85 0
 vstratixiii_lvds_rx_dpa
 I;Td8IAnCT1V;^IL?2Sm7A3
@@ -1280,7 +1200,6 @@ R5
 r1
 31
 R6
-!s100 >7@Bd9CNflW@18X50o`H>3
 !s85 0
 vstx_m_cntr
 I;gXNW_^J`hoY6QPB5W@I`0
@@ -1294,7 +1213,6 @@ R5
 r1
 31
 R6
-!s100 ?W;`P<[YEkMESEL5SAYV^1
 !s85 0
 vstx_n_cntr
 IOg;2cZUCh:U<80jz_z:Sg3
@@ -1308,7 +1226,6 @@ R5
 r1
 31
 R6
-!s100 2hSmI?4GFNQ[=[8>:0zC^1
 !s85 0
 vstx_scale_cntr
 ITzHKkBaebi>bOje5=@^A63
@@ -1322,7 +1239,6 @@ R5
 r1
 31
 R6
-!s100 K7OSkLN@FB0TfUGT96eT?1
 !s85 0
 vttn_m_cntr
 ITEAVW2i`K@0EiWY_``XO61
@@ -1336,7 +1252,6 @@ R5
 r1
 31
 R6
-!s100 RVQSe@k4ZP_e>LoPC^<E@0
 !s85 0
 vttn_n_cntr
 IY<So0nzo8IIO<>z2fi0=21
@@ -1350,7 +1265,6 @@ R5
 r1
 31
 R6
-!s100 K69OE>OnhfU0i>zc:8hzI1
 !s85 0
 vttn_scale_cntr
 InIM;`bSbBRO[HQfeJ[NmQ3
@@ -1364,5 +1278,4 @@ R5
 r1
 31
 R6
-!s100 :WX0^W`K`_5XkFk`Mn4SG0
 !s85 0

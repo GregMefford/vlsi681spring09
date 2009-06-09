@@ -1,0 +1,142 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>ERR</sub_system>
+	<callstack>Stack Trace:
+5f45c452: Ordinal6270() + 0x29 (MFC42)
+04bc5dfe: edt_ted_dll_get_template_classes() + 0xfa56 (edt_ted)
+5f40206f: Ordinal5163() + 0x363 (MFC42)
+1000bf9f: AFC_VIEW::OnWndMsg() + 0x27 (GCL_AFC)
+5f401cea: Ordinal6374() + 0x22 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41d17f: EnumDisplayMonitors() + 0x21c (USER32)
+7e41d598: DefWindowProcA() + 0xaa (USER32)
+7e41d545: DefWindowProcA() + 0x57 (USER32)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41c63f: IsWindowUnicode() + 0xa1 (USER32)
+7e41f65d: CallWindowProcA() + 0x1b (USER32)
+5f4020f2: Ordinal2385() + 0x24 (MFC42)
+5f401d01: Ordinal6374() + 0x39 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e4189cd: GetWindowLongW() + 0x127 (USER32)
+7e4196c7: DispatchMessageA() + 0xf (USER32)
+5f4011ce: Ordinal5307() + 0x3a (MFC42)
+
+End-trace
+</callstack>
+	<error>Fatal error detected: Access Violation</error>
+	<date>Mon Jun 08 20:52:56 2009</date>
+	<version>Quartus II Version 5.0 Build 168 06/22/2005 Service Pack 1 SJ Web Edition</version>
+	<full_error>Fatal error detected: Access Violation
+Stack Trace:
+5f45c452: Ordinal6270() + 0x29 (MFC42)
+04bc5dfe: edt_ted_dll_get_template_classes() + 0xfa56 (edt_ted)
+5f40206f: Ordinal5163() + 0x363 (MFC42)
+1000bf9f: AFC_VIEW::OnWndMsg() + 0x27 (GCL_AFC)
+5f401cea: Ordinal6374() + 0x22 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41d17f: EnumDisplayMonitors() + 0x21c (USER32)
+7e41d598: DefWindowProcA() + 0xaa (USER32)
+7e41d545: DefWindowProcA() + 0x57 (USER32)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41c63f: IsWindowUnicode() + 0xa1 (USER32)
+7e41f65d: CallWindowProcA() + 0x1b (USER32)
+5f4020f2: Ordinal2385() + 0x24 (MFC42)
+5f401d01: Ordinal6374() + 0x39 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e4189cd: GetWindowLongW() + 0x127 (USER32)
+7e4196c7: DispatchMessageA() + 0xf (USER32)
+5f4011ce: Ordinal5307() + 0x3a (MFC42)
+
+End-trace
+
+Quartus II Version 5.0 Build 168 06/22/2005 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>ERR</sub_system>
+	<callstack>Stack Trace:
+5f45c452: Ordinal6270() + 0x29 (MFC42)
+042b5dfe: edt_ted_dll_get_template_classes() + 0xfa56 (edt_ted)
+5f40206f: Ordinal5163() + 0x363 (MFC42)
+1000bf9f: AFC_VIEW::OnWndMsg() + 0x27 (GCL_AFC)
+5f401cea: Ordinal6374() + 0x22 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41d17f: EnumDisplayMonitors() + 0x21c (USER32)
+7e41d598: DefWindowProcA() + 0xaa (USER32)
+7e41d545: DefWindowProcA() + 0x57 (USER32)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41c63f: IsWindowUnicode() + 0xa1 (USER32)
+7e41f65d: CallWindowProcA() + 0x1b (USER32)
+5f4020f2: Ordinal2385() + 0x24 (MFC42)
+5f401d01: Ordinal6374() + 0x39 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e4189cd: GetWindowLongW() + 0x127 (USER32)
+7e4196c7: DispatchMessageA() + 0xf (USER32)
+5f4011ce: Ordinal5307() + 0x3a (MFC42)
+
+End-trace
+</callstack>
+	<error>Fatal error detected: Access Violation</error>
+	<date>Tue Jun 09 19:23:34 2009</date>
+	<version>Quartus II Version 5.0 Build 168 06/22/2005 Service Pack 1 SJ Web Edition</version>
+	<full_error>Fatal error detected: Access Violation
+Stack Trace:
+5f45c452: Ordinal6270() + 0x29 (MFC42)
+042b5dfe: edt_ted_dll_get_template_classes() + 0xfa56 (edt_ted)
+5f40206f: Ordinal5163() + 0x363 (MFC42)
+1000bf9f: AFC_VIEW::OnWndMsg() + 0x27 (GCL_AFC)
+5f401cea: Ordinal6374() + 0x22 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41d17f: EnumDisplayMonitors() + 0x21c (USER32)
+7e41d598: DefWindowProcA() + 0xaa (USER32)
+7e41d545: DefWindowProcA() + 0x57 (USER32)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e41c63f: IsWindowUnicode() + 0xa1 (USER32)
+7e41f65d: CallWindowProcA() + 0x1b (USER32)
+5f4020f2: Ordinal2385() + 0x24 (MFC42)
+5f401d01: Ordinal6374() + 0x39 (MFC42)
+5f401c73: Ordinal1109() + 0x74 (MFC42)
+5f401bfb: Ordinal1578() + 0x2a (MFC42)
+5f401bba: Ordinal1579() + 0x39 (MFC42)
+7e418734: GetDC() + 0x6d (USER32)
+7e418816: GetDC() + 0x14f (USER32)
+7e4189cd: GetWindowLongW() + 0x127 (USER32)
+7e4196c7: DispatchMessageA() + 0xf (USER32)
+5f4011ce: Ordinal5307() + 0x3a (MFC42)
+
+End-trace
+
+Quartus II Version 5.0 Build 168 06/22/2005 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>

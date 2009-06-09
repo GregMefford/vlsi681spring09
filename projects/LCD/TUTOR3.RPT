@@ -1,0 +1,1232 @@
+Project Information                               c:\booksoft\chap4\tutor3.rpt
+
+MAX+plus II Compiler Report File
+Version 10.1 06/12/2001
+Compiled: 06/30/2001 12:30:53
+
+Copyright (C) 1988-2001 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+tutor3    EPF10K20RC240-4  3      16     0    0         0  %    74       6  %
+
+User Pins:                 3      16     0  
+
+
+
+Project Information                               c:\booksoft\chap4\tutor3.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+tutor3@91                         Clock_25Mhz
+tutor3@17                         LSD_SEG_A
+tutor3@18                         LSD_SEG_B
+tutor3@19                         LSD_SEG_C
+tutor3@20                         LSD_SEG_D
+tutor3@25                         LSD_SEG_DP
+tutor3@21                         LSD_SEG_E
+tutor3@23                         LSD_SEG_F
+tutor3@24                         LSD_SEG_G
+tutor3@6                          MSD_SEG_A
+tutor3@7                          MSD_SEG_B
+tutor3@8                          MSD_SEG_C
+tutor3@9                          MSD_SEG_D
+tutor3@14                         MSD_SEG_DP
+tutor3@11                         MSD_SEG_E
+tutor3@12                         MSD_SEG_F
+tutor3@13                         MSD_SEG_G
+tutor3@28                         PB1
+tutor3@29                         PB2
+
+
+Project Information                               c:\booksoft\chap4\tutor3.rpt
+
+** FILE HIERARCHY **
+
+
+
+|8count:21|
+|8count:21|f8count:sub|
+|dec_7seg:33|
+|dec_7seg:36|
+|debounce:37|
+|clk_div:38|
+|clk_div:38|lpm_add_sub:119|
+|clk_div:38|lpm_add_sub:119|addcore:adder|
+|clk_div:38|lpm_add_sub:119|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:119|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:119|altshift:oflow_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:279|
+|clk_div:38|lpm_add_sub:279|addcore:adder|
+|clk_div:38|lpm_add_sub:279|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:279|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:279|altshift:oflow_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:362|
+|clk_div:38|lpm_add_sub:362|addcore:adder|
+|clk_div:38|lpm_add_sub:362|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:362|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:362|altshift:oflow_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:445|
+|clk_div:38|lpm_add_sub:445|addcore:adder|
+|clk_div:38|lpm_add_sub:445|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:445|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:445|altshift:oflow_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:528|
+|clk_div:38|lpm_add_sub:528|addcore:adder|
+|clk_div:38|lpm_add_sub:528|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:528|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:528|altshift:oflow_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:611|
+|clk_div:38|lpm_add_sub:611|addcore:adder|
+|clk_div:38|lpm_add_sub:611|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:611|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:611|altshift:oflow_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:694|
+|clk_div:38|lpm_add_sub:694|addcore:adder|
+|clk_div:38|lpm_add_sub:694|altshift:result_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:694|altshift:carry_ext_latency_ffs|
+|clk_div:38|lpm_add_sub:694|altshift:oflow_ext_latency_ffs|
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+***** Logic for device 'tutor3' compiled without errors.
+
+
+
+
+Device: EPF10K20RC240-4
+
+FLEX 10K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+
+                                                                                                                                          
+                                                                                                                                          
+                                                                                                                                          
+                 R R R R R R R R   R R R R R R R   R R R R R R R   R R R       R R R R   R R R R R R R   R R R R R R R   R R R R R R R R  
+                 E E E E E E E E   E E E E E E E   E E E E E E E   E E E       E E E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                 S S S S S S S S G S S S S S S S V S S S S S S S G S S S G G G S S S S V S S S S S S S G S S S S S S S V S S S S S S S S  
+                 E E E E E E E E N E E E E E E E C E E E E E E E N E E E N N N E E E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                 R R R R R R R R D R R R R R R R C R R R R R R R D R R R D D D R R R R C R R R R R R R D R R R R R R R C R R R R R R R R  
+                 V V V V V V V V I V V V V V V V I V V V V V V V I V V V I I I V V V V I V V V V V V V I V V V V V V V I V V V V V V V V  
+                 E E E E E E E E N E E E E E E E N E E E E E E E N E E E N N N E E E E N E E E E E E E N E E E E E E E N E E E E E E E E  
+                 D D D D D D D D T D D D D D D D T D D D D D D D T D D D T T T D D D D T D D D D D D D T D D D D D D D T D D D D D D D D  
+               --------------------------------------------------------------------------------------------------------------------------_ 
+              / 240 238 236 234 232 230 228 226 224 222 220 218 216 214 212 210 208 206 204 202 200 198 196 194 192 190 188 186 184 182   |_ 
+             /    239 237 235 233 231 229 227 225 223 221 219 217 215 213 211 209 207 205 203 201 199 197 195 193 191 189 187 185 183 181    | 
+       #TCK |  1                                                                                                                         180 | ^DATA0 
+ ^CONF_DONE |  2                                                                                                                         179 | ^DCLK 
+      ^nCEO |  3                                                                                                                         178 | ^nCE 
+       #TDO |  4                                                                                                                         177 | #TDI 
+     VCCINT |  5                                                                                                                         176 | GNDINT 
+  MSD_SEG_A |  6                                                                                                                         175 | RESERVED 
+  MSD_SEG_B |  7                                                                                                                         174 | RESERVED 
+  MSD_SEG_C |  8                                                                                                                         173 | RESERVED 
+  MSD_SEG_D |  9                                                                                                                         172 | RESERVED 
+     GNDINT | 10                                                                                                                         171 | RESERVED 
+  MSD_SEG_E | 11                                                                                                                         170 | VCCINT 
+  MSD_SEG_F | 12                                                                                                                         169 | RESERVED 
+  MSD_SEG_G | 13                                                                                                                         168 | RESERVED 
+ MSD_SEG_DP | 14                                                                                                                         167 | RESERVED 
+   RESERVED | 15                                                                                                                         166 | RESERVED 
+     VCCINT | 16                                                                                                                         165 | GNDINT 
+  LSD_SEG_A | 17                                                                                                                         164 | RESERVED 
+  LSD_SEG_B | 18                                                                                                                         163 | RESERVED 
+  LSD_SEG_C | 19                                                                                                                         162 | RESERVED 
+  LSD_SEG_D | 20                                                                                                                         161 | RESERVED 
+  LSD_SEG_E | 21                                                                                                                         160 | VCCINT 
+     GNDINT | 22                                                                                                                         159 | RESERVED 
+  LSD_SEG_F | 23                                                                                                                         158 | RESERVED 
+  LSD_SEG_G | 24                                                                                                                         157 | RESERVED 
+ LSD_SEG_DP | 25                                                                                                                         156 | RESERVED 
+   RESERVED | 26                                                                                                                         155 | GNDINT 
+     VCCINT | 27                                                                                                                         154 | RESERVED 
+        PB1 | 28                                                                                                                         153 | RESERVED 
+        PB2 | 29                                                                                                                         152 | RESERVED 
+   RESERVED | 30                                                                                                                         151 | RESERVED 
+   RESERVED | 31                                                     EPF10K20RC240-4                                                     150 | VCCINT 
+     GNDINT | 32                                                                                                                         149 | RESERVED 
+   RESERVED | 33                                                                                                                         148 | RESERVED 
+   RESERVED | 34                                                                                                                         147 | RESERVED 
+   RESERVED | 35                                                                                                                         146 | RESERVED 
+   RESERVED | 36                                                                                                                         145 | GNDINT 
+     VCCINT | 37                                                                                                                         144 | RESERVED 
+   RESERVED | 38                                                                                                                         143 | RESERVED 
+   RESERVED | 39                                                                                                                         142 | RESERVED 
+   RESERVED | 40                                                                                                                         141 | RESERVED 
+   RESERVED | 41                                                                                                                         140 | VCCINT 
+     GNDINT | 42                                                                                                                         139 | RESERVED 
+   RESERVED | 43                                                                                                                         138 | RESERVED 
+   RESERVED | 44                                                                                                                         137 | RESERVED 
+   RESERVED | 45                                                                                                                         136 | RESERVED 
+   RESERVED | 46                                                                                                                         135 | GNDINT 
+     VCCINT | 47                                                                                                                         134 | RESERVED 
+   RESERVED | 48                                                                                                                         133 | RESERVED 
+   RESERVED | 49                                                                                                                         132 | RESERVED 
+   RESERVED | 50                                                                                                                         131 | RESERVED 
+   RESERVED | 51                                                                                                                         130 | VCCINT 
+     GNDINT | 52                                                                                                                         129 | RESERVED 
+   RESERVED | 53                                                                                                                         128 | RESERVED 
+   RESERVED | 54                                                                                                                         127 | RESERVED 
+   RESERVED | 55                                                                                                                         126 | RESERVED 
+   RESERVED | 56                                                                                                                         125 | GNDINT 
+     VCCINT | 57                                                                                                                         124 | ^MSEL0 
+       #TMS | 58                                                                                                                         123 | ^MSEL1 
+      #TRST | 59                                                                                                                         122 | VCCINT 
+   ^nSTATUS | 60                                                                                                                         121 | ^nCONFIG 
+            |      62  64  66  68  70  72  74  76  78  80  82  84  86  88  90  92  94  96  98 100 102 104 106 108 110 112 114 116 118 120  _| 
+             \   61  63  65  67  69  71  73  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109 111 113 115 117 119   | 
+              \--------------------------------------------------------------------------------------------------------------------------- 
+                 R R R R R R R R G R R R R R R R V R R R R R R R G R R R V G C G G R R V R R R R R R R G R R R R R R R V R R R R R R R R  
+                 E E E E E E E E N E E E E E E E C E E E E E E E N E E E C N l N N E E C E E E E E E E N E E E E E E E C E E E E E E E E  
+                 S S S S S S S S D S S S S S S S C S S S S S S S D S S S C D o D D S S C S S S S S S S D S S S S S S S C S S S S S S S S  
+                 E E E E E E E E I E E E E E E E I E E E E E E E I E E E I I c I I E E I E E E E E E E I E E E E E E E I E E E E E E E E  
+                 R R R R R R R R N R R R R R R R N R R R R R R R N R R R N N k N N R R N R R R R R R R N R R R R R R R N R R R R R R R R  
+                 V V V V V V V V T V V V V V V V T V V V V V V V T V V V T T _ T T V V T V V V V V V V T V V V V V V V T V V V V V V V V  
+                 E E E E E E E E   E E E E E E E   E E E E E E E   E E E     2     E E   E E E E E E E   E E E E E E E   E E E E E E E E  
+                 D D D D D D D D   D D D D D D D   D D D D D D D   D D D     5     D D   D D D D D D D   D D D D D D D   D D D D D D D D  
+                                                                             M                                                            
+                                                                             h                                                            
+                                                                             z                                                            
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GNDINT = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+GNDIO = Dedicated ground pin, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+A9       8/ 8(100%)   0/ 8(  0%)   1/ 8( 12%)    2/2    0/2       1/22(  4%)   
+A11      8/ 8(100%)   0/ 8(  0%)   3/ 8( 37%)    2/2    0/2       1/22(  4%)   
+A12      3/ 8( 37%)   0/ 8(  0%)   1/ 8( 12%)    1/2    0/2       2/22(  9%)   
+A13      8/ 8(100%)   0/ 8(  0%)   3/ 8( 37%)    0/2    0/2       5/22( 22%)   
+A17      8/ 8(100%)   1/ 8( 12%)   1/ 8( 12%)    0/2    0/2       4/22( 18%)   
+A19      5/ 8( 62%)   1/ 8( 12%)   0/ 8(  0%)    2/2    0/2       1/22(  4%)   
+A22      3/ 8( 37%)   0/ 8(  0%)   3/ 8( 37%)    0/2    0/2       4/22( 18%)   
+B13      7/ 8( 87%)   1/ 8( 12%)   2/ 8( 25%)    0/2    0/2       4/22( 18%)   
+B16      8/ 8(100%)   4/ 8( 50%)   2/ 8( 25%)    1/2    1/2       4/22( 18%)   
+B18      8/ 8(100%)   1/ 8( 12%)   3/ 8( 37%)    2/2    1/2       5/22( 22%)   
+B21      8/ 8(100%)   0/ 8(  0%)   4/ 8( 50%)    0/2    0/2       5/22( 22%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 1/6      ( 16%)
+Total I/O pins used:                            18/183    (  9%)
+Total logic cells used:                         74/1152   (  6%)
+Total embedded cells used:                       0/48     (  0%)
+Total EABs used:                                 0/6      (  0%)
+Average fan-in:                                 3.28/4    ( 82%)
+Total fan-in:                                 243/4608    (  5%)
+
+Total input pins required:                       3
+Total input I/O cell registers required:         0
+Total output pins required:                     16
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     74
+Total flipflops required:                       36
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         9/1152   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  EA  13  14  15  16  17  18  19  20  21  22  23  24  Total(LC/EC)
+ A:      0   0   0   0   0   0   0   0   8   0   8   3   0   8   0   0   0   8   0   5   0   0   3   0   0     43/0  
+ B:      0   0   0   0   0   0   0   0   0   0   0   0   0   7   0   0   8   0   8   0   0   8   0   0   0     31/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   0   0   0   0   0   0   0   0   8   0   8   3   0  15   0   0   8   8   8   5   0   8   3   0   0     74/0  
+
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  91      -     -    -    --      INPUT  G             0    0    0    0  Clock_25Mhz
+  28      -     -    C    --      INPUT                0    0    0    1  PB1
+  29      -     -    C    --      INPUT                0    0    0    8  PB2
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  17      -     -    B    --     OUTPUT                0    1    0    0  LSD_SEG_A
+  18      -     -    B    --     OUTPUT                0    1    0    0  LSD_SEG_B
+  19      -     -    B    --     OUTPUT                0    1    0    0  LSD_SEG_C
+  20      -     -    B    --     OUTPUT                0    1    0    0  LSD_SEG_D
+  25      -     -    C    --     OUTPUT                0    0    0    0  LSD_SEG_DP
+  21      -     -    B    --     OUTPUT                0    1    0    0  LSD_SEG_E
+  23      -     -    C    --     OUTPUT                0    1    0    0  LSD_SEG_F
+  24      -     -    C    --     OUTPUT                0    1    0    0  LSD_SEG_G
+   6      -     -    A    --     OUTPUT                0    1    0    0  MSD_SEG_A
+   7      -     -    A    --     OUTPUT                0    1    0    0  MSD_SEG_B
+   8      -     -    A    --     OUTPUT                0    1    0    0  MSD_SEG_C
+   9      -     -    A    --     OUTPUT                0    1    0    0  MSD_SEG_D
+  14      -     -    B    --     OUTPUT                0    0    0    0  MSD_SEG_DP
+  11      -     -    A    --     OUTPUT                0    1    0    0  MSD_SEG_E
+  12      -     -    A    --     OUTPUT                0    1    0    0  MSD_SEG_F
+  13      -     -    B    --     OUTPUT                0    1    0    0  MSD_SEG_G
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      1     -    A    12       AND2                0    2    0    3  |CLK_DIV:38|LPM_ADD_SUB:119|addcore:adder|:59
+   -      1     -    A    19       DFFE   +            0    1    0    5  |CLK_DIV:38|:10
+   -      2     -    A    11       DFFE   +            0    3    0    5  |CLK_DIV:38|count_1Mhz4 (|CLK_DIV:38|:16)
+   -      3     -    A    11       DFFE   +            0    3    0    5  |CLK_DIV:38|count_1Mhz3 (|CLK_DIV:38|:17)
+   -      4     -    A    11       DFFE   +            0    3    0    3  |CLK_DIV:38|count_1Mhz2 (|CLK_DIV:38|:18)
+   -      2     -    A    12       DFFE   +            0    3    0    1  |CLK_DIV:38|count_1Mhz1 (|CLK_DIV:38|:19)
+   -      3     -    A    12       DFFE   +            0    2    0    2  |CLK_DIV:38|count_1Mhz0 (|CLK_DIV:38|:20)
+   -      8     -    A    11       DFFE   +            0    3    0    4  |CLK_DIV:38|clock_1Mhz_int (|CLK_DIV:38|:21)
+   -      1     -    A    11       DFFE                0    4    0    4  |CLK_DIV:38|clock_100Khz_int (|CLK_DIV:38|:22)
+   -      8     -    A    09       DFFE                0    4    0    4  |CLK_DIV:38|clock_10Khz_int (|CLK_DIV:38|:23)
+   -      4     -    A    09       DFFE                0    4    0    4  |CLK_DIV:38|clock_1Khz_int (|CLK_DIV:38|:24)
+   -      5     -    A    19       DFFE                0    4    0    1  |CLK_DIV:38|clock_100hz_int (|CLK_DIV:38|:25)
+   -      6     -    A    11       DFFE                0    3    0    2  |CLK_DIV:38|count_100Khz2 (|CLK_DIV:38|:28)
+   -      5     -    A    11       DFFE                0    2    0    3  |CLK_DIV:38|count_100Khz1 (|CLK_DIV:38|:29)
+   -      7     -    A    11       DFFE                0    3    0    3  |CLK_DIV:38|count_100Khz0 (|CLK_DIV:38|:30)
+   -      2     -    A    09       DFFE                0    3    0    2  |CLK_DIV:38|count_10Khz2 (|CLK_DIV:38|:31)
+   -      1     -    A    09       DFFE                0    2    0    3  |CLK_DIV:38|count_10Khz1 (|CLK_DIV:38|:32)
+   -      3     -    A    09       DFFE                0    3    0    3  |CLK_DIV:38|count_10Khz0 (|CLK_DIV:38|:33)
+   -      6     -    A    09       DFFE                0    3    0    2  |CLK_DIV:38|count_1Khz2 (|CLK_DIV:38|:34)
+   -      5     -    A    09       DFFE                0    2    0    3  |CLK_DIV:38|count_1Khz1 (|CLK_DIV:38|:35)
+   -      7     -    A    09       DFFE                0    3    0    3  |CLK_DIV:38|count_1Khz0 (|CLK_DIV:38|:36)
+   -      3     -    A    19       DFFE                0    3    0    2  |CLK_DIV:38|count_100hz2 (|CLK_DIV:38|:37)
+   -      2     -    A    19       DFFE                0    2    0    3  |CLK_DIV:38|count_100hz1 (|CLK_DIV:38|:38)
+   -      4     -    A    19       DFFE                0    3    0    3  |CLK_DIV:38|count_100hz0 (|CLK_DIV:38|:39)
+   -      4     -    B    18       DFFE                0    5    0    8  |DEBOUNCE:37|:3
+   -      5     -    B    18       DFFE                1    1    0    2  |DEBOUNCE:37|SHIFT_PB3 (|DEBOUNCE:37|:5)
+   -      6     -    B    18       DFFE                0    2    0    2  |DEBOUNCE:37|SHIFT_PB2 (|DEBOUNCE:37|:6)
+   -      7     -    B    18       DFFE                0    2    0    2  |DEBOUNCE:37|SHIFT_PB1 (|DEBOUNCE:37|:7)
+   -      8     -    B    18       DFFE                0    2    0    1  |DEBOUNCE:37|SHIFT_PB0 (|DEBOUNCE:37|:8)
+   -      6     -    A    17        OR2    s           0    2    0    1  |DEC_7SEG:33|~444~1
+   -      4     -    A    17       AND2                0    4    0    1  |DEC_7SEG:33|:456
+   -      3     -    A    17       AND2                0    4    0    1  |DEC_7SEG:33|:492
+   -      1     -    A    13       AND2                0    4    0    3  |DEC_7SEG:33|:528
+   -      2     -    A    13        OR2        !       0    4    0    3  |DEC_7SEG:33|:540
+   -      2     -    A    22        OR2        !       0    4    1    0  |DEC_7SEG:33|:543
+   -      4     -    A    22        OR2        !       0    4    1    0  |DEC_7SEG:33|:591
+   -      8     -    A    13        OR2        !       0    4    0    1  |DEC_7SEG:33|:638
+   -      5     -    A    13       AND2        !       0    3    1    0  |DEC_7SEG:33|:639
+   -      7     -    A    17        OR2    s           0    4    0    1  |DEC_7SEG:33|~687~1
+   -      8     -    A    17        OR2    s           0    3    0    1  |DEC_7SEG:33|~687~2
+   -      2     -    A    17        OR2    s           0    4    0    1  |DEC_7SEG:33|~687~3
+   -      6     -    A    13        OR2        !       0    4    1    0  |DEC_7SEG:33|:687
+   -      3     -    A    13        OR2        !       0    4    0    1  |DEC_7SEG:33|:729
+   -      7     -    A    13        OR2        !       0    3    1    0  |DEC_7SEG:33|:735
+   -      5     -    A    17        OR2    s           0    4    0    1  |DEC_7SEG:33|~771~1
+   -      8     -    A    22        OR2        !       0    4    1    0  |DEC_7SEG:33|:783
+   -      4     -    A    13        OR2    s           0    3    0    1  |DEC_7SEG:33|~825~1
+   -      1     -    A    17        OR2        !       0    4    1    0  |DEC_7SEG:33|:833
+   -      2     -    B    13        OR2        !       0    4    0    1  |DEC_7SEG:36|:425
+   -      7     -    B    13       AND2                0    4    0    1  |DEC_7SEG:36|:492
+   -      1     -    B    13        OR2        !       0    4    0    1  |DEC_7SEG:36|:509
+   -      1     -    B    21       AND2                0    4    0    2  |DEC_7SEG:36|:528
+   -      2     -    B    21        OR2        !       0    4    0    2  |DEC_7SEG:36|:540
+   -      4     -    B    21        OR2        !       0    4    1    0  |DEC_7SEG:36|:543
+   -      5     -    B    13        OR2        !       0    4    1    0  |DEC_7SEG:36|:591
+   -      6     -    B    13        OR2    s           0    4    0    1  |DEC_7SEG:36|~630~1
+   -      6     -    B    21        OR2        !       0    4    1    0  |DEC_7SEG:36|:639
+   -      7     -    B    21        OR2        !       0    4    1    0  |DEC_7SEG:36|:687
+   -      3     -    B    21        OR2        !       0    4    0    1  |DEC_7SEG:36|:729
+   -      8     -    B    21        OR2        !       0    3    1    0  |DEC_7SEG:36|:735
+   -      4     -    B    13        OR2    s           0    4    0    1  |DEC_7SEG:36|~771~1
+   -      1     -    B    18        OR2        !       0    4    1    0  |DEC_7SEG:36|:783
+   -      5     -    B    21        OR2    s           0    3    0    1  |DEC_7SEG:36|~825~1
+   -      3     -    B    13        OR2        !       0    4    1    0  |DEC_7SEG:36|:833
+   -      6     -    B    16       DFFE                1    4    0   14  |8count:21|f8count:sub|QH (|8count:21|f8count:sub|:1)
+   -      8     -    B    16       DFFE                1    3    0   15  |8count:21|f8count:sub|QG (|8count:21|f8count:sub|:2)
+   -      4     -    B    16       DFFE                1    4    0   16  |8count:21|f8count:sub|QF (|8count:21|f8count:sub|:3)
+   -      3     -    B    16       DFFE                1    3    0   14  |8count:21|f8count:sub|QE (|8count:21|f8count:sub|:4)
+   -      1     -    B    16       DFFE                1    4    0   16  |8count:21|f8count:sub|QD (|8count:21|f8count:sub|:5)
+   -      2     -    B    16       DFFE                1    3    0   15  |8count:21|f8count:sub|QC (|8count:21|f8count:sub|:6)
+   -      2     -    B    18       DFFE                1    2    0   16  |8count:21|f8count:sub|QB (|8count:21|f8count:sub|:7)
+   -      3     -    B    18       DFFE                1    1    0   16  |8count:21|f8count:sub|QA (|8count:21|f8count:sub|:8)
+   -      5     -    B    16       AND2                0    3    0    3  |8count:21|f8count:sub|:289
+   -      7     -    B    16       AND2                0    3    0    2  |8count:21|f8count:sub|:293
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+p = Packed register
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       4/ 96(  4%)     4/ 48(  8%)     8/ 48( 16%)    0/16(  0%)      6/16( 37%)     0/16(  0%)
+B:       4/ 96(  4%)     0/ 48(  0%)    11/ 48( 22%)    0/16(  0%)      7/16( 43%)     0/16(  0%)
+C:       2/ 96(  2%)     0/ 48(  0%)     2/ 48(  4%)    2/16( 12%)      3/16( 18%)     0/16(  0%)
+D:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+E:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+F:       0/ 96(  0%)     0/ 48(  0%)     0/ 48(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      4/24( 16%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      1/24(  4%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** CLOCK SIGNALS **
+
+Type     Fan-out       Name
+DFF          8         |DEBOUNCE:37|:3
+INPUT        7         Clock_25Mhz
+DFF          5         |CLK_DIV:38|:10
+DFF          5         |CLK_DIV:38|clock_100Khz_int
+DFF          5         |CLK_DIV:38|clock_10Khz_int
+DFF          5         |CLK_DIV:38|clock_1Khz_int
+DFF          4         |CLK_DIV:38|clock_1Mhz_int
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** CLEAR SIGNALS **
+
+Type     Fan-out       Name
+INPUT        8         PB2
+
+
+Device-Specific Information:                      c:\booksoft\chap4\tutor3.rpt
+tutor3
+
+** EQUATIONS **
+
+Clock_25Mhz : INPUT;
+PB1      : INPUT;
+PB2      : INPUT;
+
+-- Node name is 'LSD_SEG_A' 
+-- Equation name is 'LSD_SEG_A', type is output 
+LSD_SEG_A = !_LC4_B21;
+
+-- Node name is 'LSD_SEG_B' 
+-- Equation name is 'LSD_SEG_B', type is output 
+LSD_SEG_B = !_LC5_B13;
+
+-- Node name is 'LSD_SEG_C' 
+-- Equation name is 'LSD_SEG_C', type is output 
+LSD_SEG_C = !_LC6_B21;
+
+-- Node name is 'LSD_SEG_D' 
+-- Equation name is 'LSD_SEG_D', type is output 
+LSD_SEG_D = !_LC7_B21;
+
+-- Node name is 'LSD_SEG_DP' 
+-- Equation name is 'LSD_SEG_DP', type is output 
+LSD_SEG_DP =  VCC;
+
+-- Node name is 'LSD_SEG_E' 
+-- Equation name is 'LSD_SEG_E', type is output 
+LSD_SEG_E = !_LC8_B21;
+
+-- Node name is 'LSD_SEG_F' 
+-- Equation name is 'LSD_SEG_F', type is output 
+LSD_SEG_F = !_LC1_B18;
+
+-- Node name is 'LSD_SEG_G' 
+-- Equation name is 'LSD_SEG_G', type is output 
+LSD_SEG_G = !_LC3_B13;
+
+-- Node name is 'MSD_SEG_A' 
+-- Equation name is 'MSD_SEG_A', type is output 
+MSD_SEG_A = !_LC2_A22;
+
+-- Node name is 'MSD_SEG_B' 
+-- Equation name is 'MSD_SEG_B', type is output 
+MSD_SEG_B = !_LC4_A22;
+
+-- Node name is 'MSD_SEG_C' 
+-- Equation name is 'MSD_SEG_C', type is output 
+MSD_SEG_C = !_LC5_A13;
+
+-- Node name is 'MSD_SEG_D' 
+-- Equation name is 'MSD_SEG_D', type is output 
+MSD_SEG_D = !_LC6_A13;
+
+-- Node name is 'MSD_SEG_DP' 
+-- Equation name is 'MSD_SEG_DP', type is output 
+MSD_SEG_DP =  VCC;
+
+-- Node name is 'MSD_SEG_E' 
+-- Equation name is 'MSD_SEG_E', type is output 
+MSD_SEG_E = !_LC7_A13;
+
+-- Node name is 'MSD_SEG_F' 
+-- Equation name is 'MSD_SEG_F', type is output 
+MSD_SEG_F = !_LC8_A22;
+
+-- Node name is 'MSD_SEG_G' 
+-- Equation name is 'MSD_SEG_G', type is output 
+MSD_SEG_G = !_LC1_A17;
+
+-- Node name is '|CLK_DIV:38|:24' = '|CLK_DIV:38|clock_1Khz_int' 
+-- Equation name is '_LC4_A9', type is buried 
+_LC4_A9  = DFFE( _EQ001,  _LC8_A9,  VCC,  VCC,  VCC);
+  _EQ001 = !_LC4_A9 & !_LC5_A9 &  _LC6_A9 & !_LC7_A9
+         #  _LC4_A9 &  _LC5_A9
+         #  _LC4_A9 & !_LC6_A9
+         #  _LC4_A9 &  _LC7_A9;
+
+-- Node name is '|CLK_DIV:38|:21' = '|CLK_DIV:38|clock_1Mhz_int' 
+-- Equation name is '_LC8_A11', type is buried 
+_LC8_A11 = DFFE( _EQ002, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ002 =  _LC3_A11 &  _LC4_A11
+         #  _LC2_A11;
+
+-- Node name is '|CLK_DIV:38|:23' = '|CLK_DIV:38|clock_10Khz_int' 
+-- Equation name is '_LC8_A9', type is buried 
+_LC8_A9  = DFFE( _EQ003,  _LC1_A11,  VCC,  VCC,  VCC);
+  _EQ003 = !_LC1_A9 &  _LC2_A9 & !_LC3_A9 & !_LC8_A9
+         #  _LC1_A9 &  _LC8_A9
+         # !_LC2_A9 &  _LC8_A9
+         #  _LC3_A9 &  _LC8_A9;
+
+-- Node name is '|CLK_DIV:38|:25' = '|CLK_DIV:38|clock_100hz_int' 
+-- Equation name is '_LC5_A19', type is buried 
+_LC5_A19 = DFFE( _EQ004,  _LC4_A9,  VCC,  VCC,  VCC);
+  _EQ004 = !_LC2_A19 &  _LC3_A19 & !_LC4_A19 & !_LC5_A19
+         #  _LC2_A19 &  _LC5_A19
+         # !_LC3_A19 &  _LC5_A19
+         #  _LC4_A19 &  _LC5_A19;
+
+-- Node name is '|CLK_DIV:38|:22' = '|CLK_DIV:38|clock_100Khz_int' 
+-- Equation name is '_LC1_A11', type is buried 
+_LC1_A11 = DFFE( _EQ005,  _LC8_A11,  VCC,  VCC,  VCC);
+  _EQ005 = !_LC1_A11 & !_LC5_A11 &  _LC6_A11 & !_LC7_A11
+         #  _LC1_A11 &  _LC5_A11
+         #  _LC1_A11 & !_LC6_A11
+         #  _LC1_A11 &  _LC7_A11;
+
+-- Node name is '|CLK_DIV:38|:36' = '|CLK_DIV:38|count_1Khz0' 
+-- Equation name is '_LC7_A9', type is buried 
+_LC7_A9  = DFFE( _EQ006,  _LC8_A9,  VCC,  VCC,  VCC);
+  _EQ006 =  _LC5_A9 & !_LC7_A9
+         # !_LC6_A9 & !_LC7_A9;
+
+-- Node name is '|CLK_DIV:38|:35' = '|CLK_DIV:38|count_1Khz1' 
+-- Equation name is '_LC5_A9', type is buried 
+_LC5_A9  = DFFE( _EQ007,  _LC8_A9,  VCC,  VCC,  VCC);
+  _EQ007 = !_LC5_A9 &  _LC7_A9
+         #  _LC5_A9 & !_LC7_A9;
+
+-- Node name is '|CLK_DIV:38|:34' = '|CLK_DIV:38|count_1Khz2' 
+-- Equation name is '_LC6_A9', type is buried 
+_LC6_A9  = DFFE( _EQ008,  _LC8_A9,  VCC,  VCC,  VCC);
+  _EQ008 =  _LC5_A9 & !_LC6_A9 &  _LC7_A9
+         #  _LC5_A9 &  _LC6_A9 & !_LC7_A9
+         # !_LC5_A9 &  _LC6_A9 &  _LC7_A9;
+
+-- Node name is '|CLK_DIV:38|:20' = '|CLK_DIV:38|count_1Mhz0' 
+-- Equation name is '_LC3_A12', type is buried 
+_LC3_A12 = DFFE( _EQ009, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ009 = !_LC2_A11 & !_LC3_A12
+         # !_LC3_A11 & !_LC3_A12;
+
+-- Node name is '|CLK_DIV:38|:19' = '|CLK_DIV:38|count_1Mhz1' 
+-- Equation name is '_LC2_A12', type is buried 
+_LC2_A12 = DFFE( _EQ010, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ010 = !_LC2_A11 & !_LC2_A12 &  _LC3_A12
+         # !_LC2_A12 & !_LC3_A11 &  _LC3_A12
+         # !_LC2_A11 &  _LC2_A12 & !_LC3_A12
+         #  _LC2_A12 & !_LC3_A11 & !_LC3_A12;
+
+-- Node name is '|CLK_DIV:38|:18' = '|CLK_DIV:38|count_1Mhz2' 
+-- Equation name is '_LC4_A11', type is buried 
+_LC4_A11 = DFFE( _EQ011, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ011 = !_LC1_A12 & !_LC2_A11 &  _LC4_A11
+         # !_LC1_A12 & !_LC3_A11 &  _LC4_A11
+         #  _LC1_A12 & !_LC2_A11 & !_LC4_A11
+         #  _LC1_A12 & !_LC3_A11 & !_LC4_A11;
+
+-- Node name is '|CLK_DIV:38|:17' = '|CLK_DIV:38|count_1Mhz3' 
+-- Equation name is '_LC3_A11', type is buried 
+_LC3_A11 = DFFE( _EQ012, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ012 =  _LC1_A12 & !_LC3_A11 &  _LC4_A11
+         # !_LC2_A11 &  _LC3_A11 & !_LC4_A11
+         # !_LC1_A12 & !_LC2_A11 &  _LC3_A11;
+
+-- Node name is '|CLK_DIV:38|:16' = '|CLK_DIV:38|count_1Mhz4' 
+-- Equation name is '_LC2_A11', type is buried 
+_LC2_A11 = DFFE( _EQ013, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+  _EQ013 =  _LC2_A11 & !_LC3_A11
+         #  _LC1_A12 & !_LC2_A11 &  _LC3_A11 &  _LC4_A11;
+
+-- Node name is '|CLK_DIV:38|:33' = '|CLK_DIV:38|count_10Khz0' 
+-- Equation name is '_LC3_A9', type is buried 
+_LC3_A9  = DFFE( _EQ014,  _LC1_A11,  VCC,  VCC,  VCC);
+  _EQ014 =  _LC1_A9 & !_LC3_A9
+         # !_LC2_A9 & !_LC3_A9;
+
+-- Node name is '|CLK_DIV:38|:32' = '|CLK_DIV:38|count_10Khz1' 
+-- Equation name is '_LC1_A9', type is buried 
+_LC1_A9  = DFFE( _EQ015,  _LC1_A11,  VCC,  VCC,  VCC);
+  _EQ015 = !_LC1_A9 &  _LC3_A9
+         #  _LC1_A9 & !_LC3_A9;
+
+-- Node name is '|CLK_DIV:38|:31' = '|CLK_DIV:38|count_10Khz2' 
+-- Equation name is '_LC2_A9', type is buried 
+_LC2_A9  = DFFE( _EQ016,  _LC1_A11,  VCC,  VCC,  VCC);
+  _EQ016 =  _LC1_A9 & !_LC2_A9 &  _LC3_A9
+         #  _LC1_A9 &  _LC2_A9 & !_LC3_A9
+         # !_LC1_A9 &  _LC2_A9 &  _LC3_A9;
+
+-- Node name is '|CLK_DIV:38|:39' = '|CLK_DIV:38|count_100hz0' 
+-- Equation name is '_LC4_A19', type is buried 
+_LC4_A19 = DFFE( _EQ017,  _LC4_A9,  VCC,  VCC,  VCC);
+  _EQ017 =  _LC2_A19 & !_LC4_A19
+         # !_LC3_A19 & !_LC4_A19;
+
+-- Node name is '|CLK_DIV:38|:38' = '|CLK_DIV:38|count_100hz1' 
+-- Equation name is '_LC2_A19', type is buried 
+_LC2_A19 = DFFE( _EQ018,  _LC4_A9,  VCC,  VCC,  VCC);
+  _EQ018 = !_LC2_A19 &  _LC4_A19
+         #  _LC2_A19 & !_LC4_A19;
+
+-- Node name is '|CLK_DIV:38|:37' = '|CLK_DIV:38|count_100hz2' 
+-- Equation name is '_LC3_A19', type is buried 
+_LC3_A19 = DFFE( _EQ019,  _LC4_A9,  VCC,  VCC,  VCC);
+  _EQ019 =  _LC2_A19 & !_LC3_A19 &  _LC4_A19
+         #  _LC2_A19 &  _LC3_A19 & !_LC4_A19
+         # !_LC2_A19 &  _LC3_A19 &  _LC4_A19;
+
+-- Node name is '|CLK_DIV:38|:30' = '|CLK_DIV:38|count_100Khz0' 
+-- Equation name is '_LC7_A11', type is buried 
+_LC7_A11 = DFFE( _EQ020,  _LC8_A11,  VCC,  VCC,  VCC);
+  _EQ020 =  _LC5_A11 & !_LC7_A11
+         # !_LC6_A11 & !_LC7_A11;
+
+-- Node name is '|CLK_DIV:38|:29' = '|CLK_DIV:38|count_100Khz1' 
+-- Equation name is '_LC5_A11', type is buried 
+_LC5_A11 = DFFE( _EQ021,  _LC8_A11,  VCC,  VCC,  VCC);
+  _EQ021 = !_LC5_A11 &  _LC7_A11
+         #  _LC5_A11 & !_LC7_A11;
+
+-- Node name is '|CLK_DIV:38|:28' = '|CLK_DIV:38|count_100Khz2' 
+-- Equation name is '_LC6_A11', type is buried 
+_LC6_A11 = DFFE( _EQ022,  _LC8_A11,  VCC,  VCC,  VCC);
+  _EQ022 =  _LC5_A11 & !_LC6_A11 &  _LC7_A11
+         #  _LC5_A11 &  _LC6_A11 & !_LC7_A11
+         # !_LC5_A11 &  _LC6_A11 &  _LC7_A11;
+
+-- Node name is '|CLK_DIV:38|LPM_ADD_SUB:119|addcore:adder|:59' from file "addcore.tdf" line 312, column 64
+-- Equation name is '_LC1_A12', type is buried 
+_LC1_A12 = LCELL( _EQ023);
+  _EQ023 =  _LC2_A12 &  _LC3_A12;
+
+-- Node name is '|CLK_DIV:38|:10' 
+-- Equation name is '_LC1_A19', type is buried 
+_LC1_A19 = DFFE( _LC5_A19, GLOBAL( Clock_25Mhz),  VCC,  VCC,  VCC);
+
+-- Node name is '|DEBOUNCE:37|:8' = '|DEBOUNCE:37|SHIFT_PB0' 
+-- Equation name is '_LC8_B18', type is buried 
+_LC8_B18 = DFFE( _LC7_B18,  _LC1_A19,  VCC,  VCC,  VCC);
+
+-- Node name is '|DEBOUNCE:37|:7' = '|DEBOUNCE:37|SHIFT_PB1' 
+-- Equation name is '_LC7_B18', type is buried 
+_LC7_B18 = DFFE( _LC6_B18,  _LC1_A19,  VCC,  VCC,  VCC);
+
+-- Node name is '|DEBOUNCE:37|:6' = '|DEBOUNCE:37|SHIFT_PB2' 
+-- Equation name is '_LC6_B18', type is buried 
+_LC6_B18 = DFFE( _LC5_B18,  _LC1_A19,  VCC,  VCC,  VCC);
+
+-- Node name is '|DEBOUNCE:37|:5' = '|DEBOUNCE:37|SHIFT_PB3' 
+-- Equation name is '_LC5_B18', type is buried 
+_LC5_B18 = DFFE(!PB1,  _LC1_A19,  VCC,  VCC,  VCC);
+
+-- Node name is '|DEBOUNCE:37|:3' 
+-- Equation name is '_LC4_B18', type is buried 
+_LC4_B18 = DFFE( _EQ024,  _LC1_A19,  VCC,  VCC,  VCC);
+  _EQ024 =  _LC8_B18
+         #  _LC5_B18
+         #  _LC6_B18
+         #  _LC7_B18;
+
+-- Node name is '|DEC_7SEG:33|~444~1' 
+-- Equation name is '_LC6_A17', type is buried 
+-- synthesized logic cell 
+_LC6_A17 = LCELL( _EQ025);
+  _EQ025 = !_LC6_B16
+         #  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:456' 
+-- Equation name is '_LC4_A17', type is buried 
+_LC4_A17 = LCELL( _EQ026);
+  _EQ026 =  _LC3_B16 &  _LC4_B16 & !_LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:492' 
+-- Equation name is '_LC3_A17', type is buried 
+_LC3_A17 = LCELL( _EQ027);
+  _EQ027 = !_LC3_B16 & !_LC4_B16 & !_LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:528' 
+-- Equation name is '_LC1_A13', type is buried 
+_LC1_A13 = LCELL( _EQ028);
+  _EQ028 =  _LC3_B16 & !_LC4_B16 & !_LC6_B16 & !_LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:540' 
+-- Equation name is '_LC2_A13', type is buried 
+!_LC2_A13 = _LC2_A13~NOT;
+_LC2_A13~NOT = LCELL( _EQ029);
+  _EQ029 =  _LC4_B16
+         #  _LC3_B16
+         #  _LC6_B16
+         #  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:543' 
+-- Equation name is '_LC2_A22', type is buried 
+!_LC2_A22 = _LC2_A22~NOT;
+_LC2_A22~NOT = LCELL( _EQ030);
+  _EQ030 =  _LC3_B16 &  _LC4_B16 &  _LC6_B16 & !_LC8_B16
+         #  _LC3_B16 & !_LC4_B16 &  _LC6_B16 &  _LC8_B16
+         #  _LC3_B16 & !_LC4_B16 & !_LC6_B16 & !_LC8_B16
+         # !_LC3_B16 & !_LC4_B16 & !_LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:591' 
+-- Equation name is '_LC4_A22', type is buried 
+!_LC4_A22 = _LC4_A22~NOT;
+_LC4_A22~NOT = LCELL( _EQ031);
+  _EQ031 =  _LC4_B16 &  _LC6_B16 &  _LC8_B16
+         #  _LC3_B16 &  _LC4_B16 &  _LC6_B16
+         # !_LC3_B16 &  _LC4_B16 &  _LC8_B16
+         # !_LC3_B16 &  _LC6_B16 &  _LC8_B16
+         #  _LC3_B16 & !_LC4_B16 & !_LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:638' 
+-- Equation name is '_LC8_A13', type is buried 
+!_LC8_A13 = _LC8_A13~NOT;
+_LC8_A13~NOT = LCELL( _EQ032);
+  _EQ032 = !_LC4_B16 & !_LC6_B16 & !_LC8_B16
+         # !_LC3_B16 & !_LC6_B16 & !_LC8_B16
+         # !_LC3_B16 &  _LC6_B16 &  _LC8_B16
+         #  _LC4_B16 &  _LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|:639' 
+-- Equation name is '_LC5_A13', type is buried 
+!_LC5_A13 = _LC5_A13~NOT;
+_LC5_A13~NOT = LCELL( _EQ033);
+  _EQ033 = !_LC1_A13 & !_LC2_A13 & !_LC8_A13;
+
+-- Node name is '|DEC_7SEG:33|~687~1' 
+-- Equation name is '_LC7_A17', type is buried 
+-- synthesized logic cell 
+_LC7_A17 = LCELL( _EQ034);
+  _EQ034 = !_LC6_B16
+         # !_LC4_B16 & !_LC8_B16
+         #  _LC3_B16 &  _LC4_B16 &  _LC8_B16
+         # !_LC3_B16 & !_LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|~687~2' 
+-- Equation name is '_LC8_A17', type is buried 
+-- synthesized logic cell 
+_LC8_A17 = LCELL( _EQ035);
+  _EQ035 =  _LC6_A17 &  _LC7_A17
+         #  _LC4_B16 &  _LC7_A17;
+
+-- Node name is '|DEC_7SEG:33|~687~3' 
+-- Equation name is '_LC2_A17', type is buried 
+-- synthesized logic cell 
+_LC2_A17 = LCELL( _EQ036);
+  _EQ036 =  _LC3_A17
+         #  _LC4_A17 &  _LC5_A17
+         #  _LC5_A17 &  _LC8_A17;
+
+-- Node name is '|DEC_7SEG:33|:687' 
+-- Equation name is '_LC6_A13', type is buried 
+!_LC6_A13 = _LC6_A13~NOT;
+_LC6_A13~NOT = LCELL( _EQ037);
+  _EQ037 = !_LC2_A13 &  _LC2_A17 &  _LC4_A13
+         #  _LC1_A13 & !_LC2_A13;
+
+-- Node name is '|DEC_7SEG:33|:729' 
+-- Equation name is '_LC3_A13', type is buried 
+!_LC3_A13 = _LC3_A13~NOT;
+_LC3_A13~NOT = LCELL( _EQ038);
+  _EQ038 = !_LC4_B16 & !_LC6_B16 &  _LC8_B16
+         #  _LC3_B16 & !_LC4_B16 &  _LC6_B16 & !_LC8_B16
+         #  _LC3_B16 &  _LC4_B16 & !_LC6_B16;
+
+-- Node name is '|DEC_7SEG:33|:735' 
+-- Equation name is '_LC7_A13', type is buried 
+!_LC7_A13 = _LC7_A13~NOT;
+_LC7_A13~NOT = LCELL( _EQ039);
+  _EQ039 =  _LC1_A13 & !_LC2_A13
+         # !_LC2_A13 & !_LC3_A13;
+
+-- Node name is '|DEC_7SEG:33|~771~1' 
+-- Equation name is '_LC5_A17', type is buried 
+-- synthesized logic cell 
+_LC5_A17 = LCELL( _EQ040);
+  _EQ040 =  _LC6_B16
+         # !_LC8_B16
+         # !_LC3_B16 & !_LC4_B16
+         #  _LC3_B16 &  _LC4_B16;
+
+-- Node name is '|DEC_7SEG:33|:783' 
+-- Equation name is '_LC8_A22', type is buried 
+!_LC8_A22 = _LC8_A22~NOT;
+_LC8_A22~NOT = LCELL( _EQ041);
+  _EQ041 =  _LC4_B16 & !_LC6_B16 & !_LC8_B16
+         #  _LC3_B16 & !_LC6_B16 & !_LC8_B16
+         #  _LC3_B16 &  _LC4_B16 & !_LC6_B16
+         #  _LC3_B16 & !_LC4_B16 &  _LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:33|~825~1' 
+-- Equation name is '_LC4_A13', type is buried 
+-- synthesized logic cell 
+_LC4_A13 = LCELL( _EQ042);
+  _EQ042 = !_LC4_B16
+         #  _LC8_B16
+         #  _LC6_B16;
+
+-- Node name is '|DEC_7SEG:33|:833' 
+-- Equation name is '_LC1_A17', type is buried 
+!_LC1_A17 = _LC1_A17~NOT;
+_LC1_A17~NOT = LCELL( _EQ043);
+  _EQ043 = !_LC4_B16 & !_LC6_B16 & !_LC8_B16
+         #  _LC3_B16 &  _LC4_B16 & !_LC6_B16 &  _LC8_B16
+         # !_LC3_B16 & !_LC4_B16 &  _LC6_B16 &  _LC8_B16;
+
+-- Node name is '|DEC_7SEG:36|:425' 
+-- Equation name is '_LC2_B13', type is buried 
+!_LC2_B13 = _LC2_B13~NOT;
+_LC2_B13~NOT = LCELL( _EQ044);
+  _EQ044 =  _LC1_B16 & !_LC2_B16 &  _LC2_B18 &  _LC3_B18
+         #  _LC1_B16 &  _LC2_B16 & !_LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:492' 
+-- Equation name is '_LC7_B13', type is buried 
+_LC7_B13 = LCELL( _EQ045);
+  _EQ045 = !_LC1_B16 &  _LC2_B16 & !_LC2_B18 & !_LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:509' 
+-- Equation name is '_LC1_B13', type is buried 
+!_LC1_B13 = _LC1_B13~NOT;
+_LC1_B13~NOT = LCELL( _EQ046);
+  _EQ046 = !_LC2_B13 &  _LC4_B13 &  _LC6_B13
+         #  _LC7_B13;
+
+-- Node name is '|DEC_7SEG:36|:528' 
+-- Equation name is '_LC1_B21', type is buried 
+_LC1_B21 = LCELL( _EQ047);
+  _EQ047 = !_LC1_B16 & !_LC2_B16 & !_LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:540' 
+-- Equation name is '_LC2_B21', type is buried 
+!_LC2_B21 = _LC2_B21~NOT;
+_LC2_B21~NOT = LCELL( _EQ048);
+  _EQ048 =  _LC3_B18
+         #  _LC2_B18
+         #  _LC1_B16
+         #  _LC2_B16;
+
+-- Node name is '|DEC_7SEG:36|:543' 
+-- Equation name is '_LC4_B21', type is buried 
+!_LC4_B21 = _LC4_B21~NOT;
+_LC4_B21~NOT = LCELL( _EQ049);
+  _EQ049 = !_LC1_B13 & !_LC2_B21 &  _LC5_B21
+         #  _LC1_B21 & !_LC2_B21;
+
+-- Node name is '|DEC_7SEG:36|:591' 
+-- Equation name is '_LC5_B13', type is buried 
+!_LC5_B13 = _LC5_B13~NOT;
+_LC5_B13~NOT = LCELL( _EQ050);
+  _EQ050 =  _LC1_B16 &  _LC2_B16 &  _LC2_B18
+         #  _LC1_B16 &  _LC2_B18 &  _LC3_B18
+         #  _LC2_B16 &  _LC2_B18 & !_LC3_B18
+         #  _LC1_B16 &  _LC2_B16 & !_LC3_B18
+         # !_LC1_B16 &  _LC2_B16 & !_LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|~630~1' 
+-- Equation name is '_LC6_B13', type is buried 
+-- synthesized logic cell 
+_LC6_B13 = LCELL( _EQ051);
+  _EQ051 = !_LC1_B16 & !_LC2_B18
+         # !_LC1_B16 & !_LC2_B16
+         # !_LC1_B16 & !_LC3_B18
+         #  _LC2_B16 & !_LC2_B18
+         #  _LC1_B16 &  _LC2_B16
+         #  _LC2_B16 & !_LC3_B18
+         # !_LC2_B16 &  _LC2_B18 &  _LC3_B18
+         #  _LC1_B16 &  _LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:639' 
+-- Equation name is '_LC6_B21', type is buried 
+!_LC6_B21 = _LC6_B21~NOT;
+_LC6_B21~NOT = LCELL( _EQ052);
+  _EQ052 =  _LC1_B16 &  _LC2_B16 & !_LC3_B18
+         #  _LC1_B16 &  _LC2_B16 &  _LC2_B18
+         # !_LC1_B16 & !_LC2_B16 &  _LC2_B18 & !_LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:687' 
+-- Equation name is '_LC7_B21', type is buried 
+!_LC7_B21 = _LC7_B21~NOT;
+_LC7_B21~NOT = LCELL( _EQ053);
+  _EQ053 =  _LC2_B16 &  _LC2_B18 &  _LC3_B18
+         #  _LC1_B16 & !_LC2_B16 &  _LC2_B18 & !_LC3_B18
+         # !_LC1_B16 &  _LC2_B16 & !_LC2_B18 & !_LC3_B18
+         # !_LC1_B16 & !_LC2_B16 & !_LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:729' 
+-- Equation name is '_LC3_B21', type is buried 
+!_LC3_B21 = _LC3_B21~NOT;
+_LC3_B21~NOT = LCELL( _EQ054);
+  _EQ054 = !_LC1_B16 &  _LC2_B16 & !_LC2_B18
+         #  _LC1_B16 & !_LC2_B16 & !_LC2_B18 &  _LC3_B18
+         # !_LC1_B16 &  _LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:735' 
+-- Equation name is '_LC8_B21', type is buried 
+!_LC8_B21 = _LC8_B21~NOT;
+_LC8_B21~NOT = LCELL( _EQ055);
+  _EQ055 =  _LC1_B21 & !_LC2_B21
+         # !_LC2_B21 & !_LC3_B21;
+
+-- Node name is '|DEC_7SEG:36|~771~1' 
+-- Equation name is '_LC4_B13', type is buried 
+-- synthesized logic cell 
+_LC4_B13 = LCELL( _EQ056);
+  _EQ056 =  _LC1_B16
+         # !_LC2_B16
+         #  _LC2_B18 &  _LC3_B18
+         # !_LC2_B18 & !_LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|:783' 
+-- Equation name is '_LC1_B18', type is buried 
+!_LC1_B18 = _LC1_B18~NOT;
+_LC1_B18~NOT = LCELL( _EQ057);
+  _EQ057 = !_LC1_B16 & !_LC2_B16 &  _LC2_B18
+         # !_LC1_B16 & !_LC2_B16 &  _LC3_B18
+         # !_LC1_B16 &  _LC2_B18 &  _LC3_B18
+         #  _LC1_B16 &  _LC2_B16 & !_LC2_B18 &  _LC3_B18;
+
+-- Node name is '|DEC_7SEG:36|~825~1' 
+-- Equation name is '_LC5_B21', type is buried 
+-- synthesized logic cell 
+_LC5_B21 = LCELL( _EQ058);
+  _EQ058 = !_LC2_B18
+         #  _LC2_B16
+         #  _LC1_B16;
+
+-- Node name is '|DEC_7SEG:36|:833' 
+-- Equation name is '_LC3_B13', type is buried 
+!_LC3_B13 = _LC3_B13~NOT;
+_LC3_B13~NOT = LCELL( _EQ059);
+  _EQ059 = !_LC1_B16 & !_LC2_B16 & !_LC2_B18
+         # !_LC1_B16 &  _LC2_B16 &  _LC2_B18 &  _LC3_B18
+         #  _LC1_B16 &  _LC2_B16 & !_LC2_B18 & !_LC3_B18;
+
+-- Node name is '|8count:21|f8count:sub|:8' = '|8count:21|f8count:sub|QA' 
+-- Equation name is '_LC3_B18', type is buried 
+_LC3_B18 = DFFE(!_LC3_B18,  _LC4_B18,  PB2,  VCC,  VCC);
+
+-- Node name is '|8count:21|f8count:sub|:7' = '|8count:21|f8count:sub|QB' 
+-- Equation name is '_LC2_B18', type is buried 
+_LC2_B18 = DFFE( _EQ060,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ060 = !_LC2_B18 &  _LC3_B18
+         #  _LC2_B18 & !_LC3_B18;
+
+-- Node name is '|8count:21|f8count:sub|:6' = '|8count:21|f8count:sub|QC' 
+-- Equation name is '_LC2_B16', type is buried 
+_LC2_B16 = DFFE( _EQ061,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ061 =  _LC2_B16 & !_LC3_B18
+         #  _LC2_B16 & !_LC2_B18
+         # !_LC2_B16 &  _LC2_B18 &  _LC3_B18;
+
+-- Node name is '|8count:21|f8count:sub|:5' = '|8count:21|f8count:sub|QD' 
+-- Equation name is '_LC1_B16', type is buried 
+_LC1_B16 = DFFE( _EQ062,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ062 =  _LC1_B16 & !_LC3_B18
+         #  _LC1_B16 & !_LC2_B18
+         #  _LC1_B16 & !_LC2_B16
+         # !_LC1_B16 &  _LC2_B16 &  _LC2_B18 &  _LC3_B18;
+
+-- Node name is '|8count:21|f8count:sub|:4' = '|8count:21|f8count:sub|QE' 
+-- Equation name is '_LC3_B16', type is buried 
+_LC3_B16 = DFFE( _EQ063,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ063 = !_LC1_B16 &  _LC3_B16
+         #  _LC3_B16 & !_LC5_B16
+         #  _LC1_B16 & !_LC3_B16 &  _LC5_B16;
+
+-- Node name is '|8count:21|f8count:sub|:3' = '|8count:21|f8count:sub|QF' 
+-- Equation name is '_LC4_B16', type is buried 
+_LC4_B16 = DFFE( _EQ064,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ064 = !_LC1_B16 &  _LC4_B16
+         #  _LC4_B16 & !_LC5_B16
+         # !_LC3_B16 &  _LC4_B16
+         #  _LC1_B16 &  _LC3_B16 & !_LC4_B16 &  _LC5_B16;
+
+-- Node name is '|8count:21|f8count:sub|:2' = '|8count:21|f8count:sub|QG' 
+-- Equation name is '_LC8_B16', type is buried 
+_LC8_B16 = DFFE( _EQ065,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ065 = !_LC4_B16 &  _LC8_B16
+         # !_LC7_B16 &  _LC8_B16
+         #  _LC4_B16 &  _LC7_B16 & !_LC8_B16;
+
+-- Node name is '|8count:21|f8count:sub|:1' = '|8count:21|f8count:sub|QH' 
+-- Equation name is '_LC6_B16', type is buried 
+_LC6_B16 = DFFE( _EQ066,  _LC4_B18,  PB2,  VCC,  VCC);
+  _EQ066 = !_LC4_B16 &  _LC6_B16
+         #  _LC6_B16 & !_LC7_B16
+         #  _LC6_B16 & !_LC8_B16
+         #  _LC4_B16 & !_LC6_B16 &  _LC7_B16 &  _LC8_B16;
+
+-- Node name is '|8count:21|f8count:sub|:289' 
+-- Equation name is '_LC5_B16', type is buried 
+_LC5_B16 = LCELL( _EQ067);
+  _EQ067 =  _LC2_B16 &  _LC2_B18 &  _LC3_B18;
+
+-- Node name is '|8count:21|f8count:sub|:293' 
+-- Equation name is '_LC7_B16', type is buried 
+_LC7_B16 = LCELL( _EQ068);
+  _EQ068 =  _LC1_B16 &  _LC3_B16 &  _LC5_B16;
+
+
+
+Project Information                               c:\booksoft\chap4\tutor3.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'FLEX10K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Use Quartus Fitter                        = on
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:05
+   Database Builder                       00:00:01
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:01
+   Fitter                                 00:00:02
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:09
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 15,936K
