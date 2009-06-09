@@ -17,11 +17,9 @@ input	[15:0] RD_DATA;
 input	[15:0] Y;
 output	[15:0] DATA;
 
-output reg	[15:0] MAR;
+output	[15:0] MAR;
 
-always @(posedge CLK) begin
-  if(MAR_LE) MAR = (MAR_CONTROL) ? DATA : Y;
-end
+assign MAR = (MAR_CONTROL) ? DATA : Y;
 
 DRAM	DRAM_inst (
 	.address ( MAR[11:0] ),

@@ -96,15 +96,17 @@ module control
 	function reg_control;
 		input [15:0] IR;
 		input [ 1:0] STAGE;
-		if(IR[15:12] == 'b0110) reg_control = 1; // RD = DATA
+		if(IR[15:12] == 'b0110) reg_control = 1; // LDR: RD = DATA
 		else reg_control = 0; // RD = Y
 	endfunction // reg_control
 
 	function rd_le;
 		input [15:0] IR;
 		input        WRITEBACK;
-		if(IR[15:12] == 'b0111) rd_le = 0; // STR
-		else rd_le = WRITEBACK;
+		case(IR[15:12])
+		  'b0111:  rd_le = 0; // STR
+		  default: rd_le = WRITEBACK;
+		endcase
 	endfunction // rd_le
 
 	function mar_le;

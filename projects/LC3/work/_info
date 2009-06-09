@@ -502,31 +502,51 @@ r1
 R6
 !s85 0
 vcontrol
-ISWacBWj3lQHMNzX`a5I]g1
+I2mA_LL<;W_Rb>W_3:UE:j0
 VGO9>VWeK_EMULCQ4K>b5i3
 R1
+<<<<<<< HEAD:projects/LC3/work/_info
 R2
 8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/control.v
 FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/control.v
+=======
+w1244484793
+8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v
+FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/control.v
+>>>>>>> origin/master:projects/LC3/work/_info
 L0 1
 R5
 r1
 31
 R6
+<<<<<<< HEAD:projects/LC3/work/_info
+=======
+!s100 ]YH:aK0D=AHW_2REjBa[N2
+>>>>>>> origin/master:projects/LC3/work/_info
 !s85 0
 vData
-I5c;`YE_6I4`nCdJE1Nb[S2
+IPF[B[j98DQb?cOL2NVMLN1
 V8o9ONaV3<K3E<KH@d0;>83
 R1
+<<<<<<< HEAD:projects/LC3/work/_info
 R2
 8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Data.v
 FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/Data.v
+=======
+w1244484728
+8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v
+FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/Data.v
+>>>>>>> origin/master:projects/LC3/work/_info
 L0 1
 R5
 r1
 31
 R6
 n@data
+<<<<<<< HEAD:projects/LC3/work/_info
+=======
+!s100 2=YM;@:Vdb3BO]JzFUKon0
+>>>>>>> origin/master:projects/LC3/work/_info
 !s85 0
 vDataram
 IQ>nA=;NjmAhlJl1]4<;el2
@@ -651,9 +671,15 @@ vDRAM
 I0S2?[@7Q`^X7WHY0CKS930
 VCF^M?04TXzICdHnAUQML=3
 R1
+<<<<<<< HEAD:projects/LC3/work/_info
 R2
 8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/DRAM.v
 FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/DRAM.v
+=======
+w1244488685
+8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v
+FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/DRAM.v
+>>>>>>> origin/master:projects/LC3/work/_info
 L0 39
 R5
 r1
@@ -774,9 +800,15 @@ vIRAM
 I1Zd5m^cc2MK]EMk<5Zm`i2
 VobYB5I[mPHamo[P;cj50j1
 R1
+<<<<<<< HEAD:projects/LC3/work/_info
 R2
 8C:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/IRAM.v
 FC:/Users/Megan/Documents/Megan/Spring 2009/EECE 681/vlsi681spring09/projects/LC3/src/IRAM.v
+=======
+w1244488692
+8Z:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v
+FZ:/Dropbox/UC Stuff/VLSI System Design/git/vlsi681spring09/projects/LC3/src/IRAM.v
+>>>>>>> origin/master:projects/LC3/work/_info
 L0 39
 R5
 r1

@@ -47,4 +47,8 @@ force -freeze sim:/LC3/CLK 1 0, 0 {50 ps} -r 100
 force RESET 1
 run 100
 force RESET 0
+<<<<<<< HEAD:projects/LC3/wave.do
 run 100000
+=======
+run 10000
+>>>>>>> origin/master:projects/LC3/wave.do

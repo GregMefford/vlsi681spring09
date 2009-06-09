@@ -61,8 +61,6 @@ module control
 		input [15:0] IR;
 		// Decode the OPCODE
 		case(IR[15:12])
-			4'b0110: alu_MuxA = 'b0; // LDR (A = PC)
-			4'b0111: alu_MuxA = 'b0; // STR (A = PC)
 			default: alu_MuxA = 'b1; // (A = RS1_DATA)
 		endcase
 	endfunction // alu_MuxA
@@ -105,8 +103,11 @@ module control
 	function rd_le;
 		input [15:0] IR;
 		input        WRITEBACK;
-		if(IR[15:12] == 'b0111) rd_le = 0; // STR
-		else rd_le = WRITEBACK;
+		case(IR[15:12])
+		  'b0110:  rd_le = 0; // LDR
+		  'b0111:  rd_le = 0; // STR
+		  default: rd_le = WRITEBACK;
+		endcase
 	endfunction // rd_le
 
 	function mar_le;
