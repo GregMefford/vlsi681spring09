@@ -47,8 +47,6 @@ Week 7:
 2009-05-16: 3.50 hours: Matrix multiply prgm in assembly and MIF file implementation
 2009-05-18: 1.00 hours: Compiling hours and submitting Report 7
 2009-05-18: 1.50 hours: Working on matrix multiply program
-Week 8:
-???
 Week 9:
 2009-05-27: 5.00 hours:	Finishing matrix multiply changes and converting to machine code
 2009-05-27: 0.50 hours: Modifying ALU for different control signals and retesting
@@ -56,3 +54,9 @@ Week 9:
 2009-05-29: 3.00 hours: Getting ready for project demonstration
 Week 10:
 2009-06-04: 3.00 hours: Thinking about LCD implementation, matrix mult. with loops?
+Week 10:
+2009-06-08: 7.00 hours:	Working on LCD implementation into Verilog
+2009-06-09: 4.00 hours: Working on LCD implementation and matrix mult.
+2009-06-10: 1.00 hours: Discussing project progress/what to do
+2009-06-11: 3.00 hours: Compiling final report
+2009-06-11: 2.00 hours: Completing take-home final
