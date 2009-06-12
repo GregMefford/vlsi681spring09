@@ -56,5 +56,8 @@ Week 9:
 2009-06-03: 2.00 hours: Partitioning the design into pipeline stages.
 2009-06-04: 3.00 hours: Working on a pipelined architecture.
 2009-06-05: 4.00 hours: Working on output verification and instructions for sorting.
+Week 10:
 2009-06-08: 7.00 hours: Debugging the CPU, including the memory, in Modelsim.
 2009-06-10: 1.50 hours: Working out the LCD interfacing
+2009-06-11: 2.00 hours: Completing take-home final
+2009-06-12: 4.00 hours: Finalizing and testing and demo
